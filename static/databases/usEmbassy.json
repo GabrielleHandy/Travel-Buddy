@@ -1,0 +1,4364 @@
+{
+"results" : [
+
+  {
+    "objectId": "HD8J3jowM9",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 69.19371818005794,
+      "longitude": 34.53752004403598
+    },
+    "country": "Afghanistan",
+    "embassy": "U.S. Embassy in Kabul",
+    "info": "Tel: (00 93) (0)700-10-8001",
+    "createdAt": "2020-02-20T13:36:18.980Z",
+    "updatedAt": "2020-02-20T16:22:43.463Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "MEzedNnNVw"
+    }
+  },
+  {
+    "objectId": "aXszRoMQCC",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 19.82707,
+      "longitude": 41.320471
+    },
+    "country": "Albania",
+    "embassy": "U.S. Embassy Tirana",
+    "info": "Rruga e Elbasanit\nNo. 103\nTirana, ALBANIA\nPhone: +(355) 4 2247 285",
+    "createdAt": "2020-02-20T13:36:19.972Z",
+    "updatedAt": "2020-02-20T16:22:43.990Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8rTBsf4ObQ"
+    }
+  },
+  {
+    "objectId": "w1eXqFcm8g",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 3.021801240845189,
+      "longitude": 36.753424531614456
+    },
+    "country": "Algeria",
+    "embassy": "U.S. Embassy in Algiers",
+    "info": "05 Chemin Cheikh Bachir Ibrahimi\nEl-Biar 16030\nAlger Algerie\nTelephone: 213 (0) 770-08-2000",
+    "createdAt": "2020-02-20T13:36:22.186Z",
+    "updatedAt": "2020-02-20T16:22:44.510Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8XKDe93BnC"
+    }
+  },
+  {
+    "objectId": "X4iPqaHCTq",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 13.244469090775446,
+      "longitude": -8.809720967521883
+    },
+    "country": "Angola",
+    "embassy": "U.S. Embassy in Luanda",
+    "info": "R. Houari Boumediene 32,\nLuanda, Angola,\nC.P. 6468\nTel: 222641000",
+    "createdAt": "2020-02-20T13:36:24.343Z",
+    "updatedAt": "2020-02-20T16:22:45.286Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "khAszEtDXl"
+    }
+  },
+  {
+    "objectId": "VAxuJmijN3",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -58.42101148534582,
+      "longitude": -34.5766049804666
+    },
+    "country": "Argentina",
+    "embassy": "U.S. Embassy in Buenos Aires",
+    "info": "Av. Colombia 4300\n(C1425GMN) Buenos Aires\nArgentina\nTelephone: (54-11) 5777-4533",
+    "createdAt": "2020-02-20T13:36:26.306Z",
+    "updatedAt": "2020-02-20T16:22:45.892Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "emj7gm2L4O"
+    }
+  },
+  {
+    "objectId": "1zwoYCAz7W",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 44.47928465065334,
+      "longitude": 40.16526737871782
+    },
+    "country": "Armenia",
+    "embassy": "U.S. Embassy in Yerevan",
+    "info": "1 American Avenue\nYerevan 0082, Republic of Armenia\nTelephone: (+37410) 464-700\nFax: (+37410) 464-742",
+    "createdAt": "2020-02-20T13:36:28.631Z",
+    "updatedAt": "2020-02-20T16:22:46.406Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hVs5HyPvID"
+    }
+  },
+  {
+    "objectId": "jisgRWsS1W",
+    "country": "Australia",
+    "embassy": "U.S. Consulate in Melbourne",
+    "info": "553 St. Kilda Road\nMelbourne, VIC 3004\nTelephone: (03) 9526-5900",
+    "createdAt": "2020-02-20T13:36:30.498Z",
+    "updatedAt": "2020-02-20T16:22:46.918Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8lauBzPLI5"
+    }
+  },
+  {
+    "objectId": "HjadnsAyxd",
+    "country": "Australia",
+    "embassy": "U.S. Embassy in Canberra",
+    "info": "Moonah Place\nYarralumla, ACT 2600\nTelephone: (02) 6214-5600",
+    "createdAt": "2020-02-20T13:36:30.534Z",
+    "updatedAt": "2020-02-20T16:22:47.434Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8lauBzPLI5"
+    }
+  },
+  {
+    "objectId": "ASBwCmcmBL",
+    "country": "Australia",
+    "embassy": "U.S. Consulate in Sydney",
+    "info": "Level 10, MLC Centre\n19-29 Martin Place\nSydney, NSW 2000",
+    "createdAt": "2020-02-20T13:36:30.428Z",
+    "updatedAt": "2020-02-20T16:22:48.266Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8lauBzPLI5"
+    }
+  },
+  {
+    "objectId": "4xtwYbYYck",
+    "country": "Australia",
+    "embassy": "U.S. Consulate in Perth",
+    "info": "16 St. George’s Terrace\nPerth, WA 6000\nTelephone: (08) 6144-5100",
+    "createdAt": "2020-02-20T13:36:30.790Z",
+    "updatedAt": "2020-02-20T16:22:48.778Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8lauBzPLI5"
+    }
+  },
+  {
+    "objectId": "jtJhuCph6e",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 16.354499215758217,
+      "longitude": 48.22291345319236
+    },
+    "country": "Austria",
+    "embassy": "U.S. Embassy in Austria",
+    "info": "Boltzmanngasse 16\n1090 Vienna, Austria\nPhone: (+43-1) 31339-0\n\n\n\n\n\n\t\tBy bottsc | 4 October, 2016 | Topics: A",
+    "createdAt": "2020-02-20T13:36:32.647Z",
+    "updatedAt": "2020-02-20T16:22:49.299Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "sbCG0KlS9w"
+    }
+  },
+  {
+    "objectId": "1DQzpUbgIV",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 19.82707,
+      "longitude": 41.320471
+    },
+    "country": "Azerbaijan",
+    "embassy": "U.S. Embassy in Baku",
+    "info": "111 Azadlig avenue\nAZ1007 Baku, Azerbaijan\nSwitchboard: (+994 12) 488-3300",
+    "createdAt": "2020-02-20T13:36:34.958Z",
+    "updatedAt": "2020-02-20T16:22:49.822Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mDMzJJXtB2"
+    }
+  },
+  {
+    "objectId": "zy2QaHoiml",
+    "country": "U.S. Mission to ASEAN",
+    "embassy": "U.S. Mission to ASEAN",
+    "info": "Jl. Medan Merdeka Selatan 5\nJakarta 10110, Indonesia\nPhone: (62)(21) 3435-9000",
+    "createdAt": "2020-02-20T13:36:36.998Z",
+    "updatedAt": "2020-02-20T13:36:36.998Z"
+  },
+  {
+    "objectId": "P9ZYQogf8V",
+    "country": "U.S. Mission to the African Union",
+    "embassy": "U.S. Mission to the African Union",
+    "info": "Entoto Street\nAddis Ababa, Ethiopia\nTel: +251-11-517-4037",
+    "createdAt": "2020-02-20T13:36:39.543Z",
+    "updatedAt": "2020-02-20T13:36:39.543Z"
+  },
+  {
+    "objectId": "YrrPFOfmTo",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -77.34896624969824,
+      "longitude": 25.077164483873396
+    },
+    "country": "Bahamas",
+    "embassy": "U.S. Embassy Nassau",
+    "info": "42 Queen St.\nNassau, the Bahamas\nPhone: 242-322-1181",
+    "createdAt": "2020-02-20T13:36:41.568Z",
+    "updatedAt": "2020-02-20T16:22:50.863Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "5xyA61UG1h"
+    }
+  },
+  {
+    "objectId": "PIEDjRDEPw",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 50.538771,
+      "longitude": 26.237461
+    },
+    "country": "Bahrain",
+    "embassy": "U.S. Embassy Manama",
+    "info": "Bldg. 979, Road 3119, Block 331, Zinj\nP.O. Box 26431\nManama – Kingdom of Bahrain\nTel: (+973) 17 242700",
+    "createdAt": "2020-02-20T13:36:43.845Z",
+    "updatedAt": "2020-02-20T16:22:51.386Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "gXKD3sCcJI"
+    }
+  },
+  {
+    "objectId": "2q37YZv4GX",
+    "country": "Bangladesh",
+    "embassy": "U.S. Embassy in Dhaka",
+    "info": "Madani Avenue,\nBaridhara, Dhaka -1212,\nBangladesh\nTel: (880) (2) 5566-2000",
+    "createdAt": "2020-02-20T13:36:45.034Z",
+    "updatedAt": "2020-02-20T16:22:51.897Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "AWnxgoUzw0"
+    }
+  },
+  {
+    "objectId": "OkT1HUD7ic",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -59.58767188544566,
+      "longitude": 13.093218815741189
+    },
+    "country": "Barbados",
+    "embassy": "U.S. Embassy in Bridgetown",
+    "info": "Wildey Business Park\nSt. Michael BB 14006\nBarbados, W.I.\nPhone: (246) 227-4000",
+    "createdAt": "2020-02-20T13:36:47.422Z",
+    "updatedAt": "2020-02-20T16:22:52.419Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "27DB6uofpp"
+    }
+  },
+  {
+    "objectId": "mLW39Fbqu4",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -61.760287273189775,
+      "longitude": 12.010290496280286
+    },
+    "country": "Barbados",
+    "embassy": "U.S. Embassy in Grenada",
+    "info": "Lance Aux Epines\nSt. George’s\nGrenada\nPhone: (+1 473) 444-1173 to 6",
+    "createdAt": "2020-02-20T13:36:47.816Z",
+    "updatedAt": "2020-02-20T16:22:52.936Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "27DB6uofpp"
+    }
+  },
+  {
+    "objectId": "skWGC7aWBT",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 27.556450815687707,
+      "longitude": 53.912943639820504
+    },
+    "country": "Belarus",
+    "embassy": "U.S. Embassy Minsk",
+    "info": "46 Starovilenskaya St.\nMinsk 220002, Belarus\nPhone: +375 17 210-12-83 / 217-7347 / 217-7348\n\n\n\n\n\n\t\tBy bottsc | 4 October, 2016 | Topics: B",
+    "createdAt": "2020-02-20T13:36:49.473Z",
+    "updatedAt": "2020-02-20T16:22:53.460Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "5oTW0cNpxA"
+    }
+  },
+  {
+    "objectId": "UPhhRHbEjW",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 4.365151650990838,
+      "longitude": 50.84451007943123
+    },
+    "country": "Belgium",
+    "embassy": "U.S. Embassy Brussels",
+    "info": "Regentlaan 27 Boulevard du Régent, B-1000 Brussels\nPhone: (32-2) 811-4000",
+    "createdAt": "2020-02-20T13:36:51.594Z",
+    "updatedAt": "2020-02-20T16:22:53.999Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "TySeDEiFtc"
+    }
+  },
+  {
+    "objectId": "LzOo5XNeJI",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -88.7746408500989,
+      "longitude": 17.257409411026316
+    },
+    "country": "Belize",
+    "embassy": "U.S. Embassy in Belmopan",
+    "info": "Floral Park Road\nBelmopan, Cayo\nBelize\nInternational: Dial 011 +\nPhone: (501) 822-4011",
+    "createdAt": "2020-02-20T13:36:52.617Z",
+    "updatedAt": "2020-02-20T16:22:54.826Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "v9SGqANrU2"
+    }
+  },
+  {
+    "objectId": "1Fk9HQe3kE",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 2.3962361978393565,
+      "longitude": 6.3507944803280525
+    },
+    "country": "Benin",
+    "embassy": "U.S. Embassy in City",
+    "info": "Marina Avenue,\n01 BP 2012, Cotonou, Benin\nTel: (229) 21- 30 – 06 – 50\nFax:(229) 21- 30 – 66 – 82",
+    "createdAt": "2020-02-20T13:36:54.915Z",
+    "updatedAt": "2020-02-20T16:22:55.340Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "zVrvUTYEeC"
+    }
+  },
+  {
+    "objectId": "6IUGWf2UjW",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -64.77029974967265,
+      "longitude": 32.29539498102744
+    },
+    "country": "Bermuda",
+    "embassy": "U.S. Consulate in Hamilton",
+    "info": "16 Middle Road Devonshire, DV 03\nBermuda\nMain: (441) 295-1342",
+    "createdAt": "2020-02-20T13:36:57.478Z",
+    "updatedAt": "2020-02-20T16:22:55.884Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "nj3z9SHzzq"
+    }
+  },
+  {
+    "objectId": "J75j2VqjoQ",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -68.121301,
+      "longitude": -16.512683
+    },
+    "country": "Bolivia",
+    "embassy": "U.S. Embassy in La Paz",
+    "info": "Avenida Arce 2780\nCasilla 425\nLa Paz, Bolivia\nPhone: (591) 2-216-8000",
+    "createdAt": "2020-02-20T13:36:59.693Z",
+    "updatedAt": "2020-02-20T16:22:56.420Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "PdgGA5Y5Tt"
+    }
+  },
+  {
+    "objectId": "yhfHg1Fehh",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -34.89513298604406,
+      "longitude": -8.057479794198347
+    },
+    "country": "Brazil",
+    "embassy": "U.S. Consulate General in Recife",
+    "info": "Rua Gonçalves Maia, 163 – Boa Vista\n50070-060 – Recife, PE\nPhone: (55-81) 3416-3050",
+    "createdAt": "2020-02-20T13:37:04.835Z",
+    "updatedAt": "2020-02-20T16:22:56.943Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qq2ryXaIYG"
+    }
+  },
+  {
+    "objectId": "r5wdEXqcoB",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -43.17603538580082,
+      "longitude": -22.9114962850094
+    },
+    "country": "Brazil",
+    "embassy": "U.S. Consulate General in Rio de Janeiro",
+    "info": "Av. Presidente Wilson, 147 – Castelo\n20030-020 – Rio de Janeiro, RJ\nPhone: (55-21) 3823-2000",
+    "createdAt": "2020-02-20T13:37:05.088Z",
+    "updatedAt": "2020-02-20T16:22:57.465Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qq2ryXaIYG"
+    }
+  },
+  {
+    "objectId": "Z31dWGXl9n",
+    "country": "Brunei",
+    "embassy": "U.S. Embassy in Bandar Seri Begawan",
+    "info": "Simpang 336-52-16-9, Jalan Duta\nBandar Seri Begawan\nBC4115 Brunei Darussalam\nPhone: 673-238-4616",
+    "createdAt": "2020-02-20T13:37:07.197Z",
+    "updatedAt": "2020-02-20T16:22:58.020Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "W1DBYJ0DT4"
+    }
+  },
+  {
+    "objectId": "Ue2QKuHeim",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 23.310085350655804,
+      "longitude": 42.66685437906526
+    },
+    "country": "Bulgaria",
+    "embassy": "U.S. Embassy in Sofia",
+    "info": "16, Kozyak Street\nSofia 1408, Bulgaria\nTelephone: +359 2 937 5100",
+    "createdAt": "2020-02-20T13:37:08.720Z",
+    "updatedAt": "2020-02-20T16:22:58.553Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "LHOE9MSsmI"
+    }
+  },
+  {
+    "objectId": "JoCzYhDx3C",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -1.5370534984062096,
+      "longitude": 12.251802140547836
+    },
+    "country": "Burkina Faso",
+    "embassy": "U.S. Embassy in Ouagadougou",
+    "info": "Secteur 15, Ouaga 2000\nAvenue Sembène Ousmane, Rue 15.873\nOuagadougou, Burkina Faso\nTelephone: (226) 25-49-53-00",
+    "createdAt": "2020-02-20T13:37:10.368Z",
+    "updatedAt": "2020-02-20T16:22:59.074Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "buIC80yx3R"
+    }
+  },
+  {
+    "objectId": "lcgEnF58ad",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -47.87494718594563,
+      "longitude": -15.80437338904502
+    },
+    "country": "Brazil",
+    "embassy": "U.S. Embassy in Brasilia",
+    "info": "SES – Av. das Nações, Quadra 801, Lote 03\n70403-900 – Brasília, DF\nPhone: (55-61) 3312-7000",
+    "createdAt": "2020-02-20T13:37:11.140Z",
+    "updatedAt": "2020-02-20T16:22:59.592Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qq2ryXaIYG"
+    }
+  },
+  {
+    "objectId": "ktIPAt1sv8",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 18.398199750701693,
+      "longitude": 43.856664479012416
+    },
+    "country": "Bosnia & Herzegovina",
+    "embassy": "U.S. Embassy in Sarajevo",
+    "info": "1 Robert C. Frasure Street, 71000\nSARAJEVO\ntel: +387 33 704-000",
+    "createdAt": "2020-02-20T13:37:12.140Z",
+    "updatedAt": "2020-02-20T13:37:12.140Z"
+  },
+  {
+    "objectId": "G4nzRufh2N",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -46.71500176726864,
+      "longitude": -23.629400686822922
+    },
+    "country": "Brazil",
+    "embassy": "U.S. Consulate General in Sao Paulo",
+    "info": "Rua Henri Dunant, 500,\nChácara Santo Antônio,\nSão Paulo- SP, 04709-110\nPhone: (55-11) 3250-5000",
+    "createdAt": "2020-02-20T13:37:12.140Z",
+    "updatedAt": "2020-02-20T16:23:00.374Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qq2ryXaIYG"
+    }
+  },
+  {
+    "objectId": "MMcTGzBwPe",
+    "country": "Burma",
+    "embassy": "U.S. Embassy in Rangoon",
+    "info": "110 University Ave\nKamayut Township\nRangoon, Burma\nTelephone: (95)-(1) 536-509, 535-756, 538-038",
+    "createdAt": "2020-02-20T13:37:12.409Z",
+    "updatedAt": "2020-02-20T16:23:00.901Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cz9fi68eVU"
+    }
+  },
+  {
+    "objectId": "QJXNZlVLrz",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 25.90648851606914,
+      "longitude": -24.661260909013087
+    },
+    "country": "Botswana",
+    "embassy": "U.S. Embassy Gaborone",
+    "info": "Embassy Drive\nGovernment Enclave\nGaborone, Botswana\nPhone: (+267) 395-3982",
+    "createdAt": "2020-02-20T13:37:12.885Z",
+    "updatedAt": "2020-02-20T16:23:01.425Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9l8d95idZG"
+    }
+  },
+  {
+    "objectId": "5SNBxFKhNJ",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -51.170603185102486,
+      "longitude": -30.012005881894144
+    },
+    "country": "Brazil",
+    "embassy": "U.S. Consulate in Porto Alegre",
+    "info": "Av. Assis Brasil, 1889\nPasso d’Areia Porto Alegre – RS\nPhone: +55 (51) 3345-6000",
+    "createdAt": "2020-02-20T13:37:12.885Z",
+    "updatedAt": "2020-02-20T16:23:01.953Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qq2ryXaIYG"
+    }
+  },
+  {
+    "objectId": "v8ANNleCRe",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 29.380263715846144,
+      "longitude": -3.368231542392924
+    },
+    "country": "Burundi",
+    "embassy": "U.S. Embassy in Bujumbura",
+    "info": "B.P. 1720\nAvenue Des Etats-Unis\nBujumbura, Burundi\nTel: +257 22-207-000\nTel (after hours): +257 22-214-853",
+    "createdAt": "2020-02-20T13:37:14.243Z",
+    "updatedAt": "2020-02-20T16:23:02.465Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qEgnSc4sip"
+    }
+  },
+  {
+    "objectId": "6CNvg8DfMg",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -23.50859068535588,
+      "longitude": 14.92113557314168
+    },
+    "country": "Cabo Verde",
+    "embassy": "U.S. Embassy in Praia",
+    "info": "Rua Abilio Macedo 6\nPraia, Cape Verde\nTelephone: (238)-260-89-00",
+    "createdAt": "2020-02-20T13:37:16.175Z",
+    "updatedAt": "2020-02-20T13:37:16.175Z"
+  },
+  {
+    "objectId": "3lfYOjXJ1q",
+    "country": "Cambodia",
+    "embassy": "U.S. Embassy in Phnom Penh",
+    "info": "Embassy of the United States of America\n#1, Street 96, Sangkat Wat Phnom\nKhan Daun Penh, Phnom Penh\nEmbassy Tel: +(855) 23 728-000",
+    "createdAt": "2020-02-20T13:37:17.345Z",
+    "updatedAt": "2020-02-20T16:23:03.255Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "EpBnGVkBLF"
+    }
+  },
+  {
+    "objectId": "xHYCOOv6D7",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 11.501709352318809,
+      "longitude": 3.8991557297769273
+    },
+    "country": "Cameroon",
+    "embassy": "U.S. Embassy in Yaounde",
+    "info": "Avenue Rosa Parks\nYaounde, Cameroon\nPhone: (237) 22220-1500\nFax: (237) 22220-1500",
+    "createdAt": "2020-02-20T13:37:19.827Z",
+    "updatedAt": "2020-02-20T16:23:03.780Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "pUFZ2RIIvG"
+    }
+  },
+  {
+    "objectId": "wiMP8nwgSz",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -73.57542628444138,
+      "longitude": 45.49943997910136
+    },
+    "country": "Canada",
+    "embassy": "U.S. Consulate General in Montreal",
+    "info": "1134 Saint-Catherine St W\nMontreal, QC H3B 5K2\nPhone: 416-645-9124",
+    "createdAt": "2020-02-20T13:37:21.524Z",
+    "updatedAt": "2020-02-20T16:23:04.297Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "NCPIqeG9Hu",
+    "country": "Canada",
+    "embassy": "U.S. Consulate General in Vancouver",
+    "info": "1075 West Pender Street\nVancouver, British Columbia\nV6E 2M6\nPhone: 604-685-4311",
+    "createdAt": "2020-02-20T13:37:21.537Z",
+    "updatedAt": "2020-02-20T16:23:05.048Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "WCs4CwQrL7",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -71.20693568487476,
+      "longitude": 46.81061277913991
+    },
+    "country": "Canada",
+    "embassy": "U.S. Consulate General in Quebec",
+    "info": "2, rue de la Terrasse-Dufferin\nQuebec, Quebec G1R 4T9\nCanada\nTelephone: (418) 692-2095",
+    "createdAt": "2020-02-20T13:37:21.656Z",
+    "updatedAt": "2020-02-20T16:23:05.562Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "X0j4EaVW2a",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -75.69805418493372,
+      "longitude": 45.42795027910043
+    },
+    "country": "Canada",
+    "embassy": "U.S. Embassy in Ottawa",
+    "info": "490 Sussex Drive\nOttawa, Ontario K1N 1G8 Canada\nTel: 613-688-5335",
+    "createdAt": "2020-02-20T13:37:21.885Z",
+    "updatedAt": "2020-02-20T16:23:06.086Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "NKTVCDKtaG",
+    "country": "Canada",
+    "embassy": "U.S. Consulate General in Calgary",
+    "info": "615 MacLeod Trail S.E.\n10th Floor\nRocky Mountain Plaza Building\nCalgary, Alberta\nT2G 4T8\nPhone: 403-266-8962",
+    "createdAt": "2020-02-20T13:37:21.859Z",
+    "updatedAt": "2020-02-20T16:23:06.617Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "uvE3AuAgz6",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -79.39009958500738,
+      "longitude": 43.65277537912137
+    },
+    "country": "Canada",
+    "embassy": "U.S. Consulate General in Toronto",
+    "info": "360 University Avenue\nToronto, Ontario M5G 1S4\nPhone: 416.595.1700",
+    "createdAt": "2020-02-20T13:37:21.778Z",
+    "updatedAt": "2020-02-20T16:23:07.133Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "zRGzaoNFCN",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -63.576402884196376,
+      "longitude": 44.652399295261674
+    },
+    "country": "Canada",
+    "embassy": "U.S. Consulate General in Halifax",
+    "info": "1969 Upper Water Street\nSuite 904, Purdy’s Wharf\nTower II\nB3J 3R7\nPhone: 902-429-2480",
+    "createdAt": "2020-02-20T13:37:21.904Z",
+    "updatedAt": "2020-02-20T16:23:07.666Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "wlTgUzaVjY",
+    "country": "Canada",
+    "embassy": "U.S. Consulate in Winnipeg",
+    "info": "201 Portage Avenue, Suite 860\nWinnipeg, Manitoba R3B 3K6 Canada\nTel: 204-940-1800",
+    "createdAt": "2020-02-20T13:37:21.905Z",
+    "updatedAt": "2020-02-20T16:23:08.185Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "mTtBWeeHCo"
+    }
+  },
+  {
+    "objectId": "blYpbxVpY0",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 18.57692871459369,
+      "longitude": 4.360147295730762
+    },
+    "country": "Central African Republic",
+    "embassy": "U.S. Embassy in Bangui",
+    "info": "Avenue David Dacko\nP.O. Box 924\nBangui\nCentral African Republic\nPhone: (236) 2161-0200",
+    "createdAt": "2020-02-20T13:37:23.978Z",
+    "updatedAt": "2020-02-20T16:23:08.711Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "CAFBhOmYoF"
+    }
+  },
+  {
+    "objectId": "m4AmEhUczk",
+    "country": "Chad",
+    "embassy": "U.S. Embassy in Ndjamena",
+    "info": "U.S. Embassy N’Djamena\nB.P. 413\nN’Djamena, Chad\nTel: (235) 22 51 50 17",
+    "createdAt": "2020-02-20T13:37:25.919Z",
+    "updatedAt": "2020-02-20T16:23:09.230Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8lQ5LYAawJ"
+    }
+  },
+  {
+    "objectId": "w0anXyenS9",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -70.6065827848723,
+      "longitude": -33.411839902917684
+    },
+    "country": "Chile",
+    "embassy": "U.S. Embassy Santiago",
+    "info": "Av. Andrés Bello 2800\nLas Condes\nSantiago, Chile\nPhone: (56-2) 2330-3000",
+    "createdAt": "2020-02-20T13:37:27.862Z",
+    "updatedAt": "2020-02-20T16:23:09.746Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "dnDRHIFqGe"
+    }
+  },
+  {
+    "objectId": "GcUmDk2mxK",
+    "country": "China",
+    "embassy": "U.S. Consulate General in Wuhan",
+    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nTel：027-8555-7791",
+    "createdAt": "2020-02-20T13:37:29.932Z",
+    "updatedAt": "2020-02-20T16:23:10.268Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jPsWdF78Gn"
+    }
+  },
+  {
+    "objectId": "P22q3GB0Kl",
+    "country": "China",
+    "embassy": "U.S. Consulate General in Guangzhou",
+    "info": "Huaxia Road, Zhujiang New Town\n(near Exit B1 of the Zhujiang New Town subway station, Line 3 and Line 5)\nTianhe District\nGuangzhou, China\nPhone: 020-3814-5000",
+    "createdAt": "2020-02-20T13:37:29.904Z",
+    "updatedAt": "2020-02-20T16:23:10.793Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jPsWdF78Gn"
+    }
+  },
+  {
+    "objectId": "jNtpt9qC05",
+    "country": "China",
+    "embassy": "U.S. Consulate in Shanghai",
+    "info": "1469 Huai Hai Zhong Road\n(Near Wulumuqi Nan Lu)\n200031 Shanghai China\nTel: (86-21) 6433-6880",
+    "createdAt": "2020-02-20T13:37:30.069Z",
+    "updatedAt": "2020-02-20T16:23:11.304Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jPsWdF78Gn"
+    }
+  },
+  {
+    "objectId": "HvnzNtOlmz",
+    "country": "China",
+    "embassy": "U.S. Consulate General in Wuhan",
+    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nTel：027-8555-7791",
+    "createdAt": "2020-02-20T13:37:30.185Z",
+    "updatedAt": "2020-02-20T16:23:11.831Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jPsWdF78Gn"
+    }
+  },
+  {
+    "objectId": "AGcPedkfQB",
+    "country": "China",
+    "embassy": "U.S. Consulate in Shenyang",
+    "info": "52, 14th Wei Road, Heping District\n110003 China\nTel [86] (24) 2322-1198",
+    "createdAt": "2020-02-20T13:37:30.085Z",
+    "updatedAt": "2020-02-20T16:23:12.352Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jPsWdF78Gn"
+    }
+  },
+  {
+    "objectId": "M2LTZ4VrmL",
+    "country": "China",
+    "embassy": "U.S. Consulate General in Wuhan",
+    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nTel：027-8555-7791",
+    "createdAt": "2020-02-20T13:37:30.172Z",
+    "updatedAt": "2020-02-20T16:23:12.878Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jPsWdF78Gn"
+    }
+  },
+  {
+    "objectId": "r7C068b7D0",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -74.10426791435547,
+      "longitude": 4.636952574881353
+    },
+    "country": "Colombia",
+    "embassy": "U.S. Embassy in Bogota",
+    "info": "Carrera 45 No. 24B-27 Bogotá, D.C. Colombia\nPhone: (+57) (1) 275-2000\nFax: (+57) (1) 275-4600",
+    "createdAt": "2020-02-20T13:37:32.259Z",
+    "updatedAt": "2020-02-20T16:23:13.397Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "R3I0XpBMHj"
+    }
+  },
+  {
+    "objectId": "lHKDAIsBDF",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -84.12636725016975,
+      "longitude": 9.942651776713493
+    },
+    "country": "Costa Rica",
+    "embassy": "U.S. Embassy in San Jose",
+    "info": "Calle 98 Vía 104, Pavas\nSan José, Costa Rica\nTelephone: [506] 2519-2000",
+    "createdAt": "2020-02-20T13:37:34.703Z",
+    "updatedAt": "2020-02-20T16:23:13.915Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "CcOW7twmeX"
+    }
+  },
+  {
+    "objectId": "2PXXTLPlLf",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -3.978233386063633,
+      "longitude": 5.3350398961299375
+    },
+    "country": "Côte d’Ivoire",
+    "embassy": "U.S. Embassy in Abidjan",
+    "info": "Cocody Riviéra Golf,\n01 BP 1712 Abidjan 01,\nAbidjan, Côte d’Ivoire\nPhone: (+225) 22-49-40-00",
+    "createdAt": "2020-02-20T13:37:36.508Z",
+    "updatedAt": "2020-02-20T13:37:36.508Z"
+  },
+  {
+    "objectId": "tDO2uewIeV",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 15.992423565160433,
+      "longitude": 45.74087723720738
+    },
+    "country": "Croatia",
+    "embassy": "U.S. Embassy in Zagreb",
+    "info": "Ulica Thomasa Jeffersona 2\n10010 Zagreb\nCroatia\nTelephone: 385-1-661-2200\n\n\n\n\n\n\t\tBy wingardma | 7 October, 2016 | Topics: C",
+    "createdAt": "2020-02-20T13:37:38.185Z",
+    "updatedAt": "2020-02-20T16:23:14.686Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "uj5JYO5BE3"
+    }
+  },
+  {
+    "objectId": "rTBs3fE0dn",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -82.39025868531266,
+      "longitude": 23.145848517518314
+    },
+    "country": "Cuba",
+    "embassy": "U.S. Embassy Havana",
+    "info": "Calzada between L & M Streets, Vedado\nHavana, Cuba\nPhone: (+53) 7839-4100",
+    "createdAt": "2020-02-20T13:37:40.267Z",
+    "updatedAt": "2020-02-20T16:23:15.207Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "YNRVNxzcFx"
+    }
+  },
+  {
+    "objectId": "IRa0IEl9yU",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -68.92806705015425,
+      "longitude": 12.108160536469793
+    },
+    "country": "Curacao",
+    "embassy": "U.S. Consulate General in Curacao",
+    "info": "P.O. Box 158\nJ.B. Gorsiraweg 1\nTel +599-9-461-3066",
+    "createdAt": "2020-02-20T13:37:42.333Z",
+    "updatedAt": "2020-02-20T16:23:15.726Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "6RJs1GA7WP"
+    }
+  },
+  {
+    "objectId": "99ldYuwFSP",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 33.34222775039067,
+      "longitude": 35.165829780221046
+    },
+    "country": "Cyprus",
+    "embassy": "U.S. Embassy in Nicosia",
+    "info": "Metochiou & Ploutarchou Street\n2407, Engomi\nNicosia, Cyprus\nTelephone: 357-22-393939",
+    "createdAt": "2020-02-20T13:37:44.235Z",
+    "updatedAt": "2020-02-20T16:23:16.230Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "1KRscl4VTZ"
+    }
+  },
+  {
+    "objectId": "LCDtMEdnsR",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 14.4013251,
+      "longitude": 50.087334199999994
+    },
+    "country": "Czech Republic",
+    "embassy": "U.S. Embassy in Prague",
+    "info": "Tržiště 15\n118 01 Praha 1 – Malá Strana\nCzech Republic\nSwitchboard: (+420) 257 022 000",
+    "createdAt": "2020-02-20T13:37:46.377Z",
+    "updatedAt": "2020-02-20T16:23:16.751Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "FIdcKBVyI3"
+    }
+  },
+  {
+    "objectId": "Giq81EF170",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 15.311121414556926,
+      "longitude": -4.30045134755232
+    },
+    "country": "Democratic Republic of the Congo",
+    "embassy": "U.S. Embassy in Kinshasa",
+    "info": "310 Avenue des Aviateurs\nKinshasa, Gombe\nDemocratic Republic of the Congo\nTelephone: 081 556-0151",
+    "createdAt": "2020-02-20T13:37:48.262Z",
+    "updatedAt": "2020-02-20T16:23:17.283Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "7UlxnC5LyT"
+    }
+  },
+  {
+    "objectId": "MVH053O9O4",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 43.164265285710535,
+      "longitude": 11.564571439167759
+    },
+    "country": "Djibouti",
+    "embassy": "U.S. Embassy in Djibouti",
+    "info": "Lot 350-B Haramouss\nB.P. 185\nDjibouti\nPhone: (253) 21-45-30-00\n\n\n\n\n\n\t\tBy bottsc | 28 September, 2016 | Topics: D",
+    "createdAt": "2020-02-20T13:37:51.932Z",
+    "updatedAt": "2020-02-20T16:23:17.807Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "DKDsqKRrNW"
+    }
+  },
+  {
+    "objectId": "eVNtu9ssEj",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -69.96556585638002,
+      "longitude": 18.505791773516865
+    },
+    "country": "Dominican Republic",
+    "embassy": "U.S. Embassy in Santo Domingo",
+    "info": "Av. Republica de Colombia # 57\nSanto Domingo, Dominican Republic\nPhone: (809) 567-7775",
+    "createdAt": "2020-02-20T13:37:54.187Z",
+    "updatedAt": "2020-02-20T16:23:18.332Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "BkDVxFnLbN"
+    }
+  },
+  {
+    "objectId": "UEaHJxXX9Y",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -79.94002108545662,
+      "longitude": -2.190321437897651
+    },
+    "country": "Ecuador",
+    "embassy": "U.S. Consulate General Guayaquil",
+    "info": "Santa Ana St. and Jose Eduardo Rodriguez Bonin Ave.\nSan Eduardo Sector\nGuayaquil\nPhone: 593-4-371-7000",
+    "createdAt": "2020-02-20T13:37:55.009Z",
+    "updatedAt": "2020-02-20T16:23:18.858Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "w42L24Frj9"
+    }
+  },
+  {
+    "objectId": "ca3fCqNepA",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -78.46992368546607,
+      "longitude": -0.1387366354893353
+    },
+    "country": "Ecuador",
+    "embassy": "U.S. Embassy Quito",
+    "info": "E12-170 Avigiras Ave. and Eloy Alfaro Ave.\nQuito, Ecuador\nPhone: 593-2-398-5000",
+    "createdAt": "2020-02-20T13:37:55.134Z",
+    "updatedAt": "2020-02-20T16:23:19.384Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "w42L24Frj9"
+    }
+  },
+  {
+    "objectId": "FSrCJGt3d5",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 30.017697,
+      "longitude": 31.24555
+    },
+    "country": "Egypt",
+    "embassy": "U.S. Consulate General in Alexandria",
+    "info": "3 Pharaana Street, Azarita\nAlexandria, Egypt\nTelephone: (20-3) 486-1009",
+    "createdAt": "2020-02-20T13:37:56.853Z",
+    "updatedAt": "2020-02-20T16:23:20.153Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hFkwjKITta"
+    }
+  },
+  {
+    "objectId": "CAO0GzN5kT",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 31.230139821101467,
+      "longitude": 30.040062177118504
+    },
+    "country": "Egypt",
+    "embassy": "U.S. Embassy in Cairo",
+    "info": "5 Tawfik Diab Street\nGarden City, Cairo\nEgypt\nTelephone: (20-2) 2797 3300",
+    "createdAt": "2020-02-20T13:37:56.895Z",
+    "updatedAt": "2020-02-20T16:23:20.666Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hFkwjKITta"
+    }
+  },
+  {
+    "objectId": "Li5BWu1qas",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -89.257115,
+      "longitude": 13.664472
+    },
+    "country": "El Salvador",
+    "embassy": "U.S. Embassy in San Salvador",
+    "info": "Final Boulevard Santa Elena\nAntiguo Cuscatlán, La Libertad\nTelephone: 2501-2999",
+    "createdAt": "2020-02-20T13:37:58.701Z",
+    "updatedAt": "2020-02-20T16:23:21.187Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "neXLLQcOcE"
+    }
+  },
+  {
+    "objectId": "N54T3QkcOR",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 8.67950404719766,
+      "longitude": 3.709944052732674
+    },
+    "country": "Equatorial Guinea",
+    "embassy": "U.S. Embassy in Malabo",
+    "info": "Malabo II highway\nMalabo, Guinea Ecuatorial\nTelephone: (+240) 333 09 57 41",
+    "createdAt": "2020-02-20T13:38:00.634Z",
+    "updatedAt": "2020-02-20T16:23:21.704Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hzdCZRHhIY"
+    }
+  },
+  {
+    "objectId": "l3uVDURum0",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 38.93054880356809,
+      "longitude": 15.326481749328192
+    },
+    "country": "Eritrea",
+    "embassy": "U.S. Embassy Asmara",
+    "info": "179 Alaa Street\nAsmara, Eritrea\nPhone: (+291)1-12-00-04\nFax: (+291)1-12-75-84\nGo to Embassy >",
+    "createdAt": "2020-02-20T13:38:02.691Z",
+    "updatedAt": "2020-02-20T16:23:22.230Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "rVI3whtxQX"
+    }
+  },
+  {
+    "objectId": "cEB7gKnmRC",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 24.749452351387053,
+      "longitude": 59.43049458160451
+    },
+    "country": "Estonia",
+    "embassy": "U.S. Embassy in Tallinn",
+    "info": "Kentmanni 20\n15099 Tallinn\nEstonia\nEmbassy phone: (372) 668 8100",
+    "createdAt": "2020-02-20T13:38:04.078Z",
+    "updatedAt": "2020-02-20T16:23:22.758Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "kGAoZ5pH7T"
+    }
+  },
+  {
+    "objectId": "fkriDYOZoI",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 31.146070000000005,
+      "longitude": -26.326799
+    },
+    "country": "Eswatini",
+    "embassy": "U.S. Embassy Mbabane",
+    "info": "7th Floor, Central Bank Building\nMahlokohla Street\nP.O. Box 199\nMbabane, Swaziland\nPhone: (268) 404-6441",
+    "createdAt": "2020-02-20T13:38:04.925Z",
+    "updatedAt": "2020-02-20T13:38:04.925Z"
+  },
+  {
+    "objectId": "eSWig6APIA",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 38.7616351507037,
+      "longitude": 9.058503490987626
+    },
+    "country": "Ethiopia",
+    "embassy": "U.S. Embassy in Addis Ababa",
+    "info": "Entoto Street\nP.O. Box 1014\nAddis Ababa\nEmbassy Switchboard: 130-6000",
+    "createdAt": "2020-02-20T13:38:06.339Z",
+    "updatedAt": "2020-02-20T16:23:23.530Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "RG4CMN42m1"
+    }
+  },
+  {
+    "objectId": "dynHl6hGlf",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 4.367529,
+      "longitude": 50.844269
+    },
+    "country": "U.S. Mission to the EU",
+    "embassy": "U.S. Mission to the EU",
+    "info": "Zinnerstraat – 13 – Rue Zinner\nB-1000 Brussels, Belgium\nPhone: +32-2-811-4100",
+    "createdAt": "2020-02-20T13:38:08.827Z",
+    "updatedAt": "2020-02-20T13:38:08.827Z"
+  },
+  {
+    "objectId": "Jlp6J6ta8E",
+    "country": "Fiji",
+    "embassy": "U.S. Embassy in Suva",
+    "info": "“158 Princes Road, Tamavua\nP.O. Box 218\nSuva, Fiji\nCall us at +679 331.4466”",
+    "createdAt": "2020-02-20T13:38:10.901Z",
+    "updatedAt": "2020-02-20T16:23:24.364Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "0iYnsd3adu"
+    }
+  },
+  {
+    "objectId": "TrHKyYyHVB",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 24.95848845142241,
+      "longitude": 60.15712498186756
+    },
+    "country": "Finland",
+    "embassy": "U.S. Embassy in Finland",
+    "info": "Itäinen Puistotie 14 B\n00140 Helsinki\nFinland\nTelephone: +358-9-616-250",
+    "createdAt": "2020-02-20T13:38:13.059Z",
+    "updatedAt": "2020-02-20T16:23:24.892Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "nfHDWPtgDF"
+    }
+  },
+  {
+    "objectId": "KRiYNXDQo0",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -0.56857998497452,
+      "longitude": 44.85410907909841
+    },
+    "country": "France",
+    "embassy": "U.S. Consulate Bordeaux",
+    "info": "89 Quai des Chartrons\n33300 Bordeaux\nTel.: (0)1 43 12 48 65",
+    "createdAt": "2020-02-20T13:38:14.682Z",
+    "updatedAt": "2020-02-20T16:23:25.447Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vBQFvgbzPX"
+    }
+  },
+  {
+    "objectId": "e2wGeD4XZ0",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -1.684267,
+      "longitude": 48.110242
+    },
+    "country": "France",
+    "embassy": "U.S. Consulate Rennes",
+    "info": "P30, Quai Duguay-Trouin\n35000 Rennes\nTel: (0)1 43 12 48 70",
+    "createdAt": "2020-02-20T13:38:14.722Z",
+    "updatedAt": "2020-02-20T16:23:25.965Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vBQFvgbzPX"
+    }
+  },
+  {
+    "objectId": "42hGUjDB7I",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 4.835858715064013,
+      "longitude": 45.76289927910563
+    },
+    "country": "France",
+    "embassy": "U.S. Consulate Lyon",
+    "info": "1, quai Jules Courmont\n69002 Lyon\nTel: 01 43 12 48 60",
+    "createdAt": "2020-02-20T13:38:14.927Z",
+    "updatedAt": "2020-02-20T16:23:26.480Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vBQFvgbzPX"
+    }
+  },
+  {
+    "objectId": "GR5W3aJkcP",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 7.7593509151874125,
+      "longitude": 48.58696377926187
+    },
+    "country": "France",
+    "embassy": "U.S. Consulate General Strasbourg",
+    "info": "15, Avenue d’Alsace\n67082 Strasbourg Cedex\nFrance\nTel.: (33)1 43 124 880",
+    "createdAt": "2020-02-20T13:38:14.971Z",
+    "updatedAt": "2020-02-20T16:23:26.993Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vBQFvgbzPX"
+    }
+  },
+  {
+    "objectId": "Epc47Q9Ift",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 2.318520215199972,
+      "longitude": 48.867738979288355
+    },
+    "country": "France",
+    "embassy": "U.S. Embassy in Paris",
+    "info": "2 avenue Gabriel\n75008 Paris\nFrance\nPhone: [33] (1)43122222",
+    "createdAt": "2020-02-20T13:38:14.855Z",
+    "updatedAt": "2020-02-20T16:23:27.517Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vBQFvgbzPX"
+    }
+  },
+  {
+    "objectId": "4zYxSK3IIP",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 5.364160330718974,
+      "longitude": 43.288518314649394
+    },
+    "country": "France",
+    "embassy": "U.S. Consulate General Marseille",
+    "info": "Place Varian Fry\n13286 Marseille Cedex 6\nFrance\nTél. : 01-43-12-48-85",
+    "createdAt": "2020-02-20T13:38:14.985Z",
+    "updatedAt": "2020-02-20T16:23:28.601Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vBQFvgbzPX"
+    }
+  },
+  {
+    "objectId": "ZjyRb2EVeP",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 1.4471725149736492,
+      "longitude": 43.606616779122874
+    },
+    "country": "France",
+    "embassy": "U.S. Consulate Toulouse",
+    "info": "25, allées Jean Jaurès\n31000 Toulouse\nTel.: +33 (1) 43 12 48 75",
+    "createdAt": "2020-02-20T13:38:14.948Z",
+    "updatedAt": "2020-02-20T16:23:28.074Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vBQFvgbzPX"
+    }
+  },
+  {
+    "objectId": "nkgGEgHF6h",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 9.392872314599318,
+      "longitude": 0.48322636388167084
+    },
+    "country": "Gabon",
+    "embassy": "U.S. Embassy in Libreville",
+    "info": "Sablière B.P. 4000\nLibreville, Gabon\nPhone: (241) 01-45-71-00",
+    "createdAt": "2020-02-20T13:38:16.625Z",
+    "updatedAt": "2020-02-20T16:23:29.119Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "2aC5hV2kfd"
+    }
+  },
+  {
+    "objectId": "G8ayfjLsAN",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 44.773192550622554,
+      "longitude": 41.78923347912738
+    },
+    "country": "Georgia",
+    "embassy": "U.S. Embassy Tbilisi",
+    "info": "11 George Balanchine Street\nTbilisi, Georgia, 0131\nTelephone: (995 32) 227-70-00",
+    "createdAt": "2020-02-20T13:38:18.643Z",
+    "updatedAt": "2020-02-20T16:23:29.632Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "J7QoCukbse"
+    }
+  },
+  {
+    "objectId": "UgbSi4qX31",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 8.693728900000002,
+      "longitude": 50.141435099999995
+    },
+    "country": "Germany",
+    "embassy": "U.S. Consulate General in Frankfurt",
+    "info": "Gießener Str. 30\n60435 Frankfurt am Main\nFederal Republic of Germany\nTel.: +49-69-7535-0",
+    "createdAt": "2020-02-20T13:38:19.991Z",
+    "updatedAt": "2020-02-20T16:23:31.759Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cXVjaWqsnY"
+    }
+  },
+  {
+    "objectId": "AAUehEKowp",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 13.264519717898615,
+      "longitude": 52.45235417354004
+    },
+    "country": "Germany",
+    "embassy": "U.S. Embassy in Berlin",
+    "info": "Clayallee 170\n14191 Berlin\nFederal Republic of Germany\nTel.: +49-30-8305-0",
+    "createdAt": "2020-02-20T13:38:20.003Z",
+    "updatedAt": "2020-02-20T16:23:32.284Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cXVjaWqsnY"
+    }
+  },
+  {
+    "objectId": "SVuLfkTtZ5",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 6.795993399999999,
+      "longitude": 51.2187464
+    },
+    "country": "Germany",
+    "embassy": "U.S. Consulate General in Düsseldorf",
+    "info": "Willi-Becker-Allee 10\n40227 Düsseldorf\nFederal Republic of Germany\nTel.: +49-211-788-8927",
+    "createdAt": "2020-02-20T13:38:19.970Z",
+    "updatedAt": "2020-02-20T16:23:32.890Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cXVjaWqsnY"
+    }
+  },
+  {
+    "objectId": "MMH9Ga9FDW",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 9.99703,
+      "longitude": 53.56216
+    },
+    "country": "Germany",
+    "embassy": "U.S. Consulate General in Hamburg",
+    "info": "Alsterufer 27/28\n20354 Hamburg\nFederal Republic of Germany\nTel.: +49-40-411 71-100",
+    "createdAt": "2020-02-20T13:38:20.008Z",
+    "updatedAt": "2020-02-20T16:23:33.406Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cXVjaWqsnY"
+    }
+  },
+  {
+    "objectId": "gGMNnr5HcO",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 11.58361,
+      "longitude": 48.14519000000001
+    },
+    "country": "Germany",
+    "embassy": "U.S. Consulate General in Munich",
+    "info": "Königinstraße 5\n80539 München\nFederal Republic of Germany\nTel.: +49-89-2888-0",
+    "createdAt": "2020-02-20T13:38:20.165Z",
+    "updatedAt": "2020-02-20T16:23:33.925Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cXVjaWqsnY"
+    }
+  },
+  {
+    "objectId": "jXhWc9JnJV",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 12.367720000000002,
+      "longitude": 51.333890000000004
+    },
+    "country": "Germany",
+    "embassy": "U.S. Consulate General in Leipzig",
+    "info": "Wilhelm-Seyfferth-Straße 4\n04107 Leipzig\nFederal Republic of Germany\nTel: +49-341-213-840",
+    "createdAt": "2020-02-20T13:38:20.306Z",
+    "updatedAt": "2020-02-20T16:23:34.449Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cXVjaWqsnY"
+    }
+  },
+  {
+    "objectId": "3bqGRE3Qc1",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -0.17835773036791813,
+      "longitude": 5.575553206061542
+    },
+    "country": "Ghana",
+    "embassy": "U.S. Embassy in Accra",
+    "info": "No. 24, Fourth Circular Rd., Cantonments, Accra\nP.O. Box GP 2288\nAccra, Ghana\nPhone: +233 (0) 30 274 1000",
+    "createdAt": "2020-02-20T13:38:20.971Z",
+    "updatedAt": "2020-02-20T16:23:35.275Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "vCIN9WyEHn"
+    }
+  },
+  {
+    "objectId": "P6sNji7pLG",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 22.940211115308642,
+      "longitude": 40.633251679340525
+    },
+    "country": "Greece",
+    "embassy": "U.S. Consulate in Thessaloniki",
+    "info": "43 Tsimiski, 7th Floor\n546 23 Thessaloniki GREECE\nTelephone: +30 2310 242 905 and +30 2310 376 300",
+    "createdAt": "2020-02-20T13:38:22.949Z",
+    "updatedAt": "2020-02-20T16:23:35.800Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "zuCmaUX1g9"
+    }
+  },
+  {
+    "objectId": "GMwPQ0NaU6",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 23.74669424133668,
+      "longitude": 37.982039334998994
+    },
+    "country": "Greece",
+    "embassy": "U.S. Embassy in Athens",
+    "info": "91 Vasilisis Sophias Avenue\n10160 Athens, Greece\nPhone (Main Switchboard/Info): 30-210-721-2951",
+    "createdAt": "2020-02-20T13:38:22.951Z",
+    "updatedAt": "2020-02-20T16:23:36.314Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "zuCmaUX1g9"
+    }
+  },
+  {
+    "objectId": "0BhlDo7iLm",
+    "country": "Guatemala",
+    "embassy": "U.S. Embassy in Guatemala City",
+    "info": "Avenida Reforma 7-01, Zona 10\nGuatemala Ciudad, Guatemala\n(502) 2326-4000",
+    "createdAt": "2020-02-20T13:38:25.130Z",
+    "updatedAt": "2020-02-20T16:23:37.839Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "Rkb0Ji6GtG"
+    }
+  },
+  {
+    "objectId": "OKmRLcGuTi",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -13.658754775644615,
+      "longitude": 9.583353848528475
+    },
+    "country": "Guinea",
+    "embassy": "U.S. Embassy Conakry",
+    "info": "P.O. Box 603\nTransversale No. 2\nCentre Administratif de Koloma\nCommune de Ratoma\nConakry, Republic of Guinea\nTelephone: +224-65-10-40-00",
+    "createdAt": "2020-02-20T13:38:26.976Z",
+    "updatedAt": "2020-02-20T16:23:38.356Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "l2E7bFn2O6"
+    }
+  },
+  {
+    "objectId": "H1bIrlOHIe",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -17.516996741291123,
+      "longitude": 14.704710009473104
+    },
+    "country": "Guinea-Bissau",
+    "embassy": "U.S. Virtual Consulate in Guinea-Bissau",
+    "info": "Route des Almadies – BP 49\nDakar, Senegal\nTelephone: (221) 33-879-0000",
+    "createdAt": "2020-02-20T13:38:28.484Z",
+    "updatedAt": "2020-02-20T16:23:38.879Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "HhLTUnF1fz"
+    }
+  },
+  {
+    "objectId": "rhGmYQLHAG",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -58.16315469996067,
+      "longitude": 6.823080095044522
+    },
+    "country": "Guyana",
+    "embassy": "U.S. Embassy in Georgetown",
+    "info": "100 Young and Duke Streets, Kingston\nGeorgetown, Guyana\nPhone: 592-225-4900/9\nFax: 592-225-8497\nGo to Embassy >",
+    "createdAt": "2020-02-20T13:38:30.848Z",
+    "updatedAt": "2020-02-20T16:23:39.405Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "uyLj6RP9AZ"
+    }
+  },
+  {
+    "objectId": "S829RQpH1i",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -16.689075085172696,
+      "longitude": 13.461991890535506
+    },
+    "country": "The Gambia",
+    "embassy": "U.S. Embassy in Banjul",
+    "info": "Kairaba Avenue, Fajara\nP.M.B. 19\nBanjul, The Gambia\nTel: (220) 439-2856",
+    "createdAt": "2020-02-20T13:38:32.584Z",
+    "updatedAt": "2020-02-20T13:38:32.584Z"
+  },
+  {
+    "objectId": "ITgC1PYEw5",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -72.25316678538026,
+      "longitude": 18.564203472684127
+    },
+    "country": "Haiti",
+    "embassy": "U.S. Embassy in Port-au-Prince",
+    "info": "Tabarre 41\nRoute de Tabarre\nPort-au-Prince, Haiti\nTel: 011-509-2229-8000",
+    "createdAt": "2020-02-20T13:38:34.443Z",
+    "updatedAt": "2020-02-20T16:23:40.198Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "QLFfURjWpu"
+    }
+  },
+  {
+    "objectId": "khiEAwhEnL",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 12.489165014904835,
+      "longitude": 41.906075279219905
+    },
+    "country": "Holy See",
+    "embassy": "U.S. Embassy to the Holy See",
+    "info": "Via Sallustiana, 49\n00187 Rome, Italy\nPhone: (+39) 06-4674-1",
+    "createdAt": "2020-02-20T13:38:36.376Z",
+    "updatedAt": "2020-02-20T13:38:36.376Z"
+  },
+  {
+    "objectId": "J48xGpR5Iy",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -87.19214498442403,
+      "longitude": 14.103078392854044
+    },
+    "country": "Honduras",
+    "embassy": "U.S. Embassy Tegucigalpa",
+    "info": "Avenida La Paz\nTegucigalpa M.D.C.\nHonduras\nPhone: (504) 2236-9320",
+    "createdAt": "2020-02-20T13:38:38.564Z",
+    "updatedAt": "2020-02-20T16:23:41.041Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "pM1H87l6Bm"
+    }
+  },
+  {
+    "objectId": "cy2oRDUKNx",
+    "country": "Hong Kong and Macau",
+    "embassy": "U.S. Consulate General in Hong Kong",
+    "info": "26 Garden Road, Central\nHong Kong\nTel: (852) 2523-9011",
+    "createdAt": "2020-02-20T13:38:40.800Z",
+    "updatedAt": "2020-02-20T13:38:40.800Z"
+  },
+  {
+    "objectId": "UmjCAyWs2G",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 19.049127950848646,
+      "longitude": 47.50447497907593
+    },
+    "country": "Hungary",
+    "embassy": "U.S. Embassy in Budapest",
+    "info": "Szabadság tér 12\nH-1054 Budapest\nHungary\nTelephone: (36-1) 475-4400",
+    "createdAt": "2020-02-20T13:38:42.768Z",
+    "updatedAt": "2020-02-20T16:23:41.808Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "f5WB3Ij653"
+    }
+  },
+  {
+    "objectId": "n067dTGeSZ",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -21.940093284008785,
+      "longitude": 64.14460802302551
+    },
+    "country": "Iceland",
+    "embassy": "U.S. Embassy in Reykjavik",
+    "info": "Laufásvegur 21\n101 Reykjavík\nTel: (354) 595 2200",
+    "createdAt": "2020-02-20T13:38:44.471Z",
+    "updatedAt": "2020-02-20T16:23:42.575Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "5VTtzmVSWN"
+    }
+  },
+  {
+    "objectId": "mqhRG38BIQ",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 88.3473489502395,
+      "longitude": 22.551000939374266
+    },
+    "country": "India",
+    "embassy": "U.S. Consulate General in Kolkata",
+    "info": "38A, J.L.Nehru Road\nKolkata 700 071, West Bengal, India\nTel: 91-33-3984-6300",
+    "createdAt": "2020-02-20T13:38:45.701Z",
+    "updatedAt": "2020-02-20T16:23:43.101Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "DlHQBjd2Ke"
+    }
+  },
+  {
+    "objectId": "sXbmbNeyKU",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 77.18614975035345,
+      "longitude": 28.59275369254548
+    },
+    "country": "India",
+    "embassy": "U.S. Embassy in New Delhi",
+    "info": "Shantipath, Chanakyapuri\nNew Delhi – 110021\nTel: 011-91-11-2419-8000",
+    "createdAt": "2020-02-20T13:38:45.584Z",
+    "updatedAt": "2020-02-20T16:23:43.631Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "DlHQBjd2Ke"
+    }
+  },
+  {
+    "objectId": "KGrsWraaJR",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 80.24973505012338,
+      "longitude": 13.052359116588155
+    },
+    "country": "India",
+    "embassy": "U.S. Consulate General in Chennai",
+    "info": "Gemini Circle\nChennai 600 006\nPhone: 044-2857-4000",
+    "createdAt": "2020-02-20T13:38:45.682Z",
+    "updatedAt": "2020-02-20T16:23:44.208Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "DlHQBjd2Ke"
+    }
+  },
+  {
+    "objectId": "Ux5NwUNzM6",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 78.47482025016731,
+      "longitude": 17.442523805745555
+    },
+    "country": "India",
+    "embassy": "U.S. Consulate General in Hyderabad",
+    "info": "Paigah Palace\n1-8-323, Chiran Fort Lane Begumpet\nSecunderabad 500 003\nIndia: 040-4625-8222; 0120-484-4644",
+    "createdAt": "2020-02-20T13:38:45.961Z",
+    "updatedAt": "2020-02-20T16:23:44.768Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "DlHQBjd2Ke"
+    }
+  },
+  {
+    "objectId": "9tGlNtokxr",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 72.8661483501878,
+      "longitude": 19.065034557208715
+    },
+    "country": "India",
+    "embassy": "U.S. Consulate General in Mumbai",
+    "info": "C-49, G-Block, Bandra Kurla Complex\nBandra East, Mumbai 400051\nPhone: (91-22) 2672-4000",
+    "createdAt": "2020-02-20T13:38:45.935Z",
+    "updatedAt": "2020-02-20T16:23:45.276Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "DlHQBjd2Ke"
+    }
+  },
+  {
+    "objectId": "g8ucQCQmxk",
+    "country": "Indonesia",
+    "embassy": "U.S. Consulate Medan",
+    "info": "Uni Plaza Building\n4th Floor (West Tower)\nJl. Let. Jend. MT Haryono A-1\nMedan 20231, Indonesia\nTel: (62) (61) 451-9000\nFax: (62) (61) 455-9033",
+    "createdAt": "2020-02-20T13:38:47.610Z",
+    "updatedAt": "2020-02-20T16:23:45.800Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "pOykqMaxZB"
+    }
+  },
+  {
+    "objectId": "D9fIHvoWgd",
+    "country": "Indonesia",
+    "embassy": "U.S. Consulate General Surabaya",
+    "info": "Jl. Citra Raya Niaga No. 2\nSurabaya, Indonesia 60264\nTel: (62) (31) 297-5300",
+    "createdAt": "2020-02-20T13:38:47.646Z",
+    "updatedAt": "2020-02-20T16:23:46.320Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "pOykqMaxZB"
+    }
+  },
+  {
+    "objectId": "5MlcVVE7EM",
+    "country": "Indonesia",
+    "embassy": "U.S. Consular Agency Bali",
+    "info": "Jl. Hayam Wuruk 310, Denpasar\nBali, Indonesia 80235\nPhone: (62) (361) 233-605\nFax: (62) (361) 222-426\n\n\n\n\n\n\t\tBy bottsc | 30 September, 2016 | Topics: I",
+    "createdAt": "2020-02-20T13:38:47.530Z",
+    "updatedAt": "2020-02-20T16:23:46.834Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "pOykqMaxZB"
+    }
+  },
+  {
+    "objectId": "B4BwlhgVxE",
+    "country": "Indonesia",
+    "embassy": "U.S. Embassy Jakarta",
+    "info": "Jl. Medan Merdeka Selatan No. 3 – 5\nJakarta 10110, Indonesia\nTelephone: (62) (21) 3435-9000\nFax: (62) (21) 386-2259",
+    "createdAt": "2020-02-20T13:38:47.825Z",
+    "updatedAt": "2020-02-20T16:23:47.354Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "pOykqMaxZB"
+    }
+  },
+  {
+    "objectId": "HId4HVkG0G",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 51.46297835054143,
+      "longitude": 35.77150833252614
+    },
+    "country": "Iran",
+    "embassy": "U.S. Embassy in Tehran",
+    "info": "Embassy of Switzerland\nForeign Interests Section No. 39, Shahid Mousavi (Golestan 5th) Corner of Paidarfard St. (ex-Amir Ebrahimi St.) Pasdaran, Tehran\nTelephone: (202) 485-7600",
+    "createdAt": "2020-02-20T13:38:49.357Z",
+    "updatedAt": "2020-02-20T16:23:47.872Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "wv4OCjRaNi"
+    }
+  },
+  {
+    "objectId": "tVCTrxfHh5",
+    "country": "Iraq",
+    "embassy": "U.S. Consulate General in Erbil",
+    "info": "From Iraq: 066 211 4000\nFrom the United States: 240-264-3467",
+    "createdAt": "2020-02-20T13:38:51.548Z",
+    "updatedAt": "2020-02-20T16:23:48.388Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "nvhpnKO5rE"
+    }
+  },
+  {
+    "objectId": "5SWKwdcfNt",
+    "country": "Iraq",
+    "embassy": "U.S. Consulate General in Erbil",
+    "info": "From Iraq: 066 211 4000\nFrom the United States: 240-264-3467",
+    "createdAt": "2020-02-20T13:38:51.900Z",
+    "updatedAt": "2020-02-20T16:23:48.908Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "nvhpnKO5rE"
+    }
+  },
+  {
+    "objectId": "NPvWC7I0Fw",
+    "country": "Iraq",
+    "embassy": "U.S. Consulate General in Erbil",
+    "info": "From Iraq: 066 211 4000\nFrom the United States: 240-264-3467",
+    "createdAt": "2020-02-20T13:38:51.877Z",
+    "updatedAt": "2020-02-20T16:23:49.434Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "nvhpnKO5rE"
+    }
+  },
+  {
+    "objectId": "Fzr5Zgmdqj",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -6.235819384753993,
+      "longitude": 53.33027878361655
+    },
+    "country": "Ireland",
+    "embassy": "U.S. Embassy in Dublin",
+    "info": "42 Elgin Road\nBallsbridge\nDublin 4\nPhone: +353 1 668-8777",
+    "createdAt": "2020-02-20T13:38:53.534Z",
+    "updatedAt": "2020-02-20T16:23:49.948Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "FSUOeNw5vK"
+    }
+  },
+  {
+    "objectId": "0fsBlRgGHx",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 35.22292081605138,
+      "longitude": 31.748239681294894
+    },
+    "country": "Israel",
+    "embassy": "U.S. Embassy Jerusalem",
+    "info": "14 David Flusser Street\nJerusalem 9378322\nPhone: 02-630-4000",
+    "createdAt": "2020-02-20T13:38:54.956Z",
+    "updatedAt": "2020-02-20T16:23:50.604Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "4lBFb6Wpq5"
+    }
+  },
+  {
+    "objectId": "Z971rLPgdM",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 11.238509414763548,
+      "longitude": 43.77365535265248
+    },
+    "country": "Italy",
+    "embassy": "U.S. Consulate General Florence",
+    "info": "Lungarno Vespucci, 38\n50123 Firenze\nPhone: (+39) 055.266.951",
+    "createdAt": "2020-02-20T13:38:56.195Z",
+    "updatedAt": "2020-02-20T16:23:51.118Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hOu7Is3jvO"
+    }
+  },
+  {
+    "objectId": "9wvL9xCFQ1",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 9.191923814832595,
+      "longitude": 45.47510094073826
+    },
+    "country": "Italy",
+    "embassy": "U.S. Consulate General Milan",
+    "info": "via Principe Amedeo, 2/10\n20121 MILANO\nPhone: (+39) 02.290351",
+    "createdAt": "2020-02-20T13:38:56.113Z",
+    "updatedAt": "2020-02-20T16:23:52.019Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hOu7Is3jvO"
+    }
+  },
+  {
+    "objectId": "pXMET44nLo",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 12.488580514690454,
+      "longitude": 41.90658577161134
+    },
+    "country": "Italy",
+    "embassy": "U.S. Embassy Rome",
+    "info": "via Vittorio Veneto 121\n00187 Roma\nPhone: (+39) 06.46741",
+    "createdAt": "2020-02-20T13:38:56.435Z",
+    "updatedAt": "2020-02-20T16:23:52.548Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hOu7Is3jvO"
+    }
+  },
+  {
+    "objectId": "NLrTBrwGgx",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 14.223740714649724,
+      "longitude": 40.83118183825395
+    },
+    "country": "Italy",
+    "embassy": "U.S. Consulate General in Naples",
+    "info": "Piazza della Repubblica\n80122 NAPOLI\nPhone: (+39) 081.583.8111",
+    "createdAt": "2020-02-20T13:38:56.479Z",
+    "updatedAt": "2020-02-20T16:23:53.073Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hOu7Is3jvO"
+    }
+  },
+  {
+    "objectId": "216N7xu96w",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -73.56562254934164,
+      "longitude": 45.4997256789988
+    },
+    "country": "U.S. Mission to the ICAO",
+    "embassy": "U.S. Mission to the ICAO",
+    "info": "999 Robert-Bourassa Blvd.\nMontreal, (Quebec), Canada H3C 5J9\nTelephone: 514-954-8304",
+    "createdAt": "2020-02-20T13:38:58.197Z",
+    "updatedAt": "2020-02-20T13:38:58.197Z"
+  },
+  {
+    "objectId": "dFawIUYgiS",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -76.76704555003995,
+      "longitude": 18.01845898764298
+    },
+    "country": "Jamaica",
+    "embassy": "U.S. Embassy in Kingston",
+    "info": "142 Old Hope Road\nKingston 6\nJamaica, West Indies\nTel: 876-702-6000",
+    "createdAt": "2020-02-20T13:38:59.439Z",
+    "updatedAt": "2020-02-20T16:23:53.912Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "iRCCJGZ3RJ"
+    }
+  },
+  {
+    "objectId": "PuqVls6C7D",
+    "country": "Japan",
+    "embassy": "U.S. Consulate in Nagoya",
+    "info": "Nagoya International Center Bldg. 6F\n1-47-1 Nagono, Nakamura-ku, Nagoya\n450-0001\nPhone: 052-581-4501",
+    "createdAt": "2020-02-20T13:39:00.479Z",
+    "updatedAt": "2020-02-20T16:23:54.437Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "UN9yBtQstI"
+    }
+  },
+  {
+    "objectId": "MvBruPm2vi",
+    "country": "Japan",
+    "embassy": "U.S. Embassy in Tokyo",
+    "info": "1-10-5 Akasaka\nMinato-ku, Tokyo 107-8420 JAPAN\nPhone: 03-3224-5000",
+    "createdAt": "2020-02-20T13:39:00.453Z",
+    "updatedAt": "2020-02-20T16:23:54.972Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "UN9yBtQstI"
+    }
+  },
+  {
+    "objectId": "uEqkvIQXtl",
+    "country": "Japan",
+    "embassy": "U.S. Consulate General in Sapporo",
+    "info": "Kita 1-jo Nishi 28-chome, Chuo-ku\nSapporo 064-0821, Japan\nPhone: 011-641-1115",
+    "createdAt": "2020-02-20T13:39:00.470Z",
+    "updatedAt": "2020-02-20T16:23:55.497Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "UN9yBtQstI"
+    }
+  },
+  {
+    "objectId": "63ETSHNCGy",
+    "country": "Japan",
+    "embassy": "U.S. Consulate in Naha",
+    "info": "U.S. Consulate General Naha\n2-1-1 Toyama, Urasoe City, Okinawa\nPhone: 098-876-4211",
+    "createdAt": "2020-02-20T13:39:00.500Z",
+    "updatedAt": "2020-02-20T16:23:56.015Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "UN9yBtQstI"
+    }
+  },
+  {
+    "objectId": "Q4tuGweArW",
+    "country": "Japan",
+    "embassy": "U.S. Consulate in Osaka",
+    "info": "2-11-5, Nishitenma\nKita-ku, Osaka 530-8543\nTelephone: 06-6315-5900",
+    "createdAt": "2020-02-20T13:39:00.623Z",
+    "updatedAt": "2020-02-20T16:23:56.554Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "UN9yBtQstI"
+    }
+  },
+  {
+    "objectId": "gl5CFye61n",
+    "country": "Japan",
+    "embassy": "U.S. Consulate in Fukuoka",
+    "info": "5-26 Ohori 2-chome\nChuo-ku\nFukuoka 810-0052\nTelephone: 092-751-9331",
+    "createdAt": "2020-02-20T13:39:00.905Z",
+    "updatedAt": "2020-02-20T16:23:57.073Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "UN9yBtQstI"
+    }
+  },
+  {
+    "objectId": "viFK8iMc80",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 35.87836691444528,
+      "longitude": 31.945183933239388
+    },
+    "country": "Jordan",
+    "embassy": "U.S. Embassy in Amman",
+    "info": "Abdoun, Al-Umawyeen St.\nAmman – Jordan\nPhone: 962-6-590-6000",
+    "createdAt": "2020-02-20T13:39:02.757Z",
+    "updatedAt": "2020-02-20T16:23:57.619Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "AVGAFwTSFb"
+    }
+  },
+  {
+    "objectId": "tuRezn3fBw",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 71.46579625065156,
+      "longitude": 51.1294235459901
+    },
+    "country": "Kazakhstan",
+    "embassy": "U.S. Embassy in Astana",
+    "info": "Rakhymzhan Koshkarbayev Avenue, No. 3.\nAstana, Kazakhstan, 010010\nPhone: +7 (7172) 70-21-00",
+    "createdAt": "2020-02-20T13:39:04.611Z",
+    "updatedAt": "2020-02-20T16:23:58.161Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "nRlkwMtWiB"
+    }
+  },
+  {
+    "objectId": "310CkDYQ2M",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 76.95201335031406,
+      "longitude": 43.233638987376175
+    },
+    "country": "Kazakhstan",
+    "embassy": "U.S. Consulate General Almaty",
+    "info": "Samal-2, 97 Zholdasbekov Street,\nAlmaty, Kazakhstan, 050051\nTel: +7 (727) 250-76-12/17",
+    "createdAt": "2020-02-20T13:39:04.860Z",
+    "updatedAt": "2020-02-20T16:23:58.673Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "nRlkwMtWiB"
+    }
+  },
+  {
+    "objectId": "ejGURFx4ly",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 36.80837041539531,
+      "longitude": -1.2339764990999562
+    },
+    "country": "Kenya",
+    "embassy": "U.S. Embassy Nairobi",
+    "info": "United Nations Avenue Nairobi\nP. O. Box 606 Village Market\n00621 Nairobi, Kenya\nPhone: 254 20 363-6000",
+    "createdAt": "2020-02-20T13:39:05.677Z",
+    "updatedAt": "2020-02-20T16:24:00.204Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hWGVevpYaK"
+    }
+  },
+  {
+    "objectId": "l3fKLF8Dyg",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 21.150551,
+      "longitude": 42.661995
+    },
+    "country": "Kosovo",
+    "embassy": "U.S. Embassy in Pristina",
+    "info": "Arberia/Dragodan, Nazim Hikmet 30\nPristina, Kosovo\nTelephone: + 383 38 59 59 3000",
+    "createdAt": "2020-02-20T13:39:06.806Z",
+    "updatedAt": "2020-02-20T16:24:00.725Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "IAwJVS7NjJ"
+    }
+  },
+  {
+    "objectId": "c5r42G64yX",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 48.046873,
+      "longitude": 29.291608
+    },
+    "country": "Kuwait",
+    "embassy": "U.S. Embassy Kuwait City",
+    "info": "P. O. Box 77\nSafat 13001\nKuwait\nTelephone: 00-(965) 2259-1001",
+    "createdAt": "2020-02-20T13:39:08.910Z",
+    "updatedAt": "2020-02-20T16:24:01.249Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qlkgJorlNV"
+    }
+  },
+  {
+    "objectId": "tsA57ZSFkE",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 74.582561,
+      "longitude": 42.827776
+    },
+    "country": "Kyrgyz Republic",
+    "embassy": "U.S. Embassy in Bishkek",
+    "info": "171 Prospect Mira\nBishkek 720016 Kyrgyz Republic\nTelephone: +996 312 597 000\nFax: +996 312 597 744",
+    "createdAt": "2020-02-20T13:39:11.085Z",
+    "updatedAt": "2020-02-20T13:39:11.085Z"
+  },
+  {
+    "objectId": "GjuH2IK0Rs",
+    "country": "Laos",
+    "embassy": "U.S. Embassy Vientiane",
+    "info": "Ban Somvang Thai\nThadeua Road, Km 9\nHatsayfong district\nPhone: (856) 21-48-7000",
+    "createdAt": "2020-02-20T13:39:12.031Z",
+    "updatedAt": "2020-02-20T16:24:02.046Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "eaNpdUY6IC"
+    }
+  },
+  {
+    "objectId": "LlK4ZN7TkU",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 24.02705041558279,
+      "longitude": 56.93049718088476
+    },
+    "country": "Latvia",
+    "embassy": "U.S. Embassy in Riga",
+    "info": "1 Samnera Velsa St. (former Remtes)\nRiga LV-1510\nLatvia\nPhone: +371 6710 7000",
+    "createdAt": "2020-02-20T13:39:13.922Z",
+    "updatedAt": "2020-02-20T16:24:02.572Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "SRLc1TCwHn"
+    }
+  },
+  {
+    "objectId": "80p4a2mCkC",
+    "country": "Lebanon",
+    "embassy": "U.S. Embassy in Beirut",
+    "info": "Awkar-Facing the Municipality, Main Street\nBeirut, Lebanon\nTel: 04 – 543 600\nFax: 04 – 544 136",
+    "createdAt": "2020-02-20T13:39:14.899Z",
+    "updatedAt": "2020-02-20T16:24:03.095Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "P2wZxWNxtr"
+    }
+  },
+  {
+    "objectId": "ErXIzbLJ7t",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 27.4716083825458,
+      "longitude": -29.310221109186767
+    },
+    "country": "Lesotho",
+    "embassy": "U.S. Embassy in Maseru",
+    "info": "P.O. Box 333\nMaseru 100 Lesotho\nTel: +266 22 312 666",
+    "createdAt": "2020-02-20T13:39:15.985Z",
+    "updatedAt": "2020-02-20T16:24:03.611Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "fl5yo1HfMR"
+    }
+  },
+  {
+    "objectId": "Bq7RDuZjzd",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -10.81559835039078,
+      "longitude": 6.316462995406253
+    },
+    "country": "Liberia",
+    "embassy": "U.S. Embassy in Monrovia",
+    "info": "502 Benson Street\nMonrovia\nPhone: (+231) 77-677-7000",
+    "createdAt": "2020-02-20T13:39:17.950Z",
+    "updatedAt": "2020-02-20T16:24:04.166Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "ZoFyPeNM5E"
+    }
+  },
+  {
+    "objectId": "jzrv2knSFB",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 10.267989315205188,
+      "longitude": 36.85042547993822
+    },
+    "country": "Libya",
+    "embassy": "U.S. Embassy in Tripoli",
+    "info": "Please direct inquiries regarding U.S. citizens in Libya to LibyaEmergencyUSC@state.gov",
+    "createdAt": "2020-02-20T13:39:19.789Z",
+    "updatedAt": "2020-02-20T16:24:04.688Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "FgwdDPUXmJ"
+    }
+  },
+  {
+    "objectId": "GUFSwBTg8M",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 25.248973383902904,
+      "longitude": 54.68340487076181
+    },
+    "country": "Lithuania",
+    "embassy": "U.S. Embassy in Vilnius",
+    "info": "Akmenų g. 6\nVilnius, Lithuania\nLT-03106\nTel: +370 5 266 5500\nFax: +370 5 266 5510",
+    "createdAt": "2020-02-20T13:39:21.960Z",
+    "updatedAt": "2020-02-20T16:24:05.220Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9kbcTFZyKo"
+    }
+  },
+  {
+    "objectId": "bEOBMzqj7j",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 6.129033,
+      "longitude": 49.618971
+    },
+    "country": "Luxembourg",
+    "embassy": "U.S. Embassy in Luxembourg",
+    "info": "22 Boulevard Emmanuel Servais\nL-2535 Luxembourg\nPhone: +352 46 01 23",
+    "createdAt": "2020-02-20T13:39:23.141Z",
+    "updatedAt": "2020-02-20T16:24:05.793Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "5LNFOuO2Wh"
+    }
+  },
+  {
+    "objectId": "6ZwJvYAbZY",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 47.475350450205234,
+      "longitude": -18.852531787153804
+    },
+    "country": "Madagascar & Comoros",
+    "embassy": "U.S. Embassy in Antananarivo",
+    "info": "Lot 207 A – Andranoro – Antehiroka\n105 Antananarivo – Madagascar\nTel: (+261) 20 23 480 00",
+    "createdAt": "2020-02-20T13:39:25.254Z",
+    "updatedAt": "2020-02-20T13:39:25.254Z"
+  },
+  {
+    "objectId": "SUEiqnm0wU",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 47.47535581475583,
+      "longitude": -18.852526710574914
+    },
+    "country": "Madagascar & Comoros",
+    "embassy": "U.S. Virtual Presence Post–Comoros",
+    "info": "Lot 207 A – Andranoro – Antehiroka\n105 Antananarivo – Madagascar\nTel: (+261) 20 23 480 00",
+    "createdAt": "2020-02-20T13:39:25.311Z",
+    "updatedAt": "2020-02-20T13:39:25.311Z"
+  },
+  {
+    "objectId": "1LyWb6KUER",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 33.78358595013342,
+      "longitude": -13.962459990163342
+    },
+    "country": "Malawi",
+    "embassy": "U.S. Embassy in Lilongwe",
+    "info": "P.O Box 30016\n16 Jomo Kenyatta Road, Lilongwe 3, Malawi\nTelephone: (265) 1 773 166",
+    "createdAt": "2020-02-20T13:39:27.314Z",
+    "updatedAt": "2020-02-20T16:24:08.146Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "clpCIxZu1P"
+    }
+  },
+  {
+    "objectId": "6KIHAjfity",
+    "country": "Malaysia",
+    "embassy": "U.S. Embassy in Kuala Lumpur",
+    "info": "376 Jalan Tun Razak\n50400 Kuala Lumpur\nPhone: 60-3-2168-5000",
+    "createdAt": "2020-02-20T13:39:29.099Z",
+    "updatedAt": "2020-02-20T16:24:08.676Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "SHOmq2VQlZ"
+    }
+  },
+  {
+    "objectId": "xeJSaytEKp",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 79.848618,
+      "longitude": 6.913233
+    },
+    "country": "Maldives",
+    "embassy": "U.S. Virtual Mission in Maldives",
+    "info": "210 Galle Road\nColombo 03\nSri Lanka\nPhone: +94 (11) 249-8500",
+    "createdAt": "2020-02-20T13:39:30.035Z",
+    "updatedAt": "2020-02-20T16:24:09.434Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "ovfuQeRszZ"
+    }
+  },
+  {
+    "objectId": "OYjPsO4xtj",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -8.021094985993539,
+      "longitude": 12.629849291080781
+    },
+    "country": "Mali",
+    "embassy": "U.S. Embassy in Bamako",
+    "info": "ACI 2000\nRue 243, Porte 297\nBamako, Mali\nPhone: +223 20 70 23 00",
+    "createdAt": "2020-02-20T13:39:31.146Z",
+    "updatedAt": "2020-02-20T16:24:09.960Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jreQzrjZx6"
+    }
+  },
+  {
+    "objectId": "cZ6NQlFbCw",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 14.424656115526965,
+      "longitude": 35.89065722606469
+    },
+    "country": "Malta",
+    "embassy": "U.S. Embassy Valletta",
+    "info": "Ta’ Qali National Park\nAttard, ATD 4000\nPhone: (356) 2561 4000",
+    "createdAt": "2020-02-20T13:39:33.383Z",
+    "updatedAt": "2020-02-20T16:24:10.499Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "HEXUplP1Se"
+    }
+  },
+  {
+    "objectId": "Zx2cyODGo8",
+    "country": "Marshall Islands",
+    "embassy": "U.S. Embassy Majuro",
+    "info": "Mejen Weto, Ocean Side\nMajuro, Marshall Islands\nPhone: +692-247-4011",
+    "createdAt": "2020-02-20T13:39:35.713Z",
+    "updatedAt": "2020-02-20T16:24:11.028Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "ZTZhlMFIyJ"
+    }
+  },
+  {
+    "objectId": "qPN8BouNkd",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -15.992307828442954,
+      "longitude": 18.087209723782
+    },
+    "country": "Mauritania",
+    "embassy": "U.S. Embassy in Nouakchott",
+    "info": "288, rue 42-100, (rue Abdallaye)\nBP 222, Nouakchott, Mauritania\nPhone: 222-4525-2660 or 2663",
+    "createdAt": "2020-02-20T13:39:37.210Z",
+    "updatedAt": "2020-02-20T16:24:11.550Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "1hYnFHML5d"
+    }
+  },
+  {
+    "objectId": "tNseFp5815",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 57.49828105022801,
+      "longitude": -20.161990586407807
+    },
+    "country": "Mauritius",
+    "embassy": "U.S. Embassy in Port Louis",
+    "info": "4th Floor, Rogers House\nJohn Kennedy Avenue\nP.O. Box 544\nPort Louis\nRepublic of Mauritius\nTel: (230) 202-4400",
+    "createdAt": "2020-02-20T13:39:38.816Z",
+    "updatedAt": "2020-02-20T16:24:12.068Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cxnFBlqeWx"
+    }
+  },
+  {
+    "objectId": "pEjbFLpyJ8",
+    "country": "Mexico",
+    "embassy": "U.S. Embassy in Mexico City",
+    "info": "Paseo de la Reforma 305\nColonia Cuauhtemoc\n06500 Mexico, D.F.\nPhone: (+52) 55-5080-2000\nFax: (+52) 55-5080-2005",
+    "createdAt": "2020-02-20T13:39:40.068Z",
+    "updatedAt": "2020-02-20T16:24:12.585Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "ojpZ5PLCYe",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Ciudad Juarez",
+    "info": "Paseo de la Victoria #3650\nFracc. Partido Senecú\nCiudad Juárez, Chihuahua, Mexico C.P. 32543\nPhone: 656-227-3000",
+    "createdAt": "2020-02-20T13:39:39.978Z",
+    "updatedAt": "2020-02-20T16:24:13.113Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "8XE1dp4Fcr",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Guadalajara",
+    "info": "Progreso 175\nCol. Americana\nCodigo Postal 44160\nGuadalajara, Jalisco, Mexico\nPhone: (+52) 33-3268-2100\nFax: (+52) 33-3825-1951",
+    "createdAt": "2020-02-20T13:39:40.219Z",
+    "updatedAt": "2020-02-20T16:24:13.642Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "qk8OfL9Pkx",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Hermosillo",
+    "info": "141 Monterey Street\nCol. Esqueda, C.P. 83000\nHermosillo, Sonora, Mexico\nPhone: (+52) 662-690-3262\nFax: (+52) 662-217-2571",
+    "createdAt": "2020-02-20T13:39:40.360Z",
+    "updatedAt": "2020-02-20T16:24:14.165Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "iNo2kXGBaz",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Monterrey",
+    "info": "Prolongación Ave. Alfonso Reyes #150\nCol. Valle del Poniente\nSanta Catarina, Nuevo León\nMéxico 66196\nPhone: (+52) 81-8047-3100\nFax: (+52) 81-8342-5433",
+    "createdAt": "2020-02-20T13:39:40.371Z",
+    "updatedAt": "2020-02-20T16:24:14.678Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "IGmhcawBVy",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Matamoros",
+    "info": "Calle Constitución No. 1\nColonia Jardín\nMatamoros, Tamaulipas 87330\nPhone: (+52) 868-208-2000\nFax: (+52) 868-816-0883",
+    "createdAt": "2020-02-20T13:39:40.371Z",
+    "updatedAt": "2020-02-20T16:24:15.202Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "meidzkH8va",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -89.619838,
+      "longitude": 20.9870725
+    },
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Merida",
+    "info": "Calle 60 No. 338-K x 29 y 31\nCol. Alcala Martin Merida, Yucatan, Mexico 97050\nPhone: (+52) 999-942-5700\nFax: (+52) 999-942-5758",
+    "createdAt": "2020-02-20T13:39:40.339Z",
+    "updatedAt": "2020-02-20T16:24:16.906Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "9fY75AUQZs",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Tijuana",
+    "info": "Paseo de las Culturas s/n\nMesa de Otay\nDelegación Centenario C.P. 22425\nTijuana, Baja California\nPhone: (664) 977-2000",
+    "createdAt": "2020-02-20T13:39:40.353Z",
+    "updatedAt": "2020-02-20T16:24:18.946Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "Qv6rmlYtCZ",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Nuevo Laredo",
+    "info": "Paseo Colon 1901\nColonia Madero\nNuevo Laredo, Tamaulipas 88260\nTel: 867 714 0512 (from México),\n867-714-0512 (from the US)",
+    "createdAt": "2020-02-20T13:39:40.253Z",
+    "updatedAt": "2020-02-20T16:24:18.427Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "wrYIyHkOSG",
+    "country": "Mexico",
+    "embassy": "U.S. Consulate General in Nogales",
+    "info": "Calle San José s/n\nFraccionamiento los Alamos\nC. P. 84065 Nogales, Sonora\nPhone: (+52) 631-311-8150\nFax: (+52) 631-313-4652",
+    "createdAt": "2020-02-20T13:39:40.367Z",
+    "updatedAt": "2020-02-20T16:24:16.274Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jbrIeE76hr"
+    }
+  },
+  {
+    "objectId": "7c605Tk8qr",
+    "country": "Micronesia",
+    "embassy": "U.S. Embassy in Kolonia",
+    "info": "P.O. Box 1286\nKolonia, Pohnpei\nFSM 96941\nPhone: (691) 320-2187",
+    "createdAt": "2020-02-20T13:39:41.975Z",
+    "updatedAt": "2020-02-20T16:24:19.464Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "Y3YvNEgaqp"
+    }
+  },
+  {
+    "objectId": "fxFIrEgy2A",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 28.818999,
+      "longitude": 47.021521
+    },
+    "country": "Moldova",
+    "embassy": "U.S. Embassy in Chisinau",
+    "info": "103 Mateevici street\nChisinau MD-2009\nRepublic of Moldova\nPhone: (+373 22) 408 300",
+    "createdAt": "2020-02-20T13:39:43.146Z",
+    "updatedAt": "2020-02-20T16:24:20.269Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "bmYANF81hv"
+    }
+  },
+  {
+    "objectId": "3tAc6ALtjR",
+    "country": "Mongolia",
+    "embassy": "U.S. Embassy in Ulaanbaatar",
+    "info": "Denver Street #3\n11th Micro-District\nUlaanbaatar 14190\nMongolia\nTel: +976-7007-6001",
+    "createdAt": "2020-02-20T13:39:45.194Z",
+    "updatedAt": "2020-02-20T16:24:20.793Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "76H3yHIo7U"
+    }
+  },
+  {
+    "objectId": "FqwSxUe1uw",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 19.24739101507193,
+      "longitude": 42.43683063824326
+    },
+    "country": "Montenegro",
+    "embassy": "U.S. Embassy in Podgorica",
+    "info": "Dzona Dzeksona 2\n81000 Podgorica\nMontenegro\nEmbassy Switchboard: +382 (0)20 410 500",
+    "createdAt": "2020-02-20T13:39:46.572Z",
+    "updatedAt": "2020-02-20T16:24:21.315Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "wY0pApCtUt"
+    }
+  },
+  {
+    "objectId": "ueODkF91dg",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -7.626588,
+      "longitude": 33.590838
+    },
+    "country": "Morocco",
+    "embassy": "U.S. Consulate General Casablanca",
+    "info": "8, Bd Moulay Youssef\nCasablanca\nPhone: (212) 522-64-20-00",
+    "createdAt": "2020-02-20T13:39:48.673Z",
+    "updatedAt": "2020-02-20T16:24:21.838Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "Smz1hTRSIU"
+    }
+  },
+  {
+    "objectId": "O1uehgtUqp",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -6.824677,
+      "longitude": 33.955802
+    },
+    "country": "Morocco",
+    "embassy": "U.S. Embassy Rabat",
+    "info": "Km 5.7, Avenue Mohamed VI\nSouissi, Rabat 10170, Morocco\nPhone: (212) 0537 637 200",
+    "createdAt": "2020-02-20T13:39:48.682Z",
+    "updatedAt": "2020-02-20T16:24:22.358Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "Smz1hTRSIU"
+    }
+  },
+  {
+    "objectId": "5FkNQAbvhJ",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 32.59812465034629,
+      "longitude": -25.95961148346652
+    },
+    "country": "Mozambique",
+    "embassy": "U.S. Embassy in Maputo",
+    "info": "Av. Kenneth Kaunda, 193\nCaixa Postal, 783\nTel: (258) 21-49 27 97",
+    "createdAt": "2020-02-20T13:39:50.534Z",
+    "updatedAt": "2020-02-20T16:24:22.878Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9CVfAKT2WO"
+    }
+  },
+  {
+    "objectId": "IEFzpBr7MA",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 17.08486131483526,
+      "longitude": -22.57561503181287
+    },
+    "country": "Namibia",
+    "embassy": "U.S. Embassy Windhoek",
+    "info": "14 Lossen Street\nWindhoek, Namibia\nPhone: 061-295-8500",
+    "createdAt": "2020-02-20T13:39:52.574Z",
+    "updatedAt": "2020-02-20T16:24:23.406Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "cJ8QXx4aDG"
+    }
+  },
+  {
+    "objectId": "5UxrJJWMDr",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 85.33419511592635,
+      "longitude": 27.7381749307414
+    },
+    "country": "Nepal",
+    "embassy": "U.S. Embassy in Kathmandu",
+    "info": "Embassy of the United States of America\nMaharajgunj, Kathmandu, Nepal\nTel.: 977-1-423-4000",
+    "createdAt": "2020-02-20T13:39:54.310Z",
+    "updatedAt": "2020-02-20T16:24:23.964Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "uq5oiRuEKm"
+    }
+  },
+  {
+    "objectId": "U4RFaGhVfZ",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 4.882063,
+      "longitude": 52.356181
+    },
+    "country": "Netherlands",
+    "embassy": "U.S. Consulate General Amsterdam",
+    "info": "Museumplein 19\n1071 DJ Amsterdam\nThe Netherlands",
+    "createdAt": "2020-02-20T13:39:56.120Z",
+    "updatedAt": "2020-02-20T16:24:24.493Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9FyUSGZNnf"
+    }
+  },
+  {
+    "objectId": "2d8cuvaHq7",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 4.882063,
+      "longitude": 52.356181
+    },
+    "country": "Netherlands",
+    "embassy": "U.S. Consulate General Amsterdam",
+    "info": "Museumplein 19\n1071 DJ Amsterdam\nThe Netherlands",
+    "createdAt": "2020-02-20T13:39:56.294Z",
+    "updatedAt": "2020-02-20T16:24:25.046Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9FyUSGZNnf"
+    }
+  },
+  {
+    "objectId": "CkYyKGAAEP",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -68.92806705015425,
+      "longitude": 12.108160536469793
+    },
+    "country": "Netherlands Antilles",
+    "embassy": "U.S. Consulate General in Curacao",
+    "info": "P.O. Box 158\nJ.B. Gorsiraweg 1\nTel +599-9-461-3066",
+    "createdAt": "2020-02-20T13:39:57.203Z",
+    "updatedAt": "2020-02-20T13:39:57.203Z"
+  },
+  {
+    "objectId": "fioCNnFBLV",
+    "country": "New Zealand",
+    "embassy": "United States Embassy Wellington",
+    "info": "29 Fitzherbert Terrace\nThorndon\nWellington 6011\nNew Zealand\nPhone: +64 4 462 6000",
+    "createdAt": "2020-02-20T13:39:59.119Z",
+    "updatedAt": "2020-02-20T16:24:25.837Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "2vGNu7Yn7D"
+    }
+  },
+  {
+    "objectId": "iXE8Icaspe",
+    "country": "New Zealand",
+    "embassy": "U.S. Consulate General Auckland",
+    "info": "Level 3, 23 Customs Street East\nAuckland 1010\nNew Zealand\nPhone: +64 9 303 2724",
+    "createdAt": "2020-02-20T13:39:59.453Z",
+    "updatedAt": "2020-02-20T16:24:26.360Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "2vGNu7Yn7D"
+    }
+  },
+  {
+    "objectId": "hbhjkYmFHg",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -86.31586246301268,
+      "longitude": 12.128777470319303
+    },
+    "country": "Nicaragua",
+    "embassy": "U.S. Embassy Managua",
+    "info": "Kilometer 5.5 Carretera Sur\nManagua, Nicaragua\nEmbassy Telephone: +(505) 2252-7100",
+    "createdAt": "2020-02-20T13:40:01.678Z",
+    "updatedAt": "2020-02-20T16:24:26.878Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "sCGe1vsv7x"
+    }
+  },
+  {
+    "objectId": "B1E8Yd2jE2",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 2.070800850759912,
+      "longitude": 13.526350006074725
+    },
+    "country": "Niger",
+    "embassy": "U.S. Embassy Niamey",
+    "info": "BP 11201\nNiamey, Niger\nPhone: (227) 20-72-26-61",
+    "createdAt": "2020-02-20T13:40:03.790Z",
+    "updatedAt": "2020-02-20T16:24:27.398Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "lpk34LaX1T"
+    }
+  },
+  {
+    "objectId": "PCiB36yIkV",
+    "country": "Nigeria",
+    "embassy": "U.S. Consulate Lagos",
+    "info": "2 Walter Carrington Crescent,\nVictoria Island, Lagos\nTelephone:(234)-1- 460-3600 or (234)-1- 460-3400",
+    "createdAt": "2020-02-20T13:40:05.556Z",
+    "updatedAt": "2020-02-20T16:24:27.929Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "oqts6mjw76"
+    }
+  },
+  {
+    "objectId": "mnMKmKilKc",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 7.474317950082293,
+      "longitude": 9.040513693481035
+    },
+    "country": "Nigeria",
+    "embassy": "U.S. Embassy Abuja",
+    "info": "Plot 1075 Diplomatic Drive\nCentral District Area, Abuja, Nigeria\nTelephone: (234)-9-461-4000",
+    "createdAt": "2020-02-20T13:40:05.647Z",
+    "updatedAt": "2020-02-20T16:24:28.451Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "oqts6mjw76"
+    }
+  },
+  {
+    "objectId": "5Q012aGmIT",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 21.354850713788924,
+      "longitude": 41.99919648679228
+    },
+    "country": "North Macedonia",
+    "embassy": "U.S. Embassy in Skopje",
+    "info": "Str. “Samoilova” Nr.21\n1000 Skopje\nRepublic of North Macedonia\nPhone: +389 2 310-2000 (0 -for Switchboard Operator)",
+    "createdAt": "2020-02-20T13:40:07.610Z",
+    "updatedAt": "2020-02-20T16:24:28.967Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "dAH4X1RHQb"
+    }
+  },
+  {
+    "objectId": "3cQFIQ5Ktl",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 10.668108116097063,
+      "longitude": 59.93978108187661
+    },
+    "country": "Norway",
+    "embassy": "U.S. Embassy in Oslo",
+    "info": "Morgedalsvegen 36\n0378 Oslo\nNorway\nPhone: 21 30 85 40",
+    "createdAt": "2020-02-20T13:40:10.195Z",
+    "updatedAt": "2020-02-20T16:24:29.486Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "T6MXJLAUjG"
+    }
+  },
+  {
+    "objectId": "NNGyIBe7wp",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 4.3820756509457235,
+      "longitude": 50.85828708481113
+    },
+    "country": "U.S. Mission to NATO",
+    "embassy": "U.S. Mission to NATO",
+    "info": "Boulevard Leopold III\n1110 Brussels, Belgium\nPhone: (32-2) 811-4000",
+    "createdAt": "2020-02-20T13:40:11.279Z",
+    "updatedAt": "2020-02-20T13:40:11.279Z"
+  },
+  {
+    "objectId": "PEVxoEzY00",
+    "country": "Oman",
+    "embassy": "U.S. Embassy in Muscat",
+    "info": "P.C. 115\nMadinat Al Sultan Qaboos\nMuscat, Oman\nTelephone: (968) 2464-3400",
+    "createdAt": "2020-02-20T13:40:13.458Z",
+    "updatedAt": "2020-02-20T16:24:30.286Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "ta4EmTNWmu"
+    }
+  },
+  {
+    "objectId": "GrG8xfH27y",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -77.05170868456409,
+      "longitude": 38.89443515472371
+    },
+    "country": "U.S. Mission to the OAS",
+    "embassy": "U.S. Mission to the OAS",
+    "info": "U.S. Department of State\n2201 C Street, NW\nRoom 5914\nWashington, D.C. 20515\nTelephone 202-647-9376",
+    "createdAt": "2020-02-20T13:40:16.160Z",
+    "updatedAt": "2020-02-20T13:40:16.160Z"
+  },
+  {
+    "objectId": "HAyLqQwtnP",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 2.314880050761391,
+      "longitude": 48.86830080786213
+    },
+    "country": "U.S. Mission to the OECD",
+    "embassy": "U.S. Mission to the OECD",
+    "info": "18, avenue Gabriel\n75008 Paris\nCall: +33 (0) 1 43 12 22 22",
+    "createdAt": "2020-02-20T13:40:18.140Z",
+    "updatedAt": "2020-02-20T13:40:18.140Z"
+  },
+  {
+    "objectId": "wPqob9kBO4",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 71.53478281438282,
+      "longitude": 34.00574362762821
+    },
+    "country": "Pakistan",
+    "embassy": "U.S. Consulate General Peshawar",
+    "info": "11, Hospital Road,\nPeshawar, Pakistan\nPhone: Tel: (+92-91) 5268800",
+    "createdAt": "2020-02-20T13:40:19.270Z",
+    "updatedAt": "2020-02-20T16:24:32.264Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "YE4pRFqDqA"
+    }
+  },
+  {
+    "objectId": "pPVFjSQ9Kr",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 73.1158063143739,
+      "longitude": 33.72392364240929
+    },
+    "country": "Pakistan",
+    "embassy": "U.S. Embassy in Islamabad",
+    "info": "Diplomatic Enclave, Ramna 5\nIslamabad, Pakistan\nPhone: (+92) 51-208-0000 / (+92) 051-201-4000",
+    "createdAt": "2020-02-20T13:40:19.550Z",
+    "updatedAt": "2020-02-20T16:24:32.796Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "YE4pRFqDqA"
+    }
+  },
+  {
+    "objectId": "Eqp6AiUDSN",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 67.00740971413214,
+      "longitude": 24.84119765214914
+    },
+    "country": "Pakistan",
+    "embassy": "U.S. Consulate General Karachi",
+    "info": "Plot 3, 4, 5, New TPX Area\nMai Kolachi Road, Karachi\nPhone: (+92-21) 3527-5000",
+    "createdAt": "2020-02-20T13:40:19.557Z",
+    "updatedAt": "2020-02-20T16:24:33.318Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "YE4pRFqDqA"
+    }
+  },
+  {
+    "objectId": "6y1asai7Jx",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 74.33401361430799,
+      "longitude": 31.5601682523353
+    },
+    "country": "Pakistan",
+    "embassy": "U.S. Consulate General Lahore",
+    "info": "50, Shahrah-e-Abdul Hameed Bin Badees,\n(Old Empress Road) near Shimla Hill, Lahore, Pakistan\nPhone: (92-42) 3603-4000",
+    "createdAt": "2020-02-20T13:40:19.565Z",
+    "updatedAt": "2020-02-20T16:24:33.879Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "YE4pRFqDqA"
+    }
+  },
+  {
+    "objectId": "ZGjsmd81Xr",
+    "country": "Palau",
+    "embassy": "U.S. Embassy in Koror",
+    "info": "Airai State, in an area known as Omsangel (no street address)\nP.O. Box 6028\nKoro, Palau 96940",
+    "createdAt": "2020-02-20T13:40:21.492Z",
+    "updatedAt": "2020-02-20T16:24:34.407Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9r4GHFt1Gt"
+    }
+  },
+  {
+    "objectId": "2HkfMv41PO",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -79.56283808497368,
+      "longitude": 8.998702891939903
+    },
+    "country": "Panama",
+    "embassy": "U.S. Embassy in Panama City",
+    "info": "Building 783, Demetrio Basilio Lakas Avenue\nClayton, Panama\nTel: (507) 317-5000",
+    "createdAt": "2020-02-20T13:40:22.196Z",
+    "updatedAt": "2020-02-20T16:24:34.929Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "fjNf3u1Mx1"
+    }
+  },
+  {
+    "objectId": "LZVUWyacNg",
+    "country": "Papua New Guinea",
+    "embassy": "U.S. Embassy in Port Moresby",
+    "info": "Embassy of the United States of America\nP.O. Box 1492\nPort Moresby, Papua New Guinea",
+    "createdAt": "2020-02-20T13:40:23.989Z",
+    "updatedAt": "2020-02-20T16:24:35.453Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "uonlBdxrxQ"
+    }
+  },
+  {
+    "objectId": "LVVFDzVHbO",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -57.62816948465239,
+      "longitude": -25.28548103339301
+    },
+    "country": "Paraguay",
+    "embassy": "U.S. Embassy in Asuncion",
+    "info": "1776 Mariscal Lopez Avenue\nAsunción, Paraguay\nTel: 595 21 213-715, 595 21 248-3000",
+    "createdAt": "2020-02-20T13:40:26.350Z",
+    "updatedAt": "2020-02-20T16:24:36.246Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "4GJnHdhGyv"
+    }
+  },
+  {
+    "objectId": "na91ZrJJqB",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -76.97117538535889,
+      "longitude": -12.100416646195017
+    },
+    "country": "Peru",
+    "embassy": "U.S. Embassy in Lima",
+    "info": "Avenida La Encalada cdra. 17 s/n\nSurco, Lima 33, Peru\nTelephone: (51-1) 618-2000",
+    "createdAt": "2020-02-20T13:40:28.203Z",
+    "updatedAt": "2020-02-20T16:24:36.762Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "8IhgzPlSIn"
+    }
+  },
+  {
+    "objectId": "NtO8xxfrnd",
+    "country": "Philippines",
+    "embassy": "U.S. Embassy in Manila",
+    "info": "1201 Roxas Boulevard\nManila, Philippines 1000\nPhone: (632) 301-2000",
+    "createdAt": "2020-02-20T13:40:29.217Z",
+    "updatedAt": "2020-02-20T16:24:37.277Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "pmnzGTREty"
+    }
+  },
+  {
+    "objectId": "WsDzm8OK3p",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 19.939102899999998,
+      "longitude": 50.060064399999995
+    },
+    "country": "Poland",
+    "embassy": "U.S. Consulate General in Krakow",
+    "info": "ul. Stolarska 9\n31-043 Krakow\nTel.: +48 12 424 5100",
+    "createdAt": "2020-02-20T13:40:30.312Z",
+    "updatedAt": "2020-02-20T16:24:37.806Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "bejQecXKxm"
+    }
+  },
+  {
+    "objectId": "LbaSXZe6RV",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 16.927380015922793,
+      "longitude": 52.407795452290735
+    },
+    "country": "Poland",
+    "embassy": "Consular Agency in Poznan",
+    "info": "ul. Paderewskiego 8\n61-770 Poznan\nTel.: +48 61 851 8516",
+    "createdAt": "2020-02-20T13:40:30.524Z",
+    "updatedAt": "2020-02-20T16:24:38.622Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "bejQecXKxm"
+    }
+  },
+  {
+    "objectId": "TLOy0ePaF3",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 21.023320999999996,
+      "longitude": 52.224495
+    },
+    "country": "Poland",
+    "embassy": "U.S. Embassy Warsaw",
+    "info": "Aleje Ujazdowskie 29/31\n00-540 Warsaw Poland\nTel.: +48 22 504 2000",
+    "createdAt": "2020-02-20T13:40:30.447Z",
+    "updatedAt": "2020-02-20T16:24:39.139Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "bejQecXKxm"
+    }
+  },
+  {
+    "objectId": "uEFVOS71V1",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -25.71346686956659,
+      "longitude": 37.74504219110972
+    },
+    "country": "Portugal",
+    "embassy": "U.S. Consulate Ponta Delgada Azores",
+    "info": "Avenida Príncipe do Mónaco, 6-2 F\n9500 Ponta Delgada\nPhone: 351 296 308 330",
+    "createdAt": "2020-02-20T13:40:32.362Z",
+    "updatedAt": "2020-02-20T16:24:40.050Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "EZzqrmo1am"
+    }
+  },
+  {
+    "objectId": "295E4N6suT",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -9.16557018495388,
+      "longitude": 38.74412016357007
+    },
+    "country": "Portugal",
+    "embassy": "U.S. Embassy Lisbon",
+    "info": "Avenida das Forças Armadas\n1600-081 Lisboa\nPhone: 351-21-727-3300\nFax: 351-21-726-9109",
+    "createdAt": "2020-02-20T13:40:32.609Z",
+    "updatedAt": "2020-02-20T16:24:40.609Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "EZzqrmo1am"
+    }
+  },
+  {
+    "objectId": "S8RW6JGsuA",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 51.471328,
+      "longitude": 25.303604000000004
+    },
+    "country": "Qatar",
+    "embassy": "U.S. Embassy Doha",
+    "info": "22nd February Street\nAl Luqta District\nP.O. Box 2399\nDoha, Qatar\nPhone: (974) 4496-6000",
+    "createdAt": "2020-02-20T13:40:34.452Z",
+    "updatedAt": "2020-02-20T16:24:41.151Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "fadJTpiTZO"
+    }
+  },
+  {
+    "objectId": "SaDmLftxQZ",
+    "country": "Samoa",
+    "embassy": "U.S. Embassy Apia",
+    "info": "5th Floor\nACC Building\nMatafele Apia, Samoa\nPhone: +685 21436+685 21436 / 21631 / 21452 or 22696",
+    "createdAt": "2020-02-20T13:40:36.652Z",
+    "updatedAt": "2020-02-20T16:24:41.668Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "s6ejWUPV5j"
+    }
+  },
+  {
+    "objectId": "JRoDlqOuLC",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 12.490769,
+      "longitude": 41.906582
+    },
+    "country": "San Marino",
+    "embassy": "U.S. Embassy in San Marino",
+    "info": "Lungarno Amerigo Vespucci, 38\n50123 Florence, Italy\nTel: 055-266-95-1",
+    "createdAt": "2020-02-20T13:40:37.508Z",
+    "updatedAt": "2020-02-20T16:24:42.190Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "80T3vlLgy2"
+    }
+  },
+  {
+    "objectId": "hNPTXdrTJC",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 46.61878331499943,
+      "longitude": 24.68122498413883
+    },
+    "country": "Saudi Arabia",
+    "embassy": "U.S. Embassy in Riyadh",
+    "info": "P.O. Box 94309\nRiyadh 11693\nSaudi Arabia\nTelephone: 966-11-4883800",
+    "createdAt": "2020-02-20T13:40:39.314Z",
+    "updatedAt": "2020-02-20T16:24:42.706Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "PqGe1JXHMY"
+    }
+  },
+  {
+    "objectId": "rSgIHbXAUy",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 50.15211701444141,
+      "longitude": 26.304454792343083
+    },
+    "country": "Saudi Arabia",
+    "embassy": "U.S. Consulate General in Dhahran",
+    "info": "P.O. Box 38955\nDhahran Airport 31942\nSaudi Arabia\nPhone: (966-13) 330-3200",
+    "createdAt": "2020-02-20T13:40:39.290Z",
+    "updatedAt": "2020-02-20T16:24:43.236Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "PqGe1JXHMY"
+    }
+  },
+  {
+    "objectId": "2XZKKAFBi5",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 39.16193271434716,
+      "longitude": 21.526284675984353
+    },
+    "country": "Saudi Arabia",
+    "embassy": "U.S. Consulate General in Jeddah",
+    "info": "Falastin\nAl-Hamra’a\nJeddah 23323, Saudi Arabia\nPhone: +966 12 667 0080",
+    "createdAt": "2020-02-20T13:40:39.445Z",
+    "updatedAt": "2020-02-20T16:24:43.751Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "PqGe1JXHMY"
+    }
+  },
+  {
+    "objectId": "qKs7Z7I79z",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -17.516996741291123,
+      "longitude": 14.704710009473104
+    },
+    "country": "Senegal",
+    "embassy": "U.S. Embassy in Dakar",
+    "info": "Route des Almadies\nDakar, Senegal\nTelephone: (221) 33-879-4000",
+    "createdAt": "2020-02-20T13:40:41.515Z",
+    "updatedAt": "2020-02-20T16:24:44.277Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "loX389odU1"
+    }
+  },
+  {
+    "objectId": "hU6nal6z8i",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 20.45105495060411,
+      "longitude": 44.77249378724876
+    },
+    "country": "Serbia",
+    "embassy": "U.S. Embassy in Belgrade",
+    "info": "92 Bulevar kneza Aleksandra Karadjordjevica\n11040 Belgrade, Serbia\nSwitchboard +381 11 706-4000",
+    "createdAt": "2020-02-20T13:40:43.679Z",
+    "updatedAt": "2020-02-20T16:24:44.794Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "AqY4dkqJok"
+    }
+  },
+  {
+    "objectId": "HUT5mjwMBO",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -13.23203054992229,
+      "longitude": 8.451653993892794
+    },
+    "country": "Sierra Leone",
+    "embassy": "U.S. Embassy in Freetown",
+    "info": "Southridge – Hill Station\nFreetown, Sierra Leone\nTelephone: +232 99 1055 00",
+    "createdAt": "2020-02-20T13:40:45.472Z",
+    "updatedAt": "2020-02-20T16:24:45.580Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "xzEkRDMtUU"
+    }
+  },
+  {
+    "objectId": "ZDiwgB80IP",
+    "country": "Singapore",
+    "embassy": "U.S. Embassy Singapore",
+    "info": "27 Napier Road\nSingapore 258508\nPhone: (65) 6476-9100",
+    "createdAt": "2020-02-20T13:40:47.000Z",
+    "updatedAt": "2020-02-20T16:24:46.107Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "AnLxFNCcFS"
+    }
+  },
+  {
+    "objectId": "nZGaWXFyzB",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 17.10578371527176,
+      "longitude": 48.141287658882085
+    },
+    "country": "Slovakia",
+    "embassy": "U.S. Embassy Bratislava",
+    "info": "814 99 Bratislava\nSlovak Republic\nPhone: +421-2-5443 3338",
+    "createdAt": "2020-02-20T13:40:48.954Z",
+    "updatedAt": "2020-02-20T16:24:46.632Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "2PuVugMMXs"
+    }
+  },
+  {
+    "objectId": "Apycuwjd5o",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 14.496689950651993,
+      "longitude": 46.05241020192026
+    },
+    "country": "Slovenia",
+    "embassy": "U.S. Embassy in Ljubljana",
+    "info": "Prešernova 31\n1000 Ljubljana\nSlovenia\nPhone: +386 (1) 2005500",
+    "createdAt": "2020-02-20T13:40:50.807Z",
+    "updatedAt": "2020-02-20T16:24:47.173Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "oQQC8mAbuz"
+    }
+  },
+  {
+    "objectId": "oR8bfa6BG2",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 45.23645220478228,
+      "longitude": 2.0591992551702303
+    },
+    "country": "Somalia",
+    "embassy": "U.S. Embassy in Somalia",
+    "info": "Mogadishu, Somalia",
+    "createdAt": "2020-02-20T13:40:53.009Z",
+    "updatedAt": "2020-02-20T16:24:47.691Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "0ncikAUv2i"
+    }
+  },
+  {
+    "objectId": "Xausd2H9xm",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 18.431694999999998,
+      "longitude": -34.0752867
+    },
+    "country": "South Africa",
+    "embassy": "U.S. Consulate General in Cape Town",
+    "info": "2 Reddam Ave\nWestlake 7945\nPhone: +27 (21) 702-7300\nFax: +27 (21) 702-7493",
+    "createdAt": "2020-02-20T13:40:54.616Z",
+    "updatedAt": "2020-02-20T16:24:48.210Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "LQBwxAvUsE"
+    }
+  },
+  {
+    "objectId": "4Qdh7Ug9Hz",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 28.223374,
+      "longitude": -25.745777999999998
+    },
+    "country": "South Africa",
+    "embassy": "U.S. Embassy Pretoria",
+    "info": "877 Pretorius St\nArcadia, Pretoria\nPhone: +27 (12) 431-4000\nFax: +27 (12) 342-2299",
+    "createdAt": "2020-02-20T13:40:54.743Z",
+    "updatedAt": "2020-02-20T16:24:48.731Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "LQBwxAvUsE"
+    }
+  },
+  {
+    "objectId": "h5w7zRGMSu",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 28.0516737,
+      "longitude": -26.111556899999997
+    },
+    "country": "South Africa",
+    "embassy": "U.S. Consulate General in Johannesburg",
+    "info": "1 Sandton Drive\nSandhurst\nPhone: +27 (11) 290-3000\nFax: +27 (11) 884-0396",
+    "createdAt": "2020-02-20T13:40:54.844Z",
+    "updatedAt": "2020-02-20T16:24:49.254Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "LQBwxAvUsE"
+    }
+  },
+  {
+    "objectId": "KYKURU6vzl",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 31.01125499999999,
+      "longitude": -29.843728000000002
+    },
+    "country": "South Africa",
+    "embassy": "U.S. Embassy in U.S. Consulate General in Durban",
+    "info": "303 Dr. Pixley KaSeme Street\n31st Floor\nDelta Towers\nDurban\n4001\nPhone: +27 (31) 305-7600\nFax: +27 (31) 305-7691",
+    "createdAt": "2020-02-20T13:40:54.877Z",
+    "updatedAt": "2020-02-20T16:24:49.782Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "LQBwxAvUsE"
+    }
+  },
+  {
+    "objectId": "LrCMn5YnyI",
+    "country": "South Korea",
+    "embassy": "U.S. Embassy Seoul",
+    "info": "188 Sejong-daero, Jongno-gu,\nSeoul, Korea\n03141\nPhone: 82-2-397-4114",
+    "createdAt": "2020-02-20T13:40:56.344Z",
+    "updatedAt": "2020-02-20T16:24:50.308Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "H27W1K2Jx0"
+    }
+  },
+  {
+    "objectId": "AMASHRFzRa",
+    "country": "South Korea",
+    "embassy": "U.S. Consulate Busan",
+    "info": "#993, Joongangdae-Ro, Busanjin-Gu,\nRoom 612 (Lotte Gold Rose)\nBusan, Korea 47209",
+    "createdAt": "2020-02-20T13:40:56.437Z",
+    "updatedAt": "2020-02-20T16:24:50.854Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "H27W1K2Jx0"
+    }
+  },
+  {
+    "objectId": "DBkxXy9vHh",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 31.58386391452658,
+      "longitude": 4.855650541647085
+    },
+    "country": "South Sudan",
+    "embassy": "U.S. Embassy in Juba",
+    "info": "Kololo Road\nadjacent to the European Union’s compound\nJuba, South Sudan",
+    "createdAt": "2020-02-20T13:40:58.418Z",
+    "updatedAt": "2020-02-20T16:24:51.404Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "ICkEMQPTMM"
+    }
+  },
+  {
+    "objectId": "XQnfYOUNGb",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 2.1152034151191756,
+      "longitude": 41.397786603313826
+    },
+    "country": "Spain",
+    "embassy": "U.S. Consulate in Barcelona",
+    "info": "Paseo Reina Elisenda de Montcada, 23\n08034 Barcelona, España\nPhone: (+34) 93 280 22 27\nFax (+34) 93 280 61 75",
+    "createdAt": "2020-02-20T13:41:00.235Z",
+    "updatedAt": "2020-02-20T16:24:52.165Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "5Vs8zprtNC"
+    }
+  },
+  {
+    "objectId": "af1VnMEkMB",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -3.6889362849103784,
+      "longitude": 40.434621362475525
+    },
+    "country": "Spain",
+    "embassy": "U.S. Embassy in Madrid",
+    "info": "Calle de Serrano, 75\n28006 Madrid, Spain\nPhone: 91-587-2200\nFax: 91-587-2303",
+    "createdAt": "2020-02-20T13:41:00.239Z",
+    "updatedAt": "2020-02-20T16:24:52.686Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "5Vs8zprtNC"
+    }
+  },
+  {
+    "objectId": "Fg763hD8If",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 79.848618,
+      "longitude": 6.913233
+    },
+    "country": "Sri Lanka",
+    "embassy": "U.S. Embassy Colombo",
+    "info": "210 Galle Road\nColombo 03\nSri Lanka\nPhone: +94 (11) 249-8500",
+    "createdAt": "2020-02-20T13:41:01.798Z",
+    "updatedAt": "2020-02-20T16:24:53.202Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9N0Bhm2Ge4"
+    }
+  },
+  {
+    "objectId": "awENcC2kG5",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 32.60541621518638,
+      "longitude": 15.526150789218434
+    },
+    "country": "Sudan",
+    "embassy": "U.S. Embassy in Khartoum",
+    "info": "P.O. Box 699\nKilo 10, Soba\nKhartoum, Sudan\nInternational: (249)(187)-0-(22000)\nWithin Sudan (187)-0-(22000)",
+    "createdAt": "2020-02-20T13:41:03.749Z",
+    "updatedAt": "2020-02-20T16:24:53.739Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "uPVdFzQ71M"
+    }
+  },
+  {
+    "objectId": "viUQ1l1YMH",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -84.36444565058818,
+      "longitude": 21.403015973191792
+    },
+    "country": "Suriname",
+    "embassy": "U.S. Embassy in Paramaribo",
+    "info": "Kristalstraat 165\nParamaribo, Suriname\nPhone: (597) 556-700",
+    "createdAt": "2020-02-20T13:41:05.479Z",
+    "updatedAt": "2020-02-20T16:24:54.272Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "iNVlDu9rb9"
+    }
+  },
+  {
+    "objectId": "hFuhBRRcxU",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 18.10333961607249,
+      "longitude": 59.33347178166029
+    },
+    "country": "Sweden",
+    "embassy": "U.S. Embassy in Stockholm",
+    "info": "Dag Hammarskjölds Väg 31,\nSE-115 89 Stockholm\nPhone: 08-783 53 00",
+    "createdAt": "2020-02-20T13:41:07.415Z",
+    "updatedAt": "2020-02-20T16:24:54.790Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "220UohZbeo"
+    }
+  },
+  {
+    "objectId": "Rww64SvZOl",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 7.438283,
+      "longitude": 46.943433
+    },
+    "country": "Switzerland",
+    "embassy": "U.S. Embassy Bern",
+    "info": "Sulgeneckstrasse 19\nCH-3007 Bern, Switzerland\nTel: 031 357 70 11",
+    "createdAt": "2020-02-20T13:41:09.212Z",
+    "updatedAt": "2020-02-20T16:24:55.323Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "c2ZdW21DZq"
+    }
+  },
+  {
+    "objectId": "hwlfEFUdWx",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 7.438283,
+      "longitude": 46.943433
+    },
+    "country": "Switzerland",
+    "embassy": "U.S. Virtual Mission Liechtenstein",
+    "info": "In Care Of:\nSulgeneckstrasse 19\nCH-3007 Bern, Switzerland\nTel: 031 357 70 11",
+    "createdAt": "2020-02-20T13:41:09.494Z",
+    "updatedAt": "2020-02-20T16:24:55.846Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "c2ZdW21DZq"
+    }
+  },
+  {
+    "objectId": "DSiIczWTBy",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 36.280863,
+      "longitude": 33.521751
+    },
+    "country": "Syria",
+    "embassy": "U.S. Embassy in Damascus",
+    "info": "Abou Roumaneh, 2 Al Mansour Street\nDamascus, Syria\nTelephone: 3391-4444",
+    "createdAt": "2020-02-20T13:41:10.106Z",
+    "updatedAt": "2020-02-20T16:24:56.369Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "aCjqJX3che"
+    }
+  },
+  {
+    "objectId": "fVegauYkFv",
+    "country": "American Institute in Taiwan",
+    "embassy": "Kaohsiung Branch Office",
+    "info": "5F, No.88, Chenggong 2nd Road\nQianzhen Dist.,Kaohsiung 80661\nTaiwan\nTel: (+886) (07) 335-5006",
+    "createdAt": "2020-02-20T13:41:11.269Z",
+    "updatedAt": "2020-02-20T13:41:11.269Z"
+  },
+  {
+    "objectId": "ysAfCfj0zB",
+    "country": "American Institute in Taiwan",
+    "embassy": "American Institute in Taiwan",
+    "info": "No. 100, Jinhu Road,\nNeihu District 11461, Taipei City, Taiwan\nTel: (+886) (02) 2162-2000",
+    "createdAt": "2020-02-20T13:41:11.574Z",
+    "updatedAt": "2020-02-20T13:41:11.574Z"
+  },
+  {
+    "objectId": "Zll9UtEvgM",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 68.70998205039008,
+      "longitude": 38.579469073127456
+    },
+    "country": "Tajikistan",
+    "embassy": "U.S. Embassy in Dushanbe",
+    "info": "109-A, Ismoili Somoni Avenue (Zarafshon district)\nDushanbe, Tajikistan  734019\nPhone: +992 (37) 229 20 00",
+    "createdAt": "2020-02-20T13:41:13.274Z",
+    "updatedAt": "2020-02-20T16:24:58.481Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "temdDhXHMy"
+    }
+  },
+  {
+    "objectId": "5YbnRiHn5a",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 39.26846387313328,
+      "longitude": -6.774595980412405
+    },
+    "country": "Tanzania",
+    "embassy": "U.S. Embassy in Dar es Salaam",
+    "info": "686 Old Bagamoyo Road,\nMsasani\nDar es Salaam, Tanzania\nTel: 255-22-229-4000",
+    "createdAt": "2020-02-20T13:41:14.978Z",
+    "updatedAt": "2020-02-20T16:24:59.006Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "UIOtsTw0oX"
+    }
+  },
+  {
+    "objectId": "8gIrAg73Wi",
+    "country": "Thailand",
+    "embassy": "U.S. Consulate General Chiang Mai",
+    "info": "387 Witchayanond Road\nChiang Mai 50300, Thailand\nPhone.: +66-53-107-700",
+    "createdAt": "2020-02-20T13:41:17.135Z",
+    "updatedAt": "2020-02-20T16:24:59.520Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "k2lukc4AyV"
+    }
+  },
+  {
+    "objectId": "itmjvgyE4n",
+    "country": "Thailand",
+    "embassy": "U.S. Embassy Bangkok",
+    "info": "95 Wireless Road\nBangkok 10330, Thailand\nPhone: +66-2-205-4000",
+    "createdAt": "2020-02-20T13:41:17.403Z",
+    "updatedAt": "2020-02-20T16:25:00.380Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "k2lukc4AyV"
+    }
+  },
+  {
+    "objectId": "WWAe2EGVva",
+    "country": "Timor-Leste",
+    "embassy": "U.S. Embassy in Dili",
+    "info": "Avenida de Portugal\nPraia dos Coqueiros\nDili, Timor-Leste\ntel: (670) 332-4684",
+    "createdAt": "2020-02-20T13:41:18.215Z",
+    "updatedAt": "2020-02-20T13:41:18.215Z"
+  },
+  {
+    "objectId": "2uskhssaeK",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -56.219030065505436,
+      "longitude": 21.555755676518146
+    },
+    "country": "Togo",
+    "embassy": "U.S. Embassy in Lome",
+    "info": "Boulevard Eyadema\nB.P. 852, Lomé\nPhone:(+228) 2261 5470\nFax:(+228) 2261 5501",
+    "createdAt": "2020-02-20T13:41:19.985Z",
+    "updatedAt": "2020-02-20T16:25:01.190Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "LlF4qcKuXw"
+    }
+  },
+  {
+    "objectId": "S7hYs6l9RH",
+    "country": "Tonga",
+    "embassy": "U.S. Embassy in Tonga",
+    "info": "31 Loftus Street\nSuva, Fiji\nTelephone: (679) 331-4466",
+    "createdAt": "2020-02-20T13:41:21.749Z",
+    "updatedAt": "2020-02-20T16:25:01.813Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "jYnYAs4gVv"
+    }
+  },
+  {
+    "objectId": "Btk8RqPMyH",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -61.516947,
+      "longitude": 10.665985
+    },
+    "country": "Trinidad & Tobago",
+    "embassy": "U.S. Embassy in Port of Spain",
+    "info": "15 Queen’s Park West\nPort of Spain\nTrinidad and Tobago\nTel: (868) 622-6371",
+    "createdAt": "2020-02-20T13:41:22.914Z",
+    "updatedAt": "2020-02-20T13:41:22.914Z"
+  },
+  {
+    "objectId": "uGnSaQYE5Z",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 10.267989315205188,
+      "longitude": 36.85042547993822
+    },
+    "country": "Tunisia",
+    "embassy": "U.S. Embassy Tunis",
+    "info": "Les Berges du Lac\n1053 TUNIS\nTunisia\nMain switchboard:  +216 71 107 000",
+    "createdAt": "2020-02-20T13:41:24.795Z",
+    "updatedAt": "2020-02-20T16:25:02.847Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "6FCCfIIcf0"
+    }
+  },
+  {
+    "objectId": "1Lwoo5d2RK",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 29.0443211154174,
+      "longitude": 41.11749587928979
+    },
+    "country": "Turkey",
+    "embassy": "U.S. Consulate General Istanbul",
+    "info": "İstinye Mahallesi, Üç Şehitler Sokak No.2\nİstinye 34460 – Istanbul / Turkey\nPhone: (90) 212-335 90 00",
+    "createdAt": "2020-02-20T13:41:26.904Z",
+    "updatedAt": "2020-02-20T16:25:03.425Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "r1dBFhG3I7"
+    }
+  },
+  {
+    "objectId": "LigWHAqkyn",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 32.8539583150804,
+      "longitude": 39.908225094332444
+    },
+    "country": "Turkey",
+    "embassy": "U.S. Embassy Ankara",
+    "info": "110 Atatürk Blvd.\nKavaklıdere, 06100 Ankara – Turkey\nPhone: (90-312) 455-5555",
+    "createdAt": "2020-02-20T13:41:27.158Z",
+    "updatedAt": "2020-02-20T16:25:03.951Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "r1dBFhG3I7"
+    }
+  },
+  {
+    "objectId": "G2KysSCfGa",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 35.3848218149961,
+      "longitude": 36.98352556505883
+    },
+    "country": "Turkey",
+    "embassy": "U.S. Consulate Adana",
+    "info": "Girne Bulvari No:212 Guzelevler Mah.\nYuregir, Adana – TÜRKİYE\nTel: (90) (322) 455-4100",
+    "createdAt": "2020-02-20T13:41:27.138Z",
+    "updatedAt": "2020-02-20T16:25:04.477Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "r1dBFhG3I7"
+    }
+  },
+  {
+    "objectId": "bBlSGJrUNy",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 58.389301,
+      "longitude": 37.901274
+    },
+    "country": "Turkmenistan",
+    "embassy": "U.S. Embassy Ashgabat",
+    "info": "9 1984 Street (formerly Pushkin Street)\nAshgabat, Turkmenistan 744000\nTel: (+99312) 940045",
+    "createdAt": "2020-02-20T13:41:28.677Z",
+    "updatedAt": "2020-02-20T16:25:05.010Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "qURMHRB5Bh"
+    }
+  },
+  {
+    "objectId": "W5MUG9UYHE",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 6.135919716184857,
+      "longitude": 46.23200668990151
+    },
+    "country": "U.S. Mission to the UN-Geneva",
+    "embassy": "U.S. Mission-Geneva",
+    "info": "111 Route de Pregny\n1292 Geneva, Switzerland\nPhone: +41 22 749 41 11",
+    "createdAt": "2020-02-20T13:41:29.746Z",
+    "updatedAt": "2020-02-20T13:41:29.746Z"
+  },
+  {
+    "objectId": "EC05rV1H36",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 12.489735615141493,
+      "longitude": 41.907876971529674
+    },
+    "country": "U.S. Mission to the UN-Rome",
+    "embassy": "U.S. Mission Rome",
+    "info": "via Boncompagni 2\nRome, Italy\nPhone: (06) 4674-3500",
+    "createdAt": "2020-02-20T13:41:31.754Z",
+    "updatedAt": "2020-02-20T13:41:31.754Z"
+  },
+  {
+    "objectId": "2E1QBDd19r",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 55.30697651471662,
+      "longitude": 25.258485535410205
+    },
+    "country": "United Arab Emirates",
+    "embassy": "U.S. Consulate in Dubai",
+    "info": "Corner of Al Seef Rd. and Sheikh Khalifa bin Zayed Rd.\nDubai, U.A.E\nPhone: +971-4-309-4000",
+    "createdAt": "2020-02-20T13:41:36.572Z",
+    "updatedAt": "2020-02-20T16:25:06.047Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "VqASvLCk8S"
+    }
+  },
+  {
+    "objectId": "RuK4t8YwvP",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 54.43151831470147,
+      "longitude": 24.424386568611762
+    },
+    "country": "United Arab Emirates",
+    "embassy": "U.S. Embassy in Abu Dhabi",
+    "info": "Airport Road at Rabdan (29th) Street\nEmbassies District, Plot 38, Sector W59-02, Street No. 4\nAbu Dhabi, U.A.E.\nTel. +971-2 414 2200",
+    "createdAt": "2020-02-20T13:41:36.488Z",
+    "updatedAt": "2020-02-20T16:25:06.558Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "VqASvLCk8S"
+    }
+  },
+  {
+    "objectId": "uG5RtZCltw",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -0.13292556417568116,
+      "longitude": 51.482433064228786
+    },
+    "country": "United Kingdom",
+    "embassy": "Embassy of the United States of America",
+    "info": "33 Nine Elms Lane\nLondon\nSW11 7US (mailing postcode)\nor\nSW8 5DB (driving/GPS postcode)\nUnited Kingdom",
+    "createdAt": "2020-02-20T13:41:38.426Z",
+    "updatedAt": "2020-02-20T16:25:07.083Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "asMYxtQNZx"
+    }
+  },
+  {
+    "objectId": "2ZVcsJjGtd",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -56.178309884825005,
+      "longitude": -34.91348698146105
+    },
+    "country": "Uruguay",
+    "embassy": "U.S. Embassy Montevideo",
+    "info": "Lauro Müller 1776\nMontevideo, Uruguay\nPhone: (+598) 1770-2000",
+    "createdAt": "2020-02-20T13:41:38.454Z",
+    "updatedAt": "2020-02-20T16:25:07.610Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "R0GyWd9YXw"
+    }
+  },
+  {
+    "objectId": "dCEcnUH7eV",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -5.9422437,
+      "longitude": 54.5705791
+    },
+    "country": "United Kingdom",
+    "embassy": "U.S. Consulate General in Belfast",
+    "info": "Danesfort House\n223 Stranmillis Road\nBelfast BT9 5GR\nPhone: [44] (0)28-9038-6100",
+    "createdAt": "2020-02-20T13:41:38.683Z",
+    "updatedAt": "2020-02-20T16:25:08.259Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "asMYxtQNZx"
+    }
+  },
+  {
+    "objectId": "tbOjVAGNge",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -3.1778503,
+      "longitude": 55.954306900000006
+    },
+    "country": "United Kingdom",
+    "embassy": "U.S. Consulate General in Edinburgh",
+    "info": "3 Regent Terrace\nEdinburgh EH7 5BW\nPhone: [44] (0)131-556-8315",
+    "createdAt": "2020-02-20T13:41:38.658Z",
+    "updatedAt": "2020-02-20T16:25:08.931Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "asMYxtQNZx"
+    }
+  },
+  {
+    "objectId": "rxfqVyMafk",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 16.418877215353138,
+      "longitude": 48.23497265235192
+    },
+    "country": "U.S. Mission to International Organizations in Vienna",
+    "embassy": "U.S. Mission to the International Organizations in Vienna",
+    "info": "IZD Tower\nWagramerstrasse 17-19\n1220 Vienna, Austria\nPhone: (43) (1) 31339 0",
+    "createdAt": "2020-02-20T13:41:41.616Z",
+    "updatedAt": "2020-02-20T13:41:41.616Z"
+  },
+  {
+    "objectId": "jUnGKYDxKk",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": -66.87527058414291,
+      "longitude": 10.477699892524667
+    },
+    "country": "Venezuela",
+    "embassy": "U.S. Embassy in Caracas",
+    "info": "F St. and Suapure St.\nUrb . Colinas de Valle Arriba\nCaracas, Venezuela 1080\nPhone: +58 (212) 975–6411",
+    "createdAt": "2020-02-20T13:41:42.794Z",
+    "updatedAt": "2020-02-20T16:25:09.834Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "RJHFlkiRRU"
+    }
+  },
+  {
+    "objectId": "EEGsp4Poa8",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 44.22766864987787,
+      "longitude": 15.373056861749312
+    },
+    "country": "Yemen",
+    "embassy": "U.S. Embassy in Sana’a",
+    "info": "Address: Sa’awan Street\nP.O. Box 22347\nTelephone: (967) 1 755-2000",
+    "createdAt": "2020-02-20T13:41:46.174Z",
+    "updatedAt": "2020-02-20T16:25:10.414Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "9tt1nNL4xu"
+    }
+  },
+  {
+    "objectId": "7n0j63kljo",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 28.336325609106442,
+      "longitude": -15.419044901073296
+    },
+    "country": "Zambia",
+    "embassy": "U.S. Embassy in Lusaka",
+    "info": "Eastern end of Kabulonga Road\nIbex Hill\nLusaka, Zambia\nPhone: +260 (0) 211-357-000",
+    "createdAt": "2020-02-20T13:41:47.972Z",
+    "updatedAt": "2020-02-20T16:25:10.953Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "Hf8Po3Jb1p"
+    }
+  },
+  {
+    "objectId": "p9Rz0L4168",
+    "geoPosition": {
+      "__type": "GeoPoint",
+      "latitude": 31.05263,
+      "longitude": -17.83151
+    },
+    "country": "Zimbabwe",
+    "embassy": "U.S. Embassy in Harare",
+    "info": "172 Herbert Chitepo Ave\nHarare, Zimbabwe\nTel: 263-4-250593/4",
+    "createdAt": "2020-02-20T13:41:49.998Z",
+    "updatedAt": "2020-02-20T16:25:11.477Z",
+    "country_pointer": {
+      "__type": "Pointer",
+      "className": "Continentscountriescities_Country",
+      "objectId": "hvaqvemFp8"
+    }
+  }
+]
+}
