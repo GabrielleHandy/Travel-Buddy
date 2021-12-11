@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{% block body %}
+    <div><h1>Destinations- {{tp.destination.country_name}}</h1></div>
+    
+   
+     <ul>
+         <li>{{ tp.destination.city_name}}</li>
+     </ul>
+
+    <div>Weather</div>
+    <div>Money Currency</div>
+    <div>maybe a little notebook with budget calculator
+        and stuff
+    </div>
+    <div>Flight and hotel recs</div>
+    <div>emergency info and embassy stuff
+        <h1>for example:</h1>
+        {% if embassy%}
+            embassy.
+        {%else%}
+        {% if not embassies %}
+        <h1>Sorry! We couldnt find any embassies for this location!</h1>
+        <p>We are always updating, so be sure to check back in!</p>
+        {% else %}
+        <ul>
+            {% for embassy in embassies %}
+            <li>
+                
+                <p> 
+                    {%if embassy.website %}
+                    <a href="{{embassy.website}}">Embassy</a>
+                    <br>
+                    address: {{embassy.address}}
+                    {%else%}
+                    Embassy
+                    <br>
+                    address: {{embassy.address}}
+                    {%endif%}
+                </p>
+            </li>
+            {%endfor%}
+        </ul>
+        {% endif %}
+        {% endif %}  
+    </div>
+{%endblock body%}

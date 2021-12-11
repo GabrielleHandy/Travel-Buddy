@@ -1,15 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script>
+{% extends 'base.html' %}
+{% block title %}HomePage{% endblock %}
+    {% block body %}
+        <h1>WELCOME TO TRAVEL BUDDY</h1>
+        <button id="login-signup"> Already a buddy? Login here!</button>
+        <form action="/signup" id="signup-form" method="post">
+            <label>First name</label>
+            <input type="text" name="fname" id="fname">
+            <label>Last name</label>
+            <input type="text" name="lname" id="lname">
+            <label>Email</label>
+            <input type="text" name="email" id="email">
+            <label>Password</label>
+            <input type="password" name="password" id="password">
+            <label>Nationality</label>
+            <select name="Nationality" id="">
+                <option name = "Nationality" value="United States">American</option>
+                <option name = "Nationality" value="Canada">Canadian</option>
+                <option name = "Nationality" value="United Kingdom">British</option>
+            </select>
             
-        </script>
-    </head>
-    <body>
-        <form action="/recieve_pic" id="form">
-            <input type="file" name="image" id="image">
+            <input type="submit" name="submit" value="submit">
+        </form>
+
+        <form action="/login" id="login-form" method="post" style="visibility: hidden;">
+            <label>Email</label>
+            <input type="email" name="email" id="login-email">
+            <label>Password</label>
+            <input type="password" name="password" id="login-password">
             <input type="submit" name="submit" value="submit">
         </form>
         <h1></h1>
-    </body>
-</html>
+        {% for msg in get_flashed_messages() %}
+        <p class="flash-msg">
+        {{ msg }}
+        </p>
+        {% endfor %} 
+        <script src="/static/js/homepage.js"></script>
+  {% endblock %}

@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{% block body %}
+<h1>WELCOME BACK TO TRAVEL BUDDY</h1>
+<form action="/login" id="login-form">
+    <label>Travel Planner name</label>
+    <input type="text" name="fname" id="name">
+    <label>City</label>
+    <input type="text" name="lname" id="city">
+    <label>Country</label>
+    <input type="text" name="email" id="country">
+    <label>Date you plan on going? *optional</label>
+    <input type="datetime" name="password" id="date">
+    <label>Nationality</label>
+    <select name="Nationality" id="">
+        <option value="United States">American</option>
+        <option value="Canada">Canadian</option>
+        <option value="United Kingdom">British</option>
+    </select>
+    <input type="submit" name="submit" value="submit">
+</form>
+{%endblock body%}

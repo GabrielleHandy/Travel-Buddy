@@ -9,16 +9,17 @@ For MVP:
 --a google translate option
 
 What might you include in your 2.0 phase?
---I want youtube recommeneded videos
+--budget calculator
 --Create a checklist before traveling 
 --money conversion calculator
---budget calculator
---Groupchat think like facebook groups 
+--ability to customize(within reason) travel planner
+
 Any “stretch” ideas you might include in 3.0 and beyond?
 --A way to add your own links and videos of places you want to go. **Think vision board**
 --Add flight info (add price to budget, add to calendar)
 -- mobile app conversion
-
+--I want youtube recommeneded videos
+--Groupchat think like facebook groups 
 
 
 If you’re planning to use an API…

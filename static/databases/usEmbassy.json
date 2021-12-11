@@ -10,7 +10,7 @@
     },
     "country": "Afghanistan",
     "embassy": "U.S. Embassy in Kabul",
-    "info": "Tel: (00 93) (0)700-10-8001",
+    "info": "STOP (00 93) (0)700-10-8001",
     "createdAt": "2020-02-20T13:36:18.980Z",
     "updatedAt": "2020-02-20T16:22:43.463Z",
     "country_pointer": {
@@ -28,7 +28,7 @@
     },
     "country": "Albania",
     "embassy": "U.S. Embassy Tirana",
-    "info": "Rruga e Elbasanit\nNo. 103\nTirana, ALBANIA\nPhone: +(355) 4 2247 285",
+    "info": "Rruga e Elbasanit\nNo. 103\nTirana, ALBANIA\nSTOP +(355) 4 2247 285",
     "createdAt": "2020-02-20T13:36:19.972Z",
     "updatedAt": "2020-02-20T16:22:43.990Z",
     "country_pointer": {
@@ -46,7 +46,7 @@
     },
     "country": "Algeria",
     "embassy": "U.S. Embassy in Algiers",
-    "info": "05 Chemin Cheikh Bachir Ibrahimi\nEl-Biar 16030\nAlger Algerie\nTelephone: 213 (0) 770-08-2000",
+    "info": "05 Chemin Cheikh Bachir Ibrahimi\nEl-Biar 16030\nAlger Algerie\nSTOP 213 (0) 770-08-2000",
     "createdAt": "2020-02-20T13:36:22.186Z",
     "updatedAt": "2020-02-20T16:22:44.510Z",
     "country_pointer": {
@@ -64,7 +64,7 @@
     },
     "country": "Angola",
     "embassy": "U.S. Embassy in Luanda",
-    "info": "R. Houari Boumediene 32,\nLuanda, Angola,\nC.P. 6468\nTel: 222641000",
+    "info": "R. Houari Boumediene 32,\nLuanda, Angola,\nC.P. 6468\nSTOP 222641000",
     "createdAt": "2020-02-20T13:36:24.343Z",
     "updatedAt": "2020-02-20T16:22:45.286Z",
     "country_pointer": {
@@ -82,7 +82,7 @@
     },
     "country": "Argentina",
     "embassy": "U.S. Embassy in Buenos Aires",
-    "info": "Av. Colombia 4300\n(C1425GMN) Buenos Aires\nArgentina\nTelephone: (54-11) 5777-4533",
+    "info": "Av. Colombia 4300\n(C1425GMN) Buenos Aires\nArgentina\nSTOP (54-11) 5777-4533",
     "createdAt": "2020-02-20T13:36:26.306Z",
     "updatedAt": "2020-02-20T16:22:45.892Z",
     "country_pointer": {
@@ -100,7 +100,7 @@
     },
     "country": "Armenia",
     "embassy": "U.S. Embassy in Yerevan",
-    "info": "1 American Avenue\nYerevan 0082, Republic of Armenia\nTelephone: (+37410) 464-700\nFax: (+37410) 464-742",
+    "info": "1 American Avenue\nYerevan 0082, Republic of Armenia\nSTOP (+37410) 464-700\nFax: (+37410) 464-742",
     "createdAt": "2020-02-20T13:36:28.631Z",
     "updatedAt": "2020-02-20T16:22:46.406Z",
     "country_pointer": {
@@ -113,7 +113,7 @@
     "objectId": "jisgRWsS1W",
     "country": "Australia",
     "embassy": "U.S. Consulate in Melbourne",
-    "info": "553 St. Kilda Road\nMelbourne, VIC 3004\nTelephone: (03) 9526-5900",
+    "info": "553 St. Kilda Road\nMelbourne, VIC 3004\nSTOP (03) 9526-5900",
     "createdAt": "2020-02-20T13:36:30.498Z",
     "updatedAt": "2020-02-20T16:22:46.918Z",
     "country_pointer": {
@@ -126,7 +126,7 @@
     "objectId": "HjadnsAyxd",
     "country": "Australia",
     "embassy": "U.S. Embassy in Canberra",
-    "info": "Moonah Place\nYarralumla, ACT 2600\nTelephone: (02) 6214-5600",
+    "info": "Moonah Place\nYarralumla, ACT 2600\nSTOP (02) 6214-5600",
     "createdAt": "2020-02-20T13:36:30.534Z",
     "updatedAt": "2020-02-20T16:22:47.434Z",
     "country_pointer": {
@@ -152,7 +152,7 @@
     "objectId": "4xtwYbYYck",
     "country": "Australia",
     "embassy": "U.S. Consulate in Perth",
-    "info": "16 St. George’s Terrace\nPerth, WA 6000\nTelephone: (08) 6144-5100",
+    "info": "16 St. George’s Terrace\nPerth, WA 6000\nSTOP (08) 6144-5100",
     "createdAt": "2020-02-20T13:36:30.790Z",
     "updatedAt": "2020-02-20T16:22:48.778Z",
     "country_pointer": {
@@ -170,7 +170,7 @@
     },
     "country": "Austria",
     "embassy": "U.S. Embassy in Austria",
-    "info": "Boltzmanngasse 16\n1090 Vienna, Austria\nPhone: (+43-1) 31339-0\n\n\n\n\n\n\t\tBy bottsc | 4 October, 2016 | Topics: A",
+    "info": "Boltzmanngasse 16\n1090 Vienna, Austria\nSTOP (+43-1) 31339-0\n\n\n\n\n\n\t\tBy bottsc | 4 October, 2016 | Topics: A",
     "createdAt": "2020-02-20T13:36:32.647Z",
     "updatedAt": "2020-02-20T16:22:49.299Z",
     "country_pointer": {
@@ -188,7 +188,7 @@
     },
     "country": "Azerbaijan",
     "embassy": "U.S. Embassy in Baku",
-    "info": "111 Azadlig avenue\nAZ1007 Baku, Azerbaijan\nSwitchboard: (+994 12) 488-3300",
+    "info": "111 Azadlig avenue\nAZ1007 Baku, Azerbaijan\nSTOP (+994 12) 488-3300",
     "createdAt": "2020-02-20T13:36:34.958Z",
     "updatedAt": "2020-02-20T16:22:49.822Z",
     "country_pointer": {
@@ -201,7 +201,7 @@
     "objectId": "zy2QaHoiml",
     "country": "U.S. Mission to ASEAN",
     "embassy": "U.S. Mission to ASEAN",
-    "info": "Jl. Medan Merdeka Selatan 5\nJakarta 10110, Indonesia\nPhone: (62)(21) 3435-9000",
+    "info": "Jl. Medan Merdeka Selatan 5\nJakarta 10110, Indonesia\nSTOP (62)(21) 3435-9000",
     "createdAt": "2020-02-20T13:36:36.998Z",
     "updatedAt": "2020-02-20T13:36:36.998Z"
   },
@@ -209,7 +209,7 @@
     "objectId": "P9ZYQogf8V",
     "country": "U.S. Mission to the African Union",
     "embassy": "U.S. Mission to the African Union",
-    "info": "Entoto Street\nAddis Ababa, Ethiopia\nTel: +251-11-517-4037",
+    "info": "Entoto Street\nAddis Ababa, Ethiopia\nSTOP +251-11-517-4037",
     "createdAt": "2020-02-20T13:36:39.543Z",
     "updatedAt": "2020-02-20T13:36:39.543Z"
   },
@@ -222,7 +222,7 @@
     },
     "country": "Bahamas",
     "embassy": "U.S. Embassy Nassau",
-    "info": "42 Queen St.\nNassau, the Bahamas\nPhone: 242-322-1181",
+    "info": "42 Queen St.\nNassau, the Bahamas\nSTOP 242-322-1181",
     "createdAt": "2020-02-20T13:36:41.568Z",
     "updatedAt": "2020-02-20T16:22:50.863Z",
     "country_pointer": {
@@ -240,7 +240,7 @@
     },
     "country": "Bahrain",
     "embassy": "U.S. Embassy Manama",
-    "info": "Bldg. 979, Road 3119, Block 331, Zinj\nP.O. Box 26431\nManama – Kingdom of Bahrain\nTel: (+973) 17 242700",
+    "info": "Bldg. 979, Road 3119, Block 331, Zinj\nP.O. Box 26431\nManama – Kingdom of Bahrain\nSTOP (+973) 17 242700",
     "createdAt": "2020-02-20T13:36:43.845Z",
     "updatedAt": "2020-02-20T16:22:51.386Z",
     "country_pointer": {
@@ -253,7 +253,7 @@
     "objectId": "2q37YZv4GX",
     "country": "Bangladesh",
     "embassy": "U.S. Embassy in Dhaka",
-    "info": "Madani Avenue,\nBaridhara, Dhaka -1212,\nBangladesh\nTel: (880) (2) 5566-2000",
+    "info": "Madani Avenue,\nBaridhara, Dhaka -1212,\nBangladesh\nSTOP (880) (2) 5566-2000",
     "createdAt": "2020-02-20T13:36:45.034Z",
     "updatedAt": "2020-02-20T16:22:51.897Z",
     "country_pointer": {
@@ -271,7 +271,7 @@
     },
     "country": "Barbados",
     "embassy": "U.S. Embassy in Bridgetown",
-    "info": "Wildey Business Park\nSt. Michael BB 14006\nBarbados, W.I.\nPhone: (246) 227-4000",
+    "info": "Wildey Business Park\nSt. Michael BB 14006\nBarbados, W.I.\nSTOP (246) 227-4000",
     "createdAt": "2020-02-20T13:36:47.422Z",
     "updatedAt": "2020-02-20T16:22:52.419Z",
     "country_pointer": {
@@ -289,7 +289,7 @@
     },
     "country": "Barbados",
     "embassy": "U.S. Embassy in Grenada",
-    "info": "Lance Aux Epines\nSt. George’s\nGrenada\nPhone: (+1 473) 444-1173 to 6",
+    "info": "Lance Aux Epines\nSt. George’s\nGrenada\nSTOP (+1 473) 444-1173 to 6",
     "createdAt": "2020-02-20T13:36:47.816Z",
     "updatedAt": "2020-02-20T16:22:52.936Z",
     "country_pointer": {
@@ -307,7 +307,7 @@
     },
     "country": "Belarus",
     "embassy": "U.S. Embassy Minsk",
-    "info": "46 Starovilenskaya St.\nMinsk 220002, Belarus\nPhone: +375 17 210-12-83 / 217-7347 / 217-7348\n\n\n\n\n\n\t\tBy bottsc | 4 October, 2016 | Topics: B",
+    "info": "46 Starovilenskaya St.\nMinsk 220002, Belarus\nSTOP +375 17 210-12-83 / 217-7347 / 217-7348\n\n\n\n\n\n\t\tBy bottsc | 4 October, 2016 | Topics: B",
     "createdAt": "2020-02-20T13:36:49.473Z",
     "updatedAt": "2020-02-20T16:22:53.460Z",
     "country_pointer": {
@@ -325,7 +325,7 @@
     },
     "country": "Belgium",
     "embassy": "U.S. Embassy Brussels",
-    "info": "Regentlaan 27 Boulevard du Régent, B-1000 Brussels\nPhone: (32-2) 811-4000",
+    "info": "Regentlaan 27 Boulevard du Régent, B-1000 Brussels\nSTOP (32-2) 811-4000",
     "createdAt": "2020-02-20T13:36:51.594Z",
     "updatedAt": "2020-02-20T16:22:53.999Z",
     "country_pointer": {
@@ -343,7 +343,7 @@
     },
     "country": "Belize",
     "embassy": "U.S. Embassy in Belmopan",
-    "info": "Floral Park Road\nBelmopan, Cayo\nBelize\nInternational: Dial 011 +\nPhone: (501) 822-4011",
+    "info": "Floral Park Road\nBelmopan, Cayo\nBelize\nInternational: Dial 011 +\nSTOP (501) 822-4011",
     "createdAt": "2020-02-20T13:36:52.617Z",
     "updatedAt": "2020-02-20T16:22:54.826Z",
     "country_pointer": {
@@ -361,7 +361,7 @@
     },
     "country": "Benin",
     "embassy": "U.S. Embassy in City",
-    "info": "Marina Avenue,\n01 BP 2012, Cotonou, Benin\nTel: (229) 21- 30 – 06 – 50\nFax:(229) 21- 30 – 66 – 82",
+    "info": "Marina Avenue,\n01 BP 2012, Cotonou, Benin\nSTOP (229) 21- 30 – 06 – 50\nFax:(229) 21- 30 – 66 – 82",
     "createdAt": "2020-02-20T13:36:54.915Z",
     "updatedAt": "2020-02-20T16:22:55.340Z",
     "country_pointer": {
@@ -397,7 +397,7 @@
     },
     "country": "Bolivia",
     "embassy": "U.S. Embassy in La Paz",
-    "info": "Avenida Arce 2780\nCasilla 425\nLa Paz, Bolivia\nPhone: (591) 2-216-8000",
+    "info": "Avenida Arce 2780\nCasilla 425\nLa Paz, Bolivia\nSTOP (591) 2-216-8000",
     "createdAt": "2020-02-20T13:36:59.693Z",
     "updatedAt": "2020-02-20T16:22:56.420Z",
     "country_pointer": {
@@ -415,7 +415,7 @@
     },
     "country": "Brazil",
     "embassy": "U.S. Consulate General in Recife",
-    "info": "Rua Gonçalves Maia, 163 – Boa Vista\n50070-060 – Recife, PE\nPhone: (55-81) 3416-3050",
+    "info": "Rua Gonçalves Maia, 163 – Boa Vista\n50070-060 – Recife, PE\nSTOP (55-81) 3416-3050",
     "createdAt": "2020-02-20T13:37:04.835Z",
     "updatedAt": "2020-02-20T16:22:56.943Z",
     "country_pointer": {
@@ -433,7 +433,7 @@
     },
     "country": "Brazil",
     "embassy": "U.S. Consulate General in Rio de Janeiro",
-    "info": "Av. Presidente Wilson, 147 – Castelo\n20030-020 – Rio de Janeiro, RJ\nPhone: (55-21) 3823-2000",
+    "info": "Av. Presidente Wilson, 147 – CasSTOPo\n20030-020 – Rio de Janeiro, RJ\nSTOP (55-21) 3823-2000",
     "createdAt": "2020-02-20T13:37:05.088Z",
     "updatedAt": "2020-02-20T16:22:57.465Z",
     "country_pointer": {
@@ -446,7 +446,7 @@
     "objectId": "Z31dWGXl9n",
     "country": "Brunei",
     "embassy": "U.S. Embassy in Bandar Seri Begawan",
-    "info": "Simpang 336-52-16-9, Jalan Duta\nBandar Seri Begawan\nBC4115 Brunei Darussalam\nPhone: 673-238-4616",
+    "info": "Simpang 336-52-16-9, Jalan Duta\nBandar Seri Begawan\nBC4115 Brunei Darussalam\nSTOP 673-238-4616",
     "createdAt": "2020-02-20T13:37:07.197Z",
     "updatedAt": "2020-02-20T16:22:58.020Z",
     "country_pointer": {
@@ -464,7 +464,7 @@
     },
     "country": "Bulgaria",
     "embassy": "U.S. Embassy in Sofia",
-    "info": "16, Kozyak Street\nSofia 1408, Bulgaria\nTelephone: +359 2 937 5100",
+    "info": "16, Kozyak Street\nSofia 1408, Bulgaria\nSTOP +359 2 937 5100",
     "createdAt": "2020-02-20T13:37:08.720Z",
     "updatedAt": "2020-02-20T16:22:58.553Z",
     "country_pointer": {
@@ -482,7 +482,7 @@
     },
     "country": "Burkina Faso",
     "embassy": "U.S. Embassy in Ouagadougou",
-    "info": "Secteur 15, Ouaga 2000\nAvenue Sembène Ousmane, Rue 15.873\nOuagadougou, Burkina Faso\nTelephone: (226) 25-49-53-00",
+    "info": "Secteur 15, Ouaga 2000\nAvenue Sembène Ousmane, Rue 15.873\nOuagadougou, Burkina Faso\nSTOP (226) 25-49-53-00",
     "createdAt": "2020-02-20T13:37:10.368Z",
     "updatedAt": "2020-02-20T16:22:59.074Z",
     "country_pointer": {
@@ -500,7 +500,7 @@
     },
     "country": "Brazil",
     "embassy": "U.S. Embassy in Brasilia",
-    "info": "SES – Av. das Nações, Quadra 801, Lote 03\n70403-900 – Brasília, DF\nPhone: (55-61) 3312-7000",
+    "info": "SES – Av. das Nações, Quadra 801, Lote 03\n70403-900 – Brasília, DF\nSTOP (55-61) 3312-7000",
     "createdAt": "2020-02-20T13:37:11.140Z",
     "updatedAt": "2020-02-20T16:22:59.592Z",
     "country_pointer": {
@@ -518,7 +518,7 @@
     },
     "country": "Bosnia & Herzegovina",
     "embassy": "U.S. Embassy in Sarajevo",
-    "info": "1 Robert C. Frasure Street, 71000\nSARAJEVO\ntel: +387 33 704-000",
+    "info": "1 Robert C. Frasure Street, 71000\nSARAJEVO\nSTOP +387 33 704-000",
     "createdAt": "2020-02-20T13:37:12.140Z",
     "updatedAt": "2020-02-20T13:37:12.140Z"
   },
@@ -531,7 +531,7 @@
     },
     "country": "Brazil",
     "embassy": "U.S. Consulate General in Sao Paulo",
-    "info": "Rua Henri Dunant, 500,\nChácara Santo Antônio,\nSão Paulo- SP, 04709-110\nPhone: (55-11) 3250-5000",
+    "info": "Rua Henri Dunant, 500,\nChácara Santo Antônio,\nSão Paulo- SP, 04709-110\nSTOP (55-11) 3250-5000",
     "createdAt": "2020-02-20T13:37:12.140Z",
     "updatedAt": "2020-02-20T16:23:00.374Z",
     "country_pointer": {
@@ -544,7 +544,7 @@
     "objectId": "MMcTGzBwPe",
     "country": "Burma",
     "embassy": "U.S. Embassy in Rangoon",
-    "info": "110 University Ave\nKamayut Township\nRangoon, Burma\nTelephone: (95)-(1) 536-509, 535-756, 538-038",
+    "info": "110 University Ave\nKamayut Township\nRangoon, Burma\nSTOP (95)-(1) 536-509, 535-756, 538-038",
     "createdAt": "2020-02-20T13:37:12.409Z",
     "updatedAt": "2020-02-20T16:23:00.901Z",
     "country_pointer": {
@@ -562,7 +562,7 @@
     },
     "country": "Botswana",
     "embassy": "U.S. Embassy Gaborone",
-    "info": "Embassy Drive\nGovernment Enclave\nGaborone, Botswana\nPhone: (+267) 395-3982",
+    "info": "Embassy Drive\nGovernment Enclave\nGaborone, Botswana\nSTOP (+267) 395-3982",
     "createdAt": "2020-02-20T13:37:12.885Z",
     "updatedAt": "2020-02-20T16:23:01.425Z",
     "country_pointer": {
@@ -580,7 +580,7 @@
     },
     "country": "Brazil",
     "embassy": "U.S. Consulate in Porto Alegre",
-    "info": "Av. Assis Brasil, 1889\nPasso d’Areia Porto Alegre – RS\nPhone: +55 (51) 3345-6000",
+    "info": "Av. Assis Brasil, 1889\nPasso d’Areia Porto Alegre – RS\nSTOP +55 (51) 3345-6000",
     "createdAt": "2020-02-20T13:37:12.885Z",
     "updatedAt": "2020-02-20T16:23:01.953Z",
     "country_pointer": {
@@ -598,7 +598,7 @@
     },
     "country": "Burundi",
     "embassy": "U.S. Embassy in Bujumbura",
-    "info": "B.P. 1720\nAvenue Des Etats-Unis\nBujumbura, Burundi\nTel: +257 22-207-000\nTel (after hours): +257 22-214-853",
+    "info": "B.P. 1720\nAvenue Des Etats-Unis\nBujumbura, Burundi\nSTOP +257 22-207-000\nSTOP (after hours): +257 22-214-853",
     "createdAt": "2020-02-20T13:37:14.243Z",
     "updatedAt": "2020-02-20T16:23:02.465Z",
     "country_pointer": {
@@ -616,7 +616,7 @@
     },
     "country": "Cabo Verde",
     "embassy": "U.S. Embassy in Praia",
-    "info": "Rua Abilio Macedo 6\nPraia, Cape Verde\nTelephone: (238)-260-89-00",
+    "info": "Rua Abilio Macedo 6\nPraia, Cape Verde\nSTOP (238)-260-89-00",
     "createdAt": "2020-02-20T13:37:16.175Z",
     "updatedAt": "2020-02-20T13:37:16.175Z"
   },
@@ -624,7 +624,7 @@
     "objectId": "3lfYOjXJ1q",
     "country": "Cambodia",
     "embassy": "U.S. Embassy in Phnom Penh",
-    "info": "Embassy of the United States of America\n#1, Street 96, Sangkat Wat Phnom\nKhan Daun Penh, Phnom Penh\nEmbassy Tel: +(855) 23 728-000",
+    "info": "Embassy of the United States of America\n#1, Street 96, Sangkat Wat Phnom\nKhan Daun Penh, Phnom Penh\nEmbassy STOP +(855) 23 728-000",
     "createdAt": "2020-02-20T13:37:17.345Z",
     "updatedAt": "2020-02-20T16:23:03.255Z",
     "country_pointer": {
@@ -642,7 +642,7 @@
     },
     "country": "Cameroon",
     "embassy": "U.S. Embassy in Yaounde",
-    "info": "Avenue Rosa Parks\nYaounde, Cameroon\nPhone: (237) 22220-1500\nFax: (237) 22220-1500",
+    "info": "Avenue Rosa Parks\nYaounde, Cameroon\nSTOP (237) 22220-1500\nFax: (237) 22220-1500",
     "createdAt": "2020-02-20T13:37:19.827Z",
     "updatedAt": "2020-02-20T16:23:03.780Z",
     "country_pointer": {
@@ -660,7 +660,7 @@
     },
     "country": "Canada",
     "embassy": "U.S. Consulate General in Montreal",
-    "info": "1134 Saint-Catherine St W\nMontreal, QC H3B 5K2\nPhone: 416-645-9124",
+    "info": "1134 Saint-Catherine St W\nMontreal, QC H3B 5K2\nSTOP 416-645-9124",
     "createdAt": "2020-02-20T13:37:21.524Z",
     "updatedAt": "2020-02-20T16:23:04.297Z",
     "country_pointer": {
@@ -673,7 +673,7 @@
     "objectId": "NCPIqeG9Hu",
     "country": "Canada",
     "embassy": "U.S. Consulate General in Vancouver",
-    "info": "1075 West Pender Street\nVancouver, British Columbia\nV6E 2M6\nPhone: 604-685-4311",
+    "info": "1075 West Pender Street\nVancouver, British Columbia\nV6E 2M6\nSTOP 604-685-4311",
     "createdAt": "2020-02-20T13:37:21.537Z",
     "updatedAt": "2020-02-20T16:23:05.048Z",
     "country_pointer": {
@@ -691,7 +691,7 @@
     },
     "country": "Canada",
     "embassy": "U.S. Consulate General in Quebec",
-    "info": "2, rue de la Terrasse-Dufferin\nQuebec, Quebec G1R 4T9\nCanada\nTelephone: (418) 692-2095",
+    "info": "2, rue de la Terrasse-Dufferin\nQuebec, Quebec G1R 4T9\nCanada\nSTOP (418) 692-2095",
     "createdAt": "2020-02-20T13:37:21.656Z",
     "updatedAt": "2020-02-20T16:23:05.562Z",
     "country_pointer": {
@@ -709,7 +709,7 @@
     },
     "country": "Canada",
     "embassy": "U.S. Embassy in Ottawa",
-    "info": "490 Sussex Drive\nOttawa, Ontario K1N 1G8 Canada\nTel: 613-688-5335",
+    "info": "490 Sussex Drive\nOttawa, Ontario K1N 1G8 Canada\nSTOP 613-688-5335",
     "createdAt": "2020-02-20T13:37:21.885Z",
     "updatedAt": "2020-02-20T16:23:06.086Z",
     "country_pointer": {
@@ -722,7 +722,7 @@
     "objectId": "NKTVCDKtaG",
     "country": "Canada",
     "embassy": "U.S. Consulate General in Calgary",
-    "info": "615 MacLeod Trail S.E.\n10th Floor\nRocky Mountain Plaza Building\nCalgary, Alberta\nT2G 4T8\nPhone: 403-266-8962",
+    "info": "615 MacLeod Trail S.E.\n10th Floor\nRocky Mountain Plaza Building\nCalgary, Alberta\nT2G 4T8\nSTOP 403-266-8962",
     "createdAt": "2020-02-20T13:37:21.859Z",
     "updatedAt": "2020-02-20T16:23:06.617Z",
     "country_pointer": {
@@ -740,7 +740,7 @@
     },
     "country": "Canada",
     "embassy": "U.S. Consulate General in Toronto",
-    "info": "360 University Avenue\nToronto, Ontario M5G 1S4\nPhone: 416.595.1700",
+    "info": "360 University Avenue\nToronto, Ontario M5G 1S4\nSTOP 416.595.1700",
     "createdAt": "2020-02-20T13:37:21.778Z",
     "updatedAt": "2020-02-20T16:23:07.133Z",
     "country_pointer": {
@@ -758,7 +758,7 @@
     },
     "country": "Canada",
     "embassy": "U.S. Consulate General in Halifax",
-    "info": "1969 Upper Water Street\nSuite 904, Purdy’s Wharf\nTower II\nB3J 3R7\nPhone: 902-429-2480",
+    "info": "1969 Upper Water Street\nSuite 904, Purdy’s Wharf\nTower II\nB3J 3R7\nSTOP 902-429-2480",
     "createdAt": "2020-02-20T13:37:21.904Z",
     "updatedAt": "2020-02-20T16:23:07.666Z",
     "country_pointer": {
@@ -771,7 +771,7 @@
     "objectId": "wlTgUzaVjY",
     "country": "Canada",
     "embassy": "U.S. Consulate in Winnipeg",
-    "info": "201 Portage Avenue, Suite 860\nWinnipeg, Manitoba R3B 3K6 Canada\nTel: 204-940-1800",
+    "info": "201 Portage Avenue, Suite 860\nWinnipeg, Manitoba R3B 3K6 Canada\nSTOP 204-940-1800",
     "createdAt": "2020-02-20T13:37:21.905Z",
     "updatedAt": "2020-02-20T16:23:08.185Z",
     "country_pointer": {
@@ -789,7 +789,7 @@
     },
     "country": "Central African Republic",
     "embassy": "U.S. Embassy in Bangui",
-    "info": "Avenue David Dacko\nP.O. Box 924\nBangui\nCentral African Republic\nPhone: (236) 2161-0200",
+    "info": "Avenue David Dacko\nP.O. Box 924\nBangui\nCentral African Republic\nSTOP (236) 2161-0200",
     "createdAt": "2020-02-20T13:37:23.978Z",
     "updatedAt": "2020-02-20T16:23:08.711Z",
     "country_pointer": {
@@ -802,7 +802,7 @@
     "objectId": "m4AmEhUczk",
     "country": "Chad",
     "embassy": "U.S. Embassy in Ndjamena",
-    "info": "U.S. Embassy N’Djamena\nB.P. 413\nN’Djamena, Chad\nTel: (235) 22 51 50 17",
+    "info": "U.S. Embassy N’Djamena\nB.P. 413\nN’Djamena, Chad\nSTOP (235) 22 51 50 17",
     "createdAt": "2020-02-20T13:37:25.919Z",
     "updatedAt": "2020-02-20T16:23:09.230Z",
     "country_pointer": {
@@ -820,7 +820,7 @@
     },
     "country": "Chile",
     "embassy": "U.S. Embassy Santiago",
-    "info": "Av. Andrés Bello 2800\nLas Condes\nSantiago, Chile\nPhone: (56-2) 2330-3000",
+    "info": "Av. Andrés Bello 2800\nLas Condes\nSantiago, Chile\nSTOP (56-2) 2330-3000",
     "createdAt": "2020-02-20T13:37:27.862Z",
     "updatedAt": "2020-02-20T16:23:09.746Z",
     "country_pointer": {
@@ -833,7 +833,7 @@
     "objectId": "GcUmDk2mxK",
     "country": "China",
     "embassy": "U.S. Consulate General in Wuhan",
-    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nTel：027-8555-7791",
+    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nSTOP 027-8555-7791",
     "createdAt": "2020-02-20T13:37:29.932Z",
     "updatedAt": "2020-02-20T16:23:10.268Z",
     "country_pointer": {
@@ -846,7 +846,7 @@
     "objectId": "P22q3GB0Kl",
     "country": "China",
     "embassy": "U.S. Consulate General in Guangzhou",
-    "info": "Huaxia Road, Zhujiang New Town\n(near Exit B1 of the Zhujiang New Town subway station, Line 3 and Line 5)\nTianhe District\nGuangzhou, China\nPhone: 020-3814-5000",
+    "info": "Huaxia Road, Zhujiang New Town\n(near Exit B1 of the Zhujiang New Town subway station, Line 3 and Line 5)\nTianhe District\nGuangzhou, China\nSTOP 020-3814-5000",
     "createdAt": "2020-02-20T13:37:29.904Z",
     "updatedAt": "2020-02-20T16:23:10.793Z",
     "country_pointer": {
@@ -859,7 +859,7 @@
     "objectId": "jNtpt9qC05",
     "country": "China",
     "embassy": "U.S. Consulate in Shanghai",
-    "info": "1469 Huai Hai Zhong Road\n(Near Wulumuqi Nan Lu)\n200031 Shanghai China\nTel: (86-21) 6433-6880",
+    "info": "1469 Huai Hai Zhong Road\n(Near Wulumuqi Nan Lu)\n200031 Shanghai China\nSTOP (86-21) 6433-6880",
     "createdAt": "2020-02-20T13:37:30.069Z",
     "updatedAt": "2020-02-20T16:23:11.304Z",
     "country_pointer": {
@@ -872,7 +872,7 @@
     "objectId": "HvnzNtOlmz",
     "country": "China",
     "embassy": "U.S. Consulate General in Wuhan",
-    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nTel：027-8555-7791",
+    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nSTOP 027-8555-7791",
     "createdAt": "2020-02-20T13:37:30.185Z",
     "updatedAt": "2020-02-20T16:23:11.831Z",
     "country_pointer": {
@@ -885,7 +885,7 @@
     "objectId": "AGcPedkfQB",
     "country": "China",
     "embassy": "U.S. Consulate in Shenyang",
-    "info": "52, 14th Wei Road, Heping District\n110003 China\nTel [86] (24) 2322-1198",
+    "info": "52, 14th Wei Road, Heping District\n110003 China\nSTOP [86] (24) 2322-1198",
     "createdAt": "2020-02-20T13:37:30.085Z",
     "updatedAt": "2020-02-20T16:23:12.352Z",
     "country_pointer": {
@@ -898,7 +898,7 @@
     "objectId": "M2LTZ4VrmL",
     "country": "China",
     "embassy": "U.S. Consulate General in Wuhan",
-    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nTel：027-8555-7791",
+    "info": "New World International Trade Tower I\nNo. 568, Jianshe Avenue\nHankou, Wuhan 430022\nSTOP 027-8555-7791",
     "createdAt": "2020-02-20T13:37:30.172Z",
     "updatedAt": "2020-02-20T16:23:12.878Z",
     "country_pointer": {
@@ -916,7 +916,7 @@
     },
     "country": "Colombia",
     "embassy": "U.S. Embassy in Bogota",
-    "info": "Carrera 45 No. 24B-27 Bogotá, D.C. Colombia\nPhone: (+57) (1) 275-2000\nFax: (+57) (1) 275-4600",
+    "info": "Carrera 45 No. 24B-27 Bogotá, D.C. Colombia\nSTOP (+57) (1) 275-2000\nFax: (+57) (1) 275-4600",
     "createdAt": "2020-02-20T13:37:32.259Z",
     "updatedAt": "2020-02-20T16:23:13.397Z",
     "country_pointer": {
@@ -934,7 +934,7 @@
     },
     "country": "Costa Rica",
     "embassy": "U.S. Embassy in San Jose",
-    "info": "Calle 98 Vía 104, Pavas\nSan José, Costa Rica\nTelephone: [506] 2519-2000",
+    "info": "Calle 98 Vía 104, Pavas\nSan José, Costa Rica\nSTOP [506] 2519-2000",
     "createdAt": "2020-02-20T13:37:34.703Z",
     "updatedAt": "2020-02-20T16:23:13.915Z",
     "country_pointer": {
@@ -952,7 +952,7 @@
     },
     "country": "Côte d’Ivoire",
     "embassy": "U.S. Embassy in Abidjan",
-    "info": "Cocody Riviéra Golf,\n01 BP 1712 Abidjan 01,\nAbidjan, Côte d’Ivoire\nPhone: (+225) 22-49-40-00",
+    "info": "Cocody Riviéra Golf,\n01 BP 1712 Abidjan 01,\nAbidjan, Côte d’Ivoire\nSTOP (+225) 22-49-40-00",
     "createdAt": "2020-02-20T13:37:36.508Z",
     "updatedAt": "2020-02-20T13:37:36.508Z"
   },
@@ -965,7 +965,7 @@
     },
     "country": "Croatia",
     "embassy": "U.S. Embassy in Zagreb",
-    "info": "Ulica Thomasa Jeffersona 2\n10010 Zagreb\nCroatia\nTelephone: 385-1-661-2200\n\n\n\n\n\n\t\tBy wingardma | 7 October, 2016 | Topics: C",
+    "info": "Ulica Thomasa Jeffersona 2\n10010 Zagreb\nCroatia\nSTOP 385-1-661-2200\n\n\n\n\n\n\t\tBy wingardma | 7 October, 2016 | Topics: C",
     "createdAt": "2020-02-20T13:37:38.185Z",
     "updatedAt": "2020-02-20T16:23:14.686Z",
     "country_pointer": {
@@ -983,7 +983,7 @@
     },
     "country": "Cuba",
     "embassy": "U.S. Embassy Havana",
-    "info": "Calzada between L & M Streets, Vedado\nHavana, Cuba\nPhone: (+53) 7839-4100",
+    "info": "Calzada between L & M Streets, Vedado\nHavana, Cuba\nSTOP (+53) 7839-4100",
     "createdAt": "2020-02-20T13:37:40.267Z",
     "updatedAt": "2020-02-20T16:23:15.207Z",
     "country_pointer": {
@@ -1001,7 +1001,7 @@
     },
     "country": "Curacao",
     "embassy": "U.S. Consulate General in Curacao",
-    "info": "P.O. Box 158\nJ.B. Gorsiraweg 1\nTel +599-9-461-3066",
+    "info": "P.O. Box 158\nJ.B. Gorsiraweg 1\nSTOP +599-9-461-3066",
     "createdAt": "2020-02-20T13:37:42.333Z",
     "updatedAt": "2020-02-20T16:23:15.726Z",
     "country_pointer": {
@@ -1019,7 +1019,7 @@
     },
     "country": "Cyprus",
     "embassy": "U.S. Embassy in Nicosia",
-    "info": "Metochiou & Ploutarchou Street\n2407, Engomi\nNicosia, Cyprus\nTelephone: 357-22-393939",
+    "info": "Metochiou & Ploutarchou Street\n2407, Engomi\nNicosia, Cyprus\nSTOP 357-22-393939",
     "createdAt": "2020-02-20T13:37:44.235Z",
     "updatedAt": "2020-02-20T16:23:16.230Z",
     "country_pointer": {
@@ -1037,7 +1037,7 @@
     },
     "country": "Czech Republic",
     "embassy": "U.S. Embassy in Prague",
-    "info": "Tržiště 15\n118 01 Praha 1 – Malá Strana\nCzech Republic\nSwitchboard: (+420) 257 022 000",
+    "info": "Tržiště 15\n118 01 Praha 1 – Malá Strana\nCzech Republic\nSTOP (+420) 257 022 000",
     "createdAt": "2020-02-20T13:37:46.377Z",
     "updatedAt": "2020-02-20T16:23:16.751Z",
     "country_pointer": {
@@ -1055,7 +1055,7 @@
     },
     "country": "Democratic Republic of the Congo",
     "embassy": "U.S. Embassy in Kinshasa",
-    "info": "310 Avenue des Aviateurs\nKinshasa, Gombe\nDemocratic Republic of the Congo\nTelephone: 081 556-0151",
+    "info": "310 Avenue des Aviateurs\nKinshasa, Gombe\nDemocratic Republic of the Congo\nSTOP 081 556-0151",
     "createdAt": "2020-02-20T13:37:48.262Z",
     "updatedAt": "2020-02-20T16:23:17.283Z",
     "country_pointer": {
@@ -1073,7 +1073,7 @@
     },
     "country": "Djibouti",
     "embassy": "U.S. Embassy in Djibouti",
-    "info": "Lot 350-B Haramouss\nB.P. 185\nDjibouti\nPhone: (253) 21-45-30-00\n\n\n\n\n\n\t\tBy bottsc | 28 September, 2016 | Topics: D",
+    "info": "Lot 350-B Haramouss\nB.P. 185\nDjibouti\nSTOP (253) 21-45-30-00\n\n\n\n\n\n\t\tBy bottsc | 28 September, 2016 | Topics: D",
     "createdAt": "2020-02-20T13:37:51.932Z",
     "updatedAt": "2020-02-20T16:23:17.807Z",
     "country_pointer": {
@@ -1091,7 +1091,7 @@
     },
     "country": "Dominican Republic",
     "embassy": "U.S. Embassy in Santo Domingo",
-    "info": "Av. Republica de Colombia # 57\nSanto Domingo, Dominican Republic\nPhone: (809) 567-7775",
+    "info": "Av. Republica de Colombia # 57\nSanto Domingo, Dominican Republic\nSTOP (809) 567-7775",
     "createdAt": "2020-02-20T13:37:54.187Z",
     "updatedAt": "2020-02-20T16:23:18.332Z",
     "country_pointer": {
@@ -1109,7 +1109,7 @@
     },
     "country": "Ecuador",
     "embassy": "U.S. Consulate General Guayaquil",
-    "info": "Santa Ana St. and Jose Eduardo Rodriguez Bonin Ave.\nSan Eduardo Sector\nGuayaquil\nPhone: 593-4-371-7000",
+    "info": "Santa Ana St. and Jose Eduardo Rodriguez Bonin Ave.\nSan Eduardo Sector\nGuayaquil\nSTOP 593-4-371-7000",
     "createdAt": "2020-02-20T13:37:55.009Z",
     "updatedAt": "2020-02-20T16:23:18.858Z",
     "country_pointer": {
@@ -1127,7 +1127,7 @@
     },
     "country": "Ecuador",
     "embassy": "U.S. Embassy Quito",
-    "info": "E12-170 Avigiras Ave. and Eloy Alfaro Ave.\nQuito, Ecuador\nPhone: 593-2-398-5000",
+    "info": "E12-170 Avigiras Ave. and Eloy Alfaro Ave.\nQuito, Ecuador\nSTOP 593-2-398-5000",
     "createdAt": "2020-02-20T13:37:55.134Z",
     "updatedAt": "2020-02-20T16:23:19.384Z",
     "country_pointer": {
@@ -1145,7 +1145,7 @@
     },
     "country": "Egypt",
     "embassy": "U.S. Consulate General in Alexandria",
-    "info": "3 Pharaana Street, Azarita\nAlexandria, Egypt\nTelephone: (20-3) 486-1009",
+    "info": "3 Pharaana Street, Azarita\nAlexandria, Egypt\nSTOP (20-3) 486-1009",
     "createdAt": "2020-02-20T13:37:56.853Z",
     "updatedAt": "2020-02-20T16:23:20.153Z",
     "country_pointer": {
@@ -1163,7 +1163,7 @@
     },
     "country": "Egypt",
     "embassy": "U.S. Embassy in Cairo",
-    "info": "5 Tawfik Diab Street\nGarden City, Cairo\nEgypt\nTelephone: (20-2) 2797 3300",
+    "info": "5 Tawfik Diab Street\nGarden City, Cairo\nEgypt\nSTOP (20-2) 2797 3300",
     "createdAt": "2020-02-20T13:37:56.895Z",
     "updatedAt": "2020-02-20T16:23:20.666Z",
     "country_pointer": {
@@ -1181,7 +1181,7 @@
     },
     "country": "El Salvador",
     "embassy": "U.S. Embassy in San Salvador",
-    "info": "Final Boulevard Santa Elena\nAntiguo Cuscatlán, La Libertad\nTelephone: 2501-2999",
+    "info": "Final Boulevard Santa Elena\nAntiguo Cuscatlán, La Libertad\nSTOP 2501-2999",
     "createdAt": "2020-02-20T13:37:58.701Z",
     "updatedAt": "2020-02-20T16:23:21.187Z",
     "country_pointer": {
@@ -1199,7 +1199,7 @@
     },
     "country": "Equatorial Guinea",
     "embassy": "U.S. Embassy in Malabo",
-    "info": "Malabo II highway\nMalabo, Guinea Ecuatorial\nTelephone: (+240) 333 09 57 41",
+    "info": "Malabo II highway\nMalabo, Guinea Ecuatorial\nSTOP (+240) 333 09 57 41",
     "createdAt": "2020-02-20T13:38:00.634Z",
     "updatedAt": "2020-02-20T16:23:21.704Z",
     "country_pointer": {
@@ -1217,7 +1217,7 @@
     },
     "country": "Eritrea",
     "embassy": "U.S. Embassy Asmara",
-    "info": "179 Alaa Street\nAsmara, Eritrea\nPhone: (+291)1-12-00-04\nFax: (+291)1-12-75-84\nGo to Embassy >",
+    "info": "179 Alaa Street\nAsmara, Eritrea\nSTOP (+291)1-12-00-04\nFax: (+291)1-12-75-84\nGo to Embassy >",
     "createdAt": "2020-02-20T13:38:02.691Z",
     "updatedAt": "2020-02-20T16:23:22.230Z",
     "country_pointer": {
@@ -1235,7 +1235,7 @@
     },
     "country": "Estonia",
     "embassy": "U.S. Embassy in Tallinn",
-    "info": "Kentmanni 20\n15099 Tallinn\nEstonia\nEmbassy phone: (372) 668 8100",
+    "info": "Kentmanni 20\n15099 Tallinn\nEstonia\nEmbassy STOP (372) 668 8100",
     "createdAt": "2020-02-20T13:38:04.078Z",
     "updatedAt": "2020-02-20T16:23:22.758Z",
     "country_pointer": {
@@ -1253,7 +1253,7 @@
     },
     "country": "Eswatini",
     "embassy": "U.S. Embassy Mbabane",
-    "info": "7th Floor, Central Bank Building\nMahlokohla Street\nP.O. Box 199\nMbabane, Swaziland\nPhone: (268) 404-6441",
+    "info": "7th Floor, Central Bank Building\nMahlokohla Street\nP.O. Box 199\nMbabane, Swaziland\nSTOP (268) 404-6441",
     "createdAt": "2020-02-20T13:38:04.925Z",
     "updatedAt": "2020-02-20T13:38:04.925Z"
   },
@@ -1266,7 +1266,7 @@
     },
     "country": "Ethiopia",
     "embassy": "U.S. Embassy in Addis Ababa",
-    "info": "Entoto Street\nP.O. Box 1014\nAddis Ababa\nEmbassy Switchboard: 130-6000",
+    "info": "Entoto Street\nP.O. Box 1014\nAddis Ababa\nEmbassy STOP 130-6000",
     "createdAt": "2020-02-20T13:38:06.339Z",
     "updatedAt": "2020-02-20T16:23:23.530Z",
     "country_pointer": {
@@ -1284,7 +1284,7 @@
     },
     "country": "U.S. Mission to the EU",
     "embassy": "U.S. Mission to the EU",
-    "info": "Zinnerstraat – 13 – Rue Zinner\nB-1000 Brussels, Belgium\nPhone: +32-2-811-4100",
+    "info": "Zinnerstraat – 13 – Rue Zinner\nB-1000 Brussels, Belgium\nSTOP +32-2-811-4100",
     "createdAt": "2020-02-20T13:38:08.827Z",
     "updatedAt": "2020-02-20T13:38:08.827Z"
   },
@@ -1310,7 +1310,7 @@
     },
     "country": "Finland",
     "embassy": "U.S. Embassy in Finland",
-    "info": "Itäinen Puistotie 14 B\n00140 Helsinki\nFinland\nTelephone: +358-9-616-250",
+    "info": "Itäinen Puistotie 14 B\n00140 Helsinki\nFinland\nSTOP +358-9-616-250",
     "createdAt": "2020-02-20T13:38:13.059Z",
     "updatedAt": "2020-02-20T16:23:24.892Z",
     "country_pointer": {
@@ -1328,7 +1328,7 @@
     },
     "country": "France",
     "embassy": "U.S. Consulate Bordeaux",
-    "info": "89 Quai des Chartrons\n33300 Bordeaux\nTel.: (0)1 43 12 48 65",
+    "info": "89 Quai des Chartrons\n33300 Bordeaux\nSTOP (0)1 43 12 48 65",
     "createdAt": "2020-02-20T13:38:14.682Z",
     "updatedAt": "2020-02-20T16:23:25.447Z",
     "country_pointer": {
@@ -1346,7 +1346,7 @@
     },
     "country": "France",
     "embassy": "U.S. Consulate Rennes",
-    "info": "P30, Quai Duguay-Trouin\n35000 Rennes\nTel: (0)1 43 12 48 70",
+    "info": "P30, Quai Duguay-Trouin\n35000 Rennes\nSTOP (0)1 43 12 48 70",
     "createdAt": "2020-02-20T13:38:14.722Z",
     "updatedAt": "2020-02-20T16:23:25.965Z",
     "country_pointer": {
@@ -1364,7 +1364,7 @@
     },
     "country": "France",
     "embassy": "U.S. Consulate Lyon",
-    "info": "1, quai Jules Courmont\n69002 Lyon\nTel: 01 43 12 48 60",
+    "info": "1, quai Jules Courmont\n69002 Lyon\nSTOP 01 43 12 48 60",
     "createdAt": "2020-02-20T13:38:14.927Z",
     "updatedAt": "2020-02-20T16:23:26.480Z",
     "country_pointer": {
@@ -1382,7 +1382,7 @@
     },
     "country": "France",
     "embassy": "U.S. Consulate General Strasbourg",
-    "info": "15, Avenue d’Alsace\n67082 Strasbourg Cedex\nFrance\nTel.: (33)1 43 124 880",
+    "info": "15, Avenue d’Alsace\n67082 Strasbourg Cedex\nFrance\nSTOP (33)1 43 124 880",
     "createdAt": "2020-02-20T13:38:14.971Z",
     "updatedAt": "2020-02-20T16:23:26.993Z",
     "country_pointer": {
@@ -1400,7 +1400,7 @@
     },
     "country": "France",
     "embassy": "U.S. Embassy in Paris",
-    "info": "2 avenue Gabriel\n75008 Paris\nFrance\nPhone: [33] (1)43122222",
+    "info": "2 avenue Gabriel\n75008 Paris\nFrance\nSTOP [33] (1)43122222",
     "createdAt": "2020-02-20T13:38:14.855Z",
     "updatedAt": "2020-02-20T16:23:27.517Z",
     "country_pointer": {
@@ -1418,7 +1418,7 @@
     },
     "country": "France",
     "embassy": "U.S. Consulate General Marseille",
-    "info": "Place Varian Fry\n13286 Marseille Cedex 6\nFrance\nTél. : 01-43-12-48-85",
+    "info": "Place Varian Fry\n13286 Marseille Cedex 6\nFrance\nSTOP : 01-43-12-48-85",
     "createdAt": "2020-02-20T13:38:14.985Z",
     "updatedAt": "2020-02-20T16:23:28.601Z",
     "country_pointer": {
@@ -1436,7 +1436,7 @@
     },
     "country": "France",
     "embassy": "U.S. Consulate Toulouse",
-    "info": "25, allées Jean Jaurès\n31000 Toulouse\nTel.: +33 (1) 43 12 48 75",
+    "info": "25, allées Jean Jaurès\n31000 Toulouse\nSTOP +33 (1) 43 12 48 75",
     "createdAt": "2020-02-20T13:38:14.948Z",
     "updatedAt": "2020-02-20T16:23:28.074Z",
     "country_pointer": {
@@ -1454,7 +1454,7 @@
     },
     "country": "Gabon",
     "embassy": "U.S. Embassy in Libreville",
-    "info": "Sablière B.P. 4000\nLibreville, Gabon\nPhone: (241) 01-45-71-00",
+    "info": "Sablière B.P. 4000\nLibreville, Gabon\nSTOP (241) 01-45-71-00",
     "createdAt": "2020-02-20T13:38:16.625Z",
     "updatedAt": "2020-02-20T16:23:29.119Z",
     "country_pointer": {
@@ -1472,7 +1472,7 @@
     },
     "country": "Georgia",
     "embassy": "U.S. Embassy Tbilisi",
-    "info": "11 George Balanchine Street\nTbilisi, Georgia, 0131\nTelephone: (995 32) 227-70-00",
+    "info": "11 George Balanchine Street\nTbilisi, Georgia, 0131\nSTOP (995 32) 227-70-00",
     "createdAt": "2020-02-20T13:38:18.643Z",
     "updatedAt": "2020-02-20T16:23:29.632Z",
     "country_pointer": {
@@ -1490,7 +1490,7 @@
     },
     "country": "Germany",
     "embassy": "U.S. Consulate General in Frankfurt",
-    "info": "Gießener Str. 30\n60435 Frankfurt am Main\nFederal Republic of Germany\nTel.: +49-69-7535-0",
+    "info": "Gießener Str. 30\n60435 Frankfurt am Main\nFederal Republic of Germany\nSTOP +49-69-7535-0",
     "createdAt": "2020-02-20T13:38:19.991Z",
     "updatedAt": "2020-02-20T16:23:31.759Z",
     "country_pointer": {
@@ -1508,7 +1508,7 @@
     },
     "country": "Germany",
     "embassy": "U.S. Embassy in Berlin",
-    "info": "Clayallee 170\n14191 Berlin\nFederal Republic of Germany\nTel.: +49-30-8305-0",
+    "info": "Clayallee 170\n14191 Berlin\nFederal Republic of Germany\nSTOP +49-30-8305-0",
     "createdAt": "2020-02-20T13:38:20.003Z",
     "updatedAt": "2020-02-20T16:23:32.284Z",
     "country_pointer": {
@@ -1526,7 +1526,7 @@
     },
     "country": "Germany",
     "embassy": "U.S. Consulate General in Düsseldorf",
-    "info": "Willi-Becker-Allee 10\n40227 Düsseldorf\nFederal Republic of Germany\nTel.: +49-211-788-8927",
+    "info": "Willi-Becker-Allee 10\n40227 Düsseldorf\nFederal Republic of Germany\nSTOP +49-211-788-8927",
     "createdAt": "2020-02-20T13:38:19.970Z",
     "updatedAt": "2020-02-20T16:23:32.890Z",
     "country_pointer": {
@@ -1544,7 +1544,7 @@
     },
     "country": "Germany",
     "embassy": "U.S. Consulate General in Hamburg",
-    "info": "Alsterufer 27/28\n20354 Hamburg\nFederal Republic of Germany\nTel.: +49-40-411 71-100",
+    "info": "Alsterufer 27/28\n20354 Hamburg\nFederal Republic of Germany\nSTOP +49-40-411 71-100",
     "createdAt": "2020-02-20T13:38:20.008Z",
     "updatedAt": "2020-02-20T16:23:33.406Z",
     "country_pointer": {
@@ -1562,7 +1562,7 @@
     },
     "country": "Germany",
     "embassy": "U.S. Consulate General in Munich",
-    "info": "Königinstraße 5\n80539 München\nFederal Republic of Germany\nTel.: +49-89-2888-0",
+    "info": "Königinstraße 5\n80539 München\nFederal Republic of Germany\nSTOP +49-89-2888-0",
     "createdAt": "2020-02-20T13:38:20.165Z",
     "updatedAt": "2020-02-20T16:23:33.925Z",
     "country_pointer": {
@@ -1580,7 +1580,7 @@
     },
     "country": "Germany",
     "embassy": "U.S. Consulate General in Leipzig",
-    "info": "Wilhelm-Seyfferth-Straße 4\n04107 Leipzig\nFederal Republic of Germany\nTel: +49-341-213-840",
+    "info": "Wilhelm-Seyfferth-Straße 4\n04107 Leipzig\nFederal Republic of Germany\nSTOP +49-341-213-840",
     "createdAt": "2020-02-20T13:38:20.306Z",
     "updatedAt": "2020-02-20T16:23:34.449Z",
     "country_pointer": {
@@ -1598,7 +1598,7 @@
     },
     "country": "Ghana",
     "embassy": "U.S. Embassy in Accra",
-    "info": "No. 24, Fourth Circular Rd., Cantonments, Accra\nP.O. Box GP 2288\nAccra, Ghana\nPhone: +233 (0) 30 274 1000",
+    "info": "No. 24, Fourth Circular Rd., Cantonments, Accra\nP.O. Box GP 2288\nAccra, Ghana\nSTOP +233 (0) 30 274 1000",
     "createdAt": "2020-02-20T13:38:20.971Z",
     "updatedAt": "2020-02-20T16:23:35.275Z",
     "country_pointer": {
@@ -1616,7 +1616,7 @@
     },
     "country": "Greece",
     "embassy": "U.S. Consulate in Thessaloniki",
-    "info": "43 Tsimiski, 7th Floor\n546 23 Thessaloniki GREECE\nTelephone: +30 2310 242 905 and +30 2310 376 300",
+    "info": "43 Tsimiski, 7th Floor\n546 23 Thessaloniki GREECE\nSTOP +30 2310 242 905 and +30 2310 376 300",
     "createdAt": "2020-02-20T13:38:22.949Z",
     "updatedAt": "2020-02-20T16:23:35.800Z",
     "country_pointer": {
@@ -1634,7 +1634,7 @@
     },
     "country": "Greece",
     "embassy": "U.S. Embassy in Athens",
-    "info": "91 Vasilisis Sophias Avenue\n10160 Athens, Greece\nPhone (Main Switchboard/Info): 30-210-721-2951",
+    "info": "91 Vasilisis Sophias Avenue\n10160 Athens, Greece\nSTOP (Main Switchboard/Info): 30-210-721-2951",
     "createdAt": "2020-02-20T13:38:22.951Z",
     "updatedAt": "2020-02-20T16:23:36.314Z",
     "country_pointer": {
@@ -1647,7 +1647,7 @@
     "objectId": "0BhlDo7iLm",
     "country": "Guatemala",
     "embassy": "U.S. Embassy in Guatemala City",
-    "info": "Avenida Reforma 7-01, Zona 10\nGuatemala Ciudad, Guatemala\n(502) 2326-4000",
+    "info": "Avenida Reforma 7-01, Zona 10\nGuatemala Ciudad, Guatemala\n STOP (502) 2326-4000",
     "createdAt": "2020-02-20T13:38:25.130Z",
     "updatedAt": "2020-02-20T16:23:37.839Z",
     "country_pointer": {
@@ -1665,7 +1665,7 @@
     },
     "country": "Guinea",
     "embassy": "U.S. Embassy Conakry",
-    "info": "P.O. Box 603\nTransversale No. 2\nCentre Administratif de Koloma\nCommune de Ratoma\nConakry, Republic of Guinea\nTelephone: +224-65-10-40-00",
+    "info": "P.O. Box 603\nTransversale No. 2\nCentre Administratif de Koloma\nCommune de Ratoma\nConakry, Republic of Guinea\nSTOP +224-65-10-40-00",
     "createdAt": "2020-02-20T13:38:26.976Z",
     "updatedAt": "2020-02-20T16:23:38.356Z",
     "country_pointer": {
@@ -1683,7 +1683,7 @@
     },
     "country": "Guinea-Bissau",
     "embassy": "U.S. Virtual Consulate in Guinea-Bissau",
-    "info": "Route des Almadies – BP 49\nDakar, Senegal\nTelephone: (221) 33-879-0000",
+    "info": "Route des Almadies – BP 49\nDakar, Senegal\nSTOP (221) 33-879-0000",
     "createdAt": "2020-02-20T13:38:28.484Z",
     "updatedAt": "2020-02-20T16:23:38.879Z",
     "country_pointer": {
@@ -1701,7 +1701,7 @@
     },
     "country": "Guyana",
     "embassy": "U.S. Embassy in Georgetown",
-    "info": "100 Young and Duke Streets, Kingston\nGeorgetown, Guyana\nPhone: 592-225-4900/9\nFax: 592-225-8497\nGo to Embassy >",
+    "info": "100 Young and Duke Streets, Kingston\nGeorgetown, Guyana\nSTOP 592-225-4900/9\nFax: 592-225-8497\nGo to Embassy >",
     "createdAt": "2020-02-20T13:38:30.848Z",
     "updatedAt": "2020-02-20T16:23:39.405Z",
     "country_pointer": {
@@ -1719,7 +1719,7 @@
     },
     "country": "The Gambia",
     "embassy": "U.S. Embassy in Banjul",
-    "info": "Kairaba Avenue, Fajara\nP.M.B. 19\nBanjul, The Gambia\nTel: (220) 439-2856",
+    "info": "Kairaba Avenue, Fajara\nP.M.B. 19\nBanjul, The Gambia\nSTOP (220) 439-2856",
     "createdAt": "2020-02-20T13:38:32.584Z",
     "updatedAt": "2020-02-20T13:38:32.584Z"
   },
@@ -1732,7 +1732,7 @@
     },
     "country": "Haiti",
     "embassy": "U.S. Embassy in Port-au-Prince",
-    "info": "Tabarre 41\nRoute de Tabarre\nPort-au-Prince, Haiti\nTel: 011-509-2229-8000",
+    "info": "Tabarre 41\nRoute de Tabarre\nPort-au-Prince, Haiti\nSTOP 011-509-2229-8000",
     "createdAt": "2020-02-20T13:38:34.443Z",
     "updatedAt": "2020-02-20T16:23:40.198Z",
     "country_pointer": {
@@ -1748,9 +1748,9 @@
       "latitude": 12.489165014904835,
       "longitude": 41.906075279219905
     },
-    "country": "Holy See",
+    "country": "Italy",
     "embassy": "U.S. Embassy to the Holy See",
-    "info": "Via Sallustiana, 49\n00187 Rome, Italy\nPhone: (+39) 06-4674-1",
+    "info": "Via Sallustiana, 49\n00187 Rome, Italy\nSTOP (+39) 06-4674-1",
     "createdAt": "2020-02-20T13:38:36.376Z",
     "updatedAt": "2020-02-20T13:38:36.376Z"
   },
@@ -1763,7 +1763,7 @@
     },
     "country": "Honduras",
     "embassy": "U.S. Embassy Tegucigalpa",
-    "info": "Avenida La Paz\nTegucigalpa M.D.C.\nHonduras\nPhone: (504) 2236-9320",
+    "info": "Avenida La Paz\nTegucigalpa M.D.C.\nHonduras\nSTOP (504) 2236-9320",
     "createdAt": "2020-02-20T13:38:38.564Z",
     "updatedAt": "2020-02-20T16:23:41.041Z",
     "country_pointer": {
@@ -1774,9 +1774,9 @@
   },
   {
     "objectId": "cy2oRDUKNx",
-    "country": "Hong Kong and Macau",
+    "country": "Hong Kong",
     "embassy": "U.S. Consulate General in Hong Kong",
-    "info": "26 Garden Road, Central\nHong Kong\nTel: (852) 2523-9011",
+    "info": "26 Garden Road, Central\nHong Kong\nSTOP (852) 2523-9011",
     "createdAt": "2020-02-20T13:38:40.800Z",
     "updatedAt": "2020-02-20T13:38:40.800Z"
   },
@@ -1789,7 +1789,7 @@
     },
     "country": "Hungary",
     "embassy": "U.S. Embassy in Budapest",
-    "info": "Szabadság tér 12\nH-1054 Budapest\nHungary\nTelephone: (36-1) 475-4400",
+    "info": "Szabadság tér 12\nH-1054 Budapest\nHungary\nSTOP (36-1) 475-4400",
     "createdAt": "2020-02-20T13:38:42.768Z",
     "updatedAt": "2020-02-20T16:23:41.808Z",
     "country_pointer": {
@@ -1807,7 +1807,7 @@
     },
     "country": "Iceland",
     "embassy": "U.S. Embassy in Reykjavik",
-    "info": "Laufásvegur 21\n101 Reykjavík\nTel: (354) 595 2200",
+    "info": "Laufásvegur 21\n101 Reykjavík\nSTOP (354) 595 2200",
     "createdAt": "2020-02-20T13:38:44.471Z",
     "updatedAt": "2020-02-20T16:23:42.575Z",
     "country_pointer": {
@@ -1825,7 +1825,7 @@
     },
     "country": "India",
     "embassy": "U.S. Consulate General in Kolkata",
-    "info": "38A, J.L.Nehru Road\nKolkata 700 071, West Bengal, India\nTel: 91-33-3984-6300",
+    "info": "38A, J.L.Nehru Road\nKolkata 700 071, West Bengal, India\nSTOP 91-33-3984-6300",
     "createdAt": "2020-02-20T13:38:45.701Z",
     "updatedAt": "2020-02-20T16:23:43.101Z",
     "country_pointer": {
@@ -1843,7 +1843,7 @@
     },
     "country": "India",
     "embassy": "U.S. Embassy in New Delhi",
-    "info": "Shantipath, Chanakyapuri\nNew Delhi – 110021\nTel: 011-91-11-2419-8000",
+    "info": "Shantipath, Chanakyapuri\nNew Delhi – 110021\nSTOP 011-91-11-2419-8000",
     "createdAt": "2020-02-20T13:38:45.584Z",
     "updatedAt": "2020-02-20T16:23:43.631Z",
     "country_pointer": {
@@ -1861,7 +1861,7 @@
     },
     "country": "India",
     "embassy": "U.S. Consulate General in Chennai",
-    "info": "Gemini Circle\nChennai 600 006\nPhone: 044-2857-4000",
+    "info": "Gemini Circle\nChennai 600 006\nSTOP 044-2857-4000",
     "createdAt": "2020-02-20T13:38:45.682Z",
     "updatedAt": "2020-02-20T16:23:44.208Z",
     "country_pointer": {
@@ -1879,7 +1879,7 @@
     },
     "country": "India",
     "embassy": "U.S. Consulate General in Hyderabad",
-    "info": "Paigah Palace\n1-8-323, Chiran Fort Lane Begumpet\nSecunderabad 500 003\nIndia: 040-4625-8222; 0120-484-4644",
+    "info": "Paigah Palace\n1-8-323, Chiran Fort Lane Begumpet\nSecunderabad 500 003\n",
     "createdAt": "2020-02-20T13:38:45.961Z",
     "updatedAt": "2020-02-20T16:23:44.768Z",
     "country_pointer": {
@@ -1897,7 +1897,7 @@
     },
     "country": "India",
     "embassy": "U.S. Consulate General in Mumbai",
-    "info": "C-49, G-Block, Bandra Kurla Complex\nBandra East, Mumbai 400051\nPhone: (91-22) 2672-4000",
+    "info": "C-49, G-Block, Bandra Kurla Complex\nBandra East, Mumbai 400051\nSTOP (91-22) 2672-4000",
     "createdAt": "2020-02-20T13:38:45.935Z",
     "updatedAt": "2020-02-20T16:23:45.276Z",
     "country_pointer": {
@@ -1910,7 +1910,7 @@
     "objectId": "g8ucQCQmxk",
     "country": "Indonesia",
     "embassy": "U.S. Consulate Medan",
-    "info": "Uni Plaza Building\n4th Floor (West Tower)\nJl. Let. Jend. MT Haryono A-1\nMedan 20231, Indonesia\nTel: (62) (61) 451-9000\nFax: (62) (61) 455-9033",
+    "info": "Uni Plaza Building\n4th Floor (West Tower)\nJl. Let. Jend. MT Haryono A-1\nMedan 20231, Indonesia\nSTOP (62) (61) 451-9000\nFax: (62) (61) 455-9033",
     "createdAt": "2020-02-20T13:38:47.610Z",
     "updatedAt": "2020-02-20T16:23:45.800Z",
     "country_pointer": {
@@ -1923,7 +1923,7 @@
     "objectId": "D9fIHvoWgd",
     "country": "Indonesia",
     "embassy": "U.S. Consulate General Surabaya",
-    "info": "Jl. Citra Raya Niaga No. 2\nSurabaya, Indonesia 60264\nTel: (62) (31) 297-5300",
+    "info": "Jl. Citra Raya Niaga No. 2\nSurabaya, Indonesia 60264\nSTOP (62) (31) 297-5300",
     "createdAt": "2020-02-20T13:38:47.646Z",
     "updatedAt": "2020-02-20T16:23:46.320Z",
     "country_pointer": {
@@ -1936,7 +1936,7 @@
     "objectId": "5MlcVVE7EM",
     "country": "Indonesia",
     "embassy": "U.S. Consular Agency Bali",
-    "info": "Jl. Hayam Wuruk 310, Denpasar\nBali, Indonesia 80235\nPhone: (62) (361) 233-605\nFax: (62) (361) 222-426\n\n\n\n\n\n\t\tBy bottsc | 30 September, 2016 | Topics: I",
+    "info": "Jl. Hayam Wuruk 310, Denpasar\nBali, Indonesia 80235\nSTOP (62) (361) 233-605\nFax: (62) (361) 222-426\n\n\n\n\n\n\t\tBy bottsc | 30 September, 2016 | Topics: I",
     "createdAt": "2020-02-20T13:38:47.530Z",
     "updatedAt": "2020-02-20T16:23:46.834Z",
     "country_pointer": {
@@ -1949,7 +1949,7 @@
     "objectId": "B4BwlhgVxE",
     "country": "Indonesia",
     "embassy": "U.S. Embassy Jakarta",
-    "info": "Jl. Medan Merdeka Selatan No. 3 – 5\nJakarta 10110, Indonesia\nTelephone: (62) (21) 3435-9000\nFax: (62) (21) 386-2259",
+    "info": "Jl. Medan Merdeka Selatan No. 3 – 5\nJakarta 10110, Indonesia\nSTOP (62) (21) 3435-9000\nFax: (62) (21) 386-2259",
     "createdAt": "2020-02-20T13:38:47.825Z",
     "updatedAt": "2020-02-20T16:23:47.354Z",
     "country_pointer": {
@@ -1967,7 +1967,7 @@
     },
     "country": "Iran",
     "embassy": "U.S. Embassy in Tehran",
-    "info": "Embassy of Switzerland\nForeign Interests Section No. 39, Shahid Mousavi (Golestan 5th) Corner of Paidarfard St. (ex-Amir Ebrahimi St.) Pasdaran, Tehran\nTelephone: (202) 485-7600",
+    "info": "Embassy of Switzerland\nForeign Interests Section No. 39, Shahid Mousavi (Golestan 5th) Corner of Paidarfard St. (ex-Amir Ebrahimi St.) Pasdaran, Tehran\nSTOP (202) 485-7600",
     "createdAt": "2020-02-20T13:38:49.357Z",
     "updatedAt": "2020-02-20T16:23:47.872Z",
     "country_pointer": {
@@ -1993,7 +1993,7 @@
     "objectId": "5SWKwdcfNt",
     "country": "Iraq",
     "embassy": "U.S. Consulate General in Erbil",
-    "info": "From Iraq: 066 211 4000\nFrom the United States: 240-264-3467",
+    "info":  "STOP From Iraq: 066 211 4000\nFrom the United States: 240-264-3467",
     "createdAt": "2020-02-20T13:38:51.900Z",
     "updatedAt": "2020-02-20T16:23:48.908Z",
     "country_pointer": {
@@ -2006,7 +2006,7 @@
     "objectId": "NPvWC7I0Fw",
     "country": "Iraq",
     "embassy": "U.S. Consulate General in Erbil",
-    "info": "From Iraq: 066 211 4000\nFrom the United States: 240-264-3467",
+    "info": "STOP From Iraq: 066 211 4000\nFrom the United States: 240-264-3467",
     "createdAt": "2020-02-20T13:38:51.877Z",
     "updatedAt": "2020-02-20T16:23:49.434Z",
     "country_pointer": {
@@ -2024,7 +2024,7 @@
     },
     "country": "Ireland",
     "embassy": "U.S. Embassy in Dublin",
-    "info": "42 Elgin Road\nBallsbridge\nDublin 4\nPhone: +353 1 668-8777",
+    "info": "42 Elgin Road\nBallsbridge\nDublin 4\nSTOP +353 1 668-8777",
     "createdAt": "2020-02-20T13:38:53.534Z",
     "updatedAt": "2020-02-20T16:23:49.948Z",
     "country_pointer": {
@@ -2042,7 +2042,7 @@
     },
     "country": "Israel",
     "embassy": "U.S. Embassy Jerusalem",
-    "info": "14 David Flusser Street\nJerusalem 9378322\nPhone: 02-630-4000",
+    "info": "14 David Flusser Street\nJerusalem 9378322\nSTOP 02-630-4000",
     "createdAt": "2020-02-20T13:38:54.956Z",
     "updatedAt": "2020-02-20T16:23:50.604Z",
     "country_pointer": {
@@ -2060,7 +2060,7 @@
     },
     "country": "Italy",
     "embassy": "U.S. Consulate General Florence",
-    "info": "Lungarno Vespucci, 38\n50123 Firenze\nPhone: (+39) 055.266.951",
+    "info": "Lungarno Vespucci, 38\n50123 Firenze\nSTOP (+39) 055.266.951",
     "createdAt": "2020-02-20T13:38:56.195Z",
     "updatedAt": "2020-02-20T16:23:51.118Z",
     "country_pointer": {
@@ -2078,7 +2078,7 @@
     },
     "country": "Italy",
     "embassy": "U.S. Consulate General Milan",
-    "info": "via Principe Amedeo, 2/10\n20121 MILANO\nPhone: (+39) 02.290351",
+    "info": "via Principe Amedeo, 2/10\n20121 MILANO\nSTOP (+39) 02.290351",
     "createdAt": "2020-02-20T13:38:56.113Z",
     "updatedAt": "2020-02-20T16:23:52.019Z",
     "country_pointer": {
@@ -2096,7 +2096,7 @@
     },
     "country": "Italy",
     "embassy": "U.S. Embassy Rome",
-    "info": "via Vittorio Veneto 121\n00187 Roma\nPhone: (+39) 06.46741",
+    "info": "via Vittorio Veneto 121\n00187 Roma\nSTOP (+39) 06.46741",
     "createdAt": "2020-02-20T13:38:56.435Z",
     "updatedAt": "2020-02-20T16:23:52.548Z",
     "country_pointer": {
@@ -2114,7 +2114,7 @@
     },
     "country": "Italy",
     "embassy": "U.S. Consulate General in Naples",
-    "info": "Piazza della Repubblica\n80122 NAPOLI\nPhone: (+39) 081.583.8111",
+    "info": "Piazza della Repubblica\n80122 NAPOLI\nSTOP (+39) 081.583.8111",
     "createdAt": "2020-02-20T13:38:56.479Z",
     "updatedAt": "2020-02-20T16:23:53.073Z",
     "country_pointer": {
@@ -2132,7 +2132,7 @@
     },
     "country": "U.S. Mission to the ICAO",
     "embassy": "U.S. Mission to the ICAO",
-    "info": "999 Robert-Bourassa Blvd.\nMontreal, (Quebec), Canada H3C 5J9\nTelephone: 514-954-8304",
+    "info": "999 Robert-Bourassa Blvd.\nMontreal, (Quebec), Canada H3C 5J9\nSTOP 514-954-8304",
     "createdAt": "2020-02-20T13:38:58.197Z",
     "updatedAt": "2020-02-20T13:38:58.197Z"
   },
@@ -2145,7 +2145,7 @@
     },
     "country": "Jamaica",
     "embassy": "U.S. Embassy in Kingston",
-    "info": "142 Old Hope Road\nKingston 6\nJamaica, West Indies\nTel: 876-702-6000",
+    "info": "142 Old Hope Road\nKingston 6\nJamaica, West Indies\nSTOP 876-702-6000",
     "createdAt": "2020-02-20T13:38:59.439Z",
     "updatedAt": "2020-02-20T16:23:53.912Z",
     "country_pointer": {
@@ -2158,7 +2158,7 @@
     "objectId": "PuqVls6C7D",
     "country": "Japan",
     "embassy": "U.S. Consulate in Nagoya",
-    "info": "Nagoya International Center Bldg. 6F\n1-47-1 Nagono, Nakamura-ku, Nagoya\n450-0001\nPhone: 052-581-4501",
+    "info": "Nagoya International Center Bldg. 6F\n1-47-1 Nagono, Nakamura-ku, Nagoya\n450-0001\nSTOP 052-581-4501",
     "createdAt": "2020-02-20T13:39:00.479Z",
     "updatedAt": "2020-02-20T16:23:54.437Z",
     "country_pointer": {
@@ -2171,7 +2171,7 @@
     "objectId": "MvBruPm2vi",
     "country": "Japan",
     "embassy": "U.S. Embassy in Tokyo",
-    "info": "1-10-5 Akasaka\nMinato-ku, Tokyo 107-8420 JAPAN\nPhone: 03-3224-5000",
+    "info": "1-10-5 Akasaka\nMinato-ku, Tokyo 107-8420 JAPAN\nSTOP 03-3224-5000",
     "createdAt": "2020-02-20T13:39:00.453Z",
     "updatedAt": "2020-02-20T16:23:54.972Z",
     "country_pointer": {
@@ -2184,7 +2184,7 @@
     "objectId": "uEqkvIQXtl",
     "country": "Japan",
     "embassy": "U.S. Consulate General in Sapporo",
-    "info": "Kita 1-jo Nishi 28-chome, Chuo-ku\nSapporo 064-0821, Japan\nPhone: 011-641-1115",
+    "info": "Kita 1-jo Nishi 28-chome, Chuo-ku\nSapporo 064-0821, Japan\nSTOP 011-641-1115",
     "createdAt": "2020-02-20T13:39:00.470Z",
     "updatedAt": "2020-02-20T16:23:55.497Z",
     "country_pointer": {
@@ -2197,7 +2197,7 @@
     "objectId": "63ETSHNCGy",
     "country": "Japan",
     "embassy": "U.S. Consulate in Naha",
-    "info": "U.S. Consulate General Naha\n2-1-1 Toyama, Urasoe City, Okinawa\nPhone: 098-876-4211",
+    "info": "U.S. Consulate General Naha\n2-1-1 Toyama, Urasoe City, Okinawa\nSTOP 098-876-4211",
     "createdAt": "2020-02-20T13:39:00.500Z",
     "updatedAt": "2020-02-20T16:23:56.015Z",
     "country_pointer": {
@@ -2210,7 +2210,7 @@
     "objectId": "Q4tuGweArW",
     "country": "Japan",
     "embassy": "U.S. Consulate in Osaka",
-    "info": "2-11-5, Nishitenma\nKita-ku, Osaka 530-8543\nTelephone: 06-6315-5900",
+    "info": "2-11-5, Nishitenma\nKita-ku, Osaka 530-8543\nSTOP 06-6315-5900",
     "createdAt": "2020-02-20T13:39:00.623Z",
     "updatedAt": "2020-02-20T16:23:56.554Z",
     "country_pointer": {
@@ -2223,7 +2223,7 @@
     "objectId": "gl5CFye61n",
     "country": "Japan",
     "embassy": "U.S. Consulate in Fukuoka",
-    "info": "5-26 Ohori 2-chome\nChuo-ku\nFukuoka 810-0052\nTelephone: 092-751-9331",
+    "info": "5-26 Ohori 2-chome\nChuo-ku\nFukuoka 810-0052\nSTOP 092-751-9331",
     "createdAt": "2020-02-20T13:39:00.905Z",
     "updatedAt": "2020-02-20T16:23:57.073Z",
     "country_pointer": {
@@ -2241,7 +2241,7 @@
     },
     "country": "Jordan",
     "embassy": "U.S. Embassy in Amman",
-    "info": "Abdoun, Al-Umawyeen St.\nAmman – Jordan\nPhone: 962-6-590-6000",
+    "info": "Abdoun, Al-Umawyeen St.\nAmman – Jordan\nSTOP 962-6-590-6000",
     "createdAt": "2020-02-20T13:39:02.757Z",
     "updatedAt": "2020-02-20T16:23:57.619Z",
     "country_pointer": {
@@ -2259,7 +2259,7 @@
     },
     "country": "Kazakhstan",
     "embassy": "U.S. Embassy in Astana",
-    "info": "Rakhymzhan Koshkarbayev Avenue, No. 3.\nAstana, Kazakhstan, 010010\nPhone: +7 (7172) 70-21-00",
+    "info": "Rakhymzhan Koshkarbayev Avenue, No. 3.\nAstana, Kazakhstan, 010010\nSTOP +7 (7172) 70-21-00",
     "createdAt": "2020-02-20T13:39:04.611Z",
     "updatedAt": "2020-02-20T16:23:58.161Z",
     "country_pointer": {
@@ -2277,7 +2277,7 @@
     },
     "country": "Kazakhstan",
     "embassy": "U.S. Consulate General Almaty",
-    "info": "Samal-2, 97 Zholdasbekov Street,\nAlmaty, Kazakhstan, 050051\nTel: +7 (727) 250-76-12/17",
+    "info": "Samal-2, 97 Zholdasbekov Street,\nAlmaty, Kazakhstan, 050051\nSTOP +7 (727) 250-76-12/17",
     "createdAt": "2020-02-20T13:39:04.860Z",
     "updatedAt": "2020-02-20T16:23:58.673Z",
     "country_pointer": {
@@ -2295,7 +2295,7 @@
     },
     "country": "Kenya",
     "embassy": "U.S. Embassy Nairobi",
-    "info": "United Nations Avenue Nairobi\nP. O. Box 606 Village Market\n00621 Nairobi, Kenya\nPhone: 254 20 363-6000",
+    "info": "United Nations Avenue Nairobi\nP. O. Box 606 Village Market\n00621 Nairobi, Kenya\nSTOP 254 20 363-6000",
     "createdAt": "2020-02-20T13:39:05.677Z",
     "updatedAt": "2020-02-20T16:24:00.204Z",
     "country_pointer": {
@@ -2313,7 +2313,7 @@
     },
     "country": "Kosovo",
     "embassy": "U.S. Embassy in Pristina",
-    "info": "Arberia/Dragodan, Nazim Hikmet 30\nPristina, Kosovo\nTelephone: + 383 38 59 59 3000",
+    "info": "Arberia/Dragodan, Nazim Hikmet 30\nPristina, Kosovo\nSTOP + 383 38 59 59 3000",
     "createdAt": "2020-02-20T13:39:06.806Z",
     "updatedAt": "2020-02-20T16:24:00.725Z",
     "country_pointer": {
@@ -2331,7 +2331,7 @@
     },
     "country": "Kuwait",
     "embassy": "U.S. Embassy Kuwait City",
-    "info": "P. O. Box 77\nSafat 13001\nKuwait\nTelephone: 00-(965) 2259-1001",
+    "info": "P. O. Box 77\nSafat 13001\nKuwait\nSTOP 00-(965) 2259-1001",
     "createdAt": "2020-02-20T13:39:08.910Z",
     "updatedAt": "2020-02-20T16:24:01.249Z",
     "country_pointer": {
@@ -2349,7 +2349,7 @@
     },
     "country": "Kyrgyz Republic",
     "embassy": "U.S. Embassy in Bishkek",
-    "info": "171 Prospect Mira\nBishkek 720016 Kyrgyz Republic\nTelephone: +996 312 597 000\nFax: +996 312 597 744",
+    "info": "171 Prospect Mira\nBishkek 720016 Kyrgyz Republic\nSTOP +996 312 597 000\nFax: +996 312 597 744",
     "createdAt": "2020-02-20T13:39:11.085Z",
     "updatedAt": "2020-02-20T13:39:11.085Z"
   },
@@ -2357,7 +2357,7 @@
     "objectId": "GjuH2IK0Rs",
     "country": "Laos",
     "embassy": "U.S. Embassy Vientiane",
-    "info": "Ban Somvang Thai\nThadeua Road, Km 9\nHatsayfong district\nPhone: (856) 21-48-7000",
+    "info": "Ban Somvang Thai\nThadeua Road, Km 9\nHatsayfong district\nSTOP (856) 21-48-7000",
     "createdAt": "2020-02-20T13:39:12.031Z",
     "updatedAt": "2020-02-20T16:24:02.046Z",
     "country_pointer": {
@@ -2375,7 +2375,7 @@
     },
     "country": "Latvia",
     "embassy": "U.S. Embassy in Riga",
-    "info": "1 Samnera Velsa St. (former Remtes)\nRiga LV-1510\nLatvia\nPhone: +371 6710 7000",
+    "info": "1 Samnera Velsa St. (former Remtes)\nRiga LV-1510\nLatvia\nSTOP +371 6710 7000",
     "createdAt": "2020-02-20T13:39:13.922Z",
     "updatedAt": "2020-02-20T16:24:02.572Z",
     "country_pointer": {
@@ -2388,7 +2388,7 @@
     "objectId": "80p4a2mCkC",
     "country": "Lebanon",
     "embassy": "U.S. Embassy in Beirut",
-    "info": "Awkar-Facing the Municipality, Main Street\nBeirut, Lebanon\nTel: 04 – 543 600\nFax: 04 – 544 136",
+    "info": "Awkar-Facing the Municipality, Main Street\nBeirut, Lebanon\nSTOP 04 – 543 600\nFax: 04 – 544 136",
     "createdAt": "2020-02-20T13:39:14.899Z",
     "updatedAt": "2020-02-20T16:24:03.095Z",
     "country_pointer": {
@@ -2406,7 +2406,7 @@
     },
     "country": "Lesotho",
     "embassy": "U.S. Embassy in Maseru",
-    "info": "P.O. Box 333\nMaseru 100 Lesotho\nTel: +266 22 312 666",
+    "info": "P.O. Box 333\nMaseru 100 Lesotho\nSTOP +266 22 312 666",
     "createdAt": "2020-02-20T13:39:15.985Z",
     "updatedAt": "2020-02-20T16:24:03.611Z",
     "country_pointer": {
@@ -2424,7 +2424,7 @@
     },
     "country": "Liberia",
     "embassy": "U.S. Embassy in Monrovia",
-    "info": "502 Benson Street\nMonrovia\nPhone: (+231) 77-677-7000",
+    "info": "502 Benson Street\nMonrovia\nSTOP (+231) 77-677-7000",
     "createdAt": "2020-02-20T13:39:17.950Z",
     "updatedAt": "2020-02-20T16:24:04.166Z",
     "country_pointer": {
@@ -2460,7 +2460,7 @@
     },
     "country": "Lithuania",
     "embassy": "U.S. Embassy in Vilnius",
-    "info": "Akmenų g. 6\nVilnius, Lithuania\nLT-03106\nTel: +370 5 266 5500\nFax: +370 5 266 5510",
+    "info": "Akmenų g. 6\nVilnius, Lithuania\nLT-03106\nSTOP +370 5 266 5500\nFax: +370 5 266 5510",
     "createdAt": "2020-02-20T13:39:21.960Z",
     "updatedAt": "2020-02-20T16:24:05.220Z",
     "country_pointer": {
@@ -2478,7 +2478,7 @@
     },
     "country": "Luxembourg",
     "embassy": "U.S. Embassy in Luxembourg",
-    "info": "22 Boulevard Emmanuel Servais\nL-2535 Luxembourg\nPhone: +352 46 01 23",
+    "info": "22 Boulevard Emmanuel Servais\nL-2535 Luxembourg\nSTOP +352 46 01 23",
     "createdAt": "2020-02-20T13:39:23.141Z",
     "updatedAt": "2020-02-20T16:24:05.793Z",
     "country_pointer": {
@@ -2496,7 +2496,7 @@
     },
     "country": "Madagascar & Comoros",
     "embassy": "U.S. Embassy in Antananarivo",
-    "info": "Lot 207 A – Andranoro – Antehiroka\n105 Antananarivo – Madagascar\nTel: (+261) 20 23 480 00",
+    "info": "Lot 207 A – Andranoro – Antehiroka\n105 Antananarivo – Madagascar\nSTOP (+261) 20 23 480 00",
     "createdAt": "2020-02-20T13:39:25.254Z",
     "updatedAt": "2020-02-20T13:39:25.254Z"
   },
@@ -2509,7 +2509,7 @@
     },
     "country": "Madagascar & Comoros",
     "embassy": "U.S. Virtual Presence Post–Comoros",
-    "info": "Lot 207 A – Andranoro – Antehiroka\n105 Antananarivo – Madagascar\nTel: (+261) 20 23 480 00",
+    "info": "Lot 207 A – Andranoro – Antehiroka\n105 Antananarivo – Madagascar\nSTOP (+261) 20 23 480 00",
     "createdAt": "2020-02-20T13:39:25.311Z",
     "updatedAt": "2020-02-20T13:39:25.311Z"
   },
@@ -2522,7 +2522,7 @@
     },
     "country": "Malawi",
     "embassy": "U.S. Embassy in Lilongwe",
-    "info": "P.O Box 30016\n16 Jomo Kenyatta Road, Lilongwe 3, Malawi\nTelephone: (265) 1 773 166",
+    "info": "P.O Box 30016\n16 Jomo Kenyatta Road, Lilongwe 3, Malawi\nSTOP (265) 1 773 166",
     "createdAt": "2020-02-20T13:39:27.314Z",
     "updatedAt": "2020-02-20T16:24:08.146Z",
     "country_pointer": {
@@ -2535,7 +2535,7 @@
     "objectId": "6KIHAjfity",
     "country": "Malaysia",
     "embassy": "U.S. Embassy in Kuala Lumpur",
-    "info": "376 Jalan Tun Razak\n50400 Kuala Lumpur\nPhone: 60-3-2168-5000",
+    "info": "376 Jalan Tun Razak\n50400 Kuala Lumpur\nSTOP 60-3-2168-5000",
     "createdAt": "2020-02-20T13:39:29.099Z",
     "updatedAt": "2020-02-20T16:24:08.676Z",
     "country_pointer": {
@@ -2553,7 +2553,7 @@
     },
     "country": "Maldives",
     "embassy": "U.S. Virtual Mission in Maldives",
-    "info": "210 Galle Road\nColombo 03\nSri Lanka\nPhone: +94 (11) 249-8500",
+    "info": "210 Galle Road\nColombo 03\nSri Lanka\nSTOP +94 (11) 249-8500",
     "createdAt": "2020-02-20T13:39:30.035Z",
     "updatedAt": "2020-02-20T16:24:09.434Z",
     "country_pointer": {
@@ -2571,7 +2571,7 @@
     },
     "country": "Mali",
     "embassy": "U.S. Embassy in Bamako",
-    "info": "ACI 2000\nRue 243, Porte 297\nBamako, Mali\nPhone: +223 20 70 23 00",
+    "info": "ACI 2000\nRue 243, Porte 297\nBamako, Mali\nSTOP +223 20 70 23 00",
     "createdAt": "2020-02-20T13:39:31.146Z",
     "updatedAt": "2020-02-20T16:24:09.960Z",
     "country_pointer": {
@@ -2589,7 +2589,7 @@
     },
     "country": "Malta",
     "embassy": "U.S. Embassy Valletta",
-    "info": "Ta’ Qali National Park\nAttard, ATD 4000\nPhone: (356) 2561 4000",
+    "info": "Ta’ Qali National Park\nAttard, ATD 4000\nSTOP (356) 2561 4000",
     "createdAt": "2020-02-20T13:39:33.383Z",
     "updatedAt": "2020-02-20T16:24:10.499Z",
     "country_pointer": {
@@ -2602,7 +2602,7 @@
     "objectId": "Zx2cyODGo8",
     "country": "Marshall Islands",
     "embassy": "U.S. Embassy Majuro",
-    "info": "Mejen Weto, Ocean Side\nMajuro, Marshall Islands\nPhone: +692-247-4011",
+    "info": "Mejen Weto, Ocean Side\nMajuro, Marshall Islands\nSTOP +692-247-4011",
     "createdAt": "2020-02-20T13:39:35.713Z",
     "updatedAt": "2020-02-20T16:24:11.028Z",
     "country_pointer": {
@@ -2620,7 +2620,7 @@
     },
     "country": "Mauritania",
     "embassy": "U.S. Embassy in Nouakchott",
-    "info": "288, rue 42-100, (rue Abdallaye)\nBP 222, Nouakchott, Mauritania\nPhone: 222-4525-2660 or 2663",
+    "info": "288, rue 42-100, (rue Abdallaye)\nBP 222, Nouakchott, Mauritania\nSTOP 222-4525-2660 or 2663",
     "createdAt": "2020-02-20T13:39:37.210Z",
     "updatedAt": "2020-02-20T16:24:11.550Z",
     "country_pointer": {
@@ -2638,7 +2638,7 @@
     },
     "country": "Mauritius",
     "embassy": "U.S. Embassy in Port Louis",
-    "info": "4th Floor, Rogers House\nJohn Kennedy Avenue\nP.O. Box 544\nPort Louis\nRepublic of Mauritius\nTel: (230) 202-4400",
+    "info": "4th Floor, Rogers House\nJohn Kennedy Avenue\nP.O. Box 544\nPort Louis\nRepublic of Mauritius\nSTOP (230) 202-4400",
     "createdAt": "2020-02-20T13:39:38.816Z",
     "updatedAt": "2020-02-20T16:24:12.068Z",
     "country_pointer": {
@@ -2651,7 +2651,7 @@
     "objectId": "pEjbFLpyJ8",
     "country": "Mexico",
     "embassy": "U.S. Embassy in Mexico City",
-    "info": "Paseo de la Reforma 305\nColonia Cuauhtemoc\n06500 Mexico, D.F.\nPhone: (+52) 55-5080-2000\nFax: (+52) 55-5080-2005",
+    "info": "Paseo de la Reforma 305\nColonia Cuauhtemoc\n06500 Mexico, D.F.\nSTOP (+52) 55-5080-2000\nFax: (+52) 55-5080-2005",
     "createdAt": "2020-02-20T13:39:40.068Z",
     "updatedAt": "2020-02-20T16:24:12.585Z",
     "country_pointer": {
@@ -2664,7 +2664,7 @@
     "objectId": "ojpZ5PLCYe",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Ciudad Juarez",
-    "info": "Paseo de la Victoria #3650\nFracc. Partido Senecú\nCiudad Juárez, Chihuahua, Mexico C.P. 32543\nPhone: 656-227-3000",
+    "info": "Paseo de la Victoria #3650\nFracc. Partido Senecú\nCiudad Juárez, Chihuahua, Mexico C.P. 32543\nSTOP 656-227-3000",
     "createdAt": "2020-02-20T13:39:39.978Z",
     "updatedAt": "2020-02-20T16:24:13.113Z",
     "country_pointer": {
@@ -2677,7 +2677,7 @@
     "objectId": "8XE1dp4Fcr",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Guadalajara",
-    "info": "Progreso 175\nCol. Americana\nCodigo Postal 44160\nGuadalajara, Jalisco, Mexico\nPhone: (+52) 33-3268-2100\nFax: (+52) 33-3825-1951",
+    "info": "Progreso 175\nCol. Americana\nCodigo Postal 44160\nGuadalajara, Jalisco, Mexico\nSTOP (+52) 33-3268-2100\nFax: (+52) 33-3825-1951",
     "createdAt": "2020-02-20T13:39:40.219Z",
     "updatedAt": "2020-02-20T16:24:13.642Z",
     "country_pointer": {
@@ -2690,7 +2690,7 @@
     "objectId": "qk8OfL9Pkx",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Hermosillo",
-    "info": "141 Monterey Street\nCol. Esqueda, C.P. 83000\nHermosillo, Sonora, Mexico\nPhone: (+52) 662-690-3262\nFax: (+52) 662-217-2571",
+    "info": "141 Monterey Street\nCol. Esqueda, C.P. 83000\nHermosillo, Sonora, Mexico\nSTOP (+52) 662-690-3262\nFax: (+52) 662-217-2571",
     "createdAt": "2020-02-20T13:39:40.360Z",
     "updatedAt": "2020-02-20T16:24:14.165Z",
     "country_pointer": {
@@ -2703,7 +2703,7 @@
     "objectId": "iNo2kXGBaz",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Monterrey",
-    "info": "Prolongación Ave. Alfonso Reyes #150\nCol. Valle del Poniente\nSanta Catarina, Nuevo León\nMéxico 66196\nPhone: (+52) 81-8047-3100\nFax: (+52) 81-8342-5433",
+    "info": "Prolongación Ave. Alfonso Reyes #150\nCol. Valle del Poniente\nSanta Catarina, Nuevo León\nMéxico 66196\nSTOP (+52) 81-8047-3100\nFax: (+52) 81-8342-5433",
     "createdAt": "2020-02-20T13:39:40.371Z",
     "updatedAt": "2020-02-20T16:24:14.678Z",
     "country_pointer": {
@@ -2716,7 +2716,7 @@
     "objectId": "IGmhcawBVy",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Matamoros",
-    "info": "Calle Constitución No. 1\nColonia Jardín\nMatamoros, Tamaulipas 87330\nPhone: (+52) 868-208-2000\nFax: (+52) 868-816-0883",
+    "info": "Calle Constitución No. 1\nColonia Jardín\nMatamoros, Tamaulipas 87330\nSTOP (+52) 868-208-2000\nFax: (+52) 868-816-0883",
     "createdAt": "2020-02-20T13:39:40.371Z",
     "updatedAt": "2020-02-20T16:24:15.202Z",
     "country_pointer": {
@@ -2734,7 +2734,7 @@
     },
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Merida",
-    "info": "Calle 60 No. 338-K x 29 y 31\nCol. Alcala Martin Merida, Yucatan, Mexico 97050\nPhone: (+52) 999-942-5700\nFax: (+52) 999-942-5758",
+    "info": "Calle 60 No. 338-K x 29 y 31\nCol. Alcala Martin Merida, Yucatan, Mexico 97050\nSTOP (+52) 999-942-5700\nFax: (+52) 999-942-5758",
     "createdAt": "2020-02-20T13:39:40.339Z",
     "updatedAt": "2020-02-20T16:24:16.906Z",
     "country_pointer": {
@@ -2747,7 +2747,7 @@
     "objectId": "9fY75AUQZs",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Tijuana",
-    "info": "Paseo de las Culturas s/n\nMesa de Otay\nDelegación Centenario C.P. 22425\nTijuana, Baja California\nPhone: (664) 977-2000",
+    "info": "Paseo de las Culturas s/n\nMesa de Otay\nDelegación Centenario C.P. 22425\nTijuana, Baja California\nSTOP (664) 977-2000",
     "createdAt": "2020-02-20T13:39:40.353Z",
     "updatedAt": "2020-02-20T16:24:18.946Z",
     "country_pointer": {
@@ -2760,7 +2760,7 @@
     "objectId": "Qv6rmlYtCZ",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Nuevo Laredo",
-    "info": "Paseo Colon 1901\nColonia Madero\nNuevo Laredo, Tamaulipas 88260\nTel: 867 714 0512 (from México),\n867-714-0512 (from the US)",
+    "info": "Paseo Colon 1901\nColonia Madero\nNuevo Laredo, Tamaulipas 88260\nSTOP 867 714 0512 (from México),\n867-714-0512 (from the US)",
     "createdAt": "2020-02-20T13:39:40.253Z",
     "updatedAt": "2020-02-20T16:24:18.427Z",
     "country_pointer": {
@@ -2773,7 +2773,7 @@
     "objectId": "wrYIyHkOSG",
     "country": "Mexico",
     "embassy": "U.S. Consulate General in Nogales",
-    "info": "Calle San José s/n\nFraccionamiento los Alamos\nC. P. 84065 Nogales, Sonora\nPhone: (+52) 631-311-8150\nFax: (+52) 631-313-4652",
+    "info": "Calle San José s/n\nFraccionamiento los Alamos\nC. P. 84065 Nogales, Sonora\nSTOP (+52) 631-311-8150\nFax: (+52) 631-313-4652",
     "createdAt": "2020-02-20T13:39:40.367Z",
     "updatedAt": "2020-02-20T16:24:16.274Z",
     "country_pointer": {
@@ -2786,7 +2786,7 @@
     "objectId": "7c605Tk8qr",
     "country": "Micronesia",
     "embassy": "U.S. Embassy in Kolonia",
-    "info": "P.O. Box 1286\nKolonia, Pohnpei\nFSM 96941\nPhone: (691) 320-2187",
+    "info": "P.O. Box 1286\nKolonia, Pohnpei\nFSM 96941\nSTOP (691) 320-2187",
     "createdAt": "2020-02-20T13:39:41.975Z",
     "updatedAt": "2020-02-20T16:24:19.464Z",
     "country_pointer": {
@@ -2804,7 +2804,7 @@
     },
     "country": "Moldova",
     "embassy": "U.S. Embassy in Chisinau",
-    "info": "103 Mateevici street\nChisinau MD-2009\nRepublic of Moldova\nPhone: (+373 22) 408 300",
+    "info": "103 Mateevici street\nChisinau MD-2009\nRepublic of Moldova\nSTOP (+373 22) 408 300",
     "createdAt": "2020-02-20T13:39:43.146Z",
     "updatedAt": "2020-02-20T16:24:20.269Z",
     "country_pointer": {
@@ -2817,7 +2817,7 @@
     "objectId": "3tAc6ALtjR",
     "country": "Mongolia",
     "embassy": "U.S. Embassy in Ulaanbaatar",
-    "info": "Denver Street #3\n11th Micro-District\nUlaanbaatar 14190\nMongolia\nTel: +976-7007-6001",
+    "info": "Denver Street #3\n11th Micro-District\nUlaanbaatar 14190\nMongolia\nSTOP +976-7007-6001",
     "createdAt": "2020-02-20T13:39:45.194Z",
     "updatedAt": "2020-02-20T16:24:20.793Z",
     "country_pointer": {
@@ -2835,7 +2835,7 @@
     },
     "country": "Montenegro",
     "embassy": "U.S. Embassy in Podgorica",
-    "info": "Dzona Dzeksona 2\n81000 Podgorica\nMontenegro\nEmbassy Switchboard: +382 (0)20 410 500",
+    "info": "Dzona Dzeksona 2\n81000 Podgorica\nMontenegro\nEmbassy STOP +382 (0)20 410 500",
     "createdAt": "2020-02-20T13:39:46.572Z",
     "updatedAt": "2020-02-20T16:24:21.315Z",
     "country_pointer": {
@@ -2853,7 +2853,7 @@
     },
     "country": "Morocco",
     "embassy": "U.S. Consulate General Casablanca",
-    "info": "8, Bd Moulay Youssef\nCasablanca\nPhone: (212) 522-64-20-00",
+    "info": "8, Bd Moulay Youssef\nCasablanca\nSTOP (212) 522-64-20-00",
     "createdAt": "2020-02-20T13:39:48.673Z",
     "updatedAt": "2020-02-20T16:24:21.838Z",
     "country_pointer": {
@@ -2871,7 +2871,7 @@
     },
     "country": "Morocco",
     "embassy": "U.S. Embassy Rabat",
-    "info": "Km 5.7, Avenue Mohamed VI\nSouissi, Rabat 10170, Morocco\nPhone: (212) 0537 637 200",
+    "info": "Km 5.7, Avenue Mohamed VI\nSouissi, Rabat 10170, Morocco\nSTOP (212) 0537 637 200",
     "createdAt": "2020-02-20T13:39:48.682Z",
     "updatedAt": "2020-02-20T16:24:22.358Z",
     "country_pointer": {
@@ -2889,7 +2889,7 @@
     },
     "country": "Mozambique",
     "embassy": "U.S. Embassy in Maputo",
-    "info": "Av. Kenneth Kaunda, 193\nCaixa Postal, 783\nTel: (258) 21-49 27 97",
+    "info": "Av. Kenneth Kaunda, 193\nCaixa Postal, 783\nSTOP (258) 21-49 27 97",
     "createdAt": "2020-02-20T13:39:50.534Z",
     "updatedAt": "2020-02-20T16:24:22.878Z",
     "country_pointer": {
@@ -2907,7 +2907,7 @@
     },
     "country": "Namibia",
     "embassy": "U.S. Embassy Windhoek",
-    "info": "14 Lossen Street\nWindhoek, Namibia\nPhone: 061-295-8500",
+    "info": "14 Lossen Street\nWindhoek, Namibia\nSTOP 061-295-8500",
     "createdAt": "2020-02-20T13:39:52.574Z",
     "updatedAt": "2020-02-20T16:24:23.406Z",
     "country_pointer": {
@@ -2925,7 +2925,7 @@
     },
     "country": "Nepal",
     "embassy": "U.S. Embassy in Kathmandu",
-    "info": "Embassy of the United States of America\nMaharajgunj, Kathmandu, Nepal\nTel.: 977-1-423-4000",
+    "info": "Embassy of the United States of America\nMaharajgunj, Kathmandu, Nepal\nSTOP 977-1-423-4000",
     "createdAt": "2020-02-20T13:39:54.310Z",
     "updatedAt": "2020-02-20T16:24:23.964Z",
     "country_pointer": {
@@ -2979,7 +2979,7 @@
     },
     "country": "Netherlands Antilles",
     "embassy": "U.S. Consulate General in Curacao",
-    "info": "P.O. Box 158\nJ.B. Gorsiraweg 1\nTel +599-9-461-3066",
+    "info": "P.O. Box 158\nJ.B. Gorsiraweg 1\nSTOP +599-9-461-3066",
     "createdAt": "2020-02-20T13:39:57.203Z",
     "updatedAt": "2020-02-20T13:39:57.203Z"
   },
@@ -2987,7 +2987,7 @@
     "objectId": "fioCNnFBLV",
     "country": "New Zealand",
     "embassy": "United States Embassy Wellington",
-    "info": "29 Fitzherbert Terrace\nThorndon\nWellington 6011\nNew Zealand\nPhone: +64 4 462 6000",
+    "info": "29 Fitzherbert Terrace\nThorndon\nWellington 6011\nNew Zealand\nSTOP +64 4 462 6000",
     "createdAt": "2020-02-20T13:39:59.119Z",
     "updatedAt": "2020-02-20T16:24:25.837Z",
     "country_pointer": {
@@ -3000,7 +3000,7 @@
     "objectId": "iXE8Icaspe",
     "country": "New Zealand",
     "embassy": "U.S. Consulate General Auckland",
-    "info": "Level 3, 23 Customs Street East\nAuckland 1010\nNew Zealand\nPhone: +64 9 303 2724",
+    "info": "Level 3, 23 Customs Street East\nAuckland 1010\nNew Zealand\nSTOP +64 9 303 2724",
     "createdAt": "2020-02-20T13:39:59.453Z",
     "updatedAt": "2020-02-20T16:24:26.360Z",
     "country_pointer": {
@@ -3018,7 +3018,7 @@
     },
     "country": "Nicaragua",
     "embassy": "U.S. Embassy Managua",
-    "info": "Kilometer 5.5 Carretera Sur\nManagua, Nicaragua\nEmbassy Telephone: +(505) 2252-7100",
+    "info": "Kilometer 5.5 Carretera Sur\nManagua, Nicaragua\nEmbassy STOP +(505) 2252-7100",
     "createdAt": "2020-02-20T13:40:01.678Z",
     "updatedAt": "2020-02-20T16:24:26.878Z",
     "country_pointer": {
@@ -3036,7 +3036,7 @@
     },
     "country": "Niger",
     "embassy": "U.S. Embassy Niamey",
-    "info": "BP 11201\nNiamey, Niger\nPhone: (227) 20-72-26-61",
+    "info": "BP 11201\nNiamey, Niger\nSTOP (227) 20-72-26-61",
     "createdAt": "2020-02-20T13:40:03.790Z",
     "updatedAt": "2020-02-20T16:24:27.398Z",
     "country_pointer": {
@@ -3049,7 +3049,7 @@
     "objectId": "PCiB36yIkV",
     "country": "Nigeria",
     "embassy": "U.S. Consulate Lagos",
-    "info": "2 Walter Carrington Crescent,\nVictoria Island, Lagos\nTelephone:(234)-1- 460-3600 or (234)-1- 460-3400",
+    "info": "2 Walter Carrington Crescent,\nVictoria Island, Lagos\nSTOP(234)-1- 460-3600 or (234)-1- 460-3400",
     "createdAt": "2020-02-20T13:40:05.556Z",
     "updatedAt": "2020-02-20T16:24:27.929Z",
     "country_pointer": {
@@ -3067,7 +3067,7 @@
     },
     "country": "Nigeria",
     "embassy": "U.S. Embassy Abuja",
-    "info": "Plot 1075 Diplomatic Drive\nCentral District Area, Abuja, Nigeria\nTelephone: (234)-9-461-4000",
+    "info": "Plot 1075 Diplomatic Drive\nCentral District Area, Abuja, Nigeria\nSTOP (234)-9-461-4000",
     "createdAt": "2020-02-20T13:40:05.647Z",
     "updatedAt": "2020-02-20T16:24:28.451Z",
     "country_pointer": {
@@ -3085,7 +3085,7 @@
     },
     "country": "North Macedonia",
     "embassy": "U.S. Embassy in Skopje",
-    "info": "Str. “Samoilova” Nr.21\n1000 Skopje\nRepublic of North Macedonia\nPhone: +389 2 310-2000 (0 -for Switchboard Operator)",
+    "info": "Str. “Samoilova” Nr.21\n1000 Skopje\nRepublic of North Macedonia\nSTOP +389 2 310-2000 (0 -for Switchboard Operator)",
     "createdAt": "2020-02-20T13:40:07.610Z",
     "updatedAt": "2020-02-20T16:24:28.967Z",
     "country_pointer": {
@@ -3103,7 +3103,7 @@
     },
     "country": "Norway",
     "embassy": "U.S. Embassy in Oslo",
-    "info": "Morgedalsvegen 36\n0378 Oslo\nNorway\nPhone: 21 30 85 40",
+    "info": "Morgedalsvegen 36\n0378 Oslo\nNorway\nSTOP 21 30 85 40",
     "createdAt": "2020-02-20T13:40:10.195Z",
     "updatedAt": "2020-02-20T16:24:29.486Z",
     "country_pointer": {
@@ -3121,7 +3121,7 @@
     },
     "country": "U.S. Mission to NATO",
     "embassy": "U.S. Mission to NATO",
-    "info": "Boulevard Leopold III\n1110 Brussels, Belgium\nPhone: (32-2) 811-4000",
+    "info": "Boulevard Leopold III\n1110 Brussels, Belgium\nSTOP (32-2) 811-4000",
     "createdAt": "2020-02-20T13:40:11.279Z",
     "updatedAt": "2020-02-20T13:40:11.279Z"
   },
@@ -3129,7 +3129,7 @@
     "objectId": "PEVxoEzY00",
     "country": "Oman",
     "embassy": "U.S. Embassy in Muscat",
-    "info": "P.C. 115\nMadinat Al Sultan Qaboos\nMuscat, Oman\nTelephone: (968) 2464-3400",
+    "info": "P.C. 115\nMadinat Al Sultan Qaboos\nMuscat, Oman\nSTOP (968) 2464-3400",
     "createdAt": "2020-02-20T13:40:13.458Z",
     "updatedAt": "2020-02-20T16:24:30.286Z",
     "country_pointer": {
@@ -3147,7 +3147,7 @@
     },
     "country": "U.S. Mission to the OAS",
     "embassy": "U.S. Mission to the OAS",
-    "info": "U.S. Department of State\n2201 C Street, NW\nRoom 5914\nWashington, D.C. 20515\nTelephone 202-647-9376",
+    "info": "U.S. Department of State\n2201 C Street, NW\nRoom 5914\nWashington, D.C. 20515\nSTOP 202-647-9376",
     "createdAt": "2020-02-20T13:40:16.160Z",
     "updatedAt": "2020-02-20T13:40:16.160Z"
   },
@@ -3160,7 +3160,7 @@
     },
     "country": "U.S. Mission to the OECD",
     "embassy": "U.S. Mission to the OECD",
-    "info": "18, avenue Gabriel\n75008 Paris\nCall: +33 (0) 1 43 12 22 22",
+    "info": "18, avenue Gabriel\n75008 Paris\nSTOP +33 (0) 1 43 12 22 22",
     "createdAt": "2020-02-20T13:40:18.140Z",
     "updatedAt": "2020-02-20T13:40:18.140Z"
   },
@@ -3173,7 +3173,7 @@
     },
     "country": "Pakistan",
     "embassy": "U.S. Consulate General Peshawar",
-    "info": "11, Hospital Road,\nPeshawar, Pakistan\nPhone: Tel: (+92-91) 5268800",
+    "info": "11, Hospital Road,\nPeshawar, Pakistan\nSTOP STOP (+92-91) 5268800",
     "createdAt": "2020-02-20T13:40:19.270Z",
     "updatedAt": "2020-02-20T16:24:32.264Z",
     "country_pointer": {
@@ -3191,7 +3191,7 @@
     },
     "country": "Pakistan",
     "embassy": "U.S. Embassy in Islamabad",
-    "info": "Diplomatic Enclave, Ramna 5\nIslamabad, Pakistan\nPhone: (+92) 51-208-0000 / (+92) 051-201-4000",
+    "info": "Diplomatic Enclave, Ramna 5\nIslamabad, Pakistan\nSTOP (+92) 51-208-0000 / (+92) 051-201-4000",
     "createdAt": "2020-02-20T13:40:19.550Z",
     "updatedAt": "2020-02-20T16:24:32.796Z",
     "country_pointer": {
@@ -3209,7 +3209,7 @@
     },
     "country": "Pakistan",
     "embassy": "U.S. Consulate General Karachi",
-    "info": "Plot 3, 4, 5, New TPX Area\nMai Kolachi Road, Karachi\nPhone: (+92-21) 3527-5000",
+    "info": "Plot 3, 4, 5, New TPX Area\nMai Kolachi Road, Karachi\nSTOP (+92-21) 3527-5000",
     "createdAt": "2020-02-20T13:40:19.557Z",
     "updatedAt": "2020-02-20T16:24:33.318Z",
     "country_pointer": {
@@ -3227,7 +3227,7 @@
     },
     "country": "Pakistan",
     "embassy": "U.S. Consulate General Lahore",
-    "info": "50, Shahrah-e-Abdul Hameed Bin Badees,\n(Old Empress Road) near Shimla Hill, Lahore, Pakistan\nPhone: (92-42) 3603-4000",
+    "info": "50, Shahrah-e-Abdul Hameed Bin Badees,\n(Old Empress Road) near Shimla Hill, Lahore, Pakistan\nSTOP (92-42) 3603-4000",
     "createdAt": "2020-02-20T13:40:19.565Z",
     "updatedAt": "2020-02-20T16:24:33.879Z",
     "country_pointer": {
@@ -3258,7 +3258,7 @@
     },
     "country": "Panama",
     "embassy": "U.S. Embassy in Panama City",
-    "info": "Building 783, Demetrio Basilio Lakas Avenue\nClayton, Panama\nTel: (507) 317-5000",
+    "info": "Building 783, Demetrio Basilio Lakas Avenue\nClayton, Panama\nSTOP (507) 317-5000",
     "createdAt": "2020-02-20T13:40:22.196Z",
     "updatedAt": "2020-02-20T16:24:34.929Z",
     "country_pointer": {
@@ -3289,7 +3289,7 @@
     },
     "country": "Paraguay",
     "embassy": "U.S. Embassy in Asuncion",
-    "info": "1776 Mariscal Lopez Avenue\nAsunción, Paraguay\nTel: 595 21 213-715, 595 21 248-3000",
+    "info": "1776 Mariscal Lopez Avenue\nAsunción, Paraguay\nSTOP 595 21 213-715, 595 21 248-3000",
     "createdAt": "2020-02-20T13:40:26.350Z",
     "updatedAt": "2020-02-20T16:24:36.246Z",
     "country_pointer": {
@@ -3307,7 +3307,7 @@
     },
     "country": "Peru",
     "embassy": "U.S. Embassy in Lima",
-    "info": "Avenida La Encalada cdra. 17 s/n\nSurco, Lima 33, Peru\nTelephone: (51-1) 618-2000",
+    "info": "Avenida La Encalada cdra. 17 s/n\nSurco, Lima 33, Peru\nSTOP (51-1) 618-2000",
     "createdAt": "2020-02-20T13:40:28.203Z",
     "updatedAt": "2020-02-20T16:24:36.762Z",
     "country_pointer": {
@@ -3320,7 +3320,7 @@
     "objectId": "NtO8xxfrnd",
     "country": "Philippines",
     "embassy": "U.S. Embassy in Manila",
-    "info": "1201 Roxas Boulevard\nManila, Philippines 1000\nPhone: (632) 301-2000",
+    "info": "1201 Roxas Boulevard\nManila, Philippines 1000\nSTOP (632) 301-2000",
     "createdAt": "2020-02-20T13:40:29.217Z",
     "updatedAt": "2020-02-20T16:24:37.277Z",
     "country_pointer": {
@@ -3338,7 +3338,7 @@
     },
     "country": "Poland",
     "embassy": "U.S. Consulate General in Krakow",
-    "info": "ul. Stolarska 9\n31-043 Krakow\nTel.: +48 12 424 5100",
+    "info": "ul. Stolarska 9\n31-043 Krakow\nSTOP +48 12 424 5100",
     "createdAt": "2020-02-20T13:40:30.312Z",
     "updatedAt": "2020-02-20T16:24:37.806Z",
     "country_pointer": {
@@ -3356,7 +3356,7 @@
     },
     "country": "Poland",
     "embassy": "Consular Agency in Poznan",
-    "info": "ul. Paderewskiego 8\n61-770 Poznan\nTel.: +48 61 851 8516",
+    "info": "ul. Paderewskiego 8\n61-770 Poznan\nSTOP +48 61 851 8516",
     "createdAt": "2020-02-20T13:40:30.524Z",
     "updatedAt": "2020-02-20T16:24:38.622Z",
     "country_pointer": {
@@ -3374,7 +3374,7 @@
     },
     "country": "Poland",
     "embassy": "U.S. Embassy Warsaw",
-    "info": "Aleje Ujazdowskie 29/31\n00-540 Warsaw Poland\nTel.: +48 22 504 2000",
+    "info": "Aleje Ujazdowskie 29/31\n00-540 Warsaw Poland\nSTOP +48 22 504 2000",
     "createdAt": "2020-02-20T13:40:30.447Z",
     "updatedAt": "2020-02-20T16:24:39.139Z",
     "country_pointer": {
@@ -3392,7 +3392,7 @@
     },
     "country": "Portugal",
     "embassy": "U.S. Consulate Ponta Delgada Azores",
-    "info": "Avenida Príncipe do Mónaco, 6-2 F\n9500 Ponta Delgada\nPhone: 351 296 308 330",
+    "info": "Avenida Príncipe do Mónaco, 6-2 F\n9500 Ponta Delgada\nSTOP 351 296 308 330",
     "createdAt": "2020-02-20T13:40:32.362Z",
     "updatedAt": "2020-02-20T16:24:40.050Z",
     "country_pointer": {
@@ -3410,7 +3410,7 @@
     },
     "country": "Portugal",
     "embassy": "U.S. Embassy Lisbon",
-    "info": "Avenida das Forças Armadas\n1600-081 Lisboa\nPhone: 351-21-727-3300\nFax: 351-21-726-9109",
+    "info": "Avenida das Forças Armadas\n1600-081 Lisboa\nSTOP 351-21-727-3300\nFax: 351-21-726-9109",
     "createdAt": "2020-02-20T13:40:32.609Z",
     "updatedAt": "2020-02-20T16:24:40.609Z",
     "country_pointer": {
@@ -3428,7 +3428,7 @@
     },
     "country": "Qatar",
     "embassy": "U.S. Embassy Doha",
-    "info": "22nd February Street\nAl Luqta District\nP.O. Box 2399\nDoha, Qatar\nPhone: (974) 4496-6000",
+    "info": "22nd February Street\nAl Luqta District\nP.O. Box 2399\nDoha, Qatar\nSTOP (974) 4496-6000",
     "createdAt": "2020-02-20T13:40:34.452Z",
     "updatedAt": "2020-02-20T16:24:41.151Z",
     "country_pointer": {
@@ -3441,7 +3441,7 @@
     "objectId": "SaDmLftxQZ",
     "country": "Samoa",
     "embassy": "U.S. Embassy Apia",
-    "info": "5th Floor\nACC Building\nMatafele Apia, Samoa\nPhone: +685 21436+685 21436 / 21631 / 21452 or 22696",
+    "info": "5th Floor\nACC Building\nMatafele Apia, Samoa\nSTOP +685 21436+685 21436 / 21631 / 21452 or 22696",
     "createdAt": "2020-02-20T13:40:36.652Z",
     "updatedAt": "2020-02-20T16:24:41.668Z",
     "country_pointer": {
@@ -3459,7 +3459,7 @@
     },
     "country": "San Marino",
     "embassy": "U.S. Embassy in San Marino",
-    "info": "Lungarno Amerigo Vespucci, 38\n50123 Florence, Italy\nTel: 055-266-95-1",
+    "info": "Lungarno Amerigo Vespucci, 38\n50123 Florence, Italy\nSTOP 055-266-95-1",
     "createdAt": "2020-02-20T13:40:37.508Z",
     "updatedAt": "2020-02-20T16:24:42.190Z",
     "country_pointer": {
@@ -3477,7 +3477,7 @@
     },
     "country": "Saudi Arabia",
     "embassy": "U.S. Embassy in Riyadh",
-    "info": "P.O. Box 94309\nRiyadh 11693\nSaudi Arabia\nTelephone: 966-11-4883800",
+    "info": "P.O. Box 94309\nRiyadh 11693\nSaudi Arabia\nSTOP 966-11-4883800",
     "createdAt": "2020-02-20T13:40:39.314Z",
     "updatedAt": "2020-02-20T16:24:42.706Z",
     "country_pointer": {
@@ -3495,7 +3495,7 @@
     },
     "country": "Saudi Arabia",
     "embassy": "U.S. Consulate General in Dhahran",
-    "info": "P.O. Box 38955\nDhahran Airport 31942\nSaudi Arabia\nPhone: (966-13) 330-3200",
+    "info": "P.O. Box 38955\nDhahran Airport 31942\nSaudi Arabia\nSTOP (966-13) 330-3200",
     "createdAt": "2020-02-20T13:40:39.290Z",
     "updatedAt": "2020-02-20T16:24:43.236Z",
     "country_pointer": {
@@ -3513,7 +3513,7 @@
     },
     "country": "Saudi Arabia",
     "embassy": "U.S. Consulate General in Jeddah",
-    "info": "Falastin\nAl-Hamra’a\nJeddah 23323, Saudi Arabia\nPhone: +966 12 667 0080",
+    "info": "Falastin\nAl-Hamra’a\nJeddah 23323, Saudi Arabia\nSTOP +966 12 667 0080",
     "createdAt": "2020-02-20T13:40:39.445Z",
     "updatedAt": "2020-02-20T16:24:43.751Z",
     "country_pointer": {
@@ -3531,7 +3531,7 @@
     },
     "country": "Senegal",
     "embassy": "U.S. Embassy in Dakar",
-    "info": "Route des Almadies\nDakar, Senegal\nTelephone: (221) 33-879-4000",
+    "info": "Route des Almadies\nDakar, Senegal\nSTOP (221) 33-879-4000",
     "createdAt": "2020-02-20T13:40:41.515Z",
     "updatedAt": "2020-02-20T16:24:44.277Z",
     "country_pointer": {
@@ -3567,7 +3567,7 @@
     },
     "country": "Sierra Leone",
     "embassy": "U.S. Embassy in Freetown",
-    "info": "Southridge – Hill Station\nFreetown, Sierra Leone\nTelephone: +232 99 1055 00",
+    "info": "Southridge – Hill Station\nFreetown, Sierra Leone\nSTOP +232 99 1055 00",
     "createdAt": "2020-02-20T13:40:45.472Z",
     "updatedAt": "2020-02-20T16:24:45.580Z",
     "country_pointer": {
@@ -3580,7 +3580,7 @@
     "objectId": "ZDiwgB80IP",
     "country": "Singapore",
     "embassy": "U.S. Embassy Singapore",
-    "info": "27 Napier Road\nSingapore 258508\nPhone: (65) 6476-9100",
+    "info": "27 Napier Road\nSingapore 258508\nSTOP (65) 6476-9100",
     "createdAt": "2020-02-20T13:40:47.000Z",
     "updatedAt": "2020-02-20T16:24:46.107Z",
     "country_pointer": {
@@ -3598,7 +3598,7 @@
     },
     "country": "Slovakia",
     "embassy": "U.S. Embassy Bratislava",
-    "info": "814 99 Bratislava\nSlovak Republic\nPhone: +421-2-5443 3338",
+    "info": "814 99 Bratislava\nSlovak Republic\nSTOP +421-2-5443 3338",
     "createdAt": "2020-02-20T13:40:48.954Z",
     "updatedAt": "2020-02-20T16:24:46.632Z",
     "country_pointer": {
@@ -3616,7 +3616,7 @@
     },
     "country": "Slovenia",
     "embassy": "U.S. Embassy in Ljubljana",
-    "info": "Prešernova 31\n1000 Ljubljana\nSlovenia\nPhone: +386 (1) 2005500",
+    "info": "Prešernova 31\n1000 Ljubljana\nSlovenia\nSTOP +386 (1) 2005500",
     "createdAt": "2020-02-20T13:40:50.807Z",
     "updatedAt": "2020-02-20T16:24:47.173Z",
     "country_pointer": {
@@ -3652,7 +3652,7 @@
     },
     "country": "South Africa",
     "embassy": "U.S. Consulate General in Cape Town",
-    "info": "2 Reddam Ave\nWestlake 7945\nPhone: +27 (21) 702-7300\nFax: +27 (21) 702-7493",
+    "info": "2 Reddam Ave\nWestlake 7945\nSTOP +27 (21) 702-7300\nFax: +27 (21) 702-7493",
     "createdAt": "2020-02-20T13:40:54.616Z",
     "updatedAt": "2020-02-20T16:24:48.210Z",
     "country_pointer": {
@@ -3670,7 +3670,7 @@
     },
     "country": "South Africa",
     "embassy": "U.S. Embassy Pretoria",
-    "info": "877 Pretorius St\nArcadia, Pretoria\nPhone: +27 (12) 431-4000\nFax: +27 (12) 342-2299",
+    "info": "877 Pretorius St\nArcadia, Pretoria\nSTOP +27 (12) 431-4000\nFax: +27 (12) 342-2299",
     "createdAt": "2020-02-20T13:40:54.743Z",
     "updatedAt": "2020-02-20T16:24:48.731Z",
     "country_pointer": {
@@ -3688,7 +3688,7 @@
     },
     "country": "South Africa",
     "embassy": "U.S. Consulate General in Johannesburg",
-    "info": "1 Sandton Drive\nSandhurst\nPhone: +27 (11) 290-3000\nFax: +27 (11) 884-0396",
+    "info": "1 Sandton Drive\nSandhurst\nSTOP +27 (11) 290-3000\nFax: +27 (11) 884-0396",
     "createdAt": "2020-02-20T13:40:54.844Z",
     "updatedAt": "2020-02-20T16:24:49.254Z",
     "country_pointer": {
@@ -3706,7 +3706,7 @@
     },
     "country": "South Africa",
     "embassy": "U.S. Embassy in U.S. Consulate General in Durban",
-    "info": "303 Dr. Pixley KaSeme Street\n31st Floor\nDelta Towers\nDurban\n4001\nPhone: +27 (31) 305-7600\nFax: +27 (31) 305-7691",
+    "info": "303 Dr. Pixley KaSeme Street\n31st Floor\nDelta Towers\nDurban\n4001\nSTOP +27 (31) 305-7600\nFax: +27 (31) 305-7691",
     "createdAt": "2020-02-20T13:40:54.877Z",
     "updatedAt": "2020-02-20T16:24:49.782Z",
     "country_pointer": {
@@ -3719,7 +3719,7 @@
     "objectId": "LrCMn5YnyI",
     "country": "South Korea",
     "embassy": "U.S. Embassy Seoul",
-    "info": "188 Sejong-daero, Jongno-gu,\nSeoul, Korea\n03141\nPhone: 82-2-397-4114",
+    "info": "188 Sejong-daero, Jongno-gu,\nSeoul, Korea\n03141\nSTOP 82-2-397-4114",
     "createdAt": "2020-02-20T13:40:56.344Z",
     "updatedAt": "2020-02-20T16:24:50.308Z",
     "country_pointer": {
@@ -3768,7 +3768,7 @@
     },
     "country": "Spain",
     "embassy": "U.S. Consulate in Barcelona",
-    "info": "Paseo Reina Elisenda de Montcada, 23\n08034 Barcelona, España\nPhone: (+34) 93 280 22 27\nFax (+34) 93 280 61 75",
+    "info": "Paseo Reina Elisenda de Montcada, 23\n08034 Barcelona, España\nSTOP (+34) 93 280 22 27\nFax (+34) 93 280 61 75",
     "createdAt": "2020-02-20T13:41:00.235Z",
     "updatedAt": "2020-02-20T16:24:52.165Z",
     "country_pointer": {
@@ -3786,7 +3786,7 @@
     },
     "country": "Spain",
     "embassy": "U.S. Embassy in Madrid",
-    "info": "Calle de Serrano, 75\n28006 Madrid, Spain\nPhone: 91-587-2200\nFax: 91-587-2303",
+    "info": "Calle de Serrano, 75\n28006 Madrid, Spain\nSTOP 91-587-2200\nFax: 91-587-2303",
     "createdAt": "2020-02-20T13:41:00.239Z",
     "updatedAt": "2020-02-20T16:24:52.686Z",
     "country_pointer": {
@@ -3804,7 +3804,7 @@
     },
     "country": "Sri Lanka",
     "embassy": "U.S. Embassy Colombo",
-    "info": "210 Galle Road\nColombo 03\nSri Lanka\nPhone: +94 (11) 249-8500",
+    "info": "210 Galle Road\nColombo 03\nSri Lanka\nSTOP +94 (11) 249-8500",
     "createdAt": "2020-02-20T13:41:01.798Z",
     "updatedAt": "2020-02-20T16:24:53.202Z",
     "country_pointer": {
@@ -3840,7 +3840,7 @@
     },
     "country": "Suriname",
     "embassy": "U.S. Embassy in Paramaribo",
-    "info": "Kristalstraat 165\nParamaribo, Suriname\nPhone: (597) 556-700",
+    "info": "Kristalstraat 165\nParamaribo, Suriname\nSTOP (597) 556-700",
     "createdAt": "2020-02-20T13:41:05.479Z",
     "updatedAt": "2020-02-20T16:24:54.272Z",
     "country_pointer": {
@@ -3858,7 +3858,7 @@
     },
     "country": "Sweden",
     "embassy": "U.S. Embassy in Stockholm",
-    "info": "Dag Hammarskjölds Väg 31,\nSE-115 89 Stockholm\nPhone: 08-783 53 00",
+    "info": "Dag Hammarskjölds Väg 31,\nSE-115 89 Stockholm\nSTOP 08-783 53 00",
     "createdAt": "2020-02-20T13:41:07.415Z",
     "updatedAt": "2020-02-20T16:24:54.790Z",
     "country_pointer": {
@@ -3876,7 +3876,7 @@
     },
     "country": "Switzerland",
     "embassy": "U.S. Embassy Bern",
-    "info": "Sulgeneckstrasse 19\nCH-3007 Bern, Switzerland\nTel: 031 357 70 11",
+    "info": "Sulgeneckstrasse 19\nCH-3007 Bern, Switzerland\nSTOP 031 357 70 11",
     "createdAt": "2020-02-20T13:41:09.212Z",
     "updatedAt": "2020-02-20T16:24:55.323Z",
     "country_pointer": {
@@ -3894,7 +3894,7 @@
     },
     "country": "Switzerland",
     "embassy": "U.S. Virtual Mission Liechtenstein",
-    "info": "In Care Of:\nSulgeneckstrasse 19\nCH-3007 Bern, Switzerland\nTel: 031 357 70 11",
+    "info": "In Care Of:\nSulgeneckstrasse 19\nCH-3007 Bern, Switzerland\nSTOP 031 357 70 11",
     "createdAt": "2020-02-20T13:41:09.494Z",
     "updatedAt": "2020-02-20T16:24:55.846Z",
     "country_pointer": {
@@ -3912,7 +3912,7 @@
     },
     "country": "Syria",
     "embassy": "U.S. Embassy in Damascus",
-    "info": "Abou Roumaneh, 2 Al Mansour Street\nDamascus, Syria\nTelephone: 3391-4444",
+    "info": "Abou Roumaneh, 2 Al Mansour Street\nDamascus, Syria\nSTOP 3391-4444",
     "createdAt": "2020-02-20T13:41:10.106Z",
     "updatedAt": "2020-02-20T16:24:56.369Z",
     "country_pointer": {
@@ -3925,7 +3925,7 @@
     "objectId": "fVegauYkFv",
     "country": "American Institute in Taiwan",
     "embassy": "Kaohsiung Branch Office",
-    "info": "5F, No.88, Chenggong 2nd Road\nQianzhen Dist.,Kaohsiung 80661\nTaiwan\nTel: (+886) (07) 335-5006",
+    "info": "5F, No.88, Chenggong 2nd Road\nQianzhen Dist.,Kaohsiung 80661\nTaiwan\nSTOP (+886) (07) 335-5006",
     "createdAt": "2020-02-20T13:41:11.269Z",
     "updatedAt": "2020-02-20T13:41:11.269Z"
   },
@@ -3933,7 +3933,7 @@
     "objectId": "ysAfCfj0zB",
     "country": "American Institute in Taiwan",
     "embassy": "American Institute in Taiwan",
-    "info": "No. 100, Jinhu Road,\nNeihu District 11461, Taipei City, Taiwan\nTel: (+886) (02) 2162-2000",
+    "info": "No. 100, Jinhu Road,\nNeihu District 11461, Taipei City, Taiwan\nSTOP (+886) (02) 2162-2000",
     "createdAt": "2020-02-20T13:41:11.574Z",
     "updatedAt": "2020-02-20T13:41:11.574Z"
   },
@@ -3946,7 +3946,7 @@
     },
     "country": "Tajikistan",
     "embassy": "U.S. Embassy in Dushanbe",
-    "info": "109-A, Ismoili Somoni Avenue (Zarafshon district)\nDushanbe, Tajikistan  734019\nPhone: +992 (37) 229 20 00",
+    "info": "109-A, Ismoili Somoni Avenue (Zarafshon district)\nDushanbe, Tajikistan  734019\nSTOP +992 (37) 229 20 00",
     "createdAt": "2020-02-20T13:41:13.274Z",
     "updatedAt": "2020-02-20T16:24:58.481Z",
     "country_pointer": {
@@ -3964,7 +3964,7 @@
     },
     "country": "Tanzania",
     "embassy": "U.S. Embassy in Dar es Salaam",
-    "info": "686 Old Bagamoyo Road,\nMsasani\nDar es Salaam, Tanzania\nTel: 255-22-229-4000",
+    "info": "686 Old Bagamoyo Road,\nMsasani\nDar es Salaam, Tanzania\nSTOP 255-22-229-4000",
     "createdAt": "2020-02-20T13:41:14.978Z",
     "updatedAt": "2020-02-20T16:24:59.006Z",
     "country_pointer": {
@@ -3977,7 +3977,7 @@
     "objectId": "8gIrAg73Wi",
     "country": "Thailand",
     "embassy": "U.S. Consulate General Chiang Mai",
-    "info": "387 Witchayanond Road\nChiang Mai 50300, Thailand\nPhone.: +66-53-107-700",
+    "info": "387 Witchayanond Road\nChiang Mai 50300, Thailand\nSTOP +66-53-107-700",
     "createdAt": "2020-02-20T13:41:17.135Z",
     "updatedAt": "2020-02-20T16:24:59.520Z",
     "country_pointer": {
@@ -3990,7 +3990,7 @@
     "objectId": "itmjvgyE4n",
     "country": "Thailand",
     "embassy": "U.S. Embassy Bangkok",
-    "info": "95 Wireless Road\nBangkok 10330, Thailand\nPhone: +66-2-205-4000",
+    "info": "95 Wireless Road\nBangkok 10330, Thailand\nSTOP +66-2-205-4000",
     "createdAt": "2020-02-20T13:41:17.403Z",
     "updatedAt": "2020-02-20T16:25:00.380Z",
     "country_pointer": {
@@ -4003,7 +4003,7 @@
     "objectId": "WWAe2EGVva",
     "country": "Timor-Leste",
     "embassy": "U.S. Embassy in Dili",
-    "info": "Avenida de Portugal\nPraia dos Coqueiros\nDili, Timor-Leste\ntel: (670) 332-4684",
+    "info": "Avenida de Portugal\nPraia dos Coqueiros\nDili, Timor-Leste\nSTOP (670) 332-4684",
     "createdAt": "2020-02-20T13:41:18.215Z",
     "updatedAt": "2020-02-20T13:41:18.215Z"
   },
@@ -4016,7 +4016,7 @@
     },
     "country": "Togo",
     "embassy": "U.S. Embassy in Lome",
-    "info": "Boulevard Eyadema\nB.P. 852, Lomé\nPhone:(+228) 2261 5470\nFax:(+228) 2261 5501",
+    "info": "Boulevard Eyadema\nB.P. 852, Lomé\nSTOP(+228) 2261 5470\nFax:(+228) 2261 5501",
     "createdAt": "2020-02-20T13:41:19.985Z",
     "updatedAt": "2020-02-20T16:25:01.190Z",
     "country_pointer": {
@@ -4029,7 +4029,7 @@
     "objectId": "S7hYs6l9RH",
     "country": "Tonga",
     "embassy": "U.S. Embassy in Tonga",
-    "info": "31 Loftus Street\nSuva, Fiji\nTelephone: (679) 331-4466",
+    "info": "31 Loftus Street\nSuva, Fiji\nSTOP (679) 331-4466",
     "createdAt": "2020-02-20T13:41:21.749Z",
     "updatedAt": "2020-02-20T16:25:01.813Z",
     "country_pointer": {
@@ -4047,7 +4047,7 @@
     },
     "country": "Trinidad & Tobago",
     "embassy": "U.S. Embassy in Port of Spain",
-    "info": "15 Queen’s Park West\nPort of Spain\nTrinidad and Tobago\nTel: (868) 622-6371",
+    "info": "15 Queen’s Park West\nPort of Spain\nTrinidad and Tobago\nSTOP (868) 622-6371",
     "createdAt": "2020-02-20T13:41:22.914Z",
     "updatedAt": "2020-02-20T13:41:22.914Z"
   },
@@ -4060,7 +4060,7 @@
     },
     "country": "Tunisia",
     "embassy": "U.S. Embassy Tunis",
-    "info": "Les Berges du Lac\n1053 TUNIS\nTunisia\nMain switchboard:  +216 71 107 000",
+    "info": "Les Berges du Lac\n1053 TUNIS\nTunisia\nMain STOP  +216 71 107 000",
     "createdAt": "2020-02-20T13:41:24.795Z",
     "updatedAt": "2020-02-20T16:25:02.847Z",
     "country_pointer": {
@@ -4078,7 +4078,7 @@
     },
     "country": "Turkey",
     "embassy": "U.S. Consulate General Istanbul",
-    "info": "İstinye Mahallesi, Üç Şehitler Sokak No.2\nİstinye 34460 – Istanbul / Turkey\nPhone: (90) 212-335 90 00",
+    "info": "İstinye Mahallesi, Üç Şehitler Sokak No.2\nİstinye 34460 – Istanbul / Turkey\nSTOP (90) 212-335 90 00",
     "createdAt": "2020-02-20T13:41:26.904Z",
     "updatedAt": "2020-02-20T16:25:03.425Z",
     "country_pointer": {
@@ -4096,7 +4096,7 @@
     },
     "country": "Turkey",
     "embassy": "U.S. Embassy Ankara",
-    "info": "110 Atatürk Blvd.\nKavaklıdere, 06100 Ankara – Turkey\nPhone: (90-312) 455-5555",
+    "info": "110 Atatürk Blvd.\nKavaklıdere, 06100 Ankara – Turkey\nSTOP (90-312) 455-5555",
     "createdAt": "2020-02-20T13:41:27.158Z",
     "updatedAt": "2020-02-20T16:25:03.951Z",
     "country_pointer": {
@@ -4114,7 +4114,7 @@
     },
     "country": "Turkey",
     "embassy": "U.S. Consulate Adana",
-    "info": "Girne Bulvari No:212 Guzelevler Mah.\nYuregir, Adana – TÜRKİYE\nTel: (90) (322) 455-4100",
+    "info": "Girne Bulvari No:212 Guzelevler Mah.\nYuregir, Adana – TÜRKİYE\nSTOP (90) (322) 455-4100",
     "createdAt": "2020-02-20T13:41:27.138Z",
     "updatedAt": "2020-02-20T16:25:04.477Z",
     "country_pointer": {
@@ -4132,7 +4132,7 @@
     },
     "country": "Turkmenistan",
     "embassy": "U.S. Embassy Ashgabat",
-    "info": "9 1984 Street (formerly Pushkin Street)\nAshgabat, Turkmenistan 744000\nTel: (+99312) 940045",
+    "info": "9 1984 Street (formerly Pushkin Street)\nAshgabat, Turkmenistan 744000\nSTOP (+99312) 940045",
     "createdAt": "2020-02-20T13:41:28.677Z",
     "updatedAt": "2020-02-20T16:25:05.010Z",
     "country_pointer": {
@@ -4150,7 +4150,7 @@
     },
     "country": "U.S. Mission to the UN-Geneva",
     "embassy": "U.S. Mission-Geneva",
-    "info": "111 Route de Pregny\n1292 Geneva, Switzerland\nPhone: +41 22 749 41 11",
+    "info": "111 Route de Pregny\n1292 Geneva, Switzerland\nSTOP +41 22 749 41 11",
     "createdAt": "2020-02-20T13:41:29.746Z",
     "updatedAt": "2020-02-20T13:41:29.746Z"
   },
@@ -4163,7 +4163,7 @@
     },
     "country": "U.S. Mission to the UN-Rome",
     "embassy": "U.S. Mission Rome",
-    "info": "via Boncompagni 2\nRome, Italy\nPhone: (06) 4674-3500",
+    "info": "via Boncompagni 2\nRome, Italy\nSTOP (06) 4674-3500",
     "createdAt": "2020-02-20T13:41:31.754Z",
     "updatedAt": "2020-02-20T13:41:31.754Z"
   },
@@ -4176,7 +4176,7 @@
     },
     "country": "United Arab Emirates",
     "embassy": "U.S. Consulate in Dubai",
-    "info": "Corner of Al Seef Rd. and Sheikh Khalifa bin Zayed Rd.\nDubai, U.A.E\nPhone: +971-4-309-4000",
+    "info": "Corner of Al Seef Rd. and Sheikh Khalifa bin Zayed Rd.\nDubai, U.A.E\nSTOP +971-4-309-4000",
     "createdAt": "2020-02-20T13:41:36.572Z",
     "updatedAt": "2020-02-20T16:25:06.047Z",
     "country_pointer": {
@@ -4194,7 +4194,7 @@
     },
     "country": "United Arab Emirates",
     "embassy": "U.S. Embassy in Abu Dhabi",
-    "info": "Airport Road at Rabdan (29th) Street\nEmbassies District, Plot 38, Sector W59-02, Street No. 4\nAbu Dhabi, U.A.E.\nTel. +971-2 414 2200",
+    "info": "Airport Road at Rabdan (29th) Street\nEmbassies District, Plot 38, Sector W59-02, Street No. 4\nAbu Dhabi, U.A.E.\nSTOP +971-2 414 2200",
     "createdAt": "2020-02-20T13:41:36.488Z",
     "updatedAt": "2020-02-20T16:25:06.558Z",
     "country_pointer": {
@@ -4230,7 +4230,7 @@
     },
     "country": "Uruguay",
     "embassy": "U.S. Embassy Montevideo",
-    "info": "Lauro Müller 1776\nMontevideo, Uruguay\nPhone: (+598) 1770-2000",
+    "info": "Lauro Müller 1776\nMontevideo, Uruguay\nSTOP (+598) 1770-2000",
     "createdAt": "2020-02-20T13:41:38.454Z",
     "updatedAt": "2020-02-20T16:25:07.610Z",
     "country_pointer": {
@@ -4248,7 +4248,7 @@
     },
     "country": "United Kingdom",
     "embassy": "U.S. Consulate General in Belfast",
-    "info": "Danesfort House\n223 Stranmillis Road\nBelfast BT9 5GR\nPhone: [44] (0)28-9038-6100",
+    "info": "Danesfort House\n223 Stranmillis Road\nBelfast BT9 5GR\nSTOP [44] (0)28-9038-6100",
     "createdAt": "2020-02-20T13:41:38.683Z",
     "updatedAt": "2020-02-20T16:25:08.259Z",
     "country_pointer": {
@@ -4266,7 +4266,7 @@
     },
     "country": "United Kingdom",
     "embassy": "U.S. Consulate General in Edinburgh",
-    "info": "3 Regent Terrace\nEdinburgh EH7 5BW\nPhone: [44] (0)131-556-8315",
+    "info": "3 Regent Terrace\nEdinburgh EH7 5BW\nSTOP [44] (0)131-556-8315",
     "createdAt": "2020-02-20T13:41:38.658Z",
     "updatedAt": "2020-02-20T16:25:08.931Z",
     "country_pointer": {
@@ -4284,7 +4284,7 @@
     },
     "country": "U.S. Mission to International Organizations in Vienna",
     "embassy": "U.S. Mission to the International Organizations in Vienna",
-    "info": "IZD Tower\nWagramerstrasse 17-19\n1220 Vienna, Austria\nPhone: (43) (1) 31339 0",
+    "info": "IZD Tower\nWagramerstrasse 17-19\n1220 Vienna, Austria\nSTOP (43) (1) 31339 0",
     "createdAt": "2020-02-20T13:41:41.616Z",
     "updatedAt": "2020-02-20T13:41:41.616Z"
   },
@@ -4297,7 +4297,7 @@
     },
     "country": "Venezuela",
     "embassy": "U.S. Embassy in Caracas",
-    "info": "F St. and Suapure St.\nUrb . Colinas de Valle Arriba\nCaracas, Venezuela 1080\nPhone: +58 (212) 975–6411",
+    "info": "F St. and Suapure St.\nUrb . Colinas de Valle Arriba\nCaracas, Venezuela 1080\nSTOP +58 (212) 975–6411",
     "createdAt": "2020-02-20T13:41:42.794Z",
     "updatedAt": "2020-02-20T16:25:09.834Z",
     "country_pointer": {
@@ -4315,7 +4315,7 @@
     },
     "country": "Yemen",
     "embassy": "U.S. Embassy in Sana’a",
-    "info": "Address: Sa’awan Street\nP.O. Box 22347\nTelephone: (967) 1 755-2000",
+    "info": "Address: Sa’awan Street\nP.O. Box 22347\nSTOP (967) 1 755-2000",
     "createdAt": "2020-02-20T13:41:46.174Z",
     "updatedAt": "2020-02-20T16:25:10.414Z",
     "country_pointer": {
@@ -4333,7 +4333,7 @@
     },
     "country": "Zambia",
     "embassy": "U.S. Embassy in Lusaka",
-    "info": "Eastern end of Kabulonga Road\nIbex Hill\nLusaka, Zambia\nPhone: +260 (0) 211-357-000",
+    "info": "Eastern end of Kabulonga Road\nIbex Hill\nLusaka, Zambia\nSTOP +260 (0) 211-357-000",
     "createdAt": "2020-02-20T13:41:47.972Z",
     "updatedAt": "2020-02-20T16:25:10.953Z",
     "country_pointer": {
@@ -4351,7 +4351,7 @@
     },
     "country": "Zimbabwe",
     "embassy": "U.S. Embassy in Harare",
-    "info": "172 Herbert Chitepo Ave\nHarare, Zimbabwe\nTel: 263-4-250593/4",
+    "info": "172 Herbert Chitepo Ave\nHarare, Zimbabwe\nSTOP 263-4-250593/4",
     "createdAt": "2020-02-20T13:41:49.998Z",
     "updatedAt": "2020-02-20T16:25:11.477Z",
     "country_pointer": {
