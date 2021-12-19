@@ -86,7 +86,7 @@ class Embassy(db.Model):
     destination = db.relationship('Destination', back_populates="embassies")
     
     def __repr__(self):
-        return f"Embassy Embassy_id:{self.embassy_id} Home Country:{self.home_country} Location:{self.address or self.country_name}"
+        return f"Embassy Embassy_id:{self.embassy_id} Home Country:{self.home_country} Location:{self.address}"
 
 
 def connect_to_db(flask_app, db_uri="postgresql:///travelbuddy", echo=True):

@@ -1,27 +1,116 @@
 {%extends 'base.html'%}
+{% block head %}
+<link rel="stylesheet" href="/static/css/travel_planner.css">
+
+{% endblock %}
+{% block content%}
+<li>
+    <div class="dropdown">
+    <button class="dropbtn"> Switch Travel Planners
+    </button>
+    <div class="dropdown-content">
+        {% for travel_planner in tp.user.travel_planner%}
+            <a href="/travel_planner/{{travel_planner.tp_id}}"`>{{travel_planner.name}}</a>
+        {%endfor%}
+    </div>
+    </li>
+
+{% endblock %}
 {% block body %}
-    <div><h1>Destinations- {{tp.destination.country_name}}</h1></div>
-    
-   
+    <div id="destination_name">
+        <h1 id="dest_country" >{{tp.destination.country_name}}</h1>
      <ul>
          <li>{{ tp.destination.city_name}}</li>
      </ul>
+    </div>
 
-    <div>Weather</div>
-    <div>Money Currency</div>
+
+    <div id= 'weather'>
+
+    <h3>Weather</h3>
+    {%for date in weather_info%}
+        <div class="day-forcast">  {{date[0]}}**(icon)***{{date[1][0][2]}} {{date[1][0][1]}}</div>
+        <p class='expand_info'>
+            Morning: {{date[1][0][1]}}  {{date[1][0][2]}} 
+            Afternoon: {{date[1][1][1]}} {{date[1][1][2]}}
+            Night: {{date[1][2][1]}} {{date[1][2][2]}}
+        </p>
+      
+    {%endfor%}
+    </div>
+    
+    <div id= 'money_exchange'>Money Currency</div>
     <div>maybe a little notebook with budget calculator
         and stuff
     </div>
-    <div>Flight and hotel recs</div>
+    <div id ="flight">Flight and hotel recs</div>
+    <div  id='hotels'>
+        <form id='hotel_choice'>
+            <label for="checkin" >Check-in date:<input type="date"id="checkin"></label>
+            <br>
+            <label for="checkout" >Check-out date:<input type="date" id="checkout"></label>
+            <br>
+            <label for="sort-order" >Sort by:</label>
+            <select name="sort-order" id ='sort-order'>
+                <option value="STAR_RATING_HIGHEST_FIRST">Star rating(high to low)</option>
+                <option value="STAR_RATING_LOWEST_FIRST">Star rating(low to high)</option>
+                <option value="GUEST_RATING">Guest rating</option>
+                <option value="PRICE_HIGHEST_FIRST">Price (high to low)</option>
+                <option value="PRICE">Price(low to high)</option>
+            </select>
+            <br>
+            <label for="destination">Choose destination:<input type="text" id= "destination" value={{tp.destination.city_name}} disabled= True></label>
+            <br>
+            <label for="currency">Currency: <input type="text" id='currency' value={{currency}}></label>
+            <br>
+            <label for="adult_num">Number of Adults: <input type="number" name="adult_num" id="adult_num"> </label>
+            <br>
+            <input type="submit" id="hotel_submit" value="Find Accomadations">
+            
+        </form>
+        <div id='hotel_results'>
+           
+        </div>
+    </div>
+
     <div>emergency info and embassy stuff
         <h1>for example:</h1>
         {% if embassy%}
-            embassy.
+            <a href="{{embassy.website}}">Embassy</a>
+            <br>
+            address: {{embassy.address}}
+        <p>Here are some in the surronding areas in {{tp.destination.country_name}}!</p>
+
+            {% if not embassies %}
+        <h3>Sorry! We couldnt find any other embassies for this location!</h3>
+        <p>We are always updating, so be sure to check back in!</p>
+            {%else%}
+            <ul>
+                {% for embassy in embassies %}
+                <li>
+                    
+                    <p> 
+                        {%if embassy.website %}
+                        <a href="{{embassy.website}}">Embassy</a>
+                        <br>
+                        address: {{embassy.address}}
+                        {%else%}
+                        Embassy
+                        <br>
+                        address: {{embassy.address}}
+                        {%endif%}
+                    </p>
+                </li>
+                {%endfor%}
+            </ul>
+            {% endif %}
         {%else%}
         {% if not embassies %}
         <h1>Sorry! We couldnt find any embassies for this location!</h1>
         <p>We are always updating, so be sure to check back in!</p>
         {% else %}
+        <p>There doesn't seem to be any embassies in {{tp.destination.city_name}}!</p>
+        <p>However, we were able to find embassies around {{tp.destination.country_name}} for you! </p>
         <ul>
             {% for embassy in embassies %}
             <li>
@@ -40,7 +129,9 @@
             </li>
             {%endfor%}
         </ul>
+        
         {% endif %}
         {% endif %}  
     </div>
+    <script src="/static/js/travel_planner.js"></script>
 {%endblock body%}

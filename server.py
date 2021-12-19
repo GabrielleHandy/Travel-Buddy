@@ -1,6 +1,6 @@
 import os
 import requests
-from flask import Flask, render_template, request, redirect, session, flash
+from flask import Flask, render_template, request, redirect, session, flash, jsonify
 from werkzeug.utils import secure_filename
 import crud
 from model import connect_to_db
@@ -9,6 +9,7 @@ from model import connect_to_db
 app = Flask(__name__)
 app.secret_key = 'erwjrkmfw]r77\544rew'
 OCR_API = os.environ['OCR_KEY']
+HOTEL_KEY = os.environ['HOTEL_KEY']
 
 @app.route('/')
 def homepage():
@@ -45,7 +46,6 @@ def login_user():
     password = request.form.get('password')
     user = crud.get_user_by_email(email)
     
-    print(user)
     if user:
         if user.password == password:
             flash("Logged in :)")
@@ -70,65 +70,144 @@ def clear_session():
 def show_profile(fname):
     """View user profile"""
     # flash(f"welcome back {fname}")
+    
     user =crud.get_user_by_id(session["user_id"])
     return render_template('user_profile.html', user = user)  
-
-@app.route('/travelplanners')
-def show_all_travelplanners():
-    """Show a list of all travelplanners"""
-    user =crud.get_user_by_id(session["user_id"])
-    return render_template('travel_planners.html', user = user)  
+ 
 
 # travelplanner routes 
 @app.route('/travel_planner/<tp_id>')
 def show_chosen_planner(tp_id):
     """View Travel_Planner by id"""
     # flash(f"welcome back {fname}")
+
     tp =crud.get_travelplanner_by_id(tp_id)
     destinations = tp.destination
+
+    country_name = destinations.country_name
+    alert = crud.retrieve_advisory(country_name)
+    flash(alert)
+
     embassies = []
     embassy = []
     if tp.destination.embassies:
         embassy = crud.get_home_embassy(tp)
-        if embassy == None:
-            embassies = crud.get_relevant_embassies(tp)
-
-            
+        
     
+    embassies = crud.get_relevant_embassies(tp)
+
+    city_name = destinations.city_name
+
+    # weather info saved in session to lower pulls to api
+    if city_name in session:
+        weather_info =  session[city_name]
+        
+    else:
+        results = crud.get_weather(city_name, tp.user)
+        weather_info =  crud.extract_weather_info(results)
+        session[city_name] = weather_info
+        
+    # sorted by an organizer counter I put in first array
+    # in every reoccurring day
+    print(weather_info)
+    weather_info = sorted(weather_info.items(), key=lambda x: x[1][0][3], reverse=False)
+    currencies= {'United States': 'USD',
+                'United Kingdom': 'EUR',
+                'Canada': 'CAD'  
+                }
+    currency = currencies[tp.user.home_country]
+    session['currency'] = currency
     return render_template('travelplanner.html', tp = tp,
-                          destinations = destinations, embassies=embassies, embassy=embassy)  
-# @app.route('/recieve_pic', methods=["POST","GET"])
-# def show_afterparty_form():
+                          destinations = destinations, embassies=embassies, 
+                          embassy=embassy, weather_info = weather_info, currency = currency) 
 
-#     if request.form.get('submit') == 'submit':
-#         f = request.files['image']
-#         print(f)
-#         filename = secure_filename(f.filename)
-#         print(filename)
-#         f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-#         print(app.config['UPLOAD_FOLDER'])
-    # print(image)
-    # url = 'https://api.ocr.space/parse/imageurl'
-    # payload = {'apikey': OCR_API}
-    # payload['file'] = image
 
+
+
+@app.route('/new_tp')
+def view_travelplanner_form():
+    """View Travelplanner Form"""
+
+    destinations = crud.get_all_destinations()
+
+    return render_template('create_travelplanner.html', destinations = destinations)
+
+
+@app.route('/create_travelplanner', methods=['POST'])
+def create_travel_planner():
+
+    user_id = session['user_id']
+    tp_name = request.form.get('tp_name')
     
-    # res = requests.get(url, params = payload)
+    # getting city and country name
+    destinations = request.form.get('destinations')
     
+    destination = destinations.split(",")
+
+
+    city_name = destination[0]
+    country = destination[1]
+
+    date = request.form.get('date')
+
+    dest_id = crud.get_destid_by_location(city_name,country)
+
+    # checking for duplicates
+    answer = crud.check_for_repeats(dest_id, user_id)
+    if answer:
+
+        crud.create_travelplanner(tp_name,user_id, dest_id, date)
+    else:
+        flash("""Seems like you created this Travel Planner already!""")
+
+    return redirect('/new_tp')
+
+
+
+# This route is used just for fetching hotel info and protecting the key
+@app.route('/find_destid', methods=['POST'])
+def hotel_dest_id():
+    """Creates a call to hotels.com in order to find dest_id"""
+    destination = request.json.get('destination')
+
+    # call for dest_id
+    currency = session['currency']
+    url = "https://hotels-com-provider.p.rapidapi.com/v1/destinations/search"
+
+    query_string = {'query': f'{destination}', 'currency': f'{currency}', 'locale': 'en_US' }
+
+    headers = {
+    'x-rapidapi-key': HOTEL_KEY,
+    'x-rapidapi-host': "hotels-com-provider.p.rapidapi.com"
+    }
+
+    response = requests.request("GET", url, headers=headers, params= query_string)
+    print(response)
+    return jsonify(response.json())
+
+@app.route('/find_hotels', methods=['POST'])
+def display_hotels():
+    """Creates a call to hotels.com to find available hotels"""
+    dest_id = request.json.get('dest_id')
+    checkin = request.json.get('checkin')
+    checkout = request.json.get('checkout')
+    sort_by = request.json.get('sortBy')
+    adult_num = request.json.get('adult_num')
+    currency = session['currency']
+
+    url = "https://hotels-com-provider.p.rapidapi.com/v1/hotels/search"
+
+    querystring = {'checkin_date':f'{checkin}','checkout_date':f'{checkout}','sort_order':f'{sort_by}','destination_id':f'{dest_id}','adults_number':f'{adult_num}','locale':'en_US','currency':f'{currency}'}
+
+    headers = {
+        'x-rapidapi-key': HOTEL_KEY,
+        'x-rapidapi-host': "hotels-com-provider.p.rapidapi.com"
+        }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
     
-    # - Use form data from the user to populate any search parameters
-    #
-    # - Make sure to save the JSON data from the response to the `data`
-    #   variable so that it can display on the page. This is useful for
-    #   debugging purposes!
-    #
-    # - Replace the empty list in `events` with the list of events from your
-    #   search results
-
-    # data = res
-    # print(data)
-
-# return redirect('/')
+    return jsonify(response.json())
+   
 
 if __name__ == '__main__':
     # DebugToolbarExtension(app)

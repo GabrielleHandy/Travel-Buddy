@@ -1,6 +1,22 @@
 {%extends 'base.html'%}
 {% block title %}profile page{% endblock %}
 {% block body%}
-<p>Welcome {{user.fname}}</p>
-<p>This is where the profile will be </p>
-<div onclick=""></div>{% endblock%}
+<p>Welcome {{user.fname}}</p>\
+<div id= 'tp_list'>
+    <ul name='tp_list' id="tp_list">
+        {% for tp in user.travel_planner %}
+            <li>
+                I want to create an on hover message that shows tp country
+                <span class="hover_info" data-hover= '{{tp.destination.city_name}}, {{tp.destination.country_name}}'>
+                    <a href="/travel_planner/{{tp.tp_id}}"> {{tp.name}}</a>
+                </span>
+            </li>
+            
+        {%endfor%}
+        </ul>
+        <a href="/new_tp"><button id ='create_tp'>Create a new planner</button></a>
+</div>
+<p>This is where the profile will be
+    I want a list of travel planners </p>
+<div onclick=""></div>
+{% endblock%}

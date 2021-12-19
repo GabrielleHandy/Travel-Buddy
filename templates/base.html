@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="/static/css/style.css"> 
+        {% block head %}{% endblock %}
         <title>
             {% block title %}{% endblock %}
           </title>
@@ -10,10 +12,10 @@
         <nav>
             <h2>Explore</h2>
           <ul>
-            <li><a href="/travelplanners">View planner</a></li>
-            <li><a href="#">undecided</a></li>
             <li><a href="/profile/{{session.get('user_id')}}">Account Page</a></li>
             <li><a href="/logout">Logout</a></li>
+            <li><a href="/new_tp">Create a new Travel planner</a></li>
+            {% block content%}{% endblock %}
           </ul>
           </nav>
           {% endif %}

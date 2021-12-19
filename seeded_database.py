@@ -28,18 +28,15 @@ with open('static/databases/usEmbassy.json') as f:
 
     results = usembassy_data['results']
     stoppers = ['STOP','Tel','Telephone:','Tel:','Phone:', 'Switchboard:', 'International:', 'Call:']
-    
-    website=None
-    for result in results: 
 
+   
+    website=None
+    
+    
+    for result in results: 
         home_country = 'United States'
         country = result['country']
-        if 'geoPosition' in result:      
-            lat = result['geoPosition']['latitude']
-            lng= result['geoPosition']['longitude']
-        else:
-            lat = 1
-            lng= 1
+
         # This is to strip the info section in csv to just give the adress.
         # Sadly the whole info section is one long list
         raw_address = result['info'].split()
@@ -51,7 +48,7 @@ with open('static/databases/usEmbassy.json') as f:
         
             elif word in stoppers:
                 break
-      
+    
             address.append(word)
             
         if len(address) > 1:
@@ -61,7 +58,7 @@ with open('static/databases/usEmbassy.json') as f:
 
 
         raw_embassy_name =result['embassy'].split()
-        print(raw_embassy_name)
+        
         city_name = []
         for i in range(len(raw_embassy_name)):
             if 'in' == raw_embassy_name[i]:
@@ -70,8 +67,8 @@ with open('static/databases/usEmbassy.json') as f:
             if  raw_embassy_name[i] in city_name:
                 break
             
-                   
-               
+                
+            
             elif  raw_embassy_name[i] == country:
                 city_name.append(raw_embassy_name[i])
                 if len (raw_embassy_name[i::]) > 1 :
@@ -81,16 +78,39 @@ with open('static/databases/usEmbassy.json') as f:
             else:
                 if i == (len(raw_embassy_name) - 1):
                     city_name = str(raw_embassy_name[-1])
-                    print(city_name) 
+                    
 
         if type(city_name) is list and len(city_name )> 1:
                 city_name = " ".join(city_name)
-                print(city_name)
-        else:
-           if type(city_name) is list:
-                city_name = city_name[0]
                 
-                print(city_name)
+        else:
+            if type(city_name) is list:
+                    city_name = city_name[0]
+                        
+        
+
+        if 'geoPosition' in result:      
+            lat = result['geoPosition']['latitude']
+            lng= result['geoPosition']['longitude']
+
+        else:
+            if address == None:
+                continue
+
+            geocode = crud.add_geocode(address)
+
+            if geocode == []:
+                continue
+            
+
+            else:
+                lat = geocode['lat']
+                lng = geocode['lng']
+
+
+        
+        
+      
                     
         crud.create_embassy(home_country, country, 
                                     lat, lng, city_name,
@@ -130,26 +150,27 @@ with open('static/databases/caEmbassy.json') as j:
 
 #British EMbassies
 
-# with open('static/databases/FCO_posts_overseas_18_October_2019.csv') as file:
+with open('static/databases/FCO_posts_overseas_18_October_2019.csv') as file:
     
-#     city_name = None
-#     address=None
-#     website=None 
+    city_name = None
+    address=None
+    website=None 
 
-#     for line in csv.reader(file, delimiter=","):
-#         if 'Region' in line:
-#             continue
-#         elif line[0] == 'Multilateral':
-#             continue
-#         else:
-#             home_country = 'United Kingdom'
-#             country = line[1]
-#             lng = float(line[4])
-#             lat = float(line[5])
-#             city_name = line[2]
-#             crud.create_embassy(capitals, home_country, country, 
-#                                     lat, lng, city_name,
-#                                     address, website)
+    for line in csv.reader(file, delimiter=","):
+        if 'Region' in line:
+            continue
+        elif line[0] == 'Multilateral':
+            continue
+        else:
+            home_country = 'United Kingdom'
+            country = line[1]
+            lat = float(line[4])
+            lng = float(line[5])
+            address = crud.add_address(lat,lng)
+            city_name = line[2]
+            crud.create_embassy(home_country, country, 
+                                    lat, lng, city_name,
+                                    address, website)
 
 # test_users
 

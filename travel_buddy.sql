@@ -4357,129 +4357,191 @@ COPY public.destinations (dest_id, city_name, country_name) FROM stdin;
 4153	Medan	Indonesia
 4154	Surabaya	Indonesia
 4155	Bali	Indonesia
-4156	Erbil	Iraq
-4157	Florence	Italy
-4158	Milan	Italy
-4159	Naples	Italy
-4160	ICAO	U.S. Mission to the ICAO
-4161	Nagoya	Japan
-4162	Sapporo	Japan
-4163	Osaka	Japan
-4164	Fukuoka	Japan
-4165	Astana	Kazakhstan
-4166	Bishkek	Kyrgyz Republic
-4167	Antananarivo	Madagascar & Comoros
-4168	Post–Comoros	Madagascar & Comoros
-4169	Maldives	Maldives
-4170	Ciudad Juarez	Mexico
-4171	Guadalajara	Mexico
-4172	Hermosillo	Mexico
-4173	Monterrey	Mexico
-4174	Merida	Mexico
-4175	Tijuana	Mexico
-4176	Nogales	Mexico
-4177	Kolonia	Micronesia
-4178	Curacao	Netherlands Antilles
-4179	Skopje	North Macedonia
-4180	NATO	U.S. Mission to NATO
-4181	OAS	U.S. Mission to the OAS
-4182	OECD	U.S. Mission to the OECD
-4183	Peshawar	Pakistan
-4184	Lahore	Pakistan
-4185	Koror	Palau
-4186	Asuncion	Paraguay
-4187	Krakow	Poland
-4188	Poznan	Poland
-4189	Azores	Portugal
-4190	Dhahran	Saudi Arabia
-4191	Jeddah	Saudi Arabia
-4192	Somalia	Somalia
-4193	U.S. Consulate General in Durban	South Africa
-4194	Busan	South Korea
-4195	Barcelona	Spain
-4196	Liechtenstein	Switzerland
-4197	Office	American Institute in Taiwan
-4198	Taiwan	American Institute in Taiwan
-4199	Mai	Thailand
-4200	Lome	Togo
-4201	Tonga	Tonga
-4202	Port of Spain	Trinidad & Tobago
-4203	Adana	Turkey
-4204	Mission-Geneva	U.S. Mission to the UN-Geneva
-4205	Rome	U.S. Mission to the UN-Rome
-4206	America	United Kingdom
-4207	Belfast	United Kingdom
-4208	Edinburgh	United Kingdom
-4209	Sana’a	Yemen
-4210	Ponta Delgada	Azores
-4211	St. John's	Antigua and Barbuda
-4212	St. George	Bermuda
-4213	Belo Horizonte	Brazil
-4214	Rio De Janeiro	Brazil
-4215	Douala	Cameroon
-4216	Seven Mile Beach	Cayman Islands
-4217	N'Djamena	Chad
-4218	Chongqing	China
-4219	Cartagena	Colombia
-4220	Dar Es Salaam	Tanzania
-4221	Kinshasa	Democratic Republic of Congo (Kinshasa)
-4222	Guardalavaca	Cuba
-4223	Punta Cana	Dominican Republic
-4224	Puerto Plata	Dominican Republic
-4225	Nice	France
-4226	Stuttgart	Germany
-4227	Pointe-à-Pitre	Guadeloupe
-4228	Pohnpei	Micronesia (FSM)
-4229	Hong Kong	China
-4230	Bengaluru (formerly Bangalore)	India
-4231	Chandigarh	India
-4232	Kolkata (formerly Calcutta)	India
-4233	Mumbai (Formerly Bombay)	India
-4234	Tel Aviv	Israel, the West Bank and the Gaza Strip
-4235	Ramallah	Israel, the West Bank and the Gaza Strip
-4236	Abidjan	Côte d'Ivoire (Ivory Coast)
-4237	Montego Bay	Jamaica
-4238	Hiroshima	Japan
-4239	Penang	Malaysia
-4240	Rabat-Souissi	Morocco
-4241	Acapulco	Mexico
-4242	Cancún	Mexico
-4243	Mazatlán	Mexico
-4244	Playa Del Carmen	Mexico
-4245	Yangon	Myanmar
-4246	Nauru	Nauru
-4247	Port Harcourt	Nigeria
-4248	Stavanger	Norway
-4249	Panama	Panama
-4250	Cebu	Philippines
-4251	Faro	Portugal
-4252	Miami	United States
-4253	Vladivostok	Russia
-4254	Saint-Pierre	Saint-Pierre-et-Miquelon
-4255	Málaga	Spain
-4256	Gothenburg	Sweden
-4257	Geneva	Switzerland
-4258	Chiang Mai	Thailand
-4259	Phuket	Thailand
-4260	Nuku'alofa	Tonga
-4261	Port of Spain	Trinidad and Tobago
-4262	Providenciales	Turks and Caicos Islands
-4263	Lviv	Ukraine
-4264	Cardiff	United Kingdom
-4265	Atlanta	United States
-4266	Boston	United States
-4267	Chicago	United States
-4268	Dallas	United States
-4269	Denver	United States
-4270	Detroit	United States
-4271	Honolulu	United States
-4272	Los Angeles	United States
-4273	Minneapolis	United States
-4274	San Francisco	United States
-4275	Seattle	United States
-4276	Port Vila	Vanuatu
-4277	Sint Maarten	Sint Maarten
-4278	Dili	Timor-Leste (East Timor)
+4156	Florence	Italy
+4157	Milan	Italy
+4158	Naples	Italy
+4159	ICAO	U.S. Mission to the ICAO
+4160	Nagoya	Japan
+4161	Sapporo	Japan
+4162	Osaka	Japan
+4163	Fukuoka	Japan
+4164	Astana	Kazakhstan
+4165	Bishkek	Kyrgyz Republic
+4166	Antananarivo	Madagascar & Comoros
+4167	Post–Comoros	Madagascar & Comoros
+4168	Maldives	Maldives
+4169	Guadalajara	Mexico
+4170	Hermosillo	Mexico
+4171	Merida	Mexico
+4172	Tijuana	Mexico
+4173	Nogales	Mexico
+4174	Kolonia	Micronesia
+4175	Curacao	Netherlands Antilles
+4176	Skopje	North Macedonia
+4177	NATO	U.S. Mission to NATO
+4178	OAS	U.S. Mission to the OAS
+4179	OECD	U.S. Mission to the OECD
+4180	Peshawar	Pakistan
+4181	Lahore	Pakistan
+4182	Koror	Palau
+4183	Asuncion	Paraguay
+4184	Krakow	Poland
+4185	Poznan	Poland
+4186	Azores	Portugal
+4187	Dhahran	Saudi Arabia
+4188	Jeddah	Saudi Arabia
+4189	Somalia	Somalia
+4190	U.S. Consulate General in Durban	South Africa
+4191	Barcelona	Spain
+4192	Liechtenstein	Switzerland
+4193	Office	American Institute in Taiwan
+4194	Taiwan	American Institute in Taiwan
+4195	Mai	Thailand
+4196	Lome	Togo
+4197	Tonga	Tonga
+4198	Port of Spain	Trinidad & Tobago
+4199	Adana	Turkey
+4200	Mission-Geneva	U.S. Mission to the UN-Geneva
+4201	Rome	U.S. Mission to the UN-Rome
+4202	America	United Kingdom
+4203	Belfast	United Kingdom
+4204	Edinburgh	United Kingdom
+4205	Sana’a	Yemen
+4206	Ponta Delgada	Azores
+4207	St. John's	Antigua and Barbuda
+4208	St. George	Bermuda
+4209	Belo Horizonte	Brazil
+4210	Rio De Janeiro	Brazil
+4211	Douala	Cameroon
+4212	Seven Mile Beach	Cayman Islands
+4213	N'Djamena	Chad
+4214	Chongqing	China
+4215	Cartagena	Colombia
+4216	Dar Es Salaam	Tanzania
+4217	Kinshasa	Democratic Republic of Congo (Kinshasa)
+4218	Guardalavaca	Cuba
+4219	Punta Cana	Dominican Republic
+4220	Puerto Plata	Dominican Republic
+4221	Nice	France
+4222	Stuttgart	Germany
+4223	Pointe-à-Pitre	Guadeloupe
+4224	Pohnpei	Micronesia (FSM)
+4225	Hong Kong	China
+4226	Bengaluru (formerly Bangalore)	India
+4227	Chandigarh	India
+4228	Kolkata (formerly Calcutta)	India
+4229	Mumbai (Formerly Bombay)	India
+4230	Erbil	Iraq
+4231	Tel Aviv	Israel, the West Bank and the Gaza Strip
+4232	Ramallah	Israel, the West Bank and the Gaza Strip
+4233	Abidjan	Côte d'Ivoire (Ivory Coast)
+4234	Montego Bay	Jamaica
+4235	Hiroshima	Japan
+4236	Busan	South Korea
+4237	Penang	Malaysia
+4238	Rabat-Souissi	Morocco
+4239	Acapulco	Mexico
+4240	Cancún	Mexico
+4241	Mazatlán	Mexico
+4242	Monterrey	Mexico
+4243	Playa Del Carmen	Mexico
+4244	Yangon	Myanmar
+4245	Nauru	Nauru
+4246	Port Harcourt	Nigeria
+4247	Stavanger	Norway
+4248	Panama	Panama
+4249	Cebu	Philippines
+4250	Faro	Portugal
+4251	Miami	United States
+4252	Vladivostok	Russia
+4253	Saint-Pierre	Saint-Pierre-et-Miquelon
+4254	Málaga	Spain
+4255	Gothenburg	Sweden
+4256	Geneva	Switzerland
+4257	Chiang Mai	Thailand
+4258	Phuket	Thailand
+4259	Nuku'alofa	Tonga
+4260	Port of Spain	Trinidad and Tobago
+4261	Providenciales	Turks and Caicos Islands
+4262	Lviv	Ukraine
+4263	Cardiff	United Kingdom
+4264	Atlanta	United States
+4265	Boston	United States
+4266	Chicago	United States
+4267	Dallas	United States
+4268	Denver	United States
+4269	Detroit	United States
+4270	Honolulu	United States
+4271	Los Angeles	United States
+4272	Minneapolis	United States
+4273	San Francisco	United States
+4274	Seattle	United States
+4275	Port Vila	Vanuatu
+4276	Sint Maarten	Sint Maarten
+4277	Dili	Timor-Leste (East Timor)
+4278	Goma	Democratic Republic of the Congo
+4279	Abidjan	Ivory Coast
+4280	Kaduna	Nigeria
+4281	Enugu	Nigeria
+4282	Kano	Nigeria
+4283	Hargeisa	Somalia
+4284	St.John's	Antigua and Barbuda
+4285	St.George's	Grenada
+4286	Port au Prince	Haiti
+4287	Cancun	Mexico
+4288	Kingstown	St. Vincent & Grenadines
+4289	Port Of Spain	Trinidad and Tobago
+4290	Houston	United States
+4291	Orlando	United States
+4292	Raleigh	United States
+4293	San Diego	United States
+4294	Brisbane	Australia
+4295	Bandar Seri Begawan	Brunei Darussalam
+4296	Hong Kong SAR	China
+4297	Pyongyang	Democratic People's Republic of Korea
+4298	Yangon	Myanmar (Burma)
+4299	Atyrau	Kazakhstan
+4300	St. Petersburg	Russia
+4301	Yekaterinburg	Russia
+4302	Banja Luka	Bosnia and Herzegovina
+4303	Sarajevo	Bosnia and Herzegovina
+4304	Split	Croatia
+4305	Marseilles	France
+4306	Dusseldorf	Germany
+4307	Corfu	Greece
+4308	Zakynthos	Greece
+4309	Rhodes	Greece
+4310	Heraklion	Greece
+4311	Vatican City	Holy See
+4312	Portimao	Portugal
+4313	Bilbao	Spain
+4314	Palma	Spain
+4315	Alicante	Spain
+4316	Malaga	Spain
+4317	Santa Cruz de Tenerife	Spain
+4318	Las Palmas	Spain
+4319	Berne	Switzerland
+4320	Izmir	Turkey
+4321	Antalya	Turkey
+4322	Manama/Bahrain	Bahrain
+4323	Tel Aviv	Israel
+4324	Kuwait	Kuwait
+4325	Jerusalem	Occupied Palestinian territories
+4326	Gaza	Occupied Palestinian territories
+4327	Al-Khobar	Saudi Arabia
+4328	Sana'a	Yemen
+4329	Anguilla	Anguilla
+4330	Ascension Island	Ascension Island
+4331	Tortola	British Virgin Islands
+4332	Stanley	Falkland Islands
+4333	Brades	Montserrat
+4334	Jamestown	Saint Helena
+4335	Tristan Da Cunha	Tristan Da Cunha 
+4336	Grand Turk	Turks and Caicos Islands
+4337	Pune	India
+4338	Goa	India
+4339	Bengaluru	India
+4340	Ahmedabad	India
 \.
 
 
@@ -4494,17 +4556,17 @@ COPY public.embassies (embassy_id, home_country, latitude, longitude, address, w
 4	United States	13.244469090775446	-8.809720967521883	R. Houari Boumediene 32, Luanda, Angola, C.P. 6468	\N	27
 5	United States	-58.42101148534582	-34.5766049804666	Av. Colombia 4300 (C1425GMN) Buenos Aires Argentina	\N	15
 6	United States	44.47928465065334	40.16526737871782	1 American Avenue Yerevan 0082, Republic of Armenia	\N	364
-7	United States	1	1	553 St. Kilda Road Melbourne, VIC 3004	\N	4096
-8	United States	1	1	Moonah Place Yarralumla, ACT 2600	\N	411
-9	United States	1	1	Level 10, MLC Centre 19-29 Martin Place Sydney, NSW 2000	\N	64
-10	United States	1	1	16 St. George’s Terrace Perth, WA 6000	\N	4097
+7	United States	-37.8469056	144.9802442	553 St. Kilda Road Melbourne, VIC 3004	\N	4096
+8	United States	-35.3076255	149.1175268	Moonah Place Yarralumla, ACT 2600	\N	411
+9	United States	-33.868669	151.2090347	Level 10, MLC Centre 19-29 Martin Place Sydney, NSW 2000	\N	64
+10	United States	-31.9568503	115.8644221	16 St. George’s Terrace Perth, WA 6000	\N	4097
 11	United States	16.354499215758217	48.22291345319236	Boltzmanngasse 16 1090 Vienna, Austria	\N	4098
 12	United States	19.82707	41.320471	111 Azadlig avenue AZ1007 Baku, Azerbaijan	\N	230
-13	United States	1	1	Jl. Medan Merdeka Selatan 5 Jakarta 10110, Indonesia	\N	4099
-14	United States	1	1	Entoto Street Addis Ababa, Ethiopia	\N	4100
+13	United States	-6.181252	106.830187	Jl. Medan Merdeka Selatan 5 Jakarta 10110, Indonesia	\N	4099
+14	United States	9.0699281	38.7606274	Entoto Street Addis Ababa, Ethiopia	\N	4100
 15	United States	-77.34896624969824	25.077164483873396	42 Queen St. Nassau, the Bahamas	\N	4101
 16	United States	50.538771	26.237461	Bldg. 979, Road 3119, Block 331, Zinj P.O. Box 26431 Manama – Kingdom of Bahrain	\N	440
-17	United States	1	1	Madani Avenue, Baridhara, Dhaka -1212, Bangladesh	\N	16
+17	United States	23.7980828	90.42211569999999	Madani Avenue, Baridhara, Dhaka -1212, Bangladesh	\N	16
 18	United States	-59.58767188544566	13.093218815741189	Wildey Business Park St. Michael BB 14006 Barbados, W.I.	\N	450
 19	United States	-61.760287273189775	12.010290496280286	Lance Aux Epines St. George’s Grenada	\N	4102
 20	United States	27.556450815687707	53.912943639820504	46 Starovilenskaya St. Minsk 220002, Belarus	\N	247
@@ -4515,623 +4577,885 @@ COPY public.embassies (embassy_id, home_country, latitude, longitude, address, w
 25	United States	-68.121301	-16.512683	Avenida Arce 2780 Casilla 425 La Paz, Bolivia	\N	184
 26	United States	-34.89513298604406	-8.057479794198347	Rua Gonçalves Maia, 163 – Boa Vista 50070-060 – Recife, PE	\N	4104
 27	United States	-43.17603538580082	-22.9114962850094	Av. Presidente Wilson, 147 – CasSTOPo 20030-020 – Rio de Janeiro, RJ	\N	4105
-28	United States	1	1	Simpang 336-52-16-9, Jalan Duta Bandar Seri Begawan BC4115 Brunei	\N	462
+28	United States	4.920613599999999	114.9549133	Simpang 336-52-16-9, Jalan Duta Bandar Seri Begawan BC4115 Brunei	\N	462
 29	United States	23.310085350655804	42.66685437906526	16, Kozyak Street Sofia 1408, Bulgaria	\N	314
 30	United States	-1.5370534984062096	12.251802140547836	Secteur 15, Ouaga 2000 Avenue Sembène Ousmane, Rue 15.873 Ouagadougou, Burkina Faso	\N	280
 31	United States	-47.87494718594563	-15.80437338904502	SES – Av. das Nações, Quadra 801, Lote 03 70403-900 – Brasília, DF	\N	4106
 32	United States	18.398199750701693	43.856664479012416	1 Robert C. Frasure Street, 71000 SARAJEVO	\N	4107
 33	United States	-46.71500176726864	-23.629400686822922	Rua Henri Dunant, 500, Chácara Santo Antônio, São Paulo- SP, 04709-110	\N	4108
-34	United States	1	1	110 University Ave Kamayut Township Rangoon, Burma	\N	4109
+34	United States	16.8253686	96.1444142	110 University Ave Kamayut Township Rangoon, Burma	\N	4109
 35	United States	25.90648851606914	-24.661260909013087	Embassy Drive Government Enclave Gaborone, Botswana	\N	430
 36	United States	-51.170603185102486	-30.012005881894144	Av. Assis Brasil, 1889 Passo d’Areia Porto Alegre – RS	\N	4110
 37	United States	29.380263715846144	-3.368231542392924	B.P. 1720 Avenue Des Etats-Unis Bujumbura, Burundi	\N	395
 38	United States	-23.50859068535588	14.92113557314168	Rua Abilio Macedo 6 Praia, Cape Verde	\N	447
-39	United States	1	1	Embassy of the United States of America #1, Street 96, Sangkat Wat Phnom Khan Daun Penh, Phnom Penh Embassy	\N	237
-40	United States	11.501709352318809	3.8991557297769273	Avenue Rosa Parks Yaounde, Cameroon	\N	4111
-41	United States	-73.57542628444138	45.49943997910136	1134 Saint-Catherine St W Montreal, QC H3B 5K2	\N	4112
-42	United States	1	1	1075 West Pender Street Vancouver, British Columbia V6E 2M6	\N	4113
-43	United States	-71.20693568487476	46.81061277913991	2, rue de la Terrasse-Dufferin Quebec, Quebec G1R 4T9 Canada	\N	4114
-44	United States	-75.69805418493372	45.42795027910043	490 Sussex Drive Ottawa, Ontario K1N 1G8 Canada	\N	4115
-45	United States	1	1	615 MacLeod Trail S.E. 10th Floor Rocky Mountain Plaza Building Calgary, Alberta T2G 4T8	\N	4116
-46	United States	-79.39009958500738	43.65277537912137	360 University Avenue Toronto, Ontario M5G 1S4	\N	58
-47	United States	-63.576402884196376	44.652399295261674	1969 Upper Water Street Suite 904, Purdy’s Wharf Tower II B3J 3R7	\N	4117
-48	United States	1	1	201 Portage Avenue, Suite 860 Winnipeg, Manitoba R3B 3K6 Canada	\N	4118
-49	United States	18.57692871459369	4.360147295730762	Avenue David Dacko P.O. Box 924 Bangui Central African Republic	\N	381
-50	United States	1	1	U.S. Embassy N’Djamena B.P. 413 N’Djamena, Chad	\N	4119
-51	United States	-70.6065827848723	-33.411839902917684	Av. Andrés Bello 2800 Las Condes Santiago, Chile	\N	32
-52	United States	1	1	New World International Trade Tower I No. 568, Jianshe Avenue Hankou, Wuhan 430022	\N	4120
-53	United States	1	1	Huaxia Road, Zhujiang New Town (near Exit B1 of the Zhujiang New Town subway station, Line 3 and Line 5) Tianhe District Guangzhou, China	\N	4121
-54	United States	1	1	1469 Huai Hai Zhong Road (Near Wulumuqi Nan Lu) 200031 Shanghai China	\N	6
-55	United States	1	1	New World International Trade Tower I No. 568, Jianshe Avenue Hankou, Wuhan 430022	\N	4120
-56	United States	1	1	52, 14th Wei Road, Heping District 110003 China	\N	4122
-57	United States	1	1	New World International Trade Tower I No. 568, Jianshe Avenue Hankou, Wuhan 430022	\N	4120
-58	United States	-74.10426791435547	4.636952574881353	Carrera 45 No. 24B-27 Bogotá, D.C. Colombia	\N	4123
-59	United States	-84.12636725016975	9.942651776713493	Calle 98 Vía 104, Pavas San José, Costa Rica	\N	4124
-60	United States	-3.978233386063633	5.3350398961299375	Cocody Riviéra Golf, 01 BP 1712 Abidjan 01, Abidjan, Côte d’Ivoire	\N	4125
-61	United States	15.992423565160433	45.74087723720738	Ulica Thomasa Jeffersona 2 10010 Zagreb Croatia	\N	386
-62	United States	-82.39025868531266	23.145848517518314	Calzada between L & M Streets, Vedado Havana, Cuba	\N	236
-63	United States	-68.92806705015425	12.108160536469793	P.O. Box 158 J.B. Gorsiraweg 1	\N	4126
-64	United States	33.34222775039067	35.165829780221046	Metochiou & Ploutarchou Street 2407, Engomi Nicosia, Cyprus	\N	420
-65	United States	14.4013251	50.087334199999994	Tržiště 15 118 01 Praha 1 – Malá Strana Czech Republic	\N	4127
-66	United States	15.311121414556926	-4.30045134755232	310 Avenue des Aviateurs Kinshasa, Gombe Democratic Republic of the Congo	\N	4128
-67	United States	43.164265285710535	11.564571439167759	Lot 350-B Haramouss B.P. 185 Djibouti	\N	405
-68	United States	-69.96556585638002	18.505791773516865	Av. Republica de Colombia # 57 Santo Domingo, Dominican Republic	\N	201
-69	United States	-79.94002108545662	-2.190321437897651	Santa Ana St. and Jose Eduardo Rodriguez Bonin Ave. San Eduardo Sector Guayaquil	\N	190
-70	United States	-78.46992368546607	-0.1387366354893353	E12-170 Avigiras Ave. and Eloy Alfaro Ave. Quito, Ecuador	\N	246
-71	United States	30.017697	31.24555	3 Pharaana Street, Azarita Alexandria, Egypt	\N	4129
-72	United States	31.230139821101467	30.040062177118504	5 Tawfik Diab Street Garden City, Cairo Egypt	\N	11
-73	United States	-89.257115	13.664472	Final Boulevard Santa Elena Antiguo Cuscatlán, La Libertad	\N	404
-74	United States	8.67950404719766	3.709944052732674	Malabo II highway Malabo, Guinea Ecuatorial	\N	435
-75	United States	38.93054880356809	15.326481749328192	179 Alaa Street Asmara, Eritrea	\N	378
-76	United States	24.749452351387053	59.43049458160451	Kentmanni 20 15099 Tallinn Estonia	\N	407
-77	United States	31.146070000000005	-26.326799	7th Floor, Central Bank Building Mahlokohla Street P.O. Box 199 Mbabane, Swaziland	\N	4130
-78	United States	38.7616351507037	9.058503490987626	Entoto Street P.O. Box 1014 Addis Ababa Embassy	\N	166
-79	United States	4.367529	50.844269	Zinnerstraat – 13 – Rue Zinner B-1000 Brussels, Belgium	\N	4131
-80	United States	1	1	“158 Princes Road, Tamavua P.O. Box 218 Suva, Fiji	\N	456
-81	United States	24.95848845142241	60.15712498186756	Itäinen Puistotie 14 B 00140 Helsinki Finland	\N	4132
-82	United States	-0.56857998497452	44.85410907909841	89 Quai des Chartrons 33300 Bordeaux	\N	4133
-83	United States	-1.684267	48.110242	P30, Quai Duguay-Trouin 35000 Rennes	\N	4134
-84	United States	4.835858715064013	45.76289927910563	1, quai Jules Courmont 69002 Lyon	\N	4135
-85	United States	7.7593509151874125	48.58696377926187	15, Avenue d’Alsace 67082 Strasbourg Cedex France	\N	4136
-86	United States	2.318520215199972	48.867738979288355	2 avenue Gabriel 75008 Paris France	\N	23
-87	United States	5.364160330718974	43.288518314649394	Place Varian Fry 13286 Marseille Cedex 6 France	\N	4137
-88	United States	1.4471725149736492	43.606616779122874	25, allées Jean Jaurès 31000 Toulouse	\N	4138
-89	United States	9.392872314599318	0.48322636388167084	Sablière B.P. 4000 Libreville, Gabon	\N	385
-90	United States	44.773192550622554	41.78923347912738	11 George Balanchine Street Tbilisi, Georgia, 0131	\N	362
-91	United States	8.693728900000002	50.141435099999995	Gießener Str. 30 60435 Frankfurt am Main Federal Republic of Germany	\N	4139
-92	United States	13.264519717898615	52.45235417354004	Clayallee 170 14191 Berlin Federal Republic of Germany	\N	136
-93	United States	6.795993399999999	51.2187464	Willi-Becker-Allee 10 40227 Düsseldorf Federal Republic of Germany	\N	4140
-94	United States	9.99703	53.56216	Alsterufer 27/28 20354 Hamburg Federal Republic of Germany	\N	4141
-95	United States	11.58361	48.14519000000001	Königinstraße 5 80539 München Federal Republic of Germany	\N	4142
-96	United States	12.367720000000002	51.333890000000004	Wilhelm-Seyfferth-Straße 4 04107 Leipzig Federal Republic of Germany	\N	4143
-97	United States	-0.17835773036791813	5.575553206061542	No. 24, Fourth Circular Rd., Cantonments, Accra P.O. Box GP 2288 Accra, Ghana	\N	222
-98	United States	22.940211115308642	40.633251679340525	43 Tsimiski, 7th Floor 546 23 Thessaloniki GREECE	\N	4144
-99	United States	23.74669424133668	37.982039334998994	91 Vasilisis Sophias Avenue 10160 Athens, Greece	\N	394
-100	United States	1	1	Avenida Reforma 7-01, Zona 10 Guatemala	\N	212
-101	United States	-13.658754775644615	9.583353848528475	P.O. Box 603 Transversale No. 2 Centre Administratif de Koloma Commune de Ratoma Conakry, Republic of Guinea	\N	277
-102	United States	-17.516996741291123	14.704710009473104	Route des Almadies – BP 49 Dakar, Senegal	\N	4145
-103	United States	-58.16315469996067	6.823080095044522	100 Young and Duke Streets, Kingston Georgetown, Guyana	\N	434
-104	United States	-16.689075085172696	13.461991890535506	Kairaba Avenue, Fajara P.M.B. 19 Banjul, The Gambia	\N	4146
-105	United States	-72.25316678538026	18.564203472684127	Tabarre 41 Route de Tabarre Port-au-Prince, Haiti	\N	373
-106	United States	12.489165014904835	41.906075279219905	Via Sallustiana, 49 00187 Rome, Italy	\N	4147
-107	United States	-87.19214498442403	14.103078392854044	Avenida La Paz Tegucigalpa M.D.C. Honduras	\N	360
-108	United States	1	1	26 Garden Road, Central Hong Kong	\N	30
-109	United States	19.049127950848646	47.50447497907593	Szabadság tér 12 H-1054 Budapest Hungary	\N	272
-110	United States	-21.940093284008785	64.14460802302551	Laufásvegur 21 101 Reykjavík	\N	4148
-111	United States	88.3473489502395	22.551000939374266	38A, J.L.Nehru Road Kolkata 700 071, West Bengal, India	\N	4149
-112	United States	77.18614975035345	28.59275369254548	Shantipath, Chanakyapuri New Delhi – 110021	\N	443
-113	United States	80.24973505012338	13.052359116588155	Gemini Circle Chennai 600 006	\N	4150
-114	United States	78.47482025016731	17.442523805745555	Paigah Palace 1-8-323, Chiran Fort Lane Begumpet Secunderabad 500 003	\N	4151
-115	United States	72.8661483501878	19.065034557208715	C-49, G-Block, Bandra Kurla Complex Bandra East, Mumbai 400051	\N	4152
-116	United States	1	1	Uni Plaza Building 4th Floor (West Tower) Jl. Let. Jend. MT Haryono A-1 Medan 20231, Indonesia	\N	4153
-117	United States	1	1	Jl. Citra Raya Niaga No. 2 Surabaya, Indonesia	\N	4154
-118	United States	1	1	Jl. Hayam Wuruk 310, Denpasar Bali, Indonesia	\N	4155
-119	United States	1	1	Jl. Medan Merdeka Selatan No. 3 – 5 Jakarta 10110, Indonesia	\N	3
-120	United States	51.46297835054143	35.77150833252614	Embassy of Switzerland Foreign Interests Section No. 39, Shahid Mousavi (Golestan 5th) Corner of Paidarfard St. (ex-Amir Ebrahimi St.) Pasdaran, Tehran	\N	20
-121	United States	1	1	From Iraq: 066 211 4000 From the United States: 240-264-3467	\N	4156
-122	United States	1	1	\N	\N	4156
-123	United States	1	1	\N	\N	4156
-124	United States	-6.235819384753993	53.33027878361655	42 Elgin Road Ballsbridge Dublin 4	\N	346
-125	United States	35.22292081605138	31.748239681294894	14 David Flusser Street Jerusalem 9378322	\N	380
-188	United States	2.070800850759912	13.526350006074725	BP 11201 Niamey, Niger	\N	370
-126	United States	11.238509414763548	43.77365535265248	Lungarno Vespucci, 38 50123 Firenze	\N	4157
-127	United States	9.191923814832595	45.47510094073826	via Principe Amedeo, 2/10 20121 MILANO	\N	4158
-128	United States	12.488580514690454	41.90658577161134	via Vittorio Veneto 121 00187 Roma	\N	183
-129	United States	14.223740714649724	40.83118183825395	Piazza della Repubblica 80122 NAPOLI	\N	4159
-130	United States	-73.56562254934164	45.4997256789988	999 Robert-Bourassa Blvd. Montreal, (Quebec), Canada H3C 5J9	\N	4160
-131	United States	-76.76704555003995	18.01845898764298	142 Old Hope Road Kingston 6 Jamaica, West Indies	\N	401
-132	United States	1	1	Nagoya International Center Bldg. 6F 1-47-1 Nagono, Nakamura-ku, Nagoya 450-0001	\N	4161
-133	United States	1	1	1-10-5 Akasaka Minato-ku, Tokyo 107-8420 JAPAN	\N	2
-134	United States	1	1	Kita 1-jo Nishi 28-chome, Chuo-ku Sapporo 064-0821, Japan	\N	4162
-135	United States	1	1	U.S. Consulate General Naha 2-1-1 Toyama, Urasoe City, Okinawa	\N	540
-136	United States	1	1	2-11-5, Nishitenma Kita-ku, Osaka 530-8543	\N	4163
-137	United States	1	1	5-26 Ohori 2-chome Chuo-ku Fukuoka 810-0052	\N	4164
-138	United States	35.87836691444528	31.945183933239388	Abdoun, Al-Umawyeen St. Amman – Jordan	\N	123
-139	United States	71.46579625065156	51.1294235459901	Rakhymzhan Koshkarbayev Avenue, No. 3. Astana, Kazakhstan, 010010	\N	4165
-140	United States	76.95201335031406	43.233638987376175	Samal-2, 97 Zholdasbekov Street, Almaty, Kazakhstan, 050051	\N	255
-141	United States	36.80837041539531	-1.2339764990999562	United Nations Avenue Nairobi P. O. Box 606 Village Market 00621 Nairobi, Kenya	\N	50
-142	United States	21.150551	42.661995	Arberia/Dragodan, Nazim Hikmet 30 Pristina, Kosovo	\N	433
-143	United States	48.046873	29.291608	P. O. Box 77 Safat 13001 Kuwait	\N	172
-144	United States	74.582561	42.827776	171 Prospect Mira Bishkek 720016 Kyrgyz Republic	\N	4166
-145	United States	1	1	Ban Somvang Thai Thadeua Road, Km 9 Hatsayfong district	\N	390
-146	United States	24.02705041558279	56.93049718088476	1 Samnera Velsa St. (former Remtes) Riga LV-1510 Latvia	\N	399
-147	United States	1	1	Awkar-Facing the Municipality, Main Street Beirut, Lebanon	\N	413
-148	United States	27.4716083825458	-29.310221109186767	P.O. Box 333 Maseru 100 Lesotho	\N	419
-149	United States	-10.81559835039078	6.316462995406253	502 Benson Street Monrovia	\N	372
-150	United States	10.267989315205188	36.85042547993822	Please direct inquiries regarding U.S. citizens in Libya	\N	361
-151	United States	25.248973383902904	54.68340487076181	Akmenų g. 6 Vilnius, Lithuania	\N	403
-152	United States	6.129033	49.618971	22 Boulevard Emmanuel Servais L-2535 Luxembourg	\N	448
-153	United States	47.475350450205234	-18.852531787153804	Lot 207 A – Andranoro – Antehiroka 105 Antananarivo – Madagascar	\N	4167
-154	United States	47.47535581475583	-18.852526710574914	Lot 207 A – Andranoro – Antehiroka 105 Antananarivo – Madagascar	\N	4168
-155	United States	33.78358595013342	-13.962459990163342	P.O Box 30016 16 Jomo Kenyatta Road, Lilongwe 3, Malawi	\N	388
-156	United States	1	1	376 Jalan Tun Razak 50400 Kuala Lumpur	\N	28
-157	United States	79.848618	6.913233	210 Galle Road Colombo 03 Sri Lanka	\N	4169
-158	United States	-8.021094985993539	12.629849291080781	ACI 2000 Rue 243, Porte 297 Bamako, Mali	\N	245
-159	United States	14.424656115526965	35.89065722606469	Ta’ Qali National Park Attard, ATD 4000	\N	487
-160	United States	1	1	Mejen Weto, Ocean Side Majuro, Marshall Islands	\N	473
-161	United States	-15.992307828442954	18.087209723782	288, rue 42-100, (rue Abdallaye) BP 222, Nouakchott, Mauritania	\N	366
-162	United States	57.49828105022801	-20.161990586407807	4th Floor, Rogers House John Kennedy Avenue P.O. Box 544 Port Louis Republic of Mauritius	\N	441
-163	United States	1	1	Paseo de la Reforma 305 Colonia Cuauhtemoc 06500 Mexico, D.F.	\N	9
-164	United States	1	1	Paseo de la Victoria #3650 Fracc. Partido Senecú Ciudad Juárez, Chihuahua, Mexico	\N	4170
-165	United States	1	1	Progreso 175 Col. Americana Codigo Postal 44160 Guadalajara, Jalisco, Mexico	\N	4171
-166	United States	1	1	141 Monterey Street Col. Esqueda, C.P. 83000 Hermosillo, Sonora, Mexico	\N	4172
-167	United States	1	1	Prolongación Ave. Alfonso Reyes #150 Col. Valle del Poniente Santa Catarina, Nuevo León México 66196	\N	4173
-168	United States	1	1	Calle Constitución No. 1 Colonia Jardín Matamoros, Tamaulipas 87330	\N	1333
-169	United States	-89.619838	20.9870725	Calle 60 No. 338-K x 29 y 31 Col. Alcala Martin Merida, Yucatan, Mexico	\N	4174
-170	United States	1	1	Paseo de las Culturas s/n Mesa de Otay Delegación Centenario C.P. 22425 Tijuana, Baja California	\N	4175
-171	United States	1	1	Paseo Colon 1901 Colonia Madero Nuevo Laredo, Tamaulipas 88260	\N	520
-172	United States	1	1	Calle San José s/n Fraccionamiento los Alamos C. P. 84065 Nogales, Sonora	\N	4176
-173	United States	1	1	P.O. Box 1286 Kolonia, Pohnpei FSM 96941	\N	4177
-174	United States	28.818999	47.021521	103 Mateevici street Chisinau MD-2009 Republic of Moldova	\N	398
-175	United States	1	1	Denver Street #3 11th Micro-District Ulaanbaatar 14190 Mongolia	\N	308
-176	United States	19.24739101507193	42.43683063824326	Dzona Dzeksona 2 81000 Podgorica Montenegro	\N	439
-177	United States	-7.626588	33.590838	8, Bd Moulay Youssef Casablanca	\N	106
-178	United States	-6.824677	33.955802	Km 5.7, Avenue Mohamed VI Souissi, Rabat 10170, Morocco	\N	402
-179	United States	32.59812465034629	-25.95961148346652	Av. Kenneth Kaunda, 193 Caixa Postal, 783	\N	343
-180	United States	17.08486131483526	-22.57561503181287	14 Lossen Street Windhoek, Namibia	\N	421
-181	United States	85.33419511592635	27.7381749307414	Embassy of the United States of America Maharajgunj, Kathmandu, Nepal	\N	375
-182	United States	4.882063	52.356181	Museumplein 19 1071 DJ Amsterdam The Netherlands	\N	383
-183	United States	4.882063	52.356181	Museumplein 19 1071 DJ Amsterdam The Netherlands	\N	383
-184	United States	-68.92806705015425	12.108160536469793	P.O. Box 158 J.B. Gorsiraweg 1	\N	4178
-185	United States	1	1	29 Fitzherbert Terrace Thorndon Wellington 6011 New Zealand	\N	412
-186	United States	1	1	Level 3, 23 Customs Street East Auckland 1010 New Zealand	\N	296
-187	United States	-86.31586246301268	12.128777470319303	Kilometer 5.5 Carretera Sur Managua, Nicaragua	\N	371
-189	United States	1	1	2 Walter Carrington Crescent, Victoria Island, Lagos STOP(234)-1- 460-3600 or (234)-1- 460-3400	\N	17
-190	United States	7.474317950082293	9.040513693481035	Plot 1075 Diplomatic Drive Central District Area, Abuja, Nigeria	\N	339
-191	United States	21.354850713788924	41.99919648679228	Str. “Samoilova” Nr.21 1000 Skopje Republic of North Macedonia	\N	4179
-192	United States	10.668108116097063	59.93978108187661	Morgedalsvegen 36 0378 Oslo Norway	\N	393
-193	United States	4.3820756509457235	50.85828708481113	Boulevard Leopold III 1110 Brussels, Belgium	\N	4180
-194	United States	1	1	P.C. 115 Madinat Al Sultan Qaboos Muscat, Oman	\N	304
-195	United States	-77.05170868456409	38.89443515472371	U.S. Department of State 2201 C Street, NW Room 5914 Washington, D.C. 20515	\N	4181
-196	United States	2.314880050761391	48.86830080786213	18, avenue Gabriel 75008 Paris	\N	4182
-197	United States	71.53478281438282	34.00574362762821	11, Hospital Road, Peshawar, Pakistan	\N	4183
-198	United States	73.1158063143739	33.72392364240929	Diplomatic Enclave, Ramna 5 Islamabad, Pakistan	\N	374
-199	United States	67.00740971413214	24.84119765214914	Plot 3, 4, 5, New TPX Area Mai Kolachi Road, Karachi	\N	19
-200	United States	74.33401361430799	31.5601682523353	50, Shahrah-e-Abdul Hameed Bin Badees, (Old Empress Road) near Shimla Hill, Lahore, Pakistan	\N	4184
-201	United States	1	1	Airai State, in an area known as Omsangel (no street address) P.O. Box 6028 Koro, Palau	\N	4185
-202	United States	-79.56283808497368	8.998702891939903	Building 783, Demetrio Basilio Lakas Avenue Clayton, Panama	\N	382
-203	United States	1	1	Embassy of the United States of America P.O. Box 1492 Port Moresby, Papua New Guinea	\N	417
-204	United States	-57.62816948465239	-25.28548103339301	1776 Mariscal Lopez Avenue Asunción, Paraguay	\N	4186
-205	United States	-76.97117538535889	-12.100416646195017	Avenida La Encalada cdra. 17 s/n Surco, Lima 33, Peru	\N	25
-206	United States	1	1	1201 Roxas Boulevard Manila, Philippines	\N	5
-207	United States	19.939102899999998	50.060064399999995	ul. Stolarska 9 31-043 Krakow	\N	4187
-208	United States	16.927380015922793	52.407795452290735	ul. Paderewskiego 8 61-770 Poznan	\N	4188
-209	United States	21.023320999999996	52.224495	Aleje Ujazdowskie 29/31 00-540 Warsaw Poland	\N	266
-210	United States	-25.71346686956659	37.74504219110972	Avenida Príncipe do Mónaco, 6-2 F 9500 Ponta Delgada	\N	4189
-211	United States	-9.16557018495388	38.74412016357007	Avenida das Forças Armadas 1600-081 Lisboa	\N	406
-212	United States	51.471328	25.303604000000004	22nd February Street Al Luqta District P.O. Box 2399 Doha, Qatar	\N	320
-213	United States	1	1	5th Floor ACC Building Matafele Apia, Samoa	\N	466
-214	United States	12.490769	41.906582	Lungarno Amerigo Vespucci, 38 50123 Florence, Italy	\N	495
-215	United States	46.61878331499943	24.68122498413883	P.O. Box 94309 Riyadh 11693 Saudi Arabia	\N	33
-216	United States	50.15211701444141	26.304454792343083	P.O. Box 38955 Dhahran Airport 31942 Saudi Arabia	\N	4190
-217	United States	39.16193271434716	21.526284675984353	Falastin Al-Hamra’a Jeddah 23323, Saudi Arabia	\N	4191
-218	United States	-17.516996741291123	14.704710009473104	Route des Almadies Dakar, Senegal	\N	353
-219	United States	20.45105495060411	44.77249378724876	92 Bulevar kneza Aleksandra Karadjordjevica 11040 Belgrade, Serbia	\N	310
-220	United States	-13.23203054992229	8.451653993892794	Southridge – Hill Station Freetown, Sierra Leone	\N	379
-221	United States	1	1	27 Napier Road Singapore	\N	46
-222	United States	17.10578371527176	48.141287658882085	814 99 Bratislava Slovak Republic	\N	409
-223	United States	14.496689950651993	46.05241020192026	Prešernova 31 1000 Ljubljana Slovenia	\N	425
-224	United States	45.23645220478228	2.0591992551702303	Mogadishu, Somalia	\N	4192
-225	United States	18.431694999999998	-34.0752867	2 Reddam Ave Westlake 7945	\N	408
-226	United States	28.223374	-25.745777999999998	877 Pretorius St Arcadia, Pretoria	\N	392
-227	United States	28.0516737	-26.111556899999997	1 Sandton Drive Sandhurst	\N	102
-228	United States	31.01125499999999	-29.843728000000002	303 Dr. Pixley KaSeme Street 31st Floor Delta Towers Durban 4001	\N	4193
-229	United States	1	1	188 Sejong-daero, Jongno-gu, Seoul, Korea 03141	\N	8
-230	United States	1	1	#993, Joongangdae-Ro, Busanjin-Gu, Room 612 (Lotte Gold Rose) Busan, Korea 47209	\N	4194
-231	United States	31.58386391452658	4.855650541647085	Kololo Road adjacent to the European Union’s compound Juba, South Sudan	\N	416
-232	United States	2.1152034151191756	41.397786603313826	Paseo Reina Elisenda de Montcada, 23 08034 Barcelona, España	\N	4195
-233	United States	-3.6889362849103784	40.434621362475525	Calle de Serrano, 75 28006 Madrid, Spain	\N	39
-234	United States	79.848618	6.913233	210 Galle Road Colombo 03 Sri Lanka	\N	391
-235	United States	32.60541621518638	15.526150789218434	P.O. Box 699 Kilo 10, Soba Khartoum, Sudan	\N	31
-236	United States	-84.36444565058818	21.403015973191792	Kristalstraat 165 Paramaribo, Suriname	\N	431
-237	United States	18.10333961607249	59.33347178166029	Dag Hammarskjölds Väg 31, SE-115 89 Stockholm	\N	377
-238	United States	7.438283	46.943433	Sulgeneckstrasse 19 CH-3007 Bern, Switzerland	\N	444
-239	United States	7.438283	46.943433	In Care Of: Sulgeneckstrasse 19 CH-3007 Bern, Switzerland	\N	4196
-240	United States	36.280863	33.521751	Abou Roumaneh, 2 Al Mansour Street Damascus, Syria	\N	269
-241	United States	1	1	5F, No.88, Chenggong 2nd Road Qianzhen Dist.,Kaohsiung 80661 Taiwan	\N	4197
-242	United States	1	1	No. 100, Jinhu Road, Neihu District 11461, Taipei City, Taiwan	\N	4198
-243	United States	68.70998205039008	38.579469073127456	109-A, Ismoili Somoni Avenue (Zarafshon district) Dushanbe, Tajikistan	\N	387
-244	United States	39.26846387313328	-6.774595980412405	686 Old Bagamoyo Road, Msasani Dar es Salaam, Tanzania	\N	34
-245	United States	1	1	387 Witchayanond Road Chiang Mai 50300, Thailand	\N	4199
-246	United States	1	1	95 Wireless Road Bangkok 10330, Thailand	\N	14
-247	United States	1	1	Avenida de Portugal Praia dos Coqueiros Dili, Timor-Leste	\N	432
-248	United States	-56.219030065505436	21.555755676518146	Boulevard Eyadema B.P. 852, Lomé STOP(+228) 2261 5470 Fax:(+228) 2261 5501	\N	4200
-249	United States	1	1	31 Loftus Street Suva, Fiji	\N	4201
-250	United States	-61.516947	10.665985	15 Queen’s Park West Port of Spain Trinidad and Tobago	\N	4202
-251	United States	10.267989315205188	36.85042547993822	Les Berges du Lac 1053 TUNIS Tunisia	\N	367
-252	United States	29.0443211154174	41.11749587928979	İstinye Mahallesi, Üç Şehitler Sokak No.2 İstinye 34460 – Istanbul / Turkey	\N	18
-253	United States	32.8539583150804	39.908225094332444	110 Atatürk Blvd. Kavaklıdere, 06100 Ankara – Turkey	\N	52
-254	United States	35.3848218149961	36.98352556505883	Girne Bulvari No:212 Guzelevler Mah. Yuregir, Adana – TÜRKİYE	\N	4203
-255	United States	58.389301	37.901274	9 1984 Street (formerly Pushkin Street) Ashgabat, Turkmenistan	\N	369
-256	United States	6.135919716184857	46.23200668990151	111 Route de Pregny 1292 Geneva, Switzerland	\N	4204
-257	United States	12.489735615141493	41.907876971529674	via Boncompagni 2 Rome, Italy	\N	4205
-258	United States	55.30697651471662	25.258485535410205	Corner of Al Seef Rd. and Sheikh Khalifa bin Zayed Rd. Dubai, U.A.E	\N	207
-259	United States	54.43151831470147	24.424386568611762	Airport Road at Rabdan (29th) Street Embassies District, Plot 38, Sector W59-02, Street No. 4 Abu Dhabi, U.A.E.	\N	376
-260	United States	-0.13292556417568116	51.482433064228786	33 Nine Elms Lane London SW11 7US (mailing postcode) or SW8 5DB (driving/GPS postcode) United Kingdom	\N	4206
-261	United States	-56.178309884825005	-34.91348698146105	Lauro Müller 1776 Montevideo, Uruguay	\N	317
-262	United States	-5.9422437	54.5705791	Danesfort House 223 Stranmillis Road Belfast BT9 5GR	\N	4207
-263	United States	-3.1778503	55.954306900000006	3 Regent Terrace Edinburgh EH7 5BW	\N	4208
-264	United States	-66.87527058414291	10.477699892524667	F St. and Suapure St. Urb . Colinas de Valle Arriba Caracas, Venezuela	\N	252
-265	United States	44.22766864987787	15.373056861749312	Address: Sa’awan Street P.O. Box 22347	\N	4209
-266	United States	28.336325609106442	-15.419044901073296	Eastern end of Kabulonga Road Ibex Hill Lusaka, Zambia	\N	274
-267	United States	31.05263	-17.83151	172 Herbert Chitepo Ave Harare, Zimbabwe	\N	234
-268	Canada	37.74324	-25.66968	Rua D’Agua, 28, 9500-016 Ponta Delgada, São Miguel, Azores, Portugal	\N	4210
-269	Canada	38.72104	-9.1458	Avenida da Liberdade 196-200, 3rd Floor, 1269-121 Lisbon, Portugal	http://www.portugal.gc.ca	406
-270	Canada	41.327546	19.818698	Rr. Ibrahim Rugova,  ND 41, H7, Kati5, Tirana, Albania	http://www.portugal.gc.ca	410
-271	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
-272	Canada	36.76148	3.0166	18 Mustapha Khalef St., Ben Aknoun, Algiers, Algeria	http://www.algeria.gc.ca	145
-273	Canada	40.479094	-3.686115	Torre Espacio, Paseo de la Castellana 259D, 28046 Madrid, Spain	http://www.spain.gc.ca	39
-274	Canada	-8.819391	13.244298	Rua Rei Katyavala 113, Luanda, Angola	http://www.spain.gc.ca	27
-275	Canada	-17.820705	31.043559	45 Baines Avenue, Harare, Zimbabwe	http://www.zimbabwe.gc.ca	234
-276	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-277	Canada	17.131657	-61.836037	#12 Village Walk Commercial Center, Friars Hill Road, St. John’s, Antigua	http://www.barbados.gc.ca	4211
-278	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-279	Canada	-34.58005	-58.3978	Tagle 2828, C1425EEH Buenos Aires, Argentina	http://www.argentina.gc.ca	15
-280	Canada	55.746664	37.595059	23 Starokonyushenny Pereulok, Moscow, 119002, Russia	http://www.russia.gc.ca	13
-281	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-282	Canada	-33.86164	151.2071	Level 5, Quay West Building, 111 Harrington Street, Sydney, NSW 2000, Australia	http://www.australia.gc.ca	64
-283	Canada	48.21076	16.37836	Laurenzenberg 2, A-1010, Vienna, Austria	http://www.austria.gc.ca	256
-284	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
-285	Canada	25.06	-77.345	Shirley Street Plaza, Nassau, Bahamas	http://www.turkey.gc.ca	4101
-286	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
-287	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
-288	Canada	23.79979	90.4185	United Nations Road, Baridhara, Dhaka, Bangladesh	http://www.bangladesh.gc.ca	16
-289	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-290	Canada	52.22477	21.02602	ul. Jana Matejki 1/5, 00-481, Warsaw, Poland	http://www.poland.gc.ca	266
-291	Canada	50.84003	4.39781	Avenue des Arts 58, 1000, Brussels, Belgium	http://www.belgium.gc.ca	271
-292	Canada	14.59704	-90.50452	Edyma Plaza Building, 8th Floor, 13 Calle 8-44, Zona 10, Guatemala City, Guatemala	http://www.guatemala.gc.ca	212
-293	Canada	12.369416	-1.516655	316 Professeur Ki-Zerbo Street, Ouagadougou, Burkina Faso	http://www.burkinafaso.gc.ca	280
-294	Canada	32.381695	-64.677982	Stewart Hall, 5 Queen Street, St. George, GE 05, Bermuda	https://www.canada.ca/Canada-In-New-York	4212
-295	Canada	40.75368	-73.974423	466 Lexington Avenue, 20th Floor, New York, New York, U.S.A., 10017	https://www.canada.ca/Canada-In-New-York	12
-296	Canada	28.58976	77.18475	7/8 Shantipath, Chanakyapuri, New Delhi 110 021, India	http://www.canada.ca/CanadaAndIndia	443
-297	Canada	-17.46667	-68.93333	2678, Calle Victor Sanjinez, Edificio Barcelona, 2nd Floor, Plaza España (Sopocachi), La Paz, Bolivia	http://www.canada.ca/CanadaAndIndia	184
-298	Canada	-12.120851	-77.035953	Calle Bolognesi 228, Miraflores, Lima 15074, Peru	http://www.peru.gc.ca	25
-299	Canada	48.21076	16.37836	Laurenzenberg 2, A-1010, Vienna, Austria	http://www.austria.gc.ca	256
-300	Canada	-24.67857	25.927319	9th floor, iTowers North, Lot 54368 Gaborone	http://www.austria.gc.ca	430
-301	Canada	-17.820705	31.043559	45 Baines Avenue, Harare, Zimbabwe	http://www.zimbabwe.gc.ca	234
-302	Canada	-15.815613	-47.878642	SES - Av. das Nações, Quadra 803, Lote 16, 70410-900 Brasília, DF, Brazil	http://www.brazil.gc.ca	4106
-303	Canada	-19.93679	-43.92222	SES - Av. das Nações, Quadra 803, Lote 16, 70410-900 Brasília, DF, Brazil	http://www.brazil.gc.ca	4213
-304	Canada	-22.964916	-43.173957	Av. Atlântica 1130, 13º andar, Copacabana, 22021-000 Rio de Janeiro - RJ, Brazil	http://www.brazil.gc.ca	4214
-305	Canada	-23.609325	-46.697676	Centro Empresarial Nações Unidas - Torre Norte, Av. das Nações Unidas, 12901, 16º andar, 04578-000 São Paulo - SP, Brazil	http://www.brazil.gc.ca	7
-306	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-307	Canada	4.887292	114.943692	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.brunei.gc.ca	462
-308	Canada	42.696228	23.316952	7 Pozitano Street, Block #3, 1st Floor, Office #4, 1000 Sofia, Bulgaria	http://www.brunei.gc.ca	314
-309	Canada	44.46099	26.0828	1-3 Tuberozelor Street, 011411 Bucharest, Sector 1, Romania	http://www.romania.gc.ca	259
-310	Canada	12.369416	-1.516655	316 Professeur Ki-Zerbo Street, Ouagadougou, Burkina Faso	http://www.burkinafaso.gc.ca	280
-311	Canada	-3.37166	29.3565	Hôtel Club du Lac Tanganyika, Chaussée d’Uvira, Bujumbura, Burundi	http://www.burkinafaso.gc.ca	395
-312	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
-313	Canada	11.579752	104.912604	27-29 Street 75, Sangkat Srah Chak, Khan Daun Penh, Phnom Penh, Cambodia	http://www.canadainternational.gc.ca/kenya/	237
-314	Canada	13.727427	100.539319	15th Floor, Abdulrahim Place, 990 Rama IV, Bangrak, Bangkok, 10500, Thailand	http://www.thailand.gc.ca	14
+39	United States	11.501709352318809	3.8991557297769273	Avenue Rosa Parks Yaounde, Cameroon	\N	4111
+40	United States	-73.57542628444138	45.49943997910136	1134 Saint-Catherine St W Montreal, QC H3B 5K2	\N	4112
+41	United States	49.2875786	-123.119728	1075 West Pender Street Vancouver, British Columbia V6E 2M6	\N	4113
+42	United States	-71.20693568487476	46.81061277913991	2, rue de la Terrasse-Dufferin Quebec, Quebec G1R 4T9 Canada	\N	4114
+43	United States	-75.69805418493372	45.42795027910043	490 Sussex Drive Ottawa, Ontario K1N 1G8 Canada	\N	4115
+44	United States	51.0466528	-114.0586221	615 MacLeod Trail S.E. 10th Floor Rocky Mountain Plaza Building Calgary, Alberta T2G 4T8	\N	4116
+45	United States	-79.39009958500738	43.65277537912137	360 University Avenue Toronto, Ontario M5G 1S4	\N	58
+46	United States	-63.576402884196376	44.652399295261674	1969 Upper Water Street Suite 904, Purdy’s Wharf Tower II B3J 3R7	\N	4117
+47	United States	49.8957545	-97.13925449999999	201 Portage Avenue, Suite 860 Winnipeg, Manitoba R3B 3K6 Canada	\N	4118
+48	United States	18.57692871459369	4.360147295730762	Avenue David Dacko P.O. Box 924 Bangui Central African Republic	\N	381
+49	United States	12.10201	15.0478635	U.S. Embassy N’Djamena B.P. 413 N’Djamena, Chad	\N	4119
+50	United States	-70.6065827848723	-33.411839902917684	Av. Andrés Bello 2800 Las Condes Santiago, Chile	\N	32
+51	United States	30.59414	114.264253	New World International Trade Tower I No. 568, Jianshe Avenue Hankou, Wuhan 430022	\N	4120
+52	United States	23.119397	113.321208	Huaxia Road, Zhujiang New Town (near Exit B1 of the Zhujiang New Town subway station, Line 3 and Line 5) Tianhe District Guangzhou, China	\N	4121
+53	United States	43.8266299	87.61688	1469 Huai Hai Zhong Road (Near Wulumuqi Nan Lu) 200031 Shanghai China	\N	6
+54	United States	30.59414	114.264253	New World International Trade Tower I No. 568, Jianshe Avenue Hankou, Wuhan 430022	\N	4120
+55	United States	41.7839499	123.4220099	52, 14th Wei Road, Heping District 110003 China	\N	4122
+56	United States	30.59414	114.264253	New World International Trade Tower I No. 568, Jianshe Avenue Hankou, Wuhan 430022	\N	4120
+57	United States	-74.10426791435547	4.636952574881353	Carrera 45 No. 24B-27 Bogotá, D.C. Colombia	\N	4123
+58	United States	-84.12636725016975	9.942651776713493	Calle 98 Vía 104, Pavas San José, Costa Rica	\N	4124
+59	United States	-3.978233386063633	5.3350398961299375	Cocody Riviéra Golf, 01 BP 1712 Abidjan 01, Abidjan, Côte d’Ivoire	\N	4125
+60	United States	15.992423565160433	45.74087723720738	Ulica Thomasa Jeffersona 2 10010 Zagreb Croatia	\N	386
+61	United States	-82.39025868531266	23.145848517518314	Calzada between L & M Streets, Vedado Havana, Cuba	\N	236
+62	United States	-68.92806705015425	12.108160536469793	P.O. Box 158 J.B. Gorsiraweg 1	\N	4126
+859	United Kingdom	31.94	35.89	Irbid St 33, Amman, Jordan	\N	123
+63	United States	33.34222775039067	35.165829780221046	Metochiou & Ploutarchou Street 2407, Engomi Nicosia, Cyprus	\N	420
+64	United States	14.4013251	50.087334199999994	Tržiště 15 118 01 Praha 1 – Malá Strana Czech Republic	\N	4127
+65	United States	15.311121414556926	-4.30045134755232	310 Avenue des Aviateurs Kinshasa, Gombe Democratic Republic of the Congo	\N	4128
+66	United States	43.164265285710535	11.564571439167759	Lot 350-B Haramouss B.P. 185 Djibouti	\N	405
+67	United States	-69.96556585638002	18.505791773516865	Av. Republica de Colombia # 57 Santo Domingo, Dominican Republic	\N	201
+68	United States	-79.94002108545662	-2.190321437897651	Santa Ana St. and Jose Eduardo Rodriguez Bonin Ave. San Eduardo Sector Guayaquil	\N	190
+69	United States	-78.46992368546607	-0.1387366354893353	E12-170 Avigiras Ave. and Eloy Alfaro Ave. Quito, Ecuador	\N	246
+70	United States	30.017697	31.24555	3 Pharaana Street, Azarita Alexandria, Egypt	\N	4129
+71	United States	31.230139821101467	30.040062177118504	5 Tawfik Diab Street Garden City, Cairo Egypt	\N	11
+72	United States	-89.257115	13.664472	Final Boulevard Santa Elena Antiguo Cuscatlán, La Libertad	\N	404
+73	United States	8.67950404719766	3.709944052732674	Malabo II highway Malabo, Guinea Ecuatorial	\N	435
+74	United States	38.93054880356809	15.326481749328192	179 Alaa Street Asmara, Eritrea	\N	378
+75	United States	24.749452351387053	59.43049458160451	Kentmanni 20 15099 Tallinn Estonia	\N	407
+76	United States	31.146070000000005	-26.326799	7th Floor, Central Bank Building Mahlokohla Street P.O. Box 199 Mbabane, Swaziland	\N	4130
+77	United States	38.7616351507037	9.058503490987626	Entoto Street P.O. Box 1014 Addis Ababa Embassy	\N	166
+78	United States	4.367529	50.844269	Zinnerstraat – 13 – Rue Zinner B-1000 Brussels, Belgium	\N	4131
+79	United States	-18.1165602	178.4407101	“158 Princes Road, Tamavua P.O. Box 218 Suva, Fiji	\N	456
+80	United States	24.95848845142241	60.15712498186756	Itäinen Puistotie 14 B 00140 Helsinki Finland	\N	4132
+81	United States	-0.56857998497452	44.85410907909841	89 Quai des Chartrons 33300 Bordeaux	\N	4133
+82	United States	-1.684267	48.110242	P30, Quai Duguay-Trouin 35000 Rennes	\N	4134
+83	United States	4.835858715064013	45.76289927910563	1, quai Jules Courmont 69002 Lyon	\N	4135
+84	United States	7.7593509151874125	48.58696377926187	15, Avenue d’Alsace 67082 Strasbourg Cedex France	\N	4136
+85	United States	2.318520215199972	48.867738979288355	2 avenue Gabriel 75008 Paris France	\N	23
+86	United States	5.364160330718974	43.288518314649394	Place Varian Fry 13286 Marseille Cedex 6 France	\N	4137
+87	United States	1.4471725149736492	43.606616779122874	25, allées Jean Jaurès 31000 Toulouse	\N	4138
+88	United States	9.392872314599318	0.48322636388167084	Sablière B.P. 4000 Libreville, Gabon	\N	385
+89	United States	44.773192550622554	41.78923347912738	11 George Balanchine Street Tbilisi, Georgia, 0131	\N	362
+90	United States	8.693728900000002	50.141435099999995	Gießener Str. 30 60435 Frankfurt am Main Federal Republic of Germany	\N	4139
+91	United States	13.264519717898615	52.45235417354004	Clayallee 170 14191 Berlin Federal Republic of Germany	\N	136
+92	United States	6.795993399999999	51.2187464	Willi-Becker-Allee 10 40227 Düsseldorf Federal Republic of Germany	\N	4140
+93	United States	9.99703	53.56216	Alsterufer 27/28 20354 Hamburg Federal Republic of Germany	\N	4141
+94	United States	11.58361	48.14519000000001	Königinstraße 5 80539 München Federal Republic of Germany	\N	4142
+95	United States	12.367720000000002	51.333890000000004	Wilhelm-Seyfferth-Straße 4 04107 Leipzig Federal Republic of Germany	\N	4143
+96	United States	-0.17835773036791813	5.575553206061542	No. 24, Fourth Circular Rd., Cantonments, Accra P.O. Box GP 2288 Accra, Ghana	\N	222
+97	United States	22.940211115308642	40.633251679340525	43 Tsimiski, 7th Floor 546 23 Thessaloniki GREECE	\N	4144
+98	United States	23.74669424133668	37.982039334998994	91 Vasilisis Sophias Avenue 10160 Athens, Greece	\N	394
+99	United States	14.6058227	-90.5150208	Avenida Reforma 7-01, Zona 10 Guatemala	\N	212
+100	United States	-13.658754775644615	9.583353848528475	P.O. Box 603 Transversale No. 2 Centre Administratif de Koloma Commune de Ratoma Conakry, Republic of Guinea	\N	277
+101	United States	-17.516996741291123	14.704710009473104	Route des Almadies – BP 49 Dakar, Senegal	\N	4145
+102	United States	-58.16315469996067	6.823080095044522	100 Young and Duke Streets, Kingston Georgetown, Guyana	\N	434
+103	United States	-16.689075085172696	13.461991890535506	Kairaba Avenue, Fajara P.M.B. 19 Banjul, The Gambia	\N	4146
+104	United States	-72.25316678538026	18.564203472684127	Tabarre 41 Route de Tabarre Port-au-Prince, Haiti	\N	373
+105	United States	12.489165014904835	41.906075279219905	Via Sallustiana, 49 00187 Rome, Italy	\N	4147
+106	United States	-87.19214498442403	14.103078392854044	Avenida La Paz Tegucigalpa M.D.C. Honduras	\N	360
+107	United States	22.2782104	114.1587519	26 Garden Road, Central Hong Kong	\N	30
+108	United States	19.049127950848646	47.50447497907593	Szabadság tér 12 H-1054 Budapest Hungary	\N	272
+109	United States	-21.940093284008785	64.14460802302551	Laufásvegur 21 101 Reykjavík	\N	4148
+110	United States	88.3473489502395	22.551000939374266	38A, J.L.Nehru Road Kolkata 700 071, West Bengal, India	\N	4149
+111	United States	77.18614975035345	28.59275369254548	Shantipath, Chanakyapuri New Delhi – 110021	\N	443
+112	United States	80.24973505012338	13.052359116588155	Gemini Circle Chennai 600 006	\N	4150
+113	United States	78.47482025016731	17.442523805745555	Paigah Palace 1-8-323, Chiran Fort Lane Begumpet Secunderabad 500 003	\N	4151
+114	United States	72.8661483501878	19.065034557208715	C-49, G-Block, Bandra Kurla Complex Bandra East, Mumbai 400051	\N	4152
+115	United States	3.5860499	98.6823189	Uni Plaza Building 4th Floor (West Tower) Jl. Let. Jend. MT Haryono A-1 Medan 20231, Indonesia	\N	4153
+116	United States	-7.2836544	112.6479534	Jl. Citra Raya Niaga No. 2 Surabaya, Indonesia	\N	4154
+117	United States	-8.6722475	115.2444518	Jl. Hayam Wuruk 310, Denpasar Bali, Indonesia	\N	4155
+118	United States	-6.1810602	106.8303286	Jl. Medan Merdeka Selatan No. 3 – 5 Jakarta 10110, Indonesia	\N	3
+119	United States	51.46297835054143	35.77150833252614	Embassy of Switzerland Foreign Interests Section No. 39, Shahid Mousavi (Golestan 5th) Corner of Paidarfard St. (ex-Amir Ebrahimi St.) Pasdaran, Tehran	\N	20
+120	United States	-6.235819384753993	53.33027878361655	42 Elgin Road Ballsbridge Dublin 4	\N	346
+121	United States	35.22292081605138	31.748239681294894	14 David Flusser Street Jerusalem 9378322	\N	380
+122	United States	11.238509414763548	43.77365535265248	Lungarno Vespucci, 38 50123 Firenze	\N	4156
+123	United States	9.191923814832595	45.47510094073826	via Principe Amedeo, 2/10 20121 MILANO	\N	4157
+124	United States	12.488580514690454	41.90658577161134	via Vittorio Veneto 121 00187 Roma	\N	183
+125	United States	14.223740714649724	40.83118183825395	Piazza della Repubblica 80122 NAPOLI	\N	4158
+126	United States	-73.56562254934164	45.4997256789988	999 Robert-Bourassa Blvd. Montreal, (Quebec), Canada H3C 5J9	\N	4159
+127	United States	-76.76704555003995	18.01845898764298	142 Old Hope Road Kingston 6 Jamaica, West Indies	\N	401
+128	United States	35.1728083	136.8901895	Nagoya International Center Bldg. 6F 1-47-1 Nagono, Nakamura-ku, Nagoya 450-0001	\N	4160
+129	United States	35.6688048	139.743326	1-10-5 Akasaka Minato-ku, Tokyo 107-8420 JAPAN	\N	2
+130	United States	43.056348	141.313697	Kita 1-jo Nishi 28-chome, Chuo-ku Sapporo 064-0821, Japan	\N	4161
+131	United States	26.2528989	127.7386313	U.S. Consulate General Naha 2-1-1 Toyama, Urasoe City, Okinawa	\N	540
+132	United States	34.69680330000001	135.501877	2-11-5, Nishitenma Kita-ku, Osaka 530-8543	\N	4162
+133	United States	33.5881047	130.3730286	5-26 Ohori 2-chome Chuo-ku Fukuoka 810-0052	\N	4163
+134	United States	35.87836691444528	31.945183933239388	Abdoun, Al-Umawyeen St. Amman – Jordan	\N	123
+135	United States	71.46579625065156	51.1294235459901	Rakhymzhan Koshkarbayev Avenue, No. 3. Astana, Kazakhstan, 010010	\N	4164
+136	United States	76.95201335031406	43.233638987376175	Samal-2, 97 Zholdasbekov Street, Almaty, Kazakhstan, 050051	\N	255
+137	United States	36.80837041539531	-1.2339764990999562	United Nations Avenue Nairobi P. O. Box 606 Village Market 00621 Nairobi, Kenya	\N	50
+138	United States	21.150551	42.661995	Arberia/Dragodan, Nazim Hikmet 30 Pristina, Kosovo	\N	433
+139	United States	48.046873	29.291608	P. O. Box 77 Safat 13001 Kuwait	\N	172
+140	United States	74.582561	42.827776	171 Prospect Mira Bishkek 720016 Kyrgyz Republic	\N	4165
+141	United States	17.8979735	102.6387695	Ban Somvang Thai Thadeua Road, Km 9 Hatsayfong district	\N	390
+142	United States	24.02705041558279	56.93049718088476	1 Samnera Velsa St. (former Remtes) Riga LV-1510 Latvia	\N	399
+143	United States	33.9346943	35.5978345	Awkar-Facing the Municipality, Main Street Beirut, Lebanon	\N	413
+144	United States	27.4716083825458	-29.310221109186767	P.O. Box 333 Maseru 100 Lesotho	\N	419
+145	United States	-10.81559835039078	6.316462995406253	502 Benson Street Monrovia	\N	372
+146	United States	10.267989315205188	36.85042547993822	Please direct inquiries regarding U.S. citizens in Libya	\N	361
+147	United States	25.248973383902904	54.68340487076181	Akmenų g. 6 Vilnius, Lithuania	\N	403
+148	United States	6.129033	49.618971	22 Boulevard Emmanuel Servais L-2535 Luxembourg	\N	448
+149	United States	47.475350450205234	-18.852531787153804	Lot 207 A – Andranoro – Antehiroka 105 Antananarivo – Madagascar	\N	4166
+150	United States	47.47535581475583	-18.852526710574914	Lot 207 A – Andranoro – Antehiroka 105 Antananarivo – Madagascar	\N	4167
+151	United States	33.78358595013342	-13.962459990163342	P.O Box 30016 16 Jomo Kenyatta Road, Lilongwe 3, Malawi	\N	388
+152	United States	3.1556223	101.7229636	376 Jalan Tun Razak 50400 Kuala Lumpur	\N	28
+153	United States	79.848618	6.913233	210 Galle Road Colombo 03 Sri Lanka	\N	4168
+154	United States	-8.021094985993539	12.629849291080781	ACI 2000 Rue 243, Porte 297 Bamako, Mali	\N	245
+155	United States	14.424656115526965	35.89065722606469	Ta’ Qali National Park Attard, ATD 4000	\N	487
+156	United States	7.066667	171.266667	Mejen Weto, Ocean Side Majuro, Marshall Islands	\N	473
+157	United States	-15.992307828442954	18.087209723782	288, rue 42-100, (rue Abdallaye) BP 222, Nouakchott, Mauritania	\N	366
+158	United States	57.49828105022801	-20.161990586407807	4th Floor, Rogers House John Kennedy Avenue P.O. Box 544 Port Louis Republic of Mauritius	\N	441
+159	United States	19.428387	-99.1663299	Paseo de la Reforma 305 Colonia Cuauhtemoc 06500 Mexico, D.F.	\N	9
+160	United States	20.6734316	-103.3669868	Progreso 175 Col. Americana Codigo Postal 44160 Guadalajara, Jalisco, Mexico	\N	4169
+161	United States	29.0785051	-110.958953	141 Monterey Street Col. Esqueda, C.P. 83000 Hermosillo, Sonora, Mexico	\N	4170
+162	United States	25.8867588	-97.5031726	Calle Constitución No. 1 Colonia Jardín Matamoros, Tamaulipas 87330	\N	1333
+163	United States	-89.619838	20.9870725	Calle 60 No. 338-K x 29 y 31 Col. Alcala Martin Merida, Yucatan, Mexico	\N	4171
+164	United States	32.5257154	-116.9552129	Paseo de las Culturas s/n Mesa de Otay Delegación Centenario C.P. 22425 Tijuana, Baja California	\N	4172
+165	United States	27.4652804	-99.50001859999999	Paseo Colon 1901 Colonia Madero Nuevo Laredo, Tamaulipas 88260	\N	520
+166	United States	31.2886516	-110.9400018	Calle San José s/n Fraccionamiento los Alamos C. P. 84065 Nogales, Sonora	\N	4173
+167	United States	6.9641667	158.2083333	P.O. Box 1286 Kolonia, Pohnpei FSM 96941	\N	4174
+168	United States	28.818999	47.021521	103 Mateevici street Chisinau MD-2009 Republic of Moldova	\N	398
+169	United States	19.24739101507193	42.43683063824326	Dzona Dzeksona 2 81000 Podgorica Montenegro	\N	439
+170	United States	-7.626588	33.590838	8, Bd Moulay Youssef Casablanca	\N	106
+171	United States	-6.824677	33.955802	Km 5.7, Avenue Mohamed VI Souissi, Rabat 10170, Morocco	\N	402
+172	United States	32.59812465034629	-25.95961148346652	Av. Kenneth Kaunda, 193 Caixa Postal, 783	\N	343
+173	United States	17.08486131483526	-22.57561503181287	14 Lossen Street Windhoek, Namibia	\N	421
+174	United States	85.33419511592635	27.7381749307414	Embassy of the United States of America Maharajgunj, Kathmandu, Nepal	\N	375
+175	United States	4.882063	52.356181	Museumplein 19 1071 DJ Amsterdam The Netherlands	\N	383
+176	United States	4.882063	52.356181	Museumplein 19 1071 DJ Amsterdam The Netherlands	\N	383
+177	United States	-68.92806705015425	12.108160536469793	P.O. Box 158 J.B. Gorsiraweg 1	\N	4175
+178	United States	-41.27268919999999	174.7788378	29 Fitzherbert Terrace Thorndon Wellington 6011 New Zealand	\N	412
+179	United States	-36.8451345	174.7675626	Level 3, 23 Customs Street East Auckland 1010 New Zealand	\N	296
+180	United States	-86.31586246301268	12.128777470319303	Kilometer 5.5 Carretera Sur Managua, Nicaragua	\N	371
+181	United States	2.070800850759912	13.526350006074725	BP 11201 Niamey, Niger	\N	370
+182	United States	6.4410754	3.4069013	2 Walter Carrington Crescent, Victoria Island, Lagos STOP(234)-1- 460-3600 or (234)-1- 460-3400	\N	17
+183	United States	7.474317950082293	9.040513693481035	Plot 1075 Diplomatic Drive Central District Area, Abuja, Nigeria	\N	339
+184	United States	21.354850713788924	41.99919648679228	Str. “Samoilova” Nr.21 1000 Skopje Republic of North Macedonia	\N	4176
+185	United States	10.668108116097063	59.93978108187661	Morgedalsvegen 36 0378 Oslo Norway	\N	393
+186	United States	4.3820756509457235	50.85828708481113	Boulevard Leopold III 1110 Brussels, Belgium	\N	4177
+187	United States	23.5994813	58.45443629999999	P.C. 115 Madinat Al Sultan Qaboos Muscat, Oman	\N	304
+188	United States	-77.05170868456409	38.89443515472371	U.S. Department of State 2201 C Street, NW Room 5914 Washington, D.C. 20515	\N	4178
+189	United States	2.314880050761391	48.86830080786213	18, avenue Gabriel 75008 Paris	\N	4179
+190	United States	71.53478281438282	34.00574362762821	11, Hospital Road, Peshawar, Pakistan	\N	4180
+191	United States	73.1158063143739	33.72392364240929	Diplomatic Enclave, Ramna 5 Islamabad, Pakistan	\N	374
+192	United States	67.00740971413214	24.84119765214914	Plot 3, 4, 5, New TPX Area Mai Kolachi Road, Karachi	\N	19
+193	United States	74.33401361430799	31.5601682523353	50, Shahrah-e-Abdul Hameed Bin Badees, (Old Empress Road) near Shimla Hill, Lahore, Pakistan	\N	4181
+194	United States	7.364184199999999	134.5360667	Airai State, in an area known as Omsangel (no street address) P.O. Box 6028 Koro, Palau	\N	4182
+195	United States	-79.56283808497368	8.998702891939903	Building 783, Demetrio Basilio Lakas Avenue Clayton, Panama	\N	382
+196	United States	-9.443800399999999	147.1802671	Embassy of the United States of America P.O. Box 1492 Port Moresby, Papua New Guinea	\N	417
+197	United States	-57.62816948465239	-25.28548103339301	1776 Mariscal Lopez Avenue Asunción, Paraguay	\N	4183
+198	United States	-76.97117538535889	-12.100416646195017	Avenida La Encalada cdra. 17 s/n Surco, Lima 33, Peru	\N	25
+199	United States	14.5791844	120.9781407	1201 Roxas Boulevard Manila, Philippines	\N	5
+200	United States	19.939102899999998	50.060064399999995	ul. Stolarska 9 31-043 Krakow	\N	4184
+201	United States	16.927380015922793	52.407795452290735	ul. Paderewskiego 8 61-770 Poznan	\N	4185
+202	United States	21.023320999999996	52.224495	Aleje Ujazdowskie 29/31 00-540 Warsaw Poland	\N	266
+203	United States	-25.71346686956659	37.74504219110972	Avenida Príncipe do Mónaco, 6-2 F 9500 Ponta Delgada	\N	4186
+204	United States	-9.16557018495388	38.74412016357007	Avenida das Forças Armadas 1600-081 Lisboa	\N	406
+205	United States	51.471328	25.303604000000004	22nd February Street Al Luqta District P.O. Box 2399 Doha, Qatar	\N	320
+206	United States	-13.8309477	-171.7699055	5th Floor ACC Building Matafele Apia, Samoa	\N	466
+207	United States	12.490769	41.906582	Lungarno Amerigo Vespucci, 38 50123 Florence, Italy	\N	495
+208	United States	46.61878331499943	24.68122498413883	P.O. Box 94309 Riyadh 11693 Saudi Arabia	\N	33
+209	United States	50.15211701444141	26.304454792343083	P.O. Box 38955 Dhahran Airport 31942 Saudi Arabia	\N	4187
+210	United States	39.16193271434716	21.526284675984353	Falastin Al-Hamra’a Jeddah 23323, Saudi Arabia	\N	4188
+211	United States	-17.516996741291123	14.704710009473104	Route des Almadies Dakar, Senegal	\N	353
+212	United States	20.45105495060411	44.77249378724876	92 Bulevar kneza Aleksandra Karadjordjevica 11040 Belgrade, Serbia	\N	310
+213	United States	-13.23203054992229	8.451653993892794	Southridge – Hill Station Freetown, Sierra Leone	\N	379
+214	United States	1.3052732	103.820494	27 Napier Road Singapore	\N	46
+215	United States	17.10578371527176	48.141287658882085	814 99 Bratislava Slovak Republic	\N	409
+216	United States	14.496689950651993	46.05241020192026	Prešernova 31 1000 Ljubljana Slovenia	\N	425
+217	United States	45.23645220478228	2.0591992551702303	Mogadishu, Somalia	\N	4189
+218	United States	18.431694999999998	-34.0752867	2 Reddam Ave Westlake 7945	\N	408
+219	United States	28.223374	-25.745777999999998	877 Pretorius St Arcadia, Pretoria	\N	392
+220	United States	28.0516737	-26.111556899999997	1 Sandton Drive Sandhurst	\N	102
+221	United States	31.01125499999999	-29.843728000000002	303 Dr. Pixley KaSeme Street 31st Floor Delta Towers Durban 4001	\N	4190
+222	United States	37.5731872	126.9780536	188 Sejong-daero, Jongno-gu, Seoul, Korea 03141	\N	8
+223	United States	31.58386391452658	4.855650541647085	Kololo Road adjacent to the European Union’s compound Juba, South Sudan	\N	416
+224	United States	2.1152034151191756	41.397786603313826	Paseo Reina Elisenda de Montcada, 23 08034 Barcelona, España	\N	4191
+225	United States	-3.6889362849103784	40.434621362475525	Calle de Serrano, 75 28006 Madrid, Spain	\N	39
+226	United States	79.848618	6.913233	210 Galle Road Colombo 03 Sri Lanka	\N	391
+227	United States	32.60541621518638	15.526150789218434	P.O. Box 699 Kilo 10, Soba Khartoum, Sudan	\N	31
+228	United States	-84.36444565058818	21.403015973191792	Kristalstraat 165 Paramaribo, Suriname	\N	431
+229	United States	18.10333961607249	59.33347178166029	Dag Hammarskjölds Väg 31, SE-115 89 Stockholm	\N	377
+230	United States	7.438283	46.943433	Sulgeneckstrasse 19 CH-3007 Bern, Switzerland	\N	444
+231	United States	7.438283	46.943433	In Care Of: Sulgeneckstrasse 19 CH-3007 Bern, Switzerland	\N	4192
+232	United States	36.280863	33.521751	Abou Roumaneh, 2 Al Mansour Street Damascus, Syria	\N	269
+233	United States	22.6048844	120.3017528	5F, No.88, Chenggong 2nd Road Qianzhen Dist.,Kaohsiung 80661 Taiwan	\N	4193
+234	United States	25.0807732	121.5982727	No. 100, Jinhu Road, Neihu District 11461, Taipei City, Taiwan	\N	4194
+235	United States	68.70998205039008	38.579469073127456	109-A, Ismoili Somoni Avenue (Zarafshon district) Dushanbe, Tajikistan	\N	387
+236	United States	39.26846387313328	-6.774595980412405	686 Old Bagamoyo Road, Msasani Dar es Salaam, Tanzania	\N	34
+237	United States	18.8160541	98.9848536	387 Witchayanond Road Chiang Mai 50300, Thailand	\N	4195
+238	United States	13.7359432	100.5472008	95 Wireless Road Bangkok 10330, Thailand	\N	14
+239	United States	-8.5483237	125.568763	Avenida de Portugal Praia dos Coqueiros Dili, Timor-Leste	\N	432
+240	United States	-56.219030065505436	21.555755676518146	Boulevard Eyadema B.P. 852, Lomé STOP(+228) 2261 5470 Fax:(+228) 2261 5501	\N	4196
+241	United States	-18.1440472	178.4244407	31 Loftus Street Suva, Fiji	\N	4197
+242	United States	-61.516947	10.665985	15 Queen’s Park West Port of Spain Trinidad and Tobago	\N	4198
+243	United States	10.267989315205188	36.85042547993822	Les Berges du Lac 1053 TUNIS Tunisia	\N	367
+244	United States	29.0443211154174	41.11749587928979	İstinye Mahallesi, Üç Şehitler Sokak No.2 İstinye 34460 – Istanbul / Turkey	\N	18
+245	United States	32.8539583150804	39.908225094332444	110 Atatürk Blvd. Kavaklıdere, 06100 Ankara – Turkey	\N	52
+246	United States	35.3848218149961	36.98352556505883	Girne Bulvari No:212 Guzelevler Mah. Yuregir, Adana – TÜRKİYE	\N	4199
+247	United States	58.389301	37.901274	9 1984 Street (formerly Pushkin Street) Ashgabat, Turkmenistan	\N	369
+248	United States	6.135919716184857	46.23200668990151	111 Route de Pregny 1292 Geneva, Switzerland	\N	4200
+249	United States	12.489735615141493	41.907876971529674	via Boncompagni 2 Rome, Italy	\N	4201
+250	United States	55.30697651471662	25.258485535410205	Corner of Al Seef Rd. and Sheikh Khalifa bin Zayed Rd. Dubai, U.A.E	\N	207
+251	United States	54.43151831470147	24.424386568611762	Airport Road at Rabdan (29th) Street Embassies District, Plot 38, Sector W59-02, Street No. 4 Abu Dhabi, U.A.E.	\N	376
+252	United States	-0.13292556417568116	51.482433064228786	33 Nine Elms Lane London SW11 7US (mailing postcode) or SW8 5DB (driving/GPS postcode) United Kingdom	\N	4202
+253	United States	-56.178309884825005	-34.91348698146105	Lauro Müller 1776 Montevideo, Uruguay	\N	317
+254	United States	-5.9422437	54.5705791	Danesfort House 223 Stranmillis Road Belfast BT9 5GR	\N	4203
+255	United States	-3.1778503	55.954306900000006	3 Regent Terrace Edinburgh EH7 5BW	\N	4204
+256	United States	-66.87527058414291	10.477699892524667	F St. and Suapure St. Urb . Colinas de Valle Arriba Caracas, Venezuela	\N	252
+257	United States	44.22766864987787	15.373056861749312	Address: Sa’awan Street P.O. Box 22347	\N	4205
+258	United States	28.336325609106442	-15.419044901073296	Eastern end of Kabulonga Road Ibex Hill Lusaka, Zambia	\N	274
+259	United States	31.05263	-17.83151	172 Herbert Chitepo Ave Harare, Zimbabwe	\N	234
+260	Canada	37.74324	-25.66968	Rua D’Agua, 28, 9500-016 Ponta Delgada, São Miguel, Azores, Portugal	\N	4206
+261	Canada	38.72104	-9.1458	Avenida da Liberdade 196-200, 3rd Floor, 1269-121 Lisbon, Portugal	http://www.portugal.gc.ca	406
+262	Canada	41.327546	19.818698	Rr. Ibrahim Rugova,  ND 41, H7, Kati5, Tirana, Albania	http://www.portugal.gc.ca	410
+263	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
+264	Canada	36.76148	3.0166	18 Mustapha Khalef St., Ben Aknoun, Algiers, Algeria	http://www.algeria.gc.ca	145
+265	Canada	40.479094	-3.686115	Torre Espacio, Paseo de la Castellana 259D, 28046 Madrid, Spain	http://www.spain.gc.ca	39
+266	Canada	-8.819391	13.244298	Rua Rei Katyavala 113, Luanda, Angola	http://www.spain.gc.ca	27
+267	Canada	-17.820705	31.043559	45 Baines Avenue, Harare, Zimbabwe	http://www.zimbabwe.gc.ca	234
+268	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+269	Canada	17.131657	-61.836037	#12 Village Walk Commercial Center, Friars Hill Road, St. John’s, Antigua	http://www.barbados.gc.ca	4207
+270	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+271	Canada	-34.58005	-58.3978	Tagle 2828, C1425EEH Buenos Aires, Argentina	http://www.argentina.gc.ca	15
+272	Canada	55.746664	37.595059	23 Starokonyushenny Pereulok, Moscow, 119002, Russia	http://www.russia.gc.ca	13
+273	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+274	Canada	-33.86164	151.2071	Level 5, Quay West Building, 111 Harrington Street, Sydney, NSW 2000, Australia	http://www.australia.gc.ca	64
+275	Canada	48.21076	16.37836	Laurenzenberg 2, A-1010, Vienna, Austria	http://www.austria.gc.ca	256
+276	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
+277	Canada	25.06	-77.345	Shirley Street Plaza, Nassau, Bahamas	http://www.turkey.gc.ca	4101
+278	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
+279	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
+280	Canada	23.79979	90.4185	United Nations Road, Baridhara, Dhaka, Bangladesh	http://www.bangladesh.gc.ca	16
+281	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+282	Canada	52.22477	21.02602	ul. Jana Matejki 1/5, 00-481, Warsaw, Poland	http://www.poland.gc.ca	266
+283	Canada	50.84003	4.39781	Avenue des Arts 58, 1000, Brussels, Belgium	http://www.belgium.gc.ca	271
+284	Canada	14.59704	-90.50452	Edyma Plaza Building, 8th Floor, 13 Calle 8-44, Zona 10, Guatemala City, Guatemala	http://www.guatemala.gc.ca	212
+285	Canada	12.369416	-1.516655	316 Professeur Ki-Zerbo Street, Ouagadougou, Burkina Faso	http://www.burkinafaso.gc.ca	280
+286	Canada	32.381695	-64.677982	Stewart Hall, 5 Queen Street, St. George, GE 05, Bermuda	https://www.canada.ca/Canada-In-New-York	4208
+287	Canada	40.75368	-73.974423	466 Lexington Avenue, 20th Floor, New York, New York, U.S.A., 10017	https://www.canada.ca/Canada-In-New-York	12
+288	Canada	28.58976	77.18475	7/8 Shantipath, Chanakyapuri, New Delhi 110 021, India	http://www.canada.ca/CanadaAndIndia	443
+289	Canada	-17.46667	-68.93333	2678, Calle Victor Sanjinez, Edificio Barcelona, 2nd Floor, Plaza España (Sopocachi), La Paz, Bolivia	http://www.canada.ca/CanadaAndIndia	184
+290	Canada	-12.120851	-77.035953	Calle Bolognesi 228, Miraflores, Lima 15074, Peru	http://www.peru.gc.ca	25
+291	Canada	48.21076	16.37836	Laurenzenberg 2, A-1010, Vienna, Austria	http://www.austria.gc.ca	256
+292	Canada	-24.67857	25.927319	9th floor, iTowers North, Lot 54368 Gaborone	http://www.austria.gc.ca	430
+293	Canada	-17.820705	31.043559	45 Baines Avenue, Harare, Zimbabwe	http://www.zimbabwe.gc.ca	234
+294	Canada	-15.815613	-47.878642	SES - Av. das Nações, Quadra 803, Lote 16, 70410-900 Brasília, DF, Brazil	http://www.brazil.gc.ca	4106
+295	Canada	-19.93679	-43.92222	SES - Av. das Nações, Quadra 803, Lote 16, 70410-900 Brasília, DF, Brazil	http://www.brazil.gc.ca	4209
+296	Canada	-22.964916	-43.173957	Av. Atlântica 1130, 13º andar, Copacabana, 22021-000 Rio de Janeiro - RJ, Brazil	http://www.brazil.gc.ca	4210
+297	Canada	-23.609325	-46.697676	Centro Empresarial Nações Unidas - Torre Norte, Av. das Nações Unidas, 12901, 16º andar, 04578-000 São Paulo - SP, Brazil	http://www.brazil.gc.ca	7
+298	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+299	Canada	4.887292	114.943692	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.brunei.gc.ca	462
+300	Canada	42.696228	23.316952	7 Pozitano Street, Block #3, 1st Floor, Office #4, 1000 Sofia, Bulgaria	http://www.brunei.gc.ca	314
+301	Canada	44.46099	26.0828	1-3 Tuberozelor Street, 011411 Bucharest, Sector 1, Romania	http://www.romania.gc.ca	259
+302	Canada	12.369416	-1.516655	316 Professeur Ki-Zerbo Street, Ouagadougou, Burkina Faso	http://www.burkinafaso.gc.ca	280
+303	Canada	-3.37166	29.3565	Hôtel Club du Lac Tanganyika, Chaussée d’Uvira, Bujumbura, Burundi	http://www.burkinafaso.gc.ca	395
+304	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
+305	Canada	11.579752	104.912604	27-29 Street 75, Sangkat Srah Chak, Khan Daun Penh, Phnom Penh, Cambodia	http://www.canadainternational.gc.ca/kenya/	237
+306	Canada	13.727427	100.539319	15th Floor, Abdulrahim Place, 990 Rama IV, Bangrak, Bangkok, 10500, Thailand	http://www.thailand.gc.ca	14
+307	Canada	3.899147	11.5100673	Les Colonnades building, Bastos, Yaoundé, Cameroon	http://www.cameroon.gc.ca	213
+308	Canada	4.04749	9.70637	90 Avenue Douala Manga Bell, Bonanjo, Douala	http://www.canadainternational.gc.ca/cameroon-cameroun/	4211
+309	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
+310	Canada	19.332905	-81.37997	1st Floor Landmark Square, 64 Earth Close, Seven Mile Beach, Cayman Islands	http://www.senegal.gc.ca	4212
+311	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
+312	Canada	4.3617	18.55598	Cabinet ARC, Bangui, Central African Republic	http://www.jamaica.gc.ca	381
+313	Canada	3.899147	11.5100673	Les Colonnades building, Bastos, Yaoundé, Cameroon	http://www.cameroon.gc.ca	213
+314	Canada	12.134846	15.055741	3602, Avenue Ngarta Tombalbaye, door 586, N'Djamena, Chad	http://www.canadainternational.gc.ca/cameroon-cameroun/	4213
 315	Canada	3.899147	11.5100673	Les Colonnades building, Bastos, Yaoundé, Cameroon	http://www.cameroon.gc.ca	213
-316	Canada	4.04749	9.70637	90 Avenue Douala Manga Bell, Bonanjo, Douala	http://www.canadainternational.gc.ca/cameroon-cameroun/	4215
-317	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
-318	Canada	19.332905	-81.37997	1st Floor Landmark Square, 64 Earth Close, Seven Mile Beach, Cayman Islands	http://www.senegal.gc.ca	4216
-319	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
-320	Canada	4.3617	18.55598	Cabinet ARC, Bangui, Central African Republic	http://www.jamaica.gc.ca	381
-321	Canada	3.899147	11.5100673	Les Colonnades building, Bastos, Yaoundé, Cameroon	http://www.cameroon.gc.ca	213
-322	Canada	12.134846	15.055741	3602, Avenue Ngarta Tombalbaye, door 586, N'Djamena, Chad	http://www.canadainternational.gc.ca/cameroon-cameroun/	4217
-323	Canada	3.899147	11.5100673	Les Colonnades building, Bastos, Yaoundé, Cameroon	http://www.cameroon.gc.ca	213
-324	Canada	-33.416678	-70.605389	Nueva Tajamar 481, Torre Norte, 12th Floor, Las Condes, Santiago, Chile	http://www.chile.gc.ca	32
-325	Canada	39.94164	116.44616	Consular Section, 19 Dongzhimenwai Dajie, Chaoyang District, Beijing 100600, China	http://www.china.gc.ca	10
-326	Canada	29.55725	106.57394	Room 1705, Metropolitan Tower, Wu Yi Lu, Yu Zhong District, Chongqing 400010, China	www.china.gc.ca	4218
-327	Canada	23.14033	113.26022	26/F, TaiKoo Hui Tower 1, 385 Tianhe Road, Tianhe District, Guangzhou, China, 510620	http://www.china.gc.ca	4121
-328	Canada	31.222252	121.44395	ECO City Building, 8th floor, 1788 Nanjing Xi Lu - Jing An District, Shanghai, 200040, China	http://www.china.gc.ca	6
-329	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
-330	Canada	10.403862	-75.553888	Edificio Centro Ejecutivo Bocagrande, Carrera 3, No. 8-129, Oficina No. 1103, Cartagena, Colombia	http://www.colombia.gc.ca	4219
-331	Canada	-6.81345	39.29166	38 Mirambo street / Garden Avenue, Dar es Salaam, Tanzania	http://www.tanzania.gc.ca	4220
-332	Canada	-4.315966	15.276362	17, avenue Pumbu, Commune de Gombe, Kinshasa, Congo (Kinshasa)	http://www.canadainternational.gc.ca/congo/	4221
-333	Canada	9.9308209336995	-84.10252511501312	La Sabana Executive Business Centre, Building No. 5, 3rd Floor, behind the Contraloría General de la República, San José, Costa Rica	http://www.costarica.gc.ca	424
-334	Canada	45.81723	15.95733	Prilaz Gjure Dezelica 4, 10000 Zagreb, Croatia	http://www.croatia.gc.ca	386
-335	Canada	23.11783	-82.423445	Calle 30, No. 518 esquina a 7ma, Miramar, Havana, Cuba	www.cuba.gc.ca	236
-336	Canada	21.125	-75.82889	Hotel Atlantico, Suite 1, Guardalavaca, Holguín, Cuba	www.cuba.gc.ca	4222
-337	Canada	35.166503	33.358065	15 Themistocles Dervis Street, 1066 Nicosia, Cyprus	www.cuba.gc.ca	420
-338	Canada	37.97739	23.749223	48 Ethnikis Antistaseos Street, Chalandri, 152 31, Athens, Greece	http://www.greece.gc.ca	394
-339	Canada	50.09847	14.40626	Ve Struhach 95/2, 160 00 Prague 6, Czech Republic	http://www.czechrepublic.gc.ca	4127
-340	Canada	55.67977	12.58216	Kristen Bernikowsgade 1, 1105 Copenhagen K., Denmark	http://www.denmark.gc.ca	400
-341	Canada	11.82514	42.59028	Place Lagarde, Djibouti	http://www.canadainternational.gc.ca/ethiopia-ethiopie/index.aspx?lang=eng	405
-342	Canada	8.995726	38.73621	Old Airport Area, Nefas Silk Lafto Sub City, Kebele 04, House No.122, Addis Ababa, Ethiopia	http://www.canadainternational.gc.ca/ethiopia-ethiopie/	166
-343	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-344	Canada	18.469616	-69.939394	Av. Winston Churchill 1099, Torre Citigroup en Acropólis Center,  18th Floor, Ensanche Piantini, Santo Domingo, Dominican Republic	www.dominicanrepublic.gc.ca	201
-345	Canada	18.613468	-68.403969	Carretera Veron- Bavaro Km. 2,5, Amstar Business Center, Building 5, Suite 521, Punta Cana, Dominican Republic	www.dominicanrepublic.gc.ca	4223
-346	Canada	19.796819	-70.690316	Calle Villanueva No. 8, Edificio Abraxas, Puerto Plata, Dominican Republic	www.dominicanrepublic.gc.ca	4224
-347	Canada	-0.173957	-78.48547	Av. Amazonas N37-29 and Union Nacional de Periodistas, Eurocenter Building, 3rd Floor (one block north of the Supreme Court Building, near Amazonas and United Nations), Quito, Ecuador	http://www.ecuador.gc.ca	246
-348	Canada	-2.166869	-79.896377	Avenida Francisco de Orellana, Number 234, Blue Towers Building, 6th Floor, Office 604, Guayaquil, Ecuador	http://www.ecuador.gc.ca	190
-349	Canada	30.072131	31.227967	Nile City Towers, 2005 (A) Corniche El Nile, South Tower, 18th floor 11221	https://www.Canada.ca/Canada-And-Egypt	11
-350	Canada	13.731	-89.161	Centro Financiero Gigante, Tower A, Lobby 2, Alameda Roosevelt and 63 Avenue S, Colonia Escalón, San Salvador, El Salvador	http://www.elsalvador.gc.ca	404
-351	Canada	9.078804	7.498289	13010G, Palm close, Diplomatic drive, Central Business District, Abuja, Nigeria	http://www.canadainternational.gc.ca/nigeria/	339
-352	Canada	15.333333	38.933333	Abeneh Street 745, House No. 152/154, Tiravolo, Asmara, Eritrea	http://www.canadainternational.gc.ca/nigeria/	378
-353	Canada	15.59715	32.537652	29 Africa Road, Block 56, Khartoum 1, Sudan	http://www.canadainternational.gc.ca/sudan-soudan/	31
-502	Canada	58.915001	5.729692	Olav Kyrres gate 21, Stavanger, Norway	http://www.norway.gc.ca	4248
-354	Canada	59.436744	24.737378	Toom Kooli 13, 2nd Floor, 15186 Tallinn, Estonia	https://www.Canada.ca/Canada-And-Estonia	407
-355	Canada	8.995726	38.73621	Old Airport Area, Nefas Silk Lafto Sub City, Kebele 04, House No.122, Addis Ababa, Ethiopia	http://www.canadainternational.gc.ca/ethiopia-ethiopie/	166
-356	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-357	Canada	60.1679	24.94848	Pohjoisesplanadi 25B, 00100 Helsinki, Finland	http://www.finland.gc.ca	396
-358	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-359	Canada	45.764962	4.836703	3, place de la Bourse 69002 Lyon, France	http://www.france.gc.ca	4135
-360	Canada	43.700804	7.269396	37, boulevard Dubouchage – 1st floor, 06000 Nice, France	http://www.france.gc.ca	4225
-361	Canada	48.862725	2.287592	59, allées Jean-Jaurès, 31000 Toulouse, France	http://www.france.gc.ca	4138
-362	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-363	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-364	Canada	-22.27055	166.4426	Immeuble Norwich, Level 2, 11 Georges Baudoux Street, Artillerie, Noumea, New Caledonia	http://www.france.gc.ca	454
-365	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-366	Canada	0.39084	9.45364	Quartier Batterie IV, Pont de Gué-Gué (1st street behind the European Union office), Libreville, Gabon	http://www.newzealand.gc.ca	385
-367	Canada	3.899147	11.5100673	Les Colonnades building, Bastos, Yaoundé, Cameroon	http://www.cameroon.gc.ca	213
-368	Canada	13.47402	-16.69271	48 Atlantic Road, Fajara, Banjul, The Gambia	http://www.cameroon.gc.ca	471
-369	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
-370	Canada	41.701391	44.794189	34 Rustaveli Avenue, Third Floor, Tbilisi, Georgia, 0108	http://www.senegal.gc.ca	362
-371	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
-372	Canada	52.51044	13.3776	Leipziger Platz 17, 10117 Berlin, Germany	http://www.germany.gc.ca	136
-373	Canada	51.22327	6.77467	Benrather Strasse 8, 40213 Düsseldorf, Germany	http://www.germany.gc.ca	4140
-374	Canada	48.13569	11.58082	Tal 29, 80331 Munich, Germany	http://www.germany.gc.ca	4142
-375	Canada	48.81332	9.17843	Leitzstrasse 45, 70469 Stuttgart, Germany	http://www.germany.gc.ca	4226
-376	Canada	5.570976	-0.190592	42 Independence Avenue, Accra, Ghana	http://www.canadainternational.gc.ca/ghana/	222
-377	Canada	37.97739	23.749223	48 Ethnikis Antistaseos Street, Chalandri, 152 31, Athens, Greece	http://www.greece.gc.ca	394
-378	Canada	40.63401	22.9369	19, N. Kountouriotou Street, 546 25, Thessaloniki, Greece	http://www.greece.gc.ca	4144
-379	Canada	64.1755	-51.74619	Tuapannguit 48, 3900 Nuuk, Greenland	http://www.greece.gc.ca	481
-380	Canada	55.67977	12.58216	Kristen Bernikowsgade 1, 1105 Copenhagen K., Denmark	http://www.denmark.gc.ca	400
-381	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-382	Canada	16.265	-61.551	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	4227
-383	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-384	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.france.gc.ca	4228
-385	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-386	Canada	14.59704	-90.50452	Edyma Plaza Building, 8th Floor, 13 Calle 8-44, Zona 10, Guatemala City, Guatemala	http://www.guatemala.gc.ca	212
-387	Canada	9.53298	-13.69048	Residence Micheline Bloc B 1er Étage Apt 202, Camayenne, Commune de Dixinn, Conakry, Republic of Guinea	http://www.guatemala.gc.ca	277
-388	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
-389	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
-390	Canada	6.82328	-58.15962	High and Young Streets, Georgetown, Guyana	http://www.guyana.gc.ca	434
-391	Canada	18.540347	-72.297276	Delmas Road, between Delmas 75 and 71, Port-au-Prince	http://www.haiti.gc.ca	373
-392	Canada	22.287647	114.213278	9th Floor, 25 Westlands Road, Quarry Bay, Hong Kong SAR, China	http://www.hongkong.gc.ca	4229
-393	Canada	14.088764587915215	-87.1787828207016	Plaza Ficohsa, 3rd Floor, Boulevard San Juan Bosco, Colonia Payaquí, Tegucigalpa, Honduras	http://www.hongkong.gc.ca	360
-394	Canada	9.9308209336995	-84.10252511501312	La Sabana Executive Business Centre, Building No. 5, 3rd Floor, behind the Contraloría General de la República, San José, Costa Rica	http://www.costarica.gc.ca	424
-395	Canada	47.5109	19.036961	Ganz utca 12-14, 1027 Budapest, Hungary	http://www.hungary.gc.ca	272
-396	Canada	64.147899	-21.945141	14 Tungata, 101 Reykjavik, Iceland	https://www.canadainternational.gc.ca/iceland-islande/	4148
-397	Canada	28.58976	77.18475	7/8 Shantipath, Chanakyapuri, New Delhi 110 021, India	http://www.canada.ca/CanadaAndIndia	443
-398	Canada	13.012526	77.556032	World Trade Center, 22nd Floor, 26/1, Dr. Rajkumar Road, Malleshwaram West, Yeshwantpur, Bangalore 560055, Karnataka, India	http://www.canada.ca/CanadaAndIndia	4230
-399	Canada	30.743959	76.784088	C413-C416, 4th Floor, Elante Office Complex, Plot No. 178-178A,  Industrial & Business Park, Phase 1, Chandigarh 160002, India	http://www.canada.ca/CanadaAndIndia	4231
-400	Canada	22.579376	88.349845	Duncan House, 31 Netaji Subhas Road, Kolkata 700 001, India	http://www.canada.ca/CanadaAndIndia	4232
-401	Canada	19.00987	72.83558	One International Centre, Tower 2, 21st Floor, Senapati Bapat Marg, Elphinstone Road West, Mumbai 400 013, India	http://www.canada.ca/CanadaAndIndia	4233
-402	Canada	-6.21516	106.8204	World Trade Centre I, 6th Floor, Jl. Jend Sudirman, Kav. 29, Jakarta 12920, Indonesia	http://www.indonesia.gc.ca	3
-403	Canada	-8.67006	115.22838	Jalan Tantular No. 32, Renon, Denpasar, Bali, Indonesia	https://bali.indonesia.embassy.gov.au/	4155
-404	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
-405	Canada	33.312	44.395	British Embassy Compound, International Zone, Baghdad, Iraq	https://www.Canada.ca/Canada-And-Iraq	44
-406	Canada	36.187525	43.973936	Rotana Hotel, Gulan Street, Erbil, Iraq	https://www.canada.ca/Canada-And-Iraq	4156
-407	Canada	53.333536	-6.248976	7-8 Wilton Terrace, Dublin 2, Ireland	https://www.Canada.ca/Canada-And-Ireland	346
-408	Canada	32.06242	34.79066	Canada House, 3/5 Nirim Street, 4th Floor, Tel Aviv 67060, Israel	http://www.israel.gc.ca	4234
-409	Canada	31.899636	35.204223	12 Elias Odeh Street, Ramallah, West Bank	http://www.westbankandgaza.gc.ca	4235
-410	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
-411	Canada	45.4728864	9.1948976	3, Piazza Cavour, 6th floor, 20121 Milan, Italy	http://www.italy.gc.ca	4158
-412	Canada	5.31778	-4.0161	Immeuble Trade Centre, 23 avenue Noguès, Le Plateau, Abidjan, Côte d'Ivoire	http://www.canadainternational.gc.ca/cotedivoire/	4236
-413	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
-414	Canada	18.48212	-77.92932	29 Gloucester Street, Montego Bay	http://www.jamaica.gc.ca	4237
-415	Canada	35.673609	139.728174	3-38 Akasaka 7-chome, Minato-ku, Tokyo, Japan, 107-8503	http://www.japan.gc.ca	2
-416	Canada	33.583544	130.404485	c/o Kyushu Electric Power Co., Inc. 1-82 Watanabe-dori 2-chome, Chuo-ku, Fukuoka, Japan, 810-8720	japan.gc.ca	4164
-417	Canada	34.388594	132.45584	c/o Chugoku Electric Power Co. Inc., 4-33 Komachi, Naka-ku, Hiroshima-shi, Hiroshima-ken, Japan, 730-8701	http://www.japan.gc.ca	4238
-418	Canada	35.175289	136.905632	Nakato Marunouchi Building, 6F, 3-17-6 Marunouchi, Naka-ku, Nagoya-shi, Aichi-ken, Japan, 460-0002	http://www.japan.gc.ca	4161
-419	Canada	34.616354	135.447783	c/o Tsuda Sangyo Co. Ltd., 1-8-19 Hirabayashi Minami, Suminoe-ku, Osaka, 559-8550, Japan	japan.gc.ca	4163
-420	Canada	43.055789	141.318457	Canada Place, Poseidon Maruyama 2F, 26-1-3 Odori Nishi, Chuo-ku, Sapporo, Japan 064-0820	http://www.japan.gc.ca	4162
-421	Canada	31.960588	35.881015	133 Zahran Street, Amman, Jordan	https://www.Canada.ca/Canada-And-Jordan	123
-422	Canada	51.136817	71.414067	Kabanbay, Batyr Street 13/1, Nur-Sultan, 010000, Kazakhstan	http://www.kazakhstan.gc.ca	365
-423	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
-424	Canada	1.32905	172.97905	Bairiki, Tarawa, Kiribati	http://www.kiribati.embassy.gov.au/twaa/home.html	474
-425	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-426	Canada	39.03031	125.80072	Munsu-dong, Taehak Street, Taedonggang District, Pyongyang, Democratic People’s Republic of Korea	https://www.swedenabroad.se/en/embassies/north-korea-pyongyang/	185
-427	Canada	37.56694	126.97079	21 Jeongdong-gil (Jeong-dong), Jung-gu, Seoul (04518), Republic of Korea	http://www.korea.gc.ca	8
-428	Canada	37.56694	126.97079	21 Jeongdong-gil (Jeong-dong), Jung-gu, Seoul (04518), Republic of Korea	http://www.korea.gc.ca	8
-429	Canada	35.10442	128.97471	c/o Dongsung Chemical Corporation, 99 Sinsan-ro (472 Shinpyung-dong), Saha-gu, Busan, 49421, Republic of Korea	http://www.korea.gc.ca	4194
-430	Canada	45.81723	15.95733	Prilaz Gjure Dezelica 4, 10000 Zagreb, Croatia	http://www.croatia.gc.ca	386
-431	Canada	29.3294	48.00393	Villa 24, Block 4, 24 Al-Mutawakkal Street, Da'aiyah, Kuwait City, Kuwait	http://www.kuwait.gc.ca	172
-432	Canada	42.87116	74.58326	299/5, Chingiz Aitmatov Avenue, Bishkek, 720016, Kyrgyz Republic	http://www.kuwait.gc.ca	368
-433	Canada	51.136817	71.414067	Kabanbay, Batyr Street 13/1, Nur-Sultan, 010000, Kazakhstan	http://www.kazakhstan.gc.ca	365
-434	Canada	17.96277	102.61443	KM4, Thadeua Road, Watnak Village,  Sisattanak District, Vientiane, Laos	http://www.kazakhstan.gc.ca	390
-435	Canada	13.727427	100.539319	15th Floor, Abdulrahim Place, 990 Rama IV, Bangrak, Bangkok, 10500, Thailand	http://www.thailand.gc.ca	14
-436	Canada	56.957612	24.121325	20/22 Baznicas Street, 6th Floor, Riga LV-1010, Latvia	https://www.Canada.ca/Canada-And-Latvia	399
-437	Canada	33.909298	35.578156	First Floor, Coolrite Building, 43 Jal El Dib Highway (seaside), Beirut, Lebanon	http://www.lebanon.gc.ca	413
-438	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
-439	Canada	5.31778	-4.0161	Immeuble Trade Centre, 23 avenue Noguès, Le Plateau, Abidjan, Côte d'Ivoire	http://www.canadainternational.gc.ca/cotedivoire/	4236
-440	Canada	36.847113	10.276961	Lot 24, rue de la Feuille d’Érable, Cité des Pins, Tunis, Tunisia	http://www.tunisia.gc.ca	367
-441	Canada	46.94036	7.45753	Kirchenfeldstrasse 88, CH-3005 Bern, Switzerland	http://www.switzerland.gc.ca	444
-442	Canada	54.686371	25.27891	Business Centre 2000, Jogailos St. 4, 7th Floor, Vilnius 01116, Lithuania	https://www.Canada.ca/Canada-And-Lithuania	403
-443	Canada	49.37008	6.10068	51 rue Raoul Follereau, L-1529 Luxembourg	http://www.belgium.gc.ca	448
-444	Canada	50.84003	4.39781	Avenue des Arts 58, 1000, Brussels, Belgium	http://www.belgium.gc.ca	271
-445	Canada	22.287647	114.213278	9th Floor, 25 Westlands Road, Quarry Bay, Hong Kong SAR, China	http://www.hongkong.gc.ca	4229
-446	Canada	-18.868517	47.524364	Ivandry Business Center (ex-pullman), 5th floor, Velo Rainimangalahy Street, Ivandry, Antananarivo 101	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	198
-447	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
-448	Canada	-25.95486	32.59268	Kenneth Kaunda Avenue 1138, Maputo, Mozambique	http://www.canadainternational.gc.ca/mozambique/	343
-449	Canada	3.14468	101.70825	17th Floor, Menara Tan & Tan, 207 Jalan Tun Razak, 50400 Kuala Lumpur, Malaysia	http://www.malaysia.gc.ca	28
-450	Canada	5.35441	100.40908	3007, Tingkat Perusahaan 5, Prai Industrial Park, 13600 Prai, Penang, Malaysia	http://www.malaysia.gc.ca	4239
-451	Canada	6.9049	79.85555	33-A 5th Lane, Colombo 03, Sri Lanka	http://www.srilanka.gc.ca	391
-452	Canada	12.659541	-7.962958	Immeuble Séméga, Route de Koulikoro, Commune II, Bamako, Mali	http://www.mali.gc.ca	245
-453	Canada	35.899888	14.513605	Demajo House, 103 Archbishop Street (Triq L-Arcisqof), Valletta VLT 09, Malta	http://www.mali.gc.ca	487
-454	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
-455	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.italy.gc.ca	4228
-456	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-457	Canada	18.09507	-15.975503	Al Khayma city center, 10 Mamadou Konaté street, 3rd floor, Nouakchott, Mauritania	http://www.france.gc.ca	366
-458	Canada	33.99335	-6.8485	66 Mehdi Ben Barka Avenue, Rabat-Souissi, Morocco	http://www.morocco.gc.ca	4240
-459	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
-460	Canada	44.802088	20.456221	Kneza Milosa 75, 111711 Belgrade, Serbia	http://www.serbia.gc.ca	310
-461	Canada	42.000408	21.417712	Bul. Partizanski odredi 70b, Third floor, 1000 Skopje, North Macedonia	http://www.serbia.gc.ca	4179
-462	Canada	19.428712	-99.185908	Calle Schiller No. 529, Colonia Polanco, 11560 México, D.F., México	http://www.mexico.gc.ca	9
-463	Canada	16.859705	-99.873603	Pasaje Diana, Avenida Costera Miguel Alemán 121, L-16, Fracc. Magallanes, 39670 Acapulco, Guerrero, México	http://www.mexico.gc.ca	4241
-464	Canada	22.901506	-109.899599	Carretera Transpeninsular Km. 0.5, Local 82, Col. El Tezal, 23454 Cabo San Lucas, Baja California Sur, México	http://www.mexico.gc.ca	1110
-465	Canada	21.106841	-86.764022	Centro Empresarial, Oficina E7, Blvd. Kukulcan Km. 12, Zona Hotelera, 77599 Cancún, Quintana Roo, México	http://www.mexico.gc.ca	4242
-466	Canada	20.655751	-103.389528	World Trade Center, Av. Mariano Otero 1249, Torre Pacifico Piso 8, Col. Rinconada del Bosque, 44530 Guadalajara, Jalisco, México	http://www.mexico.gc.ca	4171
-467	Canada	23.274546	-106.454229	Centro Comercial La Marina Business and Life, Blvd. Marina Mazatlán 2302, Office 41, Col. Marina Mazatlán, 82103 Mazatlán, Sinaloa, Mexico	http://www.mexico.gc.ca	4243
-468	Canada	25.644956	-100.3603	Torre Gomez Morin 955, Ave. Gomez Morin No. 955, Suite 404, Col. Montebello, 66279 San Pedro Garza Garcia, Nuevo Léon, México	http://www.mexico.gc.ca	4173
-469	Canada	20.620746	-87.078264	Plaza Paraíso Caribe, Modulo C, Planta 2, Oficina C21 - 24, Av. 10 Sur entre Calle 3 y 5 Sur, M-35, Lote 1, Colonia Centro, 77710 Playa del Carmen, Quintana Roo, México	http://www.mexico.gc.ca	4244
-470	Canada	20.646788	-105.239151	Plaza Peninsula, Local Sub F, Boulevard Francisco Medina Ascencio 2485, Zona Hotelera Norte, 48300 Puerto Vallarta, Jalisco, México	http://www.mexico.gc.ca	624
-471	Canada	32.520393	-117.012578	Germán Gedovius No.10411-101, Condominio del Parque, Zona Río, 22320 Tijuana, Baja California Norte, México	http://www.mexico.gc.ca	4175
-472	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.mexico.gc.ca	4228
-473	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-474	Canada	44.46099	26.0828	1-3 Tuberozelor Street, 011411 Bucharest, Sector 1, Romania	http://www.romania.gc.ca	259
-475	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-476	Canada	43.728344	7.413862	Le Mercator, 7, rue de l'Industrie (9th floor), 98000, Monaco	http://www.france.gc.ca	463
-477	Canada	47.918157	106.920625	Sukhbaatar Square 2, Central Tower, Suite 608, Sukhbaatar District, Horoo 8, Ulaanbaatar, Mongolia	http://www.mongolia.gc.ca	308
-478	Canada	44.802088	20.456221	Kneza Milosa 75, 111711 Belgrade, Serbia	http://www.serbia.gc.ca	310
-479	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-480	Canada	33.99335	-6.8485	66 Mehdi Ben Barka Avenue, Rabat-Souissi, Morocco	http://www.morocco.gc.ca	4240
-481	Canada	-25.95486	32.59268	Kenneth Kaunda Avenue 1138, Maputo, Mozambique	http://www.canadainternational.gc.ca/mozambique/	343
-482	Canada	23.61	58.54	7th Floor, Getco Tower, Muscat, Oman	http://www.canadainternational.gc.ca/mozambique/	304
-483	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
-484	Canada	16.772558	96.158467	9th Floor, Centrepoint Towers, 65 Sule Pagoda Road, Yangon, Myanmar	https://www.Canada.ca/Canada-And-Myanmar	4245
-485	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
-486	Canada	-0.53	166.911667	MQ45 NPC OE, Aiwo District, Nauru	http://nauru.highcommission.gov.au	4246
-487	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-488	Canada	27.717731	85.306019	Kaldhara Marg 20356, Khusibu, Kathmandu, Nepal	http://www.australia.gc.ca	375
-489	Canada	28.58976	77.18475	7/8 Shantipath, Chanakyapuri, New Delhi 110 021, India	http://www.canada.ca/CanadaAndIndia	443
-490	Canada	52.08552	4.30372	Sophialaan 7, 2514 JP The Hague, The Netherlands	http://www.netherlands.gc.ca	307
+316	Canada	-33.416678	-70.605389	Nueva Tajamar 481, Torre Norte, 12th Floor, Las Condes, Santiago, Chile	http://www.chile.gc.ca	32
+317	Canada	39.94164	116.44616	Consular Section, 19 Dongzhimenwai Dajie, Chaoyang District, Beijing 100600, China	http://www.china.gc.ca	10
+318	Canada	29.55725	106.57394	Room 1705, Metropolitan Tower, Wu Yi Lu, Yu Zhong District, Chongqing 400010, China	www.china.gc.ca	4214
+319	Canada	23.14033	113.26022	26/F, TaiKoo Hui Tower 1, 385 Tianhe Road, Tianhe District, Guangzhou, China, 510620	http://www.china.gc.ca	4121
+320	Canada	31.222252	121.44395	ECO City Building, 8th floor, 1788 Nanjing Xi Lu - Jing An District, Shanghai, 200040, China	http://www.china.gc.ca	6
+321	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
+322	Canada	10.403862	-75.553888	Edificio Centro Ejecutivo Bocagrande, Carrera 3, No. 8-129, Oficina No. 1103, Cartagena, Colombia	http://www.colombia.gc.ca	4215
+323	Canada	-6.81345	39.29166	38 Mirambo street / Garden Avenue, Dar es Salaam, Tanzania	http://www.tanzania.gc.ca	4216
+324	Canada	-4.315966	15.276362	17, avenue Pumbu, Commune de Gombe, Kinshasa, Congo (Kinshasa)	http://www.canadainternational.gc.ca/congo/	4217
+325	Canada	9.9308209336995	-84.10252511501312	La Sabana Executive Business Centre, Building No. 5, 3rd Floor, behind the Contraloría General de la República, San José, Costa Rica	http://www.costarica.gc.ca	424
+326	Canada	45.81723	15.95733	Prilaz Gjure Dezelica 4, 10000 Zagreb, Croatia	http://www.croatia.gc.ca	386
+327	Canada	23.11783	-82.423445	Calle 30, No. 518 esquina a 7ma, Miramar, Havana, Cuba	www.cuba.gc.ca	236
+328	Canada	21.125	-75.82889	Hotel Atlantico, Suite 1, Guardalavaca, Holguín, Cuba	www.cuba.gc.ca	4218
+329	Canada	35.166503	33.358065	15 Themistocles Dervis Street, 1066 Nicosia, Cyprus	www.cuba.gc.ca	420
+330	Canada	37.97739	23.749223	48 Ethnikis Antistaseos Street, Chalandri, 152 31, Athens, Greece	http://www.greece.gc.ca	394
+331	Canada	50.09847	14.40626	Ve Struhach 95/2, 160 00 Prague 6, Czech Republic	http://www.czechrepublic.gc.ca	4127
+332	Canada	55.67977	12.58216	Kristen Bernikowsgade 1, 1105 Copenhagen K., Denmark	http://www.denmark.gc.ca	400
+333	Canada	11.82514	42.59028	Place Lagarde, Djibouti	http://www.canadainternational.gc.ca/ethiopia-ethiopie/index.aspx?lang=eng	405
+334	Canada	8.995726	38.73621	Old Airport Area, Nefas Silk Lafto Sub City, Kebele 04, House No.122, Addis Ababa, Ethiopia	http://www.canadainternational.gc.ca/ethiopia-ethiopie/	166
+335	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+336	Canada	18.469616	-69.939394	Av. Winston Churchill 1099, Torre Citigroup en Acropólis Center,  18th Floor, Ensanche Piantini, Santo Domingo, Dominican Republic	www.dominicanrepublic.gc.ca	201
+337	Canada	18.613468	-68.403969	Carretera Veron- Bavaro Km. 2,5, Amstar Business Center, Building 5, Suite 521, Punta Cana, Dominican Republic	www.dominicanrepublic.gc.ca	4219
+338	Canada	19.796819	-70.690316	Calle Villanueva No. 8, Edificio Abraxas, Puerto Plata, Dominican Republic	www.dominicanrepublic.gc.ca	4220
+339	Canada	-0.173957	-78.48547	Av. Amazonas N37-29 and Union Nacional de Periodistas, Eurocenter Building, 3rd Floor (one block north of the Supreme Court Building, near Amazonas and United Nations), Quito, Ecuador	http://www.ecuador.gc.ca	246
+340	Canada	-2.166869	-79.896377	Avenida Francisco de Orellana, Number 234, Blue Towers Building, 6th Floor, Office 604, Guayaquil, Ecuador	http://www.ecuador.gc.ca	190
+341	Canada	30.072131	31.227967	Nile City Towers, 2005 (A) Corniche El Nile, South Tower, 18th floor 11221	https://www.Canada.ca/Canada-And-Egypt	11
+342	Canada	13.731	-89.161	Centro Financiero Gigante, Tower A, Lobby 2, Alameda Roosevelt and 63 Avenue S, Colonia Escalón, San Salvador, El Salvador	http://www.elsalvador.gc.ca	404
+343	Canada	9.078804	7.498289	13010G, Palm close, Diplomatic drive, Central Business District, Abuja, Nigeria	http://www.canadainternational.gc.ca/nigeria/	339
+344	Canada	15.333333	38.933333	Abeneh Street 745, House No. 152/154, Tiravolo, Asmara, Eritrea	http://www.canadainternational.gc.ca/nigeria/	378
+345	Canada	15.59715	32.537652	29 Africa Road, Block 56, Khartoum 1, Sudan	http://www.canadainternational.gc.ca/sudan-soudan/	31
+346	Canada	59.436744	24.737378	Toom Kooli 13, 2nd Floor, 15186 Tallinn, Estonia	https://www.Canada.ca/Canada-And-Estonia	407
+347	Canada	8.995726	38.73621	Old Airport Area, Nefas Silk Lafto Sub City, Kebele 04, House No.122, Addis Ababa, Ethiopia	http://www.canadainternational.gc.ca/ethiopia-ethiopie/	166
+348	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+349	Canada	60.1679	24.94848	Pohjoisesplanadi 25B, 00100 Helsinki, Finland	http://www.finland.gc.ca	396
+350	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+351	Canada	45.764962	4.836703	3, place de la Bourse 69002 Lyon, France	http://www.france.gc.ca	4135
+352	Canada	43.700804	7.269396	37, boulevard Dubouchage – 1st floor, 06000 Nice, France	http://www.france.gc.ca	4221
+353	Canada	48.862725	2.287592	59, allées Jean-Jaurès, 31000 Toulouse, France	http://www.france.gc.ca	4138
+354	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+355	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+356	Canada	-22.27055	166.4426	Immeuble Norwich, Level 2, 11 Georges Baudoux Street, Artillerie, Noumea, New Caledonia	http://www.france.gc.ca	454
+357	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+358	Canada	0.39084	9.45364	Quartier Batterie IV, Pont de Gué-Gué (1st street behind the European Union office), Libreville, Gabon	http://www.newzealand.gc.ca	385
+359	Canada	3.899147	11.5100673	Les Colonnades building, Bastos, Yaoundé, Cameroon	http://www.cameroon.gc.ca	213
+360	Canada	13.47402	-16.69271	48 Atlantic Road, Fajara, Banjul, The Gambia	http://www.cameroon.gc.ca	471
+361	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
+362	Canada	41.701391	44.794189	34 Rustaveli Avenue, Third Floor, Tbilisi, Georgia, 0108	http://www.senegal.gc.ca	362
+363	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
+364	Canada	52.51044	13.3776	Leipziger Platz 17, 10117 Berlin, Germany	http://www.germany.gc.ca	136
+365	Canada	51.22327	6.77467	Benrather Strasse 8, 40213 Düsseldorf, Germany	http://www.germany.gc.ca	4140
+366	Canada	48.13569	11.58082	Tal 29, 80331 Munich, Germany	http://www.germany.gc.ca	4142
+367	Canada	48.81332	9.17843	Leitzstrasse 45, 70469 Stuttgart, Germany	http://www.germany.gc.ca	4222
+368	Canada	5.570976	-0.190592	42 Independence Avenue, Accra, Ghana	http://www.canadainternational.gc.ca/ghana/	222
+369	Canada	37.97739	23.749223	48 Ethnikis Antistaseos Street, Chalandri, 152 31, Athens, Greece	http://www.greece.gc.ca	394
+370	Canada	40.63401	22.9369	19, N. Kountouriotou Street, 546 25, Thessaloniki, Greece	http://www.greece.gc.ca	4144
+371	Canada	64.1755	-51.74619	Tuapannguit 48, 3900 Nuuk, Greenland	http://www.greece.gc.ca	481
+372	Canada	55.67977	12.58216	Kristen Bernikowsgade 1, 1105 Copenhagen K., Denmark	http://www.denmark.gc.ca	400
+373	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+374	Canada	16.265	-61.551	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	4223
+375	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+376	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.france.gc.ca	4224
+377	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+378	Canada	14.59704	-90.50452	Edyma Plaza Building, 8th Floor, 13 Calle 8-44, Zona 10, Guatemala City, Guatemala	http://www.guatemala.gc.ca	212
+379	Canada	9.53298	-13.69048	Residence Micheline Bloc B 1er Étage Apt 202, Camayenne, Commune de Dixinn, Conakry, Republic of Guinea	http://www.guatemala.gc.ca	277
+380	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
+381	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
+382	Canada	6.82328	-58.15962	High and Young Streets, Georgetown, Guyana	http://www.guyana.gc.ca	434
+383	Canada	18.540347	-72.297276	Delmas Road, between Delmas 75 and 71, Port-au-Prince	http://www.haiti.gc.ca	373
+384	Canada	22.287647	114.213278	9th Floor, 25 Westlands Road, Quarry Bay, Hong Kong SAR, China	http://www.hongkong.gc.ca	4225
+385	Canada	14.088764587915215	-87.1787828207016	Plaza Ficohsa, 3rd Floor, Boulevard San Juan Bosco, Colonia Payaquí, Tegucigalpa, Honduras	http://www.hongkong.gc.ca	360
+386	Canada	9.9308209336995	-84.10252511501312	La Sabana Executive Business Centre, Building No. 5, 3rd Floor, behind the Contraloría General de la República, San José, Costa Rica	http://www.costarica.gc.ca	424
+387	Canada	47.5109	19.036961	Ganz utca 12-14, 1027 Budapest, Hungary	http://www.hungary.gc.ca	272
+388	Canada	64.147899	-21.945141	14 Tungata, 101 Reykjavik, Iceland	https://www.canadainternational.gc.ca/iceland-islande/	4148
+389	Canada	28.58976	77.18475	7/8 Shantipath, Chanakyapuri, New Delhi 110 021, India	http://www.canada.ca/CanadaAndIndia	443
+390	Canada	13.012526	77.556032	World Trade Center, 22nd Floor, 26/1, Dr. Rajkumar Road, Malleshwaram West, Yeshwantpur, Bangalore 560055, Karnataka, India	http://www.canada.ca/CanadaAndIndia	4226
+391	Canada	30.743959	76.784088	C413-C416, 4th Floor, Elante Office Complex, Plot No. 178-178A,  Industrial & Business Park, Phase 1, Chandigarh 160002, India	http://www.canada.ca/CanadaAndIndia	4227
+392	Canada	22.579376	88.349845	Duncan House, 31 Netaji Subhas Road, Kolkata 700 001, India	http://www.canada.ca/CanadaAndIndia	4228
+393	Canada	19.00987	72.83558	One International Centre, Tower 2, 21st Floor, Senapati Bapat Marg, Elphinstone Road West, Mumbai 400 013, India	http://www.canada.ca/CanadaAndIndia	4229
+394	Canada	-6.21516	106.8204	World Trade Centre I, 6th Floor, Jl. Jend Sudirman, Kav. 29, Jakarta 12920, Indonesia	http://www.indonesia.gc.ca	3
+395	Canada	-8.67006	115.22838	Jalan Tantular No. 32, Renon, Denpasar, Bali, Indonesia	https://bali.indonesia.embassy.gov.au/	4155
+396	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
+397	Canada	33.312	44.395	British Embassy Compound, International Zone, Baghdad, Iraq	https://www.Canada.ca/Canada-And-Iraq	44
+398	Canada	36.187525	43.973936	Rotana Hotel, Gulan Street, Erbil, Iraq	https://www.canada.ca/Canada-And-Iraq	4230
+399	Canada	53.333536	-6.248976	7-8 Wilton Terrace, Dublin 2, Ireland	https://www.Canada.ca/Canada-And-Ireland	346
+400	Canada	32.06242	34.79066	Canada House, 3/5 Nirim Street, 4th Floor, Tel Aviv 67060, Israel	http://www.israel.gc.ca	4231
+401	Canada	31.899636	35.204223	12 Elias Odeh Street, Ramallah, West Bank	http://www.westbankandgaza.gc.ca	4232
+402	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
+403	Canada	45.4728864	9.1948976	3, Piazza Cavour, 6th floor, 20121 Milan, Italy	http://www.italy.gc.ca	4157
+404	Canada	5.31778	-4.0161	Immeuble Trade Centre, 23 avenue Noguès, Le Plateau, Abidjan, Côte d'Ivoire	http://www.canadainternational.gc.ca/cotedivoire/	4233
+405	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
+406	Canada	18.48212	-77.92932	29 Gloucester Street, Montego Bay	http://www.jamaica.gc.ca	4234
+407	Canada	35.673609	139.728174	3-38 Akasaka 7-chome, Minato-ku, Tokyo, Japan, 107-8503	http://www.japan.gc.ca	2
+408	Canada	33.583544	130.404485	c/o Kyushu Electric Power Co., Inc. 1-82 Watanabe-dori 2-chome, Chuo-ku, Fukuoka, Japan, 810-8720	japan.gc.ca	4163
+409	Canada	34.388594	132.45584	c/o Chugoku Electric Power Co. Inc., 4-33 Komachi, Naka-ku, Hiroshima-shi, Hiroshima-ken, Japan, 730-8701	http://www.japan.gc.ca	4235
+410	Canada	35.175289	136.905632	Nakato Marunouchi Building, 6F, 3-17-6 Marunouchi, Naka-ku, Nagoya-shi, Aichi-ken, Japan, 460-0002	http://www.japan.gc.ca	4160
+411	Canada	34.616354	135.447783	c/o Tsuda Sangyo Co. Ltd., 1-8-19 Hirabayashi Minami, Suminoe-ku, Osaka, 559-8550, Japan	japan.gc.ca	4162
+412	Canada	43.055789	141.318457	Canada Place, Poseidon Maruyama 2F, 26-1-3 Odori Nishi, Chuo-ku, Sapporo, Japan 064-0820	http://www.japan.gc.ca	4161
+413	Canada	31.960588	35.881015	133 Zahran Street, Amman, Jordan	https://www.Canada.ca/Canada-And-Jordan	123
+414	Canada	51.136817	71.414067	Kabanbay, Batyr Street 13/1, Nur-Sultan, 010000, Kazakhstan	http://www.kazakhstan.gc.ca	365
+415	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
+416	Canada	1.32905	172.97905	Bairiki, Tarawa, Kiribati	http://www.kiribati.embassy.gov.au/twaa/home.html	474
+417	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+418	Canada	39.03031	125.80072	Munsu-dong, Taehak Street, Taedonggang District, Pyongyang, Democratic People’s Republic of Korea	https://www.swedenabroad.se/en/embassies/north-korea-pyongyang/	185
+419	Canada	37.56694	126.97079	21 Jeongdong-gil (Jeong-dong), Jung-gu, Seoul (04518), Republic of Korea	http://www.korea.gc.ca	8
+420	Canada	37.56694	126.97079	21 Jeongdong-gil (Jeong-dong), Jung-gu, Seoul (04518), Republic of Korea	http://www.korea.gc.ca	8
+421	Canada	35.10442	128.97471	c/o Dongsung Chemical Corporation, 99 Sinsan-ro (472 Shinpyung-dong), Saha-gu, Busan, 49421, Republic of Korea	http://www.korea.gc.ca	4236
+422	Canada	45.81723	15.95733	Prilaz Gjure Dezelica 4, 10000 Zagreb, Croatia	http://www.croatia.gc.ca	386
+423	Canada	29.3294	48.00393	Villa 24, Block 4, 24 Al-Mutawakkal Street, Da'aiyah, Kuwait City, Kuwait	http://www.kuwait.gc.ca	172
+424	Canada	42.87116	74.58326	299/5, Chingiz Aitmatov Avenue, Bishkek, 720016, Kyrgyz Republic	http://www.kuwait.gc.ca	368
+425	Canada	51.136817	71.414067	Kabanbay, Batyr Street 13/1, Nur-Sultan, 010000, Kazakhstan	http://www.kazakhstan.gc.ca	365
+426	Canada	17.96277	102.61443	KM4, Thadeua Road, Watnak Village,  Sisattanak District, Vientiane, Laos	http://www.kazakhstan.gc.ca	390
+427	Canada	13.727427	100.539319	15th Floor, Abdulrahim Place, 990 Rama IV, Bangrak, Bangkok, 10500, Thailand	http://www.thailand.gc.ca	14
+428	Canada	56.957612	24.121325	20/22 Baznicas Street, 6th Floor, Riga LV-1010, Latvia	https://www.Canada.ca/Canada-And-Latvia	399
+429	Canada	33.909298	35.578156	First Floor, Coolrite Building, 43 Jal El Dib Highway (seaside), Beirut, Lebanon	http://www.lebanon.gc.ca	413
+430	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
+431	Canada	5.31778	-4.0161	Immeuble Trade Centre, 23 avenue Noguès, Le Plateau, Abidjan, Côte d'Ivoire	http://www.canadainternational.gc.ca/cotedivoire/	4233
+432	Canada	36.847113	10.276961	Lot 24, rue de la Feuille d’Érable, Cité des Pins, Tunis, Tunisia	http://www.tunisia.gc.ca	367
+433	Canada	46.94036	7.45753	Kirchenfeldstrasse 88, CH-3005 Bern, Switzerland	http://www.switzerland.gc.ca	444
+434	Canada	54.686371	25.27891	Business Centre 2000, Jogailos St. 4, 7th Floor, Vilnius 01116, Lithuania	https://www.Canada.ca/Canada-And-Lithuania	403
+435	Canada	49.37008	6.10068	51 rue Raoul Follereau, L-1529 Luxembourg	http://www.belgium.gc.ca	448
+436	Canada	50.84003	4.39781	Avenue des Arts 58, 1000, Brussels, Belgium	http://www.belgium.gc.ca	271
+437	Canada	22.287647	114.213278	9th Floor, 25 Westlands Road, Quarry Bay, Hong Kong SAR, China	http://www.hongkong.gc.ca	4225
+438	Canada	-18.868517	47.524364	Ivandry Business Center (ex-pullman), 5th floor, Velo Rainimangalahy Street, Ivandry, Antananarivo 101	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	198
+439	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
+440	Canada	-25.95486	32.59268	Kenneth Kaunda Avenue 1138, Maputo, Mozambique	http://www.canadainternational.gc.ca/mozambique/	343
+441	Canada	3.14468	101.70825	17th Floor, Menara Tan & Tan, 207 Jalan Tun Razak, 50400 Kuala Lumpur, Malaysia	http://www.malaysia.gc.ca	28
+442	Canada	5.35441	100.40908	3007, Tingkat Perusahaan 5, Prai Industrial Park, 13600 Prai, Penang, Malaysia	http://www.malaysia.gc.ca	4237
+443	Canada	6.9049	79.85555	33-A 5th Lane, Colombo 03, Sri Lanka	http://www.srilanka.gc.ca	391
+444	Canada	12.659541	-7.962958	Immeuble Séméga, Route de Koulikoro, Commune II, Bamako, Mali	http://www.mali.gc.ca	245
+445	Canada	35.899888	14.513605	Demajo House, 103 Archbishop Street (Triq L-Arcisqof), Valletta VLT 09, Malta	http://www.mali.gc.ca	487
+446	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
+447	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.italy.gc.ca	4224
+448	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+449	Canada	18.09507	-15.975503	Al Khayma city center, 10 Mamadou Konaté street, 3rd floor, Nouakchott, Mauritania	http://www.france.gc.ca	366
+450	Canada	33.99335	-6.8485	66 Mehdi Ben Barka Avenue, Rabat-Souissi, Morocco	http://www.morocco.gc.ca	4238
+451	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
+452	Canada	44.802088	20.456221	Kneza Milosa 75, 111711 Belgrade, Serbia	http://www.serbia.gc.ca	310
+453	Canada	42.000408	21.417712	Bul. Partizanski odredi 70b, Third floor, 1000 Skopje, North Macedonia	http://www.serbia.gc.ca	4176
+454	Canada	19.428712	-99.185908	Calle Schiller No. 529, Colonia Polanco, 11560 México, D.F., México	http://www.mexico.gc.ca	9
+455	Canada	16.859705	-99.873603	Pasaje Diana, Avenida Costera Miguel Alemán 121, L-16, Fracc. Magallanes, 39670 Acapulco, Guerrero, México	http://www.mexico.gc.ca	4239
+456	Canada	22.901506	-109.899599	Carretera Transpeninsular Km. 0.5, Local 82, Col. El Tezal, 23454 Cabo San Lucas, Baja California Sur, México	http://www.mexico.gc.ca	1110
+457	Canada	21.106841	-86.764022	Centro Empresarial, Oficina E7, Blvd. Kukulcan Km. 12, Zona Hotelera, 77599 Cancún, Quintana Roo, México	http://www.mexico.gc.ca	4240
+458	Canada	20.655751	-103.389528	World Trade Center, Av. Mariano Otero 1249, Torre Pacifico Piso 8, Col. Rinconada del Bosque, 44530 Guadalajara, Jalisco, México	http://www.mexico.gc.ca	4169
+459	Canada	23.274546	-106.454229	Centro Comercial La Marina Business and Life, Blvd. Marina Mazatlán 2302, Office 41, Col. Marina Mazatlán, 82103 Mazatlán, Sinaloa, Mexico	http://www.mexico.gc.ca	4241
+460	Canada	25.644956	-100.3603	Torre Gomez Morin 955, Ave. Gomez Morin No. 955, Suite 404, Col. Montebello, 66279 San Pedro Garza Garcia, Nuevo Léon, México	http://www.mexico.gc.ca	4242
+461	Canada	20.620746	-87.078264	Plaza Paraíso Caribe, Modulo C, Planta 2, Oficina C21 - 24, Av. 10 Sur entre Calle 3 y 5 Sur, M-35, Lote 1, Colonia Centro, 77710 Playa del Carmen, Quintana Roo, México	http://www.mexico.gc.ca	4243
+462	Canada	20.646788	-105.239151	Plaza Peninsula, Local Sub F, Boulevard Francisco Medina Ascencio 2485, Zona Hotelera Norte, 48300 Puerto Vallarta, Jalisco, México	http://www.mexico.gc.ca	624
+463	Canada	32.520393	-117.012578	Germán Gedovius No.10411-101, Condominio del Parque, Zona Río, 22320 Tijuana, Baja California Norte, México	http://www.mexico.gc.ca	4172
+464	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.mexico.gc.ca	4224
+465	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+466	Canada	44.46099	26.0828	1-3 Tuberozelor Street, 011411 Bucharest, Sector 1, Romania	http://www.romania.gc.ca	259
+467	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+468	Canada	43.728344	7.413862	Le Mercator, 7, rue de l'Industrie (9th floor), 98000, Monaco	http://www.france.gc.ca	463
+469	Canada	47.918157	106.920625	Sukhbaatar Square 2, Central Tower, Suite 608, Sukhbaatar District, Horoo 8, Ulaanbaatar, Mongolia	http://www.mongolia.gc.ca	308
+470	Canada	44.802088	20.456221	Kneza Milosa 75, 111711 Belgrade, Serbia	http://www.serbia.gc.ca	310
+471	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+472	Canada	33.99335	-6.8485	66 Mehdi Ben Barka Avenue, Rabat-Souissi, Morocco	http://www.morocco.gc.ca	4238
+473	Canada	-25.95486	32.59268	Kenneth Kaunda Avenue 1138, Maputo, Mozambique	http://www.canadainternational.gc.ca/mozambique/	343
+474	Canada	23.61	58.54	7th Floor, Getco Tower, Muscat, Oman	http://www.canadainternational.gc.ca/mozambique/	304
+475	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
+476	Canada	16.772558	96.158467	9th Floor, Centrepoint Towers, 65 Sule Pagoda Road, Yangon, Myanmar	https://www.Canada.ca/Canada-And-Myanmar	4244
+477	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
+478	Canada	-0.53	166.911667	MQ45 NPC OE, Aiwo District, Nauru	http://nauru.highcommission.gov.au	4245
+479	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+480	Canada	27.717731	85.306019	Kaldhara Marg 20356, Khusibu, Kathmandu, Nepal	http://www.australia.gc.ca	375
+481	Canada	28.58976	77.18475	7/8 Shantipath, Chanakyapuri, New Delhi 110 021, India	http://www.canada.ca/CanadaAndIndia	443
+482	Canada	52.08552	4.30372	Sophialaan 7, 2514 JP The Hague, The Netherlands	http://www.netherlands.gc.ca	307
+483	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+484	Canada	12.139515	-86.279466	De Los Pipitos, 2 Blocks West, El Nogal Street No. 25, Bolonia, Managua, Nicaragua	http://www.newzealand.gc.ca	371
+485	Canada	9.9308209336995	-84.10252511501312	La Sabana Executive Business Centre, Building No. 5, 3rd Floor, behind the Contraloría General de la República, San José, Costa Rica	http://www.costarica.gc.ca	424
+486	Canada	13.32056	2.04247	Rue KK 41 Kouara Kano, Porte 335, Niamey, Niger	http://www.costarica.gc.ca	370
+487	Canada	12.659541	-7.962958	Immeuble Séméga, Route de Koulikoro, Commune II, Bamako, Mali	http://www.mali.gc.ca	245
+488	Canada	9.078804	7.498289	13010G, Palm close, Diplomatic drive, Central Business District, Abuja, Nigeria	http://www.canadainternational.gc.ca/nigeria/	339
+489	Canada	6.434491	3.414936	4 Anifowoshe Street, Victoria Island, Lagos, Nigeria	http://www.canadainternational.gc.ca/nigeria/	17
+490	Canada	4.845686	7.050609	15 Ahoada Street, Rumuibekwe Housing Estate, Port Harcourt, Nigeria	http://www.canadainternational.gc.ca/nigeria/	4246
 491	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-492	Canada	12.139515	-86.279466	De Los Pipitos, 2 Blocks West, El Nogal Street No. 25, Bolonia, Managua, Nicaragua	http://www.newzealand.gc.ca	371
-493	Canada	9.9308209336995	-84.10252511501312	La Sabana Executive Business Centre, Building No. 5, 3rd Floor, behind the Contraloría General de la República, San José, Costa Rica	http://www.costarica.gc.ca	424
-494	Canada	13.32056	2.04247	Rue KK 41 Kouara Kano, Porte 335, Niamey, Niger	http://www.costarica.gc.ca	370
-495	Canada	12.659541	-7.962958	Immeuble Séméga, Route de Koulikoro, Commune II, Bamako, Mali	http://www.mali.gc.ca	245
-496	Canada	9.078804	7.498289	13010G, Palm close, Diplomatic drive, Central Business District, Abuja, Nigeria	http://www.canadainternational.gc.ca/nigeria/	339
-497	Canada	6.434491	3.414936	4 Anifowoshe Street, Victoria Island, Lagos, Nigeria	http://www.canadainternational.gc.ca/nigeria/	17
-498	Canada	4.845686	7.050609	15 Ahoada Street, Rumuibekwe Housing Estate, Port Harcourt, Nigeria	http://www.canadainternational.gc.ca/nigeria/	4247
-499	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-500	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.newzealand.gc.ca	4228
-501	Canada	59.91891	10.7316	Wergelandsveien 7, 0244 Oslo, Norway	http://www.norway.gc.ca	393
-503	Canada	33.72311	73.1039	Diplomatic Enclave, Sector G-5, Islamabad, Pakistan	http://www.pakistan.gc.ca	374
-504	Canada	24.893194	67.028061	c/o Beach Luxury Hotel, Moulvi Tamiz Khan Road, Karachi, Sindh, Pakistan 74000	http://www.pakistan.gc.ca	19
-505	Canada	31.54505	74.34068	102-A, Siddique Trade Centre, 72 Main Boulevard, Gulberg 111, Lahore, Punjab, Pakistan 54660	http://www.pakistan.gc.ca	4184
-506	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.pakistan.gc.ca	4228
-507	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-508	Canada	8.97683	-79.50765	Torres de Las Americas, Tower A, 11th Floor, Punta Pacifica, Panama City, Panama	http://www.panama.gc.ca	4249
-509	Canada	-9.438	147.18953	Godwit Road, Waigani NCD, Port Moresby, Papua New Guinea	http://www.png.embassy.gov.au	417
-510	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-511	Canada	-25.294754	-57.579378	Edificio Citicenter, Avenida Mariscal Francisco Solano López 3794 (Cruz del Chaco entrance), 5th floor, Asunción, Paraguay	http://www.australia.gc.ca	262
-512	Canada	-34.58005	-58.3978	Tagle 2828, C1425EEH Buenos Aires, Argentina	http://www.argentina.gc.ca	15
-513	Canada	-12.120851	-77.035953	Calle Bolognesi 228, Miraflores, Lima 15074, Peru	http://www.peru.gc.ca	25
-514	Canada	14.56075	121.016443	8th Floor, Tower 2, RCBC Plaza, 6819 Ayala Avenue, Makati City, Manila, Philippines 0707	http://www.philippines.gc.ca	5
-515	Canada	10.345649	123.912861	RD Corporate Center, 96 Gov. M.C. Cuenco Avenue, Cebu City 6000, Philippines	http://www.philippines.gc.ca	4250
-516	Canada	52.22477	21.02602	ul. Jana Matejki 1/5, 00-481, Warsaw, Poland	http://www.poland.gc.ca	266
-517	Canada	38.72104	-9.1458	Avenida da Liberdade 196-200, 3rd Floor, 1269-121 Lisbon, Portugal	http://www.portugal.gc.ca	406
-518	Canada	37.021647	-7.934266	Rua Frei Lourenço de Santa Maria No. 1, 1st Floor, Apartado 79, 8000-352 Faro, Portugal	http://www.portugal.gc.ca	4251
-519	Canada	37.74324	-25.66968	Rua D’Agua, 28, 9500-016 Ponta Delgada, São Miguel, Azores, Portugal	http://www.portugal.gc.ca	4210
-520	Canada	18.4250387	-66.0579801	Hato Rey Center, 268 Ponce de Leon, Suite 1111, San Juan (Hato Rey), Puerto Rico, U.S.A., 00918	http://www.portugal.gc.ca	541
-521	Canada	25.77228	-80.18792	200 South Biscayne Boulevard, Suite 1600, Miami, Florida, U.S.A., 33131	https://www.canada.ca/Canada-In-Miami	4252
-522	Canada	25.319303	51.527986	Tornado Tower, 30th Floor, Majlis Al Taawon Street, Doha	http://www.canadainternational.gc.ca/qatar/	320
-523	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-524	Canada	44.46099	26.0828	1-3 Tuberozelor Street, 011411 Bucharest, Sector 1, Romania	http://www.romania.gc.ca	259
-525	Canada	55.746664	37.595059	23 Starokonyushenny Pereulok, Moscow, 119002, Russia	http://www.russia.gc.ca	13
-526	Canada	43.127337	131.907132	707-59 Krasnogo Znameni prospekt, Vladivostok 690002, Russia	http://www.russia.gc.ca	4253
-527	Canada	-1.9542	30.07272	59 KN16 Avenue, Kiyovu, Kigali, Rwanda	http://www.russia.gc.ca	355
-528	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-529	Canada	14.0101	-60.99	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	457
-530	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-531	Canada	46.783038	-56.172751	19, rue Docteur Dunan, 97500, Saint-Pierre, Saint-Pierre et Miquelon	http://www.France.gc.ca	4254
-532	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-533	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-534	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
-535	Canada	9.078804	7.498289	13010G, Palm close, Diplomatic drive, Central Business District, Abuja, Nigeria	http://www.canadainternational.gc.ca/nigeria/	339
-536	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
-537	Canada	21.54349	39.17299	Ali Reza Tower, 12th Floor, Medinah Road, Jeddah, Saudi Arabia	http://www.saudiarabia.gc.ca	4191
-538	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
-539	Canada	-6.81345	39.29166	38 Mirambo street / Garden Avenue, Dar es Salaam, Tanzania	http://www.tanzania.gc.ca	4220
-540	Canada	8.459018	-13.252692	1 Lewis Drive, Hill Station, Freetown, Sierra Leone	http://www.tanzania.gc.ca	379
-541	Canada	5.570976	-0.190592	42 Independence Avenue, Accra, Ghana	http://www.canadainternational.gc.ca/ghana/	222
-542	Canada	1.28566	103.84781	One George Street, #11-01 Singapore 049145	http://www.singapore.gc.ca	46
-543	Canada	48.14119	17.10945	Carlton Savoy Building, Mostova 2, 811 02 Bratislava, Slovakia	www.kanada.at	409
-544	Canada	46.06758	14.524	Linhartova cesta 49a., 1000 Ljubljana, Slovenia	www.kanada.at	425
-545	Canada	47.5109	19.036961	Ganz utca 12-14, 1027 Budapest, Hungary	http://www.hungary.gc.ca	272
-546	Canada	-9.43038	159.94832	Corner Hibiscus Avenue and Mud Alley, Honiara, Solomon Islands	http://www.solomonislands.embassy.gov.au/honi/home.html	455
-547	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-548	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
-549	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
-550	Canada	-33.857825	18.60683	12, 2nd Avenue, Boston, Bellville, Cape Town, 7530	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	408
-551	Canada	40.479094	-3.686115	Torre Espacio, Paseo de la Castellana 259D, 28046 Madrid, Spain	http://www.spain.gc.ca	39
-552	Canada	41.38698	2.16911	Plaça de Catalunya, 9, 1º, 2ª - 08002, Barcelona, Spain	http://www.spain.gc.ca	4195
-553	Canada	36.73047	-4.40021	Horizonte Building, Plaza de la Malagueta 2, 1st Floor, 29016 Málaga, Spain	http://www.spain.gc.ca	4255
-554	Canada	6.9049	79.85555	33-A 5th Lane, Colombo 03, Sri Lanka	http://www.srilanka.gc.ca	391
-555	Canada	15.59715	32.537652	29 Africa Road, Block 56, Khartoum 1, Sudan	http://www.canadainternational.gc.ca/sudan-soudan/	31
-556	Canada	5.8139165	-55.1688636	VSH United, Van’t Hogerhuysstraat 9 – 11, Paramaribo, Suriname	http://www.canadainternational.gc.ca/sudan-soudan/	431
-557	Canada	6.82328	-58.15962	High and Young Streets, Georgetown, Guyana	http://www.guyana.gc.ca	434
-558	Canada	-25.95486	32.59268	Kenneth Kaunda Avenue 1138, Maputo, Mozambique	http://www.canadainternational.gc.ca/mozambique/	343
-559	Canada	59.33213	18.06284	23 Klarabergsgatan, Stockholm, Sweden	http://www.sweden.gc.ca	377
-560	Canada	57.698179	11.98713	Mässans gata 10, 7th floor, Gothenburg, Sweden	http://www.sweden.gc.ca	4256
-561	Canada	46.94036	7.45753	Kirchenfeldstrasse 88, CH-3005 Bern, Switzerland	http://www.switzerland.gc.ca	444
-562	Canada	46.22536	6.13523	5, de l'Ariana Avenue, CH-1202 Geneva, Switzerland	http://www.switzerland.gc.ca	4257
-563	Canada	33.909298	35.578156	First Floor, Coolrite Building, 43 Jal El Dib Highway (seaside), Beirut, Lebanon	http://www.lebanon.gc.ca	413
-564	Canada	25.038478	121.565854	6F, Hua-Hsin (Citibank building), No. 1 SongZhi Road, Xinyi District, Taipei 11047, Taiwan	https://www.canada.ca/Canada-and-Taiwan	193
-565	Canada	51.136817	71.414067	Kabanbay, Batyr Street 13/1, Nur-Sultan, 010000, Kazakhstan	http://www.kazakhstan.gc.ca	365
-566	Canada	-6.81345	39.29166	38 Mirambo street / Garden Avenue, Dar es Salaam, Tanzania	http://www.tanzania.gc.ca	4220
-567	Canada	13.727427	100.539319	15th Floor, Abdulrahim Place, 990 Rama IV, Bangrak, Bangkok, 10500, Thailand	http://www.thailand.gc.ca	14
-568	Canada	18.76743	99.02394	151 Super Highway, Tambon Tahsala, Amphur Muang, Chiang Mai, 50000, Thailand	http://www.thailand.gc.ca	4258
-569	Canada	7.91045	98.367121	6th Floor CCM Complex, 77/77 Chalermprakiat Rama 9 Road (Bypass Road), Muang Phuket, Thailand	http://www.thailand.gc.ca	4259
-570	Canada	5.570976	-0.190592	42 Independence Avenue, Accra, Ghana	http://www.canadainternational.gc.ca/ghana/	222
-571	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-572	Canada	-21.13664	-175.19579	Salote Road, Nuku'alofa, Tonga	http://www.tonga.embassy.gov.au/nkfa/home.html	4260
+492	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.newzealand.gc.ca	4224
+493	Canada	59.91891	10.7316	Wergelandsveien 7, 0244 Oslo, Norway	http://www.norway.gc.ca	393
+494	Canada	58.915001	5.729692	Olav Kyrres gate 21, Stavanger, Norway	http://www.norway.gc.ca	4247
+495	Canada	33.72311	73.1039	Diplomatic Enclave, Sector G-5, Islamabad, Pakistan	http://www.pakistan.gc.ca	374
+496	Canada	24.893194	67.028061	c/o Beach Luxury Hotel, Moulvi Tamiz Khan Road, Karachi, Sindh, Pakistan 74000	http://www.pakistan.gc.ca	19
+497	Canada	31.54505	74.34068	102-A, Siddique Trade Centre, 72 Main Boulevard, Gulberg 111, Lahore, Punjab, Pakistan 54660	http://www.pakistan.gc.ca	4181
+498	Canada	6.9608	158.2088	H & E Enterprises Building, 2nd Floor, Kolonia, Pohnpei, Micronesia	http://www.pakistan.gc.ca	4224
+499	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+500	Canada	8.97683	-79.50765	Torres de Las Americas, Tower A, 11th Floor, Punta Pacifica, Panama City, Panama	http://www.panama.gc.ca	4248
+501	Canada	-9.438	147.18953	Godwit Road, Waigani NCD, Port Moresby, Papua New Guinea	http://www.png.embassy.gov.au	417
+502	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+503	Canada	-25.294754	-57.579378	Edificio Citicenter, Avenida Mariscal Francisco Solano López 3794 (Cruz del Chaco entrance), 5th floor, Asunción, Paraguay	http://www.australia.gc.ca	262
+504	Canada	-34.58005	-58.3978	Tagle 2828, C1425EEH Buenos Aires, Argentina	http://www.argentina.gc.ca	15
+505	Canada	-12.120851	-77.035953	Calle Bolognesi 228, Miraflores, Lima 15074, Peru	http://www.peru.gc.ca	25
+506	Canada	14.56075	121.016443	8th Floor, Tower 2, RCBC Plaza, 6819 Ayala Avenue, Makati City, Manila, Philippines 0707	http://www.philippines.gc.ca	5
+507	Canada	10.345649	123.912861	RD Corporate Center, 96 Gov. M.C. Cuenco Avenue, Cebu City 6000, Philippines	http://www.philippines.gc.ca	4249
+508	Canada	52.22477	21.02602	ul. Jana Matejki 1/5, 00-481, Warsaw, Poland	http://www.poland.gc.ca	266
+509	Canada	38.72104	-9.1458	Avenida da Liberdade 196-200, 3rd Floor, 1269-121 Lisbon, Portugal	http://www.portugal.gc.ca	406
+510	Canada	37.021647	-7.934266	Rua Frei Lourenço de Santa Maria No. 1, 1st Floor, Apartado 79, 8000-352 Faro, Portugal	http://www.portugal.gc.ca	4250
+511	Canada	37.74324	-25.66968	Rua D’Agua, 28, 9500-016 Ponta Delgada, São Miguel, Azores, Portugal	http://www.portugal.gc.ca	4206
+512	Canada	18.4250387	-66.0579801	Hato Rey Center, 268 Ponce de Leon, Suite 1111, San Juan (Hato Rey), Puerto Rico, U.S.A., 00918	http://www.portugal.gc.ca	541
+513	Canada	25.77228	-80.18792	200 South Biscayne Boulevard, Suite 1600, Miami, Florida, U.S.A., 33131	https://www.canada.ca/Canada-In-Miami	4251
+514	Canada	25.319303	51.527986	Tornado Tower, 30th Floor, Majlis Al Taawon Street, Doha	http://www.canadainternational.gc.ca/qatar/	320
+515	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+516	Canada	44.46099	26.0828	1-3 Tuberozelor Street, 011411 Bucharest, Sector 1, Romania	http://www.romania.gc.ca	259
+517	Canada	55.746664	37.595059	23 Starokonyushenny Pereulok, Moscow, 119002, Russia	http://www.russia.gc.ca	13
+518	Canada	43.127337	131.907132	707-59 Krasnogo Znameni prospekt, Vladivostok 690002, Russia	http://www.russia.gc.ca	4252
+519	Canada	-1.9542	30.07272	59 KN16 Avenue, Kiyovu, Kigali, Rwanda	http://www.russia.gc.ca	355
+520	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+521	Canada	14.0101	-60.99	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	457
+522	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+523	Canada	46.783038	-56.172751	19, rue Docteur Dunan, 97500, Saint-Pierre, Saint-Pierre et Miquelon	http://www.France.gc.ca	4253
+524	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+525	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+526	Canada	41.91534	12.50891	Via Zara 30, Rome 00198, Italy	http://www.italy.gc.ca	183
+527	Canada	9.078804	7.498289	13010G, Palm close, Diplomatic drive, Central Business District, Abuja, Nigeria	http://www.canadainternational.gc.ca/nigeria/	339
+528	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
+529	Canada	21.54349	39.17299	Ali Reza Tower, 12th Floor, Medinah Road, Jeddah, Saudi Arabia	http://www.saudiarabia.gc.ca	4188
+530	Canada	14.661546	-17.437567	corner of Galliéni and Amadou Cissé Dia Streets, Dakar, Senegal	http://www.senegal.gc.ca	353
+531	Canada	-6.81345	39.29166	38 Mirambo street / Garden Avenue, Dar es Salaam, Tanzania	http://www.tanzania.gc.ca	4216
+532	Canada	8.459018	-13.252692	1 Lewis Drive, Hill Station, Freetown, Sierra Leone	http://www.tanzania.gc.ca	379
+533	Canada	5.570976	-0.190592	42 Independence Avenue, Accra, Ghana	http://www.canadainternational.gc.ca/ghana/	222
+534	Canada	1.28566	103.84781	One George Street, #11-01 Singapore 049145	http://www.singapore.gc.ca	46
+535	Canada	48.14119	17.10945	Carlton Savoy Building, Mostova 2, 811 02 Bratislava, Slovakia	www.kanada.at	409
+536	Canada	46.06758	14.524	Linhartova cesta 49a., 1000 Ljubljana, Slovenia	www.kanada.at	425
+537	Canada	47.5109	19.036961	Ganz utca 12-14, 1027 Budapest, Hungary	http://www.hungary.gc.ca	272
+538	Canada	-9.43038	159.94832	Corner Hibiscus Avenue and Mud Alley, Honiara, Solomon Islands	http://www.solomonislands.embassy.gov.au/honi/home.html	455
+539	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+540	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
+541	Canada	-25.74789	28.23544	1103 Arcadia Street, Hatfield, Pretoria, 0083, South Africa	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	392
+542	Canada	-33.857825	18.60683	12, 2nd Avenue, Boston, Bellville, Cape Town, 7530	http://www.canadainternational.gc.ca/southafrica-afriquedusud/	408
+543	Canada	40.479094	-3.686115	Torre Espacio, Paseo de la Castellana 259D, 28046 Madrid, Spain	http://www.spain.gc.ca	39
+544	Canada	41.38698	2.16911	Plaça de Catalunya, 9, 1º, 2ª - 08002, Barcelona, Spain	http://www.spain.gc.ca	4191
+545	Canada	36.73047	-4.40021	Horizonte Building, Plaza de la Malagueta 2, 1st Floor, 29016 Málaga, Spain	http://www.spain.gc.ca	4254
+546	Canada	6.9049	79.85555	33-A 5th Lane, Colombo 03, Sri Lanka	http://www.srilanka.gc.ca	391
+547	Canada	15.59715	32.537652	29 Africa Road, Block 56, Khartoum 1, Sudan	http://www.canadainternational.gc.ca/sudan-soudan/	31
+548	Canada	5.8139165	-55.1688636	VSH United, Van’t Hogerhuysstraat 9 – 11, Paramaribo, Suriname	http://www.canadainternational.gc.ca/sudan-soudan/	431
+549	Canada	6.82328	-58.15962	High and Young Streets, Georgetown, Guyana	http://www.guyana.gc.ca	434
+550	Canada	-25.95486	32.59268	Kenneth Kaunda Avenue 1138, Maputo, Mozambique	http://www.canadainternational.gc.ca/mozambique/	343
+551	Canada	59.33213	18.06284	23 Klarabergsgatan, Stockholm, Sweden	http://www.sweden.gc.ca	377
+552	Canada	57.698179	11.98713	Mässans gata 10, 7th floor, Gothenburg, Sweden	http://www.sweden.gc.ca	4255
+553	Canada	46.94036	7.45753	Kirchenfeldstrasse 88, CH-3005 Bern, Switzerland	http://www.switzerland.gc.ca	444
+554	Canada	46.22536	6.13523	5, de l'Ariana Avenue, CH-1202 Geneva, Switzerland	http://www.switzerland.gc.ca	4256
+555	Canada	33.909298	35.578156	First Floor, Coolrite Building, 43 Jal El Dib Highway (seaside), Beirut, Lebanon	http://www.lebanon.gc.ca	413
+556	Canada	25.038478	121.565854	6F, Hua-Hsin (Citibank building), No. 1 SongZhi Road, Xinyi District, Taipei 11047, Taiwan	https://www.canada.ca/Canada-and-Taiwan	193
+557	Canada	51.136817	71.414067	Kabanbay, Batyr Street 13/1, Nur-Sultan, 010000, Kazakhstan	http://www.kazakhstan.gc.ca	365
+558	Canada	-6.81345	39.29166	38 Mirambo street / Garden Avenue, Dar es Salaam, Tanzania	http://www.tanzania.gc.ca	4216
+559	Canada	13.727427	100.539319	15th Floor, Abdulrahim Place, 990 Rama IV, Bangrak, Bangkok, 10500, Thailand	http://www.thailand.gc.ca	14
+560	Canada	18.76743	99.02394	151 Super Highway, Tambon Tahsala, Amphur Muang, Chiang Mai, 50000, Thailand	http://www.thailand.gc.ca	4257
+561	Canada	7.91045	98.367121	6th Floor CCM Complex, 77/77 Chalermprakiat Rama 9 Road (Bypass Road), Muang Phuket, Thailand	http://www.thailand.gc.ca	4258
+562	Canada	5.570976	-0.190592	42 Independence Avenue, Accra, Ghana	http://www.canadainternational.gc.ca/ghana/	222
+563	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+564	Canada	-21.13664	-175.19579	Salote Road, Nuku'alofa, Tonga	http://www.tonga.embassy.gov.au/nkfa/home.html	4259
+565	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+566	Canada	10.67072	-61.5209	3-3A Sweet Briar Road, Maple House, St. Clair, Port of Spain, Trinidad and Tobago	http://www.trinidadandtobago.gc.ca	4260
+567	Canada	36.847113	10.276961	Lot 24, rue de la Feuille d’Érable, Cité des Pins, Tunis, Tunisia	http://www.tunisia.gc.ca	367
+568	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
+569	Canada	41.08207	29.00933	209 Buyukdere Caddesi, Tekfen Tower - 16th Floor, Levent 4, Istanbul, Turkey	http://www.turkey.gc.ca	18
+570	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
+571	Canada	21.782597802984256	-72.24716070323575	#11 Caribbean Place, 1254 Leeward Highway, TKCS 1ZZ	http://www.turkey.gc.ca	4261
+572	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
 573	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-574	Canada	10.67072	-61.5209	3-3A Sweet Briar Road, Maple House, St. Clair, Port of Spain, Trinidad and Tobago	http://www.trinidadandtobago.gc.ca	4261
-575	Canada	36.847113	10.276961	Lot 24, rue de la Feuille d’Érable, Cité des Pins, Tunis, Tunisia	http://www.tunisia.gc.ca	367
-576	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
-577	Canada	41.08207	29.00933	209 Buyukdere Caddesi, Tekfen Tower - 16th Floor, Levent 4, Istanbul, Turkey	http://www.turkey.gc.ca	18
-578	Canada	39.89212	32.85599	Cinnah Caddesi No. 58, Çankaya 06690, Ankara, Turkey	http://www.turkey.gc.ca	52
-579	Canada	21.782597802984256	-72.24716070323575	#11 Caribbean Place, 1254 Leeward Highway, TKCS 1ZZ	http://www.turkey.gc.ca	4262
-580	Canada	18.02169	-76.78732	3 West Kings House Road, Kingston 10, Jamaica	http://www.jamaica.gc.ca	401
-581	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-582	Canada	0.31334	32.58652	Jubilee Insurance Centre, 14 Parliament Avenue, Kampala, Uganda	http://www.newzealand.gc.ca	278
-583	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
-584	Canada	50.45335	30.50647	13A Kostelna Street, Kyiv 01901, Ukraine	http://www.ukraine.gc.ca	174
-585	Canada	49.83741	24.03533	2 / 4 Academika Bohomoltsia Street, Lviv 79005, Ukraine	http://www.ukraine.gc.ca	4263
-586	Canada	24.497012	54.382067	Abu Dhabi Trade Towers (Abu Dhabi Mall), West Tower, 9th Floor, Abu Dhabi, United Arab Emirates	http://www.canadainternational.gc.ca/uae-eau/	376
-587	Canada	25.05946	55.12781	19th Floor, Jumeirah Emirates Towers, Sheikh Zayed Road, Dubai, United Arab Emirates	http://www.canadainternational.gc.ca/uae-eau/	207
-588	Canada	51.51142	-0.149	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	24
-589	Canada	54.597285	-5.93012	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	4207
-590	Canada	51.47497	-3.15195	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	4264
-591	Canada	55.934225	-3.202224	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	4208
-592	Canada	38.89268	-77.01848	501 Pennsylvania Avenue, N.W., Washington, D.C., U.S.A., 20001	https://www.canada.ca/Canada-In-Washington	60
-593	Canada	33.7869	-84.38273	1175 Peachtree Street N.E., 100 Colony Square, Suite 1700, Atlanta, Georgia, U.S.A., 30361-6205	https://www.canada.ca/Canada-In-Atlanta	4265
-594	Canada	42.34749	-71.07855	3 Copley Place, Suite 400, Boston, Massachusetts, U.S.A., 02116	https://www.canada.ca/Canada-In-Boston	4266
-595	Canada	41.88517	-87.6223	Two Prudential Plaza, 180 North Stetson Avenue, Suite 2400, Chicago, Illinois, U.S.A., 60601	https://www.canada.ca/Canada-In-Chicago	4267
-596	Canada	32.78432	-96.80022	500 N. Akard Street, Suite 2900, Dallas, Texas, U.S.A., 75201	https://www.canada.ca/Canada-In-Dallas	4268
-597	Canada	39.74236	-104.98814	1625 Broadway, Suite 2600, Denver, Colorado, U.S.A., 80202	https://www.canada.ca/Canada-In-Denver	4269
-598	Canada	42.33079	-83.03782	600 Renaissance Center, Suite 1100, Detroit, Michigan, U.S.A., 48243-1798	https://www.canada.ca/Canada-In-Detroit	4270
-599	Canada	21.30889	-157.86139	Penthouse Suite, 1000 Bishop Street, Honolulu, Hawaii, U.S.A., 96813-4299	https://www.canada.ca/Canada-In-Detroit	4271
-600	Canada	34.04972	-118.25565	550 South Hope Street, 9th Floor, Los Angeles, California, U.S.A., 90071-2327	https://www.canada.ca/Canada-In-Los-Angeles	4272
-601	Canada	25.77228	-80.18792	200 South Biscayne Boulevard, Suite 1600, Miami, Florida, U.S.A., 33131	https://www.canada.ca/Canada-In-Miami	4252
-602	Canada	44.97427	-93.26676	701 Fourth Avenue South, Suite 900, Minneapolis, Minnesota, U.S.A., 55415-1899	https://www.canada.ca/Canada-In-Minneapolis	4273
-603	Canada	40.75368	-73.974423	466 Lexington Avenue, 20th Floor, New York, New York, U.S.A., 10017	https://www.canada.ca/Canada-In-New-York	12
-604	Canada	37.79287	-122.40424	580 California Street, 14th Floor, San Francisco, California, U.S.A., 94104	https://www.canada.ca/Canada-In-San-Francisco	4274
-605	Canada	47.610246	-122.336819	1501 4th Ave, Suite 600, Seattle, Washington, U.S.A., 98101	https://www.canada.ca/Canada-In-Seattle	4275
-606	Canada	-34.905893	-56.199923	Plaza Independencia 749, oficina 102, 11100, Montevideo, Uruguay	http://www.uruguay.gc.ca	317
-607	Canada	55.746664	37.595059	23 Starokonyushenny Pereulok, Moscow, 119002, Russia	http://www.russia.gc.ca	13
-608	Canada	41.275287	69.258272	58A, Bobur Street, Yakkasaroy district, Tashkent, 100022	http://www.russia.gc.ca	217
-609	Canada	-17.74061	168.31618	Winston Churchill Avenue, Port Vila	http://www.vanuatu.highcommission.gov.au/pvla/home.html	4276
-610	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-611	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
-612	Canada	21.034662	105.835017	31 Hung Vuong Street, Hanoi, Vietnam	http://www.vietnam.gc.ca	29
-613	Canada	10.778558	106.699895	9th Floor, The Metropolitan, 235 Dong Khoi Street, District 1, Ho Chi Minh City, Vietnam	http://www.vietnam.gc.ca	22
-614	Canada	25.77228	-80.18792	200 South Biscayne Boulevard, Suite 1600, Miami, Florida, U.S.A., 33131	https://www.canada.ca/Canada-In-Miami	4252
-615	Canada	-13.83282	-171.76462	Beach Road, Apia, Samoa	http://www.samoa.embassy.gov.au/apia/home.html	466
-616	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-617	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
-618	Canada	-4.315966	15.276362	17, avenue Pumbu, Commune de Gombe, Kinshasa, Congo (Kinshasa)	http://www.canadainternational.gc.ca/congo/	4221
-619	Canada	-15.42307	28.31042	5210 Independence Avenue, Lusaka, Zambia	http://www.tanzania.gc.ca	274
-620	Canada	-17.820705	31.043559	45 Baines Avenue, Harare, Zimbabwe	http://www.zimbabwe.gc.ca	234
-621	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-622	Canada	18.054761	-63.02711	Dawn Beach Estate, Sint Maarten	http://www.france.gc.ca	4277
-623	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
-624	Canada	-22.27055	166.4426	Immeuble Norwich, Level 2, 11 Georges Baudoux Street, Artillerie, Noumea, New Caledonia	http://www.barbados.gc.ca	454
-625	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
-626	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-627	Canada	12.11125	-68.897167	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	442
-628	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
-629	Canada	-8.553508	125.558134	Rua Mártires da Pátria, Dili, Timor-Leste	http://www.timorleste.embassy.gov.au/dili/home.html	4278
-630	Canada	-6.21516	106.8204	World Trade Centre I, 6th Floor, Jl. Jend Sudirman, Kav. 29, Jakarta 12920, Indonesia	http://www.indonesia.gc.ca	3
-631	Canada	12.11125	-68.897167	World Trade Centre I, 6th Floor, Jl. Jend Sudirman, Kav. 29, Jakarta 12920, Indonesia	http://www.indonesia.gc.ca	442
-632	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
-633	Canada	12.11125	-68.897167	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	442
-634	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
-635	Canada	44.802088	20.456221	Kneza Milosa 75, 111711 Belgrade, Serbia	http://www.serbia.gc.ca	310
-636	Canada	40.479094	-3.686115	Torre Espacio, Paseo de la Castellana 259D, 28046 Madrid, Spain	http://www.spain.gc.ca	39
-637	Canada	51.51142	-0.149	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	24
-638	Canada	51.51142	-0.149	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	24
-639	Canada	4.855807	31.609267	Joint Embassy Compound, opposite to New Sudan Palace Hotel, Airport Avenue, Juba, South Sudan	http://www.canadainternational.gc.ca/south_sudan-soudan_du_sud/	416
-640	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
-641	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
-642	Canada	-13.83282	-171.76462	Beach Road, Apia, Samoa	http://www.samoa.embassy.gov.au/apia/home.html	466
-643	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
-644	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+574	Canada	0.31334	32.58652	Jubilee Insurance Centre, 14 Parliament Avenue, Kampala, Uganda	http://www.newzealand.gc.ca	278
+575	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
+576	Canada	50.45335	30.50647	13A Kostelna Street, Kyiv 01901, Ukraine	http://www.ukraine.gc.ca	174
+577	Canada	49.83741	24.03533	2 / 4 Academika Bohomoltsia Street, Lviv 79005, Ukraine	http://www.ukraine.gc.ca	4262
+578	Canada	24.497012	54.382067	Abu Dhabi Trade Towers (Abu Dhabi Mall), West Tower, 9th Floor, Abu Dhabi, United Arab Emirates	http://www.canadainternational.gc.ca/uae-eau/	376
+579	Canada	25.05946	55.12781	19th Floor, Jumeirah Emirates Towers, Sheikh Zayed Road, Dubai, United Arab Emirates	http://www.canadainternational.gc.ca/uae-eau/	207
+580	Canada	51.51142	-0.149	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	24
+581	Canada	54.597285	-5.93012	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	4203
+582	Canada	51.47497	-3.15195	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	4263
+583	Canada	55.934225	-3.202224	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	4204
+584	Canada	38.89268	-77.01848	501 Pennsylvania Avenue, N.W., Washington, D.C., U.S.A., 20001	https://www.canada.ca/Canada-In-Washington	60
+585	Canada	33.7869	-84.38273	1175 Peachtree Street N.E., 100 Colony Square, Suite 1700, Atlanta, Georgia, U.S.A., 30361-6205	https://www.canada.ca/Canada-In-Atlanta	4264
+586	Canada	42.34749	-71.07855	3 Copley Place, Suite 400, Boston, Massachusetts, U.S.A., 02116	https://www.canada.ca/Canada-In-Boston	4265
+587	Canada	41.88517	-87.6223	Two Prudential Plaza, 180 North Stetson Avenue, Suite 2400, Chicago, Illinois, U.S.A., 60601	https://www.canada.ca/Canada-In-Chicago	4266
+588	Canada	32.78432	-96.80022	500 N. Akard Street, Suite 2900, Dallas, Texas, U.S.A., 75201	https://www.canada.ca/Canada-In-Dallas	4267
+589	Canada	39.74236	-104.98814	1625 Broadway, Suite 2600, Denver, Colorado, U.S.A., 80202	https://www.canada.ca/Canada-In-Denver	4268
+590	Canada	42.33079	-83.03782	600 Renaissance Center, Suite 1100, Detroit, Michigan, U.S.A., 48243-1798	https://www.canada.ca/Canada-In-Detroit	4269
+591	Canada	21.30889	-157.86139	Penthouse Suite, 1000 Bishop Street, Honolulu, Hawaii, U.S.A., 96813-4299	https://www.canada.ca/Canada-In-Detroit	4270
+592	Canada	34.04972	-118.25565	550 South Hope Street, 9th Floor, Los Angeles, California, U.S.A., 90071-2327	https://www.canada.ca/Canada-In-Los-Angeles	4271
+593	Canada	25.77228	-80.18792	200 South Biscayne Boulevard, Suite 1600, Miami, Florida, U.S.A., 33131	https://www.canada.ca/Canada-In-Miami	4251
+594	Canada	44.97427	-93.26676	701 Fourth Avenue South, Suite 900, Minneapolis, Minnesota, U.S.A., 55415-1899	https://www.canada.ca/Canada-In-Minneapolis	4272
+595	Canada	40.75368	-73.974423	466 Lexington Avenue, 20th Floor, New York, New York, U.S.A., 10017	https://www.canada.ca/Canada-In-New-York	12
+596	Canada	37.79287	-122.40424	580 California Street, 14th Floor, San Francisco, California, U.S.A., 94104	https://www.canada.ca/Canada-In-San-Francisco	4273
+597	Canada	47.610246	-122.336819	1501 4th Ave, Suite 600, Seattle, Washington, U.S.A., 98101	https://www.canada.ca/Canada-In-Seattle	4274
+598	Canada	-34.905893	-56.199923	Plaza Independencia 749, oficina 102, 11100, Montevideo, Uruguay	http://www.uruguay.gc.ca	317
+599	Canada	55.746664	37.595059	23 Starokonyushenny Pereulok, Moscow, 119002, Russia	http://www.russia.gc.ca	13
+600	Canada	41.275287	69.258272	58A, Bobur Street, Yakkasaroy district, Tashkent, 100022	http://www.russia.gc.ca	217
+601	Canada	-17.74061	168.31618	Winston Churchill Avenue, Port Vila	http://www.vanuatu.highcommission.gov.au/pvla/home.html	4275
+602	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+603	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
+604	Canada	21.034662	105.835017	31 Hung Vuong Street, Hanoi, Vietnam	http://www.vietnam.gc.ca	29
+605	Canada	10.778558	106.699895	9th Floor, The Metropolitan, 235 Dong Khoi Street, District 1, Ho Chi Minh City, Vietnam	http://www.vietnam.gc.ca	22
+606	Canada	25.77228	-80.18792	200 South Biscayne Boulevard, Suite 1600, Miami, Florida, U.S.A., 33131	https://www.canada.ca/Canada-In-Miami	4251
+607	Canada	-13.83282	-171.76462	Beach Road, Apia, Samoa	http://www.samoa.embassy.gov.au/apia/home.html	466
+608	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+609	Canada	24.67783	46.62227	Diplomatic Quarter, Riyadh, Saudi Arabia	http://www.saudiarabia.gc.ca	33
+610	Canada	-4.315966	15.276362	17, avenue Pumbu, Commune de Gombe, Kinshasa, Congo (Kinshasa)	http://www.canadainternational.gc.ca/congo/	4217
+611	Canada	-15.42307	28.31042	5210 Independence Avenue, Lusaka, Zambia	http://www.tanzania.gc.ca	274
+612	Canada	-17.820705	31.043559	45 Baines Avenue, Harare, Zimbabwe	http://www.zimbabwe.gc.ca	234
+613	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+614	Canada	18.054761	-63.02711	Dawn Beach Estate, Sint Maarten	http://www.france.gc.ca	4276
+615	Canada	13.09511	-59.59998	Bishop's Court Hill, St. Michael, P.O. Box 404, Bridgetown, Barbados BB11113	http://www.barbados.gc.ca	450
+616	Canada	-22.27055	166.4426	Immeuble Norwich, Level 2, 11 Georges Baudoux Street, Artillerie, Noumea, New Caledonia	http://www.barbados.gc.ca	454
+617	Canada	-35.30299	149.125	Commonwealth Avenue, Canberra ACT, Australia 2600	http://www.australia.gc.ca	411
+618	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+619	Canada	12.11125	-68.897167	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	442
+620	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
+621	Canada	-8.553508	125.558134	Rua Mártires da Pátria, Dili, Timor-Leste	http://www.timorleste.embassy.gov.au/dili/home.html	4277
+622	Canada	-6.21516	106.8204	World Trade Centre I, 6th Floor, Jl. Jend Sudirman, Kav. 29, Jakarta 12920, Indonesia	http://www.indonesia.gc.ca	3
+623	Canada	12.11125	-68.897167	World Trade Centre I, 6th Floor, Jl. Jend Sudirman, Kav. 29, Jakarta 12920, Indonesia	http://www.indonesia.gc.ca	442
+624	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
+625	Canada	12.11125	-68.897167	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	442
+626	Canada	4.69251	-74.03376	Cra. 7, No. 114-33, Piso 14, Bogotá, Colombia	http://www.colombia.gc.ca	26
+627	Canada	44.802088	20.456221	Kneza Milosa 75, 111711 Belgrade, Serbia	http://www.serbia.gc.ca	310
+628	Canada	40.479094	-3.686115	Torre Espacio, Paseo de la Castellana 259D, 28046 Madrid, Spain	http://www.spain.gc.ca	39
+629	Canada	51.51142	-0.149	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	24
+630	Canada	51.51142	-0.149	Canada House, Trafalgar Square, London, SW1Y 5BJ, England, United Kingdom	http://www.unitedkingdom.gc.ca	24
+631	Canada	4.855807	31.609267	Joint Embassy Compound, opposite to New Sudan Palace Hotel, Airport Avenue, Juba, South Sudan	http://www.canadainternational.gc.ca/south_sudan-soudan_du_sud/	416
+632	Canada	-1.241846	36.813004	Limuru Road, Gigiri, Nairobi, Kenya	http://www.canadainternational.gc.ca/kenya/	50
+633	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+634	Canada	-13.83282	-171.76462	Beach Road, Apia, Samoa	http://www.samoa.embassy.gov.au/apia/home.html	466
+635	Canada	-41.283551	174.774821	Level 11, 125 The Terrace, Wellington 6011, New Zealand	http://www.newzealand.gc.ca	412
+636	Canada	48.86685	2.30556	130, rue du Faubourg Saint-Honoré, 75008 Paris	http://www.france.gc.ca	23
+637	United Kingdom	-8.81	13.22	Unnamed Road, Luanda, Angola	\N	27
+638	United Kingdom	-24.65	25.91	3171 Morupule, Gaborone, Botswana	\N	430
+639	United Kingdom	-3.38	29.36	Ave du Stade, Bujumbura, Burundi	\N	395
+640	United Kingdom	3.87	11.51	VGC5+2X Yaoundé, Cameroon	\N	4111
+641	United Kingdom	12.11	15.05	4352+J8F, N'Djamena, Chad	\N	4213
+642	United Kingdom	-4.3	15.27	78 Av. Des Nations Unies, Kinshasa, Democratic Republic of the Congo	\N	4128
+643	United Kingdom	-1.69	29.24	866Q+4JJ, Goma, Democratic Republic of the Congo	\N	4278
+644	United Kingdom	15.33	38.92	Mereb St, Asmara, Eritrea	\N	378
+645	United Kingdom	-26.41	31.18	H5RH+FCH, Lobamba, Eswatini	\N	4130
+646	United Kingdom	9.03	38.78	2QHH+QQW, Addis Ababa, Ethiopia	\N	166
+647	United Kingdom	13.48	-16.67	F8HJ+WCX, Bakau, The Gambia	\N	4146
+648	United Kingdom	5.56	-0.19	2 Asafoanye O. Broni Cir, Accra, Ghana	\N	222
+649	United Kingdom	9.52	-13.68	Corniche S, Conakry, Guinea	\N	277
+650	United Kingdom	5.33	-3.99	82H5+XX Abidjan, Côte d'Ivoire	\N	4279
+651	United Kingdom	-1.29	36.81	Integrity Center, Nairobi, Kenya	\N	50
+652	United Kingdom	-29.31	27.48	243 Constitution Rd, Foso, Lesotho	\N	419
+653	United Kingdom	6.29	-10.78	Jasmin Compound Warner Ave, Monrovia, Liberia	\N	372
+654	United Kingdom	-18.91	47.53	121 Lalana Rainandriamampandry, Antananarivo, Madagascar	\N	198
+655	United Kingdom	-13.95	33.78	M1, Lilongwe, Malawi	\N	388
+656	United Kingdom	12.63	-7.96	Route sans nom, Bamako, Mali	\N	245
+657	United Kingdom	-20.16	57.5	RGR2+22 Port Louis, Mauritius	\N	441
+658	United Kingdom	-25.97	32.57	484 Av. Karl Marx, Maputo, Mozambique	\N	343
+659	United Kingdom	-22.56	17.08	3 Pavlov Street, Windhoek, Namibia	\N	421
+660	United Kingdom	13.52	2.07	Route sans nom, Niamey, Niger	\N	370
+661	United Kingdom	9.08	7.48	3FHH+XX Abuja, Nigeria	\N	339
+662	United Kingdom	6.43	3.4	121 Louis Solomon Cl, Victoria Island 106104, Lagos, Nigeria	\N	17
+663	United Kingdom	4.81	7	4 Wonodi Street, Elechi 500101, Port Harcourt, Nigeria	\N	4246
+664	United Kingdom	10.52	7.43	5 Ahmadu Bello Way, Sabon Gari 800283, Kaduna, Nigeria	\N	4280
+665	United Kingdom	6.44	7.48	CFQH+XX Enugu, Nigeria	\N	4281
+666	United Kingdom	11.99	8.54	Sky Line, Nassarawa 700213, Kano, Nigeria	\N	4282
+667	United Kingdom	-1.94	30.09	336Q+2XP, Kigali, Rwanda	\N	355
+668	United Kingdom	14.65	-17.43	Rte de la Corniche Estate, Dakar, Senegal	\N	353
+669	United Kingdom	-4.62	55.45	9CHX+XX Victoria, Seychelles	\N	476
+670	United Kingdom	8.47	-13.27	Spur Rd, Freetown, Sierra Leone	\N	379
+671	United Kingdom	2.03	45.33	طريق بدون اسم، مقديشو‎، Somalia	\N	238
+672	United Kingdom	9.52	44.07	AfBarwaaqo Rd, Hargeisa, Somalia	\N	4283
+673	United Kingdom	-33.91	18.42	ERF158581 W Quay Rd, Victoria & Alfred Waterfront, Cape Town, 8001, South Africa	\N	408
+674	United Kingdom	-26.13	28.03	95 Rutland Ave, Craighall Park, Randburg, 2196, South Africa	\N	102
+675	United Kingdom	-25.74	28.22	813 Government Ave, Eastwood, Pretoria, 0083, South Africa	\N	392
+676	United Kingdom	4.85	31.58	RHXJ+X2 Juba, South Sudan	\N	416
+677	United Kingdom	15.6	32.53	HGXJ+X2 Khartoum, Sudan	\N	31
+678	United Kingdom	0.33	32.58	14 Kyaddondo Rd, Kampala, Uganda	\N	278
+679	United Kingdom	-6.81	39.29	Ghana St, Dar es Salaam, Tanzania	\N	4216
+680	United Kingdom	-15.42	28.31	Pandit Nehru Rd, Lusaka, Zambia	\N	274
+681	United Kingdom	-17.76	31.03	62RJ+22 Harare, Zimbabwe	\N	234
+682	United Kingdom	17.15	-61.85	Unnamed Road, Antigua and Barbuda	\N	4284
+683	United Kingdom	-34.58	-58.39	Cam. del Trabajo 202, Buenos Aires, Argentina	\N	15
+684	United Kingdom	25.07	-77.39	W Bay St, Nassau, The Bahamas	\N	4101
+685	United Kingdom	13.09	-59.6	20 Chapel Pl., Bridgetown, Barbados	\N	450
+686	United Kingdom	17.25	-88.77	66XJ+V8J, Belmopan, Belize	\N	482
+687	United Kingdom	-16.51	-68.12	FVRJ+75Q, La Paz, Bolivia	\N	184
+688	United Kingdom	-8.06	-34.89	R. da Soledade, 44 - Boa Vista, Recife - PE, 50070-040, Brazil	\N	4104
+689	United Kingdom	-23.56	-46.69	R. Mourato Coelho, 884 - Pinheiros, São Paulo - SP, 05417-001, Brazil	\N	4108
+690	United Kingdom	-22.93	-43.17	Av. Infante Dom Henrique, 1000 - Flamengo, Rio de Janeiro - RJ, 20021-060, Brazil	\N	4210
+691	United Kingdom	-19.93	-43.94	R. Espírito Santo, 1757 - Centro, Belo Horizonte - MG, 30160-030, Brazil	\N	4209
+692	United Kingdom	-15.8	-47.87	642H+2X Brasilia, Federal District, Brazil	\N	4106
+693	United Kingdom	51.04	-114.06	Nuera 1.0, 211 13 Ave SE, Calgary, AB T2G 1E1, Canada	\N	4116
+694	United Kingdom	49.28	-123.12	882-874 BC-99, Vancouver, BC V6B, Canada	\N	4113
+695	United Kingdom	45.5	-73.57	1153 Rue Metcalfe, Montréal, QC H3B 2V6, Canada	\N	4112
+696	United Kingdom	45.42	-75.69	108 Lisgar St #103, Ottawa, ON K2P 1E1, Canada	\N	4115
+697	United Kingdom	43.66	-79.38	40 Gerrard St E, Toronto, ON M5B 2M2, Canada	\N	58
+698	United Kingdom	-33.41	-70.6	Luz 2967, Las Condes, Región Metropolitana, Chile	\N	32
+699	United Kingdom	4.66	-74.05	Cra. 5 #79-26, Bogotá, Colombia	\N	4123
+700	United Kingdom	9.93	-84.09	WWJ6+22 San José Province, San José, Costa Rica	\N	4124
+701	United Kingdom	23.11	-82.42	4H5J+936, Havana, Cuba	\N	236
+702	United Kingdom	18.46	-69.92	UASD, Santo Domingo 10105, Dominican Republic	\N	201
+703	United Kingdom	-0.17	-78.47	Av. Eloy Alfaro N40-153, Quito 170138, Ecuador	\N	246
+704	United Kingdom	13.7	-89.24	MQX5+WV2, San Salvador, El Salvador	\N	404
+705	United Kingdom	12	-61.76	Prickly Bay, St. George, Grenada	\N	4285
+706	United Kingdom	14.59	-90.51	20 calle 10-30, Cdad. de Guatemala, Guatemala	\N	212
+707	United Kingdom	6.81	-58.16	146 Regent St, Georgetown, Guyana	\N	434
+708	United Kingdom	18.53	-72.29	GPJ6+22 Port-au-Prince, Haiti	\N	4286
+709	United Kingdom	18	-76.78	5 Swallowfield Rd, Kingston, Jamaica	\N	401
+710	United Kingdom	19.43	-99.16	Reforma I, Juárez, 06600 Ciudad de México, CDMX, Mexico	\N	9
+711	United Kingdom	21.1	-86.76	Tepen, Zona Hotelera, 77500 Cancún, Q.R., Mexico	\N	4287
+712	United Kingdom	20.67	-103.37	MJCJ+22 Guadalajara, Jalisco, Mexico	\N	4169
+713	United Kingdom	25.64	-100.35	Mallorca 114, San Patricio 1er Sector, 66270 San Pedro Garza García, N.L., Mexico	\N	4242
+714	United Kingdom	8.98	-79.51	XFJR+22 Panama City, Panama	\N	382
+715	United Kingdom	-25.29	-57.57	PC5J+V25, Asunción, Paraguay	\N	4183
+716	United Kingdom	-12.13	-77.02	Av. 28 de Julio 1269, Miraflores 15047, Peru	\N	25
+717	United Kingdom	13.13	-61.2	Windward Highway, Arnos Vale, St Vincent and the Grenadines	\N	4288
+718	United Kingdom	14.01	-60.99	1 Peynier St, Castries, St Lucia	\N	457
+719	United Kingdom	10.66	-61.52	28 French St, Port of Spain, Trinidad and Tobago	\N	4289
+720	United Kingdom	47.61	-122.33	JM6C+22 Seattle, WA, USA	\N	4274
+721	United Kingdom	42.36	-71.08	Dr Paul Dudley White Bike Path, Cambridge, MA 02142, USA	\N	4265
+722	United Kingdom	41.89	-87.62	303 E Illinois St, Chicago, IL 60611, USA	\N	4266
+723	United Kingdom	40.75	-73.96	Four Freedoms Park, New York, NY 10044, USA	\N	12
+724	United Kingdom	39.74	-104.98	571 E Colfax Ave, Denver, CO 80203, USA	\N	4268
+725	United Kingdom	38.92	-77.06	3003 Massachusetts Ave NW, Washington, DC 20008, USA	\N	60
+726	United Kingdom	37.79	-122.4	555 Market St, San Francisco, CA 94105, USA	\N	4273
+727	United Kingdom	34.05	-118.41	2HXR+X2 Los Angeles, CA, USA	\N	4271
+728	United Kingdom	33.75	-84.38	298 Decatur St SE, Atlanta, GA 30312, USA	\N	4264
+729	United Kingdom	29.75	-95.36	1836 Polk St, Houston, TX 77010, USA	\N	4290
+730	United Kingdom	25.76	-80.18	749 Brickell Key Dr, Miami, FL 33131, USA	\N	4251
+731	United Kingdom	28.43	-81.3	Terminal B, Orlando, FL 32827, USA	\N	4291
+732	United Kingdom	44.94	-93.09	1 W Water St, St Paul, MN 55107, USA	\N	4272
+733	United Kingdom	35.77	-78.63	505 Martin Luther King Jr Blvd, Raleigh, NC 27601, USA	\N	4292
+734	United Kingdom	32.71	-117.16	449 Fifth Ave, San Diego, CA 92101, USA	\N	4293
+735	United Kingdom	-34.9	-56.13	Av. Gral. Rivera 3850, 11300 Montevideo, Departamento de Montevideo, Uruguay	\N	317
+736	United Kingdom	10.49	-66.85	1 Av. Ávila, Caracas 1060, Miranda, Venezuela	\N	252
+737	United Kingdom	-37.81	144.97	Exhibition St/Lonsdale St, Melbourne VIC 3000, Australia	\N	4096
+738	United Kingdom	-35.3	149.12	200 Alexandrina Dr, Yarralumla ACT 2600, Australia	\N	411
+739	United Kingdom	-33.86	151.2	45RX+2X Barangaroo NSW, Australia	\N	64
+740	United Kingdom	-31.95	115.86	51 James Street Mall, Perth WA 6000, Australia	\N	4097
+741	United Kingdom	-27.46	153.03	97A School St, Fortitude Valley QLD 4006, Australia	\N	4294
+742	United Kingdom	4.88	114.94	VWHQ+XX Bandar Seri Begawan, Brunei	\N	4295
+743	United Kingdom	11.58	104.91	HWJ6+749, Phnom Penh, Cambodia	\N	237
+744	United Kingdom	39.91	116.44	WC5Q+XX Chaoyang, Beijing, China	\N	10
+745	United Kingdom	31.22	121.45	6C9X+XX Jing'An, Shanghai, China	\N	6
+746	United Kingdom	29.55	106.57	GHX9+XX Yuzhong District, Chongqing, China	\N	4214
+747	United Kingdom	23.11	113.32	Unnamed Road, 二沙岛 Yue Xiu Qu, Guang Zhou Shi, Guang Dong Sheng, China, 510310	\N	4121
+748	United Kingdom	22.27	114.16	Hong Kong, The Peak, 施勳道	\N	4296
+749	United Kingdom	30.6	114.31	Yan Jiang Da Dao, Jiang An Qu, Wu Han Shi, Hu Bei Sheng, China, 430014	\N	4120
+750	United Kingdom	39.02	125.79	2Q9Q+QX9, Pyongyang, North Korea	\N	4297
+751	United Kingdom	-18.14	178.42	Civic House, Victoria Parade, Suva, Fiji	\N	456
+752	United Kingdom	-6.23	106.83	Jl. Denpasar II No.49, RT.1/RW.2, Kuningan, Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950, Indonesia	\N	3
+753	United Kingdom	-8.7	115.25	Jl. Kutat Lestari No.120, Sanur Kauh, Denpasar Selatan, Kota Denpasar, Bali 80228, Indonesia	\N	4155
+754	United Kingdom	35.68	139.74	2-chōme-7-7 Hirakawachō, Chiyoda City, Tokyo 102-0093, Japan	\N	2
+755	United Kingdom	34.67	135.5	2-chōme-3-5 Nishishinsaibashi, Chuo Ward, Osaka, 542-0086, Japan	\N	4162
+756	United Kingdom	17.97	102.62	Patuxay, Vientiane, Laos	\N	390
+757	United Kingdom	3.15	101.71	86, Jalan Raja Chulan, Kuala Lumpur, 50200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia	\N	28
+758	United Kingdom	47.91	106.94	WW5Q+XFR, Ulaanbaatar, Mongolia	\N	308
+759	United Kingdom	16.76	96.16	Min Tan Rd, Yangon, Myanmar (Burma)	\N	4298
+760	United Kingdom	-41.27	174.77	Te Ahumairangi Hill loops, Wellington 6012, New Zealand	\N	412
+761	United Kingdom	-36.84	174.76	161 Halsey Street, Auckland CBD, Auckland 1010, New Zealand	\N	296
+762	United Kingdom	-9.43	147.19	Melanesian Way, Port Moresby, Papua New Guinea	\N	417
+763	United Kingdom	14.54	121.05	G3Q2+X2 Taguig, Metro Manila, Philippines	\N	5
+764	United Kingdom	1.3	103.82	18 Chatsworth Rd, Singapore 249780	\N	46
+765	United Kingdom	-9.43	159.96	Mendana Ave, Honiara, Solomon Islands	\N	455
+766	United Kingdom	37.56	126.97	HX69+2X Seoul, South Korea	\N	8
+767	United Kingdom	25.03	121.56	No. 15號, Alley 26, Lane 118, Wuxing St, Xinyi District, Taipei City, Taiwan 110	\N	193
+768	United Kingdom	13.74	100.54	St Regis Bangkok, 159 Ratchadamri Rd, Khwaeng Lumphini, Khet Pathum Wan, Krung Thep Maha Nakhon 10330, Thailand	\N	14
+769	United Kingdom	-17.73	168.31	40 Kumul Hwy, Port Vila, Vanuatu	\N	4275
+770	United Kingdom	21.02	105.85	55b Bà Triệu, Hàng Bài, Hoàn Kiếm, Hà Nội, Vietnam	\N	29
+771	United Kingdom	10.78	106.7	8 Đường Nguyễn Văn Bình, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Vietnam	\N	22
+772	United Kingdom	40.19	44.5	5GQ2+X2 Yerevan, Armenia	\N	364
+773	United Kingdom	40.37	49.85	9RCX+2X Baku, Azerbaijan	\N	230
+774	United Kingdom	53.9	27.56	vulica Lienina 9, Minsk, Belarus	\N	247
+775	United Kingdom	41.67	44.81	MR96+X2 Tbilisi, Georgia	\N	362
+776	United Kingdom	51.14	71.42	Ulitsa Karasakal Yerimbet 39, Nur-Sultan 020000, Kazakhstan	\N	365
+777	United Kingdom	47.1	51.91	211а, Atyrau, Kazakhstan	\N	4299
+778	United Kingdom	42.87	74.57	VH99+QXR, Bishkek, Kyrgyzstan	\N	368
+779	United Kingdom	47.02	28.82	Strada Alexei Mateevici 87, Chișinău, Moldova	\N	398
+780	United Kingdom	59.94	30.39	Novgorodskaya Ulitsa, 19, Sankt-Peterburg, Russia, 191124	\N	4300
+781	United Kingdom	56.83	60.61	Ulitsa Karla Marksa, 8-208, Yekaterinburg, Sverdlovskaya oblast', Russia, 620026	\N	4301
+782	United Kingdom	55.75	37.57	5/3к2, Kutuzovsky Ave, Moskva, Russia, 121248	\N	13
+783	United Kingdom	38.58	68.79	HQHQ+XX Dushanbe, Tajikistan	\N	387
+784	United Kingdom	37.95	58.36	Mäti Kösäýew köçesi 85, Aşgabat, Turkmenistan	\N	369
+785	United Kingdom	50.45	30.51	Ivana Franka St, 1, Kyiv, Ukraine, 01030	\N	174
+786	United Kingdom	41.3	69.28	872J+22 Tashkent, Uzbekistan	\N	217
+787	United Kingdom	41.33	19.8	8RH2+X2 Tirana, Albania	\N	410
+788	United Kingdom	48.19	16.38	Prinz Eugen-Straße 66, 1040 Wien, Austria	\N	256
+789	United Kingdom	50.84	4.38	Chau. d'Etterbeek 154, 1040 Etterbeek, Belgium	\N	271
+790	United Kingdom	44.76	17.18	Kozarska 33, Banja Luka 78000, Bosnia and Herzegovina	\N	4302
+791	United Kingdom	43.85	18.39	Behdžeta Mutevelića bb, Sarajevo 71000, Bosnia and Herzegovina	\N	4303
+792	United Kingdom	42.69	23.32	ul. "Neofit Rilski" 36, 1000 Old City Center, Sofia, Bulgaria	\N	314
+793	United Kingdom	45.79	15.97	Obala dr. Savke Dabčević Kučar, 10000, Zagreb, Croatia	\N	386
+794	United Kingdom	43.5	16.43	Sustipanski put 60, 21000, Croatia	\N	4304
+795	United Kingdom	35.18	33.34	Ι. Ψυχάρη 33, Nicosia 1107	\N	420
+796	United Kingdom	50.08	14.4	3CJ2+22 Prague, Czechia	\N	4127
+797	United Kingdom	55.69	12.58	Vej uden navn, 2100 København, Denmark	\N	400
+798	United Kingdom	59.43	24.73	Koidu 46, 10142 Tallinn, Estonia	\N	407
+799	United Kingdom	60.15	24.96	Nimetön tie, Helsinki, Finland	\N	396
+800	United Kingdom	48.86	2.31	36 Bd de la Tour-Maubourg, 75007 Paris, France	\N	23
+801	United Kingdom	45.76	4.85	21 Rue François Garcin, 69003 Lyon, France	\N	4135
+802	United Kingdom	44.85	-0.59	31 Rue Rosa Bonheur, 33000 Bordeaux, France	\N	4133
+803	United Kingdom	43.28	5.38	17 Rue Notre Dame des Anges, 13008 Marseille, France	\N	4305
+804	United Kingdom	52.51	13.38	Leipziger Str. 133, 10117 Berlin, Germany	\N	136
+805	United Kingdom	51.22	6.78	Bahnstraße 2, Königsallee 92, 40212 Düsseldorf, Germany	\N	4306
+806	United Kingdom	48.14	11.59	Tattenbachstraße 8, 80538 München, Germany	\N	4142
+807	United Kingdom	39.62	19.91	Miltiadou Margariti 92, Kerkira 491 00, Greece	\N	4307
+808	United Kingdom	37.97	23.74	Irodou Attikou 1, Athina 106 74, Greece	\N	394
+809	United Kingdom	37.78	20.89	QVJQ+2X Zakynthos, Greece	\N	4308
+810	United Kingdom	36.44	28.22	Komninon 71, Rodos 851 00, Greece	\N	4309
+811	United Kingdom	35.34	25.13	Apokoronou 7, Iraklio 712 02, Greece	\N	4310
+812	United Kingdom	41.9	12.5	Via Giovanni Amendola, 32, 00185 Roma RM, Italy	\N	4311
+813	United Kingdom	47.49	19.05	F3R2+22 Budapest, Hungary	\N	272
+814	United Kingdom	64.14	-21.93	Sjúkrahótel, Reykjavík, Iceland	\N	4148
+815	United Kingdom	53.32	-6.22	Embassy of Pakistan Residence, Ailesbury Rd, Ballsbridge, Dublin 4, Ireland	\N	346
+816	United Kingdom	45.47	9.21	Via Carlo Poerio, 15, 20129 Milano MI, Italy	\N	4157
+817	United Kingdom	41.9	12.5	Via Giovanni Amendola, 32, 00185 Roma RM, Italy	\N	183
+818	United Kingdom	42.66	21.15	149 Ahmet Krasniqi, Prishtinë 10000	\N	433
+819	United Kingdom	56.95	24.11	Zirgu iela 1, Centra rajons, Rīga, LV-1050, Latvia	\N	399
+820	United Kingdom	54.69	25.3	T. Kosciuškos g. 5, Vilnius 01100, Lithuania	\N	403
+821	United Kingdom	49.6	6.12	106 Rte d'Esch, 1470 Luxembourg	\N	448
+822	United Kingdom	35.89	14.49	31 Triq L-Orsolini, Tal-Pietà, Malta	\N	487
+823	United Kingdom	42.44	19.27	32 IV Proleterske, Podgorica, Montenegro	\N	439
+824	United Kingdom	52.35	4.86	Cornelis Krusemanstraat 75 b, 1075 NJ Amsterdam, Netherlands	\N	383
+825	United Kingdom	52.08	4.31	Kneuterdijk 2, 2514 EN Den Haag, Netherlands	\N	307
+826	United Kingdom	41.97	21.42	Rrugë pa emër, 1000, North Macedonia	\N	4176
+827	United Kingdom	59.91	10.7	Frognerstranda 2, 0250 Oslo, Norway	\N	393
+828	United Kingdom	52.21	21.03	Aleksandra Sulkiewicza 5, 00-758 Warszawa, Poland	\N	266
+829	United Kingdom	38.71	-9.15	Travessa do Terreiro a Santa Catarina 48, 1200-343 Lisboa, Portugal	\N	406
+830	United Kingdom	37.13	-8.53	Ac. Porto Comercial de Portimão, 8500 Portimão, Portugal	\N	4312
+831	United Kingdom	44.44	26.1	Bd. Nicolae Balcescu, Bulevardul Nicolae Bălcescu, București, Romania	\N	259
+832	United Kingdom	44.8	20.45	RC2X+2X Belgrade, Serbia	\N	310
+833	United Kingdom	48.14	17.1	Nábrežie armádneho generála Ludvíka Svobodu, 811 02 Bratislava, Slovakia	\N	409
+834	United Kingdom	46.05	14.49	Škrabčeva ulica 11, 1000 Ljubljana, Slovenia	\N	425
+835	United Kingdom	43.26	-2.92	Mallona Galtzada, 15B, 48006 Bilbo, Bizkaia, Spain	\N	4313
+836	United Kingdom	41.39	2.14	Passatge de les Cinc Torres, 4, 08029 Barcelona, Spain	\N	4191
+837	United Kingdom	40.47	-3.68	C. Levante, 36, 28036 Madrid, Spain	\N	39
+838	United Kingdom	39.57	2.65	Carrer dels Paners, 9, 07001 Palma, Illes Balears, Spain	\N	4314
+839	United Kingdom	38.9	1.42	C. de Carles Roman Ferrer, 17, 07800 Eivissa, Illes Balears, Spain	\N	1336
+840	United Kingdom	38.34	-0.48	Mlle. Levante, 8, 03001 Alicante (Alacant), Alicante, Spain	\N	4315
+841	United Kingdom	36.71	-4.43	C. Fernán Núñez, 6, 29002 Málaga, Spain	\N	4316
+842	United Kingdom	28.46	-16.25	Av. Víctor Zurita Soler, s/n, 38003 Santa Cruz de Tenerife, Spain	\N	4317
+843	United Kingdom	28.14	-15.43	Pl. Comandante Ramón Franco, 1, 35007 Las Palmas de Gran Canaria, Las Palmas, Spain	\N	4318
+844	United Kingdom	59.33	18.1	83HX+XX Stockholm, Sweden	\N	377
+845	United Kingdom	46.94	7.45	Kirchenfeldstrasse 24, 3005 Bern, Switzerland	\N	4319
+846	United Kingdom	41.03	28.97	Bedrettin, Ambar Arkası Sk. No:25, 34440 Beyoğlu/İstanbul, Turkey	\N	18
+847	United Kingdom	39.89	32.85	Aziziye, Portakal Çiçeği Sk. 17/A, 06690 Çankaya/Ankara, Turkey	\N	52
+848	United Kingdom	38.43	27.14	Kültür, Şevket Özçelik Sk. NO:35, 35220 Konak/İzmir, Turkey	\N	4320
+849	United Kingdom	36.85	30.62	Liman, 3. Sk. No:4, 07130 Konyaaltı/Antalya, Turkey	\N	4321
+850	United Kingdom	36.62	29.1	Karagözler, 27. Sk. 11/5, 48300 Fethiye/Muğla, Turkey	\N	724
+851	United Kingdom	36.85	28.27	Turkey	\N	2090
+852	United Kingdom	36.75	3.04	Q22Q+2X Hydra, Algeria	\N	145
+853	United Kingdom	26.23	50.58	6HJH+2X Manama, Bahrain	\N	4322
+854	United Kingdom	30.03	31.23	26HH+QJ8, Old Cairo, Cairo Governorate, Egypt	\N	11
+855	United Kingdom	35.69	51.41	Tehran, Jami St, Iran	\N	20
+856	United Kingdom	36.32	44.15	Erbil Hwy, Iraq	\N	4230
+857	United Kingdom	33.31	44.39	14th of July St, Baghdad, Iraq	\N	44
+858	United Kingdom	32.08	34.77	Ben Yehuda St 72, Tel Aviv-Yafo, Israel	\N	4323
+860	United Kingdom	29.39	47.99	1 شارع 132، Al Kuwayt, Kuwait	\N	4324
+861	United Kingdom	33.89	35.5	VGR2+22 Beirut, Lebanon	\N	413
+862	United Kingdom	32.89	13.16	Libya	\N	361
+863	United Kingdom	18.09	-15.98	32QC+Q4R, Nouakchott, Mauritania	\N	366
+864	United Kingdom	33.97	-6.84	X5C5+6GP, Rabat, Morocco	\N	402
+865	United Kingdom	33.55	-7.62	G9XH+XX Casablanca, Morocco	\N	106
+866	United Kingdom	31.79	35.23	Q6QH+XX Jerusalem, Israel	\N	4325
+867	United Kingdom	31.52	34.45	Al-Thawra	\N	4326
+868	United Kingdom	23.6	58.43	Thaqafah St, Muscat, Oman	\N	304
+869	United Kingdom	25.34	51.51	Tabariya St، Doha, Qatar	\N	320
+870	United Kingdom	24.68	46.62	8564 Al Sarat St, Al Safarat, Riyadh 12523, Saudi Arabia	\N	33
+871	United Kingdom	21.61	39.11	J456+X2 Ash Shati, Jeddah Saudi Arabia	\N	4188
+872	United Kingdom	26.33	50.2	4449 7ا، حي الجوهرة، Al Khobar 34431 8988, Saudi Arabia	\N	4327
+873	United Kingdom	33.27	36.51	Route sans nom, Syria	\N	269
+874	United Kingdom	36.83	10.24	Les Berges Du Lac Walkway, Tunis, Tunisia	\N	367
+875	United Kingdom	25.25	55.3	Obaidullah Building - 11B St - Al Mankhool - Dubai - United Arab Emirates	\N	207
+876	United Kingdom	24.48	54.35	F8JX+2X Abu Dhabi - United Arab Emirates	\N	376
+877	United Kingdom	15.36	44.23	965H+XX Sana'a, Yemen	\N	4328
+878	United Kingdom	18.21	-63.05	6W5X+CJJ, The Quarter 2640, Anguilla	\N	4329
+879	United Kingdom	-7.92	-14.41	Unnamed Road, Georgetown ASCN 1ZZ, St Helena, Ascension and Tristan da Cunha	\N	4330
+880	United Kingdom	32.3	-64.78	4 Union St, Hamilton, Bermuda	\N	461
+881	United Kingdom	18.41	-64.61	Waterfront Dr, Road Town, British Virgin Islands	\N	4331
+882	United Kingdom	19.29	-81.37	Crewe Rd, George Town, Cayman Islands	\N	475
+883	United Kingdom	-51.69	-57.87	Ross Rd, Stanley FIQQ 1ZZ, Falkland Islands (Islas Malvinas)	\N	4332
+884	United Kingdom	36.13	-5.35	3 Engineer Rd, Gibraltar GX11 1AA, Gibraltar	\N	436
+885	United Kingdom	16.79	-62.21	QQQQ+XX Brades, Montserrat	\N	4333
+886	United Kingdom	-25.06	-130.1	Unnamed Road, Adamstown PCRN 1ZZ, Pitcairn Islands	\N	516
+887	United Kingdom	-15.95	-5.72	Redgate, STHL 1ZZ, St Helena, Ascension and Tristan da Cunha	\N	4334
+888	United Kingdom	-37.06	-12.3	M1, TDCU 1ZZ, St Helena, Ascension and Tristan da Cunha	\N	4335
+889	United Kingdom	21.43	-71.14	Unnamed Road, TKCA 1ZZ, Turks and Caicos Islands	\N	4336
+890	United Kingdom	34.53	69.17	G5JC+22 Kabul, Afghanistan	\N	134
+891	United Kingdom	23.79	90.41	Bureau Veritas (Bangladesh) Private Limited, Nur Empori, Plot: 77 (Floor-10), Road: 11, Block-M,, Rd No. 11, Dhaka 1213, Bangladesh	\N	16
+892	United Kingdom	28.59	77.19	H5RQ+2X New Delhi, Delhi, India	\N	443
+893	United Kingdom	22.54	88.34	UCM Building, Debendra Lal Khan Rd, S S K M Hospital, Bhowanipore, Kolkata, West Bengal 700020, India	\N	4149
+894	United Kingdom	19.06	72.86	Bank of India, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051, India	\N	4152
+895	United Kingdom	18.52	73.85	GRCX+3WG, Shaniwar Peth, Pune, Maharashtra 411030, India	\N	4337
+896	United Kingdom	17.41	78.45	201 A ,2 Floor Maheshwari Towers, 3 rd Lane From Karachi Bakery After Care Hospital, Rd Number 1, Shyam Rao Nagar, Banjara Hills, Hyderabad, Telangana 500034, India	\N	4151
+897	United Kingdom	15.48	73.8	Sharda Mandir School Pedestrian Opas, Miramar, Panaji, Goa 403001, India	\N	4338
+898	United Kingdom	13.06	80.24	10/18, Deivanayagam St, Pushpa Nagar, Nungambakkam, Chennai, Tamil Nadu 600034, India	\N	4150
+899	United Kingdom	12.97	77.59	XH9R+X2 Bengaluru, Karnataka, India	\N	4339
+900	United Kingdom	30.7	76.8	140/24, Industrial Area Phase I, Chandigarh, 160002, India	\N	4227
+901	United Kingdom	27.72	85.31	Nirmal Lama Marg 12, Kathmandu 44600, Nepal	\N	375
+902	United Kingdom	33.72	73.11	P4C5+283, Ramna 5 Diplomatic Enclave, Islamabad, Islamabad Capital Territory, Pakistan	\N	374
+903	United Kingdom	31.55	74.31	20 Bahawalpur Rd, Al Hamad Colony Mozang Chungi, Lahore, Punjab 54000, Pakistan	\N	4181
+904	United Kingdom	24.81	67.02	Plot COM 2/6/1, Block 3 Clifton, Karachi, Karachi City, Sindh, Pakistan	\N	19
+905	United Kingdom	6.9	79.87	15/3 Malalasekara Pl, Colombo 00700, Sri Lanka	\N	391
+906	United Kingdom	23.02	72.56	Embrald 3 Residency Parimal Garden Road, Ellisbridge, Ahmedabad, Gujarat 380006, India	\N	4340
 \.
 
 
@@ -5140,25 +5464,29 @@ COPY public.embassies (embassy_id, home_country, latitude, longitude, address, w
 --
 
 COPY public.travelplanners (tp_id, name, user_id, dest_id, date) FROM stdin;
-1	test_user1's Travel_planner test 1	1	1323	\N
-2	test_user2's Travel_planner test 1	2	1642	\N
-3	test_user2's Travel_planner test 2	2	815	\N
-4	test_user3's Travel_planner test 1	3	4173	\N
-5	test_user3's Travel_planner test 2	3	2870	\N
-6	test_user4's Travel_planner test 1	4	3634	\N
-7	test_user4's Travel_planner test 2	4	3665	\N
-8	test_user4's Travel_planner test 3	4	2877	\N
-9	test_user5's Travel_planner test 1	5	1662	\N
-10	test_user5's Travel_planner test 2	5	455	\N
-11	test_user5's Travel_planner test 3	5	3247	\N
-12	test_user6's Travel_planner test 1	6	2896	\N
-13	test_user6's Travel_planner test 2	6	533	\N
-14	test_user7's Travel_planner test 1	7	41	\N
-15	test_user7's Travel_planner test 2	7	545	\N
-16	test_user8's Travel_planner test 1	8	1672	\N
-17	test_user9's Travel_planner test 1	9	2857	\N
-18	test_user10's Travel_planner test 1	10	2385	\N
-19	test_user10's Travel_planner test 2	10	1577	\N
+1	test_user1's Travel_planner test 1	1	3848	\N
+2	test_user1's Travel_planner test 2	1	754	\N
+3	test_user1's Travel_planner test 3	1	4164	\N
+4	test_user2's Travel_planner test 1	2	649	\N
+5	test_user2's Travel_planner test 2	2	2886	\N
+6	test_user3's Travel_planner test 1	3	2820	\N
+7	test_user3's Travel_planner test 2	3	2108	\N
+8	test_user3's Travel_planner test 3	3	3823	\N
+9	test_user4's Travel_planner test 1	4	1779	\N
+10	test_user5's Travel_planner test 1	5	3470	\N
+11	test_user5's Travel_planner test 2	5	1173	\N
+12	test_user5's Travel_planner test 3	5	4256	\N
+13	test_user6's Travel_planner test 1	6	1621	\N
+14	test_user7's Travel_planner test 1	7	4071	\N
+15	test_user7's Travel_planner test 2	7	3064	\N
+16	test_user7's Travel_planner test 3	7	2244	\N
+17	test_user8's Travel_planner test 1	8	1261	\N
+18	test_user8's Travel_planner test 2	8	3238	\N
+19	test_user9's Travel_planner test 1	9	454	\N
+20	test_user9's Travel_planner test 2	9	2187	\N
+21	test_user10's Travel_planner test 1	10	2785	\N
+22	test_user10's Travel_planner test 2	10	2265	\N
+23	test_user10's Travel_planner test 3	10	3646	\N
 \.
 
 
@@ -5168,14 +5496,14 @@ COPY public.travelplanners (tp_id, name, user_id, dest_id, date) FROM stdin;
 
 COPY public.users (user_id, fname, lname, email, password, home_country) FROM stdin;
 1	test_user1	Test	test_user1@test.com	test	Canada
-2	test_user2	Test	test_user2@test.com	test	Canada
+2	test_user2	Test	test_user2@test.com	test	United States
 3	test_user3	Test	test_user3@test.com	test	United States
 4	test_user4	Test	test_user4@test.com	test	Canada
 5	test_user5	Test	test_user5@test.com	test	Canada
 6	test_user6	Test	test_user6@test.com	test	United States
 7	test_user7	Test	test_user7@test.com	test	United States
-8	test_user8	Test	test_user8@test.com	test	Canada
-9	test_user9	Test	test_user9@test.com	test	Canada
+8	test_user8	Test	test_user8@test.com	test	United States
+9	test_user9	Test	test_user9@test.com	test	United States
 10	test_user10	Test	test_user10@test.com	test	Canada
 \.
 
@@ -5184,21 +5512,21 @@ COPY public.users (user_id, fname, lname, email, password, home_country) FROM st
 -- Name: destinations_dest_id_seq; Type: SEQUENCE SET; Schema: public; Owner: hackbright
 --
 
-SELECT pg_catalog.setval('public.destinations_dest_id_seq', 4278, true);
+SELECT pg_catalog.setval('public.destinations_dest_id_seq', 4340, true);
 
 
 --
 -- Name: embassies_embassy_id_seq; Type: SEQUENCE SET; Schema: public; Owner: hackbright
 --
 
-SELECT pg_catalog.setval('public.embassies_embassy_id_seq', 644, true);
+SELECT pg_catalog.setval('public.embassies_embassy_id_seq', 906, true);
 
 
 --
 -- Name: travelplanners_tp_id_seq; Type: SEQUENCE SET; Schema: public; Owner: hackbright
 --
 
-SELECT pg_catalog.setval('public.travelplanners_tp_id_seq', 19, true);
+SELECT pg_catalog.setval('public.travelplanners_tp_id_seq', 23, true);
 
 
 --
