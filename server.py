@@ -42,7 +42,6 @@ def create_user():
 def login_user():
     '''Log in user'''
     email = request.form.get('email')
-    print(email)
     password = request.form.get('password')
     user = crud.get_user_by_email(email)
     
@@ -69,7 +68,7 @@ def clear_session():
 @app.route('/profile/<fname>')
 def show_profile(fname):
     """View user profile"""
-    # flash(f"welcome back {fname}")
+    
     
     user =crud.get_user_by_id(session["user_id"])
     return render_template('user_profile.html', user = user)  
@@ -79,13 +78,13 @@ def show_profile(fname):
 @app.route('/travel_planner/<tp_id>')
 def show_chosen_planner(tp_id):
     """View Travel_Planner by id"""
-    # flash(f"welcome back {fname}")
 
     tp =crud.get_travelplanner_by_id(tp_id)
     destinations = tp.destination
 
     country_name = destinations.country_name
-    alert = crud.retrieve_advisory(country_name)
+    user = crud.get_user_by_id(session['user_id'])
+    alert = crud.retrieve_advisory(country_name, user)
     flash(alert)
 
     embassies = []
@@ -121,8 +120,12 @@ def show_chosen_planner(tp_id):
                           destinations = destinations, embassies=embassies, 
                           embassy=embassy, weather_info = weather_info, currency = currency) 
 
-
-
+@app.route('/emergency_info/<country_name>')
+def view_emergency_Info():
+    """View emergency info based on country"""
+    # country_code = crud.get_country_code
+    # emer_num= crud.get_emer_num(country_code)
+    pass
 
 @app.route('/new_tp')
 def view_travelplanner_form():

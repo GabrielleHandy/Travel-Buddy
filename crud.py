@@ -168,6 +168,63 @@ def list_all_countries(list_dest):
 #     else:
 #         return "Already in your travelplanner"
 
+def get_country_code(country_name):
+    """Gets calls from api to use in get_emer_num"""
+
+    name = country_name.lower()
+    res = requests.get(f'https://restcountries.com/v3.1/name/{name}')
+
+    response = res.json()
+
+    if response:
+        results = response[0]
+
+        country_code = results['ccn3']
+    else:
+        country_code = False
+
+    return country_code
+    
+
+def get_country_currency(country_name):
+    """Gets call from API to use in get_currency_rate """
+    name = country_name.lower()
+    res = requests.get(f'https://restcountries.com/v3.1/name/{name}')
+
+    response = res.json()
+
+    results = response[0]
+
+    currency = []
+
+    if len(results['currencies']) > 1:
+        for currency in results['currencies']:
+            keys = list(currency.keys())
+            key = keys[0]
+            currency.append([key, currency[key]['name'], currency[key]['symbol']])
+    else:
+        curr = results['currencies']
+        keys = list(curr.keys())
+        key = keys[0]
+        currency.append([key, curr[key]['name'], curr[key]['symbol']])
+    
+
+    return(currency)
+
+def get_emer_num(country_code):
+    """Gets emergency info for specific countries based on country_code"""
+
+    res = requests.get(f'https://emergencynumberapi.com/api/country/{country_code}')
+
+    response = res.json()
+    results = response['data']
+
+    print(results)
+
+def get_currency_rate(home_currency, country_currency):
+
+    pass
+
 
 # Embassies
 
@@ -229,37 +286,79 @@ def check_for_repeats(dest_id, user_id):
 ## in Travel Planner but pulls from APIs and other sources
 
 #Travel advisories specific to destination country
-def retrieve_advisory(country_name):
+def retrieve_advisory(country_name, user):
     advisory = 'No Travel Advisory for this location'
 
-    
+    home_country = user.home_country
+
+    if home_country == 'United States':
    
-    res = requests.get('https://travel.state.gov/_res/rss/TAsTWs.xml')
-    
+        res = requests.get('https://travel.state.gov/_res/rss/TAsTWs.xml')
+        
 
-    root = ET.fromstring(res.content)
+        root = ET.fromstring(res.content)
 
-    for country in root.iter("item"):
-        title = country.find("title").text
-        title = title.split("-")
-        warning = country.find("category").text
-        print(warning)
-        name = title[0].strip()
-        print(repr(name), name)
-    
-        if name == country_name:
+        for country in root.iter("item"):
+            title = country.find("title").text
+            title = title.split("-")
+            warning = country.find("category").text
+            print(warning)
+            name = title[0].strip()
+            print(repr(name), name)
+        
+            if name == country_name:
 
-            advisory = warning
-    # elif home_country == 'Canada':       
+                advisory = f"Travel Advisory: {warning}"
 
-    #     res = requests.get('https://data.international.gc.ca/travel-voyage/index-alpha-eng.json')    
+    elif home_country == 'Canada':
 
-    #     response = res.json()
-    #     print(response)
+
+        res = requests.get('https://data.international.gc.ca/travel-voyage/index-alpha-eng.json')    
+
+        response = res.json()
+        results = response['data']
+
+        for result in results:
+            if results[result]["country-eng"] == country_name:
+                advisory = f"Travel Advisory: {results[result]['eng']['advisory-text']}"
+        
+
     return advisory
-    
-   
 
+def get_advisory_url(country_name, user):
+    """Rerieves the url links to gov pages with more info for country name"""
+
+    home_country = user.home_country
+
+    if home_country == 'United States':
+        res = requests.get('https://travel.state.gov/_res/rss/TAsTWs.xml')
+        
+
+        root = ET.fromstring(res.content)
+
+        for country in root.iter("item"):
+            title = country.find("title").text
+            title = title.split("-")
+            name = title[0].strip()
+    
+            if name == country_name:
+
+                url = country.find("link").text
+
+
+    elif home_country == 'Canada':
+
+        website = 'https://travel.gc.ca/destinations/'
+        res = requests.get('https://data.international.gc.ca/travel-voyage/index-alpha-eng.json')    
+
+        response = res.json()
+        results = response['data']
+
+        for result in results:
+            if results[result]["country-eng"] == country_name:
+                url = website + results[result]['eng']['url-slug']
+   
+    return url
 
 
 
