@@ -198,22 +198,6 @@
     }
   },
   {
-    "objectId": "zy2QaHoiml",
-    "country": "U.S. Mission to ASEAN",
-    "embassy": "U.S. Mission to ASEAN",
-    "info": "Jl. Medan Merdeka Selatan 5\nJakarta 10110, Indonesia\nSTOP (62)(21) 3435-9000",
-    "createdAt": "2020-02-20T13:36:36.998Z",
-    "updatedAt": "2020-02-20T13:36:36.998Z"
-  },
-  {
-    "objectId": "P9ZYQogf8V",
-    "country": "U.S. Mission to the African Union",
-    "embassy": "U.S. Mission to the African Union",
-    "info": "Entoto Street\nAddis Ababa, Ethiopia\nSTOP +251-11-517-4037",
-    "createdAt": "2020-02-20T13:36:39.543Z",
-    "updatedAt": "2020-02-20T13:36:39.543Z"
-  },
-  {
     "objectId": "YrrPFOfmTo",
     "geoPosition": {
       "__type": "GeoPoint",
@@ -1276,19 +1260,6 @@
     }
   },
   {
-    "objectId": "dynHl6hGlf",
-    "geoPosition": {
-      "__type": "GeoPoint",
-      "latitude": 4.367529,
-      "longitude": 50.844269
-    },
-    "country": "U.S. Mission to the EU",
-    "embassy": "U.S. Mission to the EU",
-    "info": "Zinnerstraat – 13 – Rue Zinner\nB-1000 Brussels, Belgium\nSTOP +32-2-811-4100",
-    "createdAt": "2020-02-20T13:38:08.827Z",
-    "updatedAt": "2020-02-20T13:38:08.827Z"
-  },
-  {
     "objectId": "Jlp6J6ta8E",
     "country": "Fiji",
     "embassy": "U.S. Embassy in Suva",
@@ -2122,19 +2093,6 @@
       "className": "Continentscountriescities_Country",
       "objectId": "hOu7Is3jvO"
     }
-  },
-  {
-    "objectId": "216N7xu96w",
-    "geoPosition": {
-      "__type": "GeoPoint",
-      "latitude": -73.56562254934164,
-      "longitude": 45.4997256789988
-    },
-    "country": "U.S. Mission to the ICAO",
-    "embassy": "U.S. Mission to the ICAO",
-    "info": "999 Robert-Bourassa Blvd.\nMontreal, (Quebec), Canada H3C 5J9\nSTOP 514-954-8304",
-    "createdAt": "2020-02-20T13:38:58.197Z",
-    "updatedAt": "2020-02-20T13:38:58.197Z"
   },
   {
     "objectId": "dFawIUYgiS",
@@ -3113,19 +3071,6 @@
     }
   },
   {
-    "objectId": "NNGyIBe7wp",
-    "geoPosition": {
-      "__type": "GeoPoint",
-      "latitude": 4.3820756509457235,
-      "longitude": 50.85828708481113
-    },
-    "country": "U.S. Mission to NATO",
-    "embassy": "U.S. Mission to NATO",
-    "info": "Boulevard Leopold III\n1110 Brussels, Belgium\nSTOP (32-2) 811-4000",
-    "createdAt": "2020-02-20T13:40:11.279Z",
-    "updatedAt": "2020-02-20T13:40:11.279Z"
-  },
-  {
     "objectId": "PEVxoEzY00",
     "country": "Oman",
     "embassy": "U.S. Embassy in Muscat",
@@ -3137,32 +3082,6 @@
       "className": "Continentscountriescities_Country",
       "objectId": "ta4EmTNWmu"
     }
-  },
-  {
-    "objectId": "GrG8xfH27y",
-    "geoPosition": {
-      "__type": "GeoPoint",
-      "latitude": -77.05170868456409,
-      "longitude": 38.89443515472371
-    },
-    "country": "U.S. Mission to the OAS",
-    "embassy": "U.S. Mission to the OAS",
-    "info": "U.S. Department of State\n2201 C Street, NW\nRoom 5914\nWashington, D.C. 20515\nSTOP 202-647-9376",
-    "createdAt": "2020-02-20T13:40:16.160Z",
-    "updatedAt": "2020-02-20T13:40:16.160Z"
-  },
-  {
-    "objectId": "HAyLqQwtnP",
-    "geoPosition": {
-      "__type": "GeoPoint",
-      "latitude": 2.314880050761391,
-      "longitude": 48.86830080786213
-    },
-    "country": "U.S. Mission to the OECD",
-    "embassy": "U.S. Mission to the OECD",
-    "info": "18, avenue Gabriel\n75008 Paris\nSTOP +33 (0) 1 43 12 22 22",
-    "createdAt": "2020-02-20T13:40:18.140Z",
-    "updatedAt": "2020-02-20T13:40:18.140Z"
   },
   {
     "objectId": "wPqob9kBO4",
@@ -4142,19 +4061,6 @@
     }
   },
   {
-    "objectId": "W5MUG9UYHE",
-    "geoPosition": {
-      "__type": "GeoPoint",
-      "latitude": 6.135919716184857,
-      "longitude": 46.23200668990151
-    },
-    "country": "U.S. Mission to the UN-Geneva",
-    "embassy": "U.S. Mission-Geneva",
-    "info": "111 Route de Pregny\n1292 Geneva, Switzerland\nSTOP +41 22 749 41 11",
-    "createdAt": "2020-02-20T13:41:29.746Z",
-    "updatedAt": "2020-02-20T13:41:29.746Z"
-  },
-  {
     "objectId": "EC05rV1H36",
     "geoPosition": {
       "__type": "GeoPoint",
@@ -4274,19 +4180,6 @@
       "className": "Continentscountriescities_Country",
       "objectId": "asMYxtQNZx"
     }
-  },
-  {
-    "objectId": "rxfqVyMafk",
-    "geoPosition": {
-      "__type": "GeoPoint",
-      "latitude": 16.418877215353138,
-      "longitude": 48.23497265235192
-    },
-    "country": "U.S. Mission to International Organizations in Vienna",
-    "embassy": "U.S. Mission to the International Organizations in Vienna",
-    "info": "IZD Tower\nWagramerstrasse 17-19\n1220 Vienna, Austria\nSTOP (43) (1) 31339 0",
-    "createdAt": "2020-02-20T13:41:41.616Z",
-    "updatedAt": "2020-02-20T13:41:41.616Z"
   },
   {
     "objectId": "jUnGKYDxKk",

@@ -2,25 +2,31 @@
 {% block head %}
 <link rel="stylesheet" href="/static/css/travel_planner.css">
 
+
 {% endblock %}
 {% block content%}
+<li>Customize Travel Planner</li>
 <li>
     <div class="dropdown">
     <button class="dropbtn"> Switch Travel Planners
     </button>
     <div class="dropdown-content">
         {% for travel_planner in tp.user.travel_planner%}
-            <a href="/travel_planner/{{travel_planner.tp_id}}"`>{{travel_planner.name}}</a>
+            <a href="/travel_planner/{{travel_planner.tp_id}}/{{travel_planner.destinations[0].dest_id}}"`>{{travel_planner.name}}</a>
         {%endfor%}
     </div>
-    </li>
+</li>
 
 {% endblock %}
 {% block body %}
     <div id="destination_name">
-        <h1 id="dest_country" >{{tp.destination.country_name}}</h1>
+        <h1 id="dest_country">Destinations</h1>
+        <button>Add a new destination</button>
+        <button>Edit a destination</button>
      <ul>
-         <li>{{ tp.destination.city_name}}</li>
+         {% for destination in destinations%}
+         <li><a href='/travel_planner/{{tp.tp_id}}/{{destination.dest_id}}'><button value="{{destination.city_name}},{{destination.country_name}}">{{destination.city_name}},{{destination.country_name}}</button></a></li>
+        {% endfor %}
      </ul>
     </div>
 
@@ -28,17 +34,22 @@
     <div id= 'weather'>
 
     <h3>Weather</h3>
-    {%for date in weather_info%}
-        <div class="day-forcast">  {{date[0]}}**(icon)***{{date[1][0][2]}} {{date[1][0][1]}}</div>
-        <p class='expand_info'>
-            Morning: {{date[1][0][1]}}  {{date[1][0][2]}} 
-            Afternoon: {{date[1][1][1]}} {{date[1][1][2]}}
-            Night: {{date[1][2][1]}} {{date[1][2][2]}}
-        </p>
-      
-    {%endfor%}
+    {%if weather_info%}
+        {%for date in weather_info%}
+            <div class="day-forcast">  {{date[0]}}*{{date[1][0][0]}}***(icon)***{{date[1][0][2]}} {{date[1][0][1]}}</div>
+            <p class='expand_info'>
+                {%for time in date[1]%}
+                    {{time[0]}}: {{time[1]}}  {{time[2]}} 
+                {%endfor%}
+            </p>
+        
+        {%endfor%}
+    {%else%}
+        {{weather_info}}
+        <p>Sorry {{base_dest.city_name}} may be spelled improperly or may be too obscure</p> 
+    {%endif%}   
     </div>
-    
+      
     <div id= 'money_exchange'>Money Currency</div>
     <div>maybe a little notebook with budget calculator
         and stuff
@@ -59,7 +70,7 @@
                 <option value="PRICE">Price(low to high)</option>
             </select>
             <br>
-            <label for="destination">Choose destination:<input type="text" id= "destination" value={{tp.destination.city_name}} disabled= True></label>
+            <label for="destination">Choose destination:<input type="text" id= "destination" value={{base_dest.city_name}} disabled= True></label>
             <br>
             <label for="currency">Currency: <input type="text" id='currency' value={{currency}}></label>
             <br>
@@ -79,7 +90,7 @@
             <a href="{{embassy.website}}">Embassy</a>
             <br>
             address: {{embassy.address}}
-        <p>Here are some in the surronding areas in {{tp.destination.country_name}}!</p>
+        <p>Here are some in the surronding areas in {{base_dest.country_name}}!</p>
 
             {% if not embassies %}
         <h3>Sorry! We couldnt find any other embassies for this location!</h3>
@@ -109,8 +120,8 @@
         <h1>Sorry! We couldnt find any embassies for this location!</h1>
         <p>We are always updating, so be sure to check back in!</p>
         {% else %}
-        <p>There doesn't seem to be any embassies in {{tp.destination.city_name}}!</p>
-        <p>However, we were able to find embassies around {{tp.destination.country_name}} for you! </p>
+        <p>There doesn't seem to be any embassies in {{base_dest.city_name}}!</p>
+        <p>However, we were able to find embassies around {{base_dest.country_name}} for you! </p>
         <ul>
             {% for embassy in embassies %}
             <li>

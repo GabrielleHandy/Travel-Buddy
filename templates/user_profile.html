@@ -1,22 +1,77 @@
 {%extends 'base.html'%}
 {% block title %}profile page{% endblock %}
 {% block body%}
-<p>Welcome {{user.fname}}</p>\
+<p>Welcome {{user.fname}}</p>
+
 <div id= 'tp_list'>
+    
     <ul name='tp_list' id="tp_list">
         {% for tp in user.travel_planner %}
             <li>
                 I want to create an on hover message that shows tp country
-                <span class="hover_info" data-hover= '{{tp.destination.city_name}}, {{tp.destination.country_name}}'>
-                    <a href="/travel_planner/{{tp.tp_id}}"> {{tp.name}}</a>
+                <span class="hover_info" data-hover= '{{tp.destinations[0].city_name}}, {{tp.destinations[0].country_name}}'>
+                    <a href="/travel_planner/{{tp.tp_id}}/{{tp.destinations[0].dest_id}}"> {{tp.name}}</a>
                 </span>
             </li>
             
         {%endfor%}
         </ul>
+        <button>Edit/ customize travelplanner</button>
+        <button>Delete travel planner</button>
         <a href="/new_tp"><button id ='create_tp'>Create a new planner</button></a>
+</div>
+<div>
+    <h5>Make sure to do empty string and cant find text in image cases</h5>
+    <h4>Translate text or text from pictures</h4>
+    <button id="text-photo">Click here to translate from a photo</button>
+    <form id="trans-text" action="/trans_text" method="post">
+        <label for="">Choose your languges
+        <label for="language">From</label>
+        <select name="language" id="source-language">
+            {%for language in languages%}
+            <option value={{language['code']}}>{{language['language']}}</option>
+            {%endfor%}
+        </select>
+        <label for="language">To</label>
+        <select name="language" id="target-text">
+            {%for language in languages%}
+            <option value={{language['code']}}>{{language['language']}}</option>
+            {%endfor%}
+        </select>
+        </label>
+        <label for="original">Type text</label>
+        <input type="text" id="original-text">
+        <input type="submit" id='text-submit' value="Translate" >
+    </form>
+
+
+    <form id="translated-photo" action="/translated_photo" method="post" enctype="multipart/form-data" >
+        <label for="">Choose your langauges
+        <label for="language">From</label>
+        
+        <select name="source" id="source">
+            {%for language in photo_languages%}
+                <option value={{photo_languages[language]}}>{{language}}</option>
+            {%endfor%}
+        </select>
+        <label for="target_lang">To</label>
+        <select name="target_lang" id="target">
+            {%for language in languages%}
+                <option value={{language['code']}}>{{language['language']}}</option>
+            {%endfor%}
+        </select>
+        </label>
+        <label for="original">upload photo **must be 1 MB or smaller</label>
+        <input type="file" id='photo' name="original-photo"> <br>
+        <input type="submit" id='photo-sumbit' value="Translate">
+    </form>
+    <div id="trans-results">
+        <div id="original">{{original}}</div>
+        <div id="translated">{{translated}}</div>
+    </div>
 </div>
 <p>This is where the profile will be
     I want a list of travel planners </p>
-<div onclick=""></div>
+<!-- <div onclick=""></div> -->
+<script src="/static/js/profile.js"></script>
 {% endblock%}

@@ -38,14 +38,32 @@ class Travel_planner(db.Model):
                      unique = True,
                      nullable = False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
-    dest_id = db.Column(db.Integer, db.ForeignKey('destinations.dest_id'))
-    date = db.Column(db.DateTime, nullable = True)
-    
-    user = db.relationship('User', back_populates="travel_planner")
-    destination = db.relationship('Destination', back_populates="travel_planner") 
 
+
+    user = db.relationship('User', back_populates="travel_planner")
+    destinations = db.relationship("Destination",secondary= "tps_dests", back_populates="travel_planners") 
+    
     def __repr__(self):
         return f"Travel PLanner tp_id:{self.tp_id} name:{self.name}"
+
+
+# check your crud.py for necessary changes
+class TpDest(db.Model):
+    # association table
+    """A Travel_planner with more than one destination"""
+
+    __tablename__ = 'tps_dests'
+
+    tpdest_id = db.Column(db.Integer, 
+                      primary_key=True, 
+                      autoincrement=True)
+    dest_id = db.Column(db.Integer, db.ForeignKey('destinations.dest_id'))
+    tp_id = db.Column(db.Integer, db.ForeignKey('travelplanners.tp_id'))
+    date = db.Column(db.DateTime, nullable = True)
+
+    
+    def __repr__(self):
+        return f"Tp_Dest tpdest_id: {self.tpdest_id} tp_id:{self.tp_id} dest_id:{self.dest_id}"
 
 
 class Destination(db.Model):
@@ -57,11 +75,11 @@ class Destination(db.Model):
                       primary_key=True, 
                       autoincrement=True)
     city_name = db.Column(db.String(50), nullable = True)
-    country_name = db.Column(db.String(50), nullable = False)
+    country_name = db.Column(db.String(100), nullable = False)
 
 
 
-    travel_planner = db.relationship('Travel_planner', back_populates="destination")
+    travel_planners = db.relationship('Travel_planner', secondary= "tps_dests", back_populates="destinations")
     embassies = db.relationship('Embassy', back_populates="destination")
 
     def __repr__(self):

@@ -1,14 +1,21 @@
 '''CRUD operations'''
-from model import db,connect_to_db, User, Travel_planner, Destination, Embassy
+from model import db,connect_to_db, User, Travel_planner, Destination, Embassy, TpDest
 import requests
 import os
 from datetime import datetime 
 import calendar
+
+
+
+
 import xml.parsers.expat
 from xml.etree import ElementTree as ET
 
+# google_key ip restricted
 google_key = 'AIzaSyDGFnnxaxYd_2SHJ9jEPUjzEOJTDIkKoPs'
+OCR_API = os.environ['OCR_KEY']
 WEATHER_KEY = os.environ['WEATHER_KEY']
+MY_MEMORY = os.environ['MY_MEMORY']
 # This section is for creating instances of 
 # USER, TRAVEL_PLANNER, DESTINATION, OR EMBASSY
 def create_user(first_name, last_name, email, password, home_country):
@@ -23,16 +30,28 @@ def create_user(first_name, last_name, email, password, home_country):
     return user
 
 
-def create_travelplanner(name,user_id, dest_id, date = None):
+def create_travelplanner(name,user_id):
     """Creates a new Travel planner for user."""
    
-    travel_planner = Travel_planner(name= name, user_id= user_id, 
-                                    dest_id=dest_id, date = date)
+    travel_planner = Travel_planner(name= name, user_id= user_id)
+    
 
     db.session.add(travel_planner)
     db.session.commit()
 
     return travel_planner
+
+# create a new function to create a new tp_dest
+def create_tpdest(tp_id, dest_id, date = None):
+  """Creates a tp_dest to create the connection between travelplanner and destinations"""
+
+  tp_dest = TpDest(tp_id= tp_id, dest_id = dest_id, date = date)
+
+  db.session.add(tp_dest)
+  db.session.commit()
+
+  return tp_dest
+
 
 
 def create_destination(city, country):
@@ -140,10 +159,13 @@ def get_destination_by_id(dest_id):
     return Destination.query.get(dest_id)
 
 def get_destid_by_location(city_name,country):
+    """Returns dest_id or..."""
 
     dest = Destination.query.filter(Destination.city_name == city_name, Destination.country_name == country).first()
-    dest_id = dest.dest_id
-    return dest_id
+    if dest:
+      dest_id = dest.dest_id
+      return dest_id
+    return []
 
 def list_all_countries(list_dest):
     """Creates a list of available countries 
@@ -159,14 +181,14 @@ def list_all_countries(list_dest):
     return list_countries
 
 
-# def add_destination(dest_id, tp_id):  
-#     travel = get_travelplanner_by_id(tp_id)
-#     new_dest= get_destination_by_id(dest_id)
-#     if new_dest not in travel.destination:
-#         travel.destination.append(new_dest)
-#         return travel.destination
-#     else:
-#         return "Already in your travelplanner"
+def add_destination(dest_id, tp_id):  
+    travel = get_travelplanner_by_id(tp_id)
+    new_dest= get_destination_by_id(dest_id)
+    if new_dest not in travel.destination:
+        tp_dest = create_tpdest(tp_id, dest_id)
+        return tp_dest
+    
+    return "Already in your travelplanner"
 
 def get_country_code(country_name):
     """Gets calls from api to use in get_emer_num"""
@@ -233,35 +255,34 @@ def get_all_embassies():
     return Embassy.query.all()
 
 
-def get_relevant_embassies(tp):
-    """Takes in an instance of a travelplanner 
+def get_relevant_embassies(dest, user):
+    """Takes in an instance of a destination 
         to return a list of embassies related
         to destination and user"""
 
     relevant_embassies = set()
-    tp_destination = tp.destination
-    user = tp.user
+    
     user_embassies = Embassy.query.options(db.joinedload('destination')).filter(Embassy.home_country == user.home_country)
     for embassy in user_embassies:
-        if embassy.destination.country_name == tp_destination.country_name:
+        if embassy.destination.country_name == dest.country_name:
             relevant_embassies.add(embassy)
         
     
     return relevant_embassies
 
-def get_home_embassy(tp):
+def get_home_embassy(dest, user):
 
-    embassy = tp.destination.embassies
+    embassy = dest.embassies
     places = []
     
    
     for place in embassy:
-        if place.home_country == tp.user.home_country: 
-            places.append(place)
-            return places
+        if place.home_country == user.home_country: 
+          places.append(place)
+          return places
     
     if embassy == [] or places == []:
-        return None
+      return None
 
 
 
@@ -368,11 +389,14 @@ def get_weather(city_name, user):
     if user.home_country == 'United States':
         default_unit = 'imperial'
        
+   
     res = requests.get(f'http://api.openweathermap.org/data/2.5/forecast?q={city_name}&units={default_unit}&appid={WEATHER_KEY}')
     result = res.json()
-    results = result['list']
+    if 'list' in result:
+        results = result['list']
+        return results
 
-    return results
+    return result['message']
 
 def extract_weather_info(results):
     """Takes in the json of the weather data and extracts relevant info
@@ -396,7 +420,7 @@ def extract_weather_info(results):
 
         if time[1] == '06:00:00':
 
-            morning = ['morning', result['weather'][0]['description'], result['main']['temp'], organize]
+            morning = ['Morning', result['weather'][0]['description'], result['main']['temp'], organize]
             
             if f'{day}, {month} {date.day}' not in days: 
                days[f'{day}, {month} {date.day}'] = []
@@ -405,38 +429,519 @@ def extract_weather_info(results):
             organize += 1          
             
         elif time[1] == '12:00:00':
-            afternoon = ['afternoon', result['weather'][0]['description'], result['main']['temp']]
+            afternoon = ['Afternoon', result['weather'][0]['description'], result['main']['temp'], organize]
 
             if f'{day}, {month} {date.day}' not in days: 
                days[f'{day}, {month} {date.day}'] = []
 
             days[f'{day}, {month} {date.day}'].append(afternoon)
+            organize += 1
             
         elif time[1] == '18:00:00':
-            evening = ['evening', result['weather'][0]['description'], result['main']['temp']] 
+            evening = ['Evening', result['weather'][0]['description'], result['main']['temp'], organize] 
 
             if f'{day}, {month} {date.day}' not in days: 
                days[f'{day}, {month} {date.day}'] = []
 
             days[f'{day}, {month} {date.day}'].append(evening) 
-            
+            organize += 1
         
     return days
 
 
 
+# Call for photo strip and translataion
+def strip_text(img_url, language):
+    """This is to pull the text off of the image to translate """
+
+    res =requests.get(f"https://api.ocr.space/parse/imageurl?apikey={OCR_API}&url={img_url}&language={language}")
+
+
+    response = res.json()
+    print(response)
+    result = response['ParsedResults'][0]['ParsedText']
+    result = result.split()
+    
+    return " ".join(result)
+
+
+def translate(text, target_language, source):
+    """Uses MyMemory- Translation Memory API to translate text"""
+
+
+    url = "https://translated-mymemory---translation-memory.p.rapidapi.com/api/get"
+
+    querystring = {"langpair":f"{source}|{target_language}","q":f"{text}"}
+
+    headers = {
+        'x-rapidapi-key': MY_MEMORY,
+        'x-rapidapi-host': "translated-mymemory---translation-memory.p.rapidapi.com"
+        }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    res = response.json()
+    print(res)
+    result = res['responseData']['translatedText']
+    return result
 
 
 
+# Datasets used for language translations
+# language codes necessary for strip photo and translation 
 
+def get_photo_lang_options():
+    """Gives a dictionary of languges available for photo stripping"""
+    lan=    {"Arabic": "ara",
+            "Bulgarian": "bul",
+            "Chinese(Simplified)": "chs",
+            "Chinese(Traditional)": "cht",
+            "Croatian" : "hrv",
+            "Czech" : "cze",
+            "Danish" : "dan",
+            "Dutch" : "dut",
+            "English" : "eng",
+            "Finnish" : "fin",
+            "French" : "fre",
+            "German" : "ger",
+            "Greek" : "gre",
+            "Hungarian" : "hun",
+            "Korean" : "kor",
+            "Italian" : "ita",
+            "Japanese" : "jpn",
+            "Polish" : "pol",
+            "Portuguese" : "por",
+            "Russian" : "rus",
+            "Slovenian" : "slv",
+            "Spanish" : "spa",
+            "Swedish" : "swe",
+            "Turkish" : "tur"}
 
+    return lan
 
+def get_languages_text():
+    """gets languages for text translation"""
+    """Found this awesome dataset from https://github.com/itsecurityco/to-google-translate/find/master"""
+    google_supported = [
+    {
+      "language": "Afrikaans",
+      "code": "af"
+    },
+    {
+      "language": "Albanian",
+      "code": "sq"
+    },
+    {
+      "language": "Amharic",
+      "code": "am"
+    },
+    {
+      "language": "Arabic",
+      "code": "ar"
+    },
+    {
+      "language": "Armenian",
+      "code": "hy"
+    },
+    {
+      "language": "Azerbaijani",
+      "code": "az"
+    },
+    {
+      "language": "Basque",
+      "code": "eu"
+    },
+    {
+      "language": "Belarusian",
+      "code": "be"
+    },
+    {
+      "language": "Bengali",
+      "code": "bn"
+    },
+    {
+      "language": "Bosnian",
+      "code": "bs"
+    },
+    {
+      "language": "Bulgarian",
+      "code": "bg"
+    },
+    {
+      "language": "Catalan",
+      "code": "ca"
+    },
+    {
+      "language": "Cebuano",
+      "code": "ceb"
+    },
+    {
+      "language": "Chinese (Simplified)",
+      "code": "zh-CN"
+    },
+    {
+      "language": "Chinese (Traditional)",
+      "code": "zh-TW"
+    },
+    {
+      "language": "Corsican",
+      "code": "co"
+    },
+    {
+      "language": "Croatian",
+      "code": "hr"
+    },
+    {
+      "language": "Czech",
+      "code": "cs"
+    },
+    {
+      "language": "Danish",
+      "code": "da"
+    },
+    {
+      "language": "Dutch",
+      "code": "nl"
+    },
+    {
+      "language": "English",
+      "code": "en"
+    },
+    {
+      "language": "Esperanto",
+      "code": "eo"
+    },
+    {
+      "language": "Estonian",
+      "code": "et"
+    },
+    {
+      "language": "Finnish",
+      "code": "fi"
+    },
+    {
+      "language": "French",
+      "code": "fr"
+    },
+    {
+      "language": "Frisian",
+      "code": "fy"
+    },
+    {
+      "language": "Galician",
+      "code": "gl"
+    },
+    {
+      "language": "Georgian",
+      "code": "ka"
+    },
+    {
+      "language": "German",
+      "code": "de"
+    },
+    {
+      "language": "Greek",
+      "code": "el"
+    },
+    {
+      "language": "Gujarati",
+      "code": "gu"
+    },
+    {
+      "language": "Haitian Creole",
+      "code": "ht"
+    },
+    {
+      "language": "Hausa",
+      "code": "ha"
+    },
+    {
+      "language": "Hawaiian",
+      "code": "haw"
+    },
+    {
+      "language": "Hebrew",
+      "code": "iw"
+    },
+    {
+      "language": "Hindi",
+      "code": "hi"
+    },
+    {
+      "language": "Hmong",
+      "code": "hmn"
+    },
+    {
+      "language": "Hungarian",
+      "code": "hu"
+    },
+    {
+      "language": "Icelandic",
+      "code": "is"
+    },
+    {
+      "language": "Igbo",
+      "code": "ig"
+    },
+    {
+      "language": "Indonesian",
+      "code": "id"
+    },
+    {
+      "language": "Irish",
+      "code": "ga"
+    },
+    {
+      "language": "Italian",
+      "code": "it"
+    },
+    {
+      "language": "Japanese",
+      "code": "ja"
+    },
+    {
+      "language": "Javanese",
+      "code": "jw"
+    },
+    {
+      "language": "Kannada",
+      "code": "kn"
+    },
+    {
+      "language": "Kazakh",
+      "code": "kk"
+    },
+    {
+      "language": "Khmer",
+      "code": "km"
+    },
+    {
+      "language": "Korean",
+      "code": "ko"
+    },
+    {
+      "language": "Kurdish",
+      "code": "ku"
+    },
+    {
+      "language": "Kyrgyz",
+      "code": "ky"
+    },
+    {
+      "language": "Lao",
+      "code": "lo"
+    },
+    {
+      "language": "Latin",
+      "code": "la"
+    },
+    {
+      "language": "Latvian",
+      "code": "lv"
+    },
+    {
+      "language": "Lithuanian",
+      "code": "lt"
+    },
+    {
+      "language": "Luxembourgish",
+      "code": "lb"
+    },
+    {
+      "language": "Macedonian",
+      "code": "mk"
+    },
+    {
+      "language": "Malagasy",
+      "code": "mg"
+    },
+    {
+      "language": "Malay",
+      "code": "ms"
+    },
+    {
+      "language": "Malayalam",
+      "code": "ml"
+    },
+    {
+      "language": "Maltese",
+      "code": "mt"
+    },
+    {
+      "language": "Maori",
+      "code": "mi"
+    },
+    {
+      "language": "Marathi",
+      "code": "mr"
+    },
+    {
+      "language": "Mongolian",
+      "code": "mn"
+    },
+    {
+      "language": "Myanmar (Burmese)",
+      "code": "my"
+    },
+    {
+      "language": "Nepali",
+      "code": "ne"
+    },
+    {
+      "language": "Norwegian",
+      "code": "no"
+    },
+    {
+      "language": "Nyanja (Chichewa)",
+      "code": "ny"
+    },
+    {
+      "language": "Pashto",
+      "code": "ps"
+    },
+    {
+      "language": "Persian",
+      "code": "fa"
+    },
+    {
+      "language": "Polish",
+      "code": "pl"
+    },
+    {
+      "language": "Portuguese (Portugal, Brazil)",
+      "code": "pt"
+    },
+    {
+      "language": "Punjabi",
+      "code": "pa"
+    },
+    {
+      "language": "Romanian",
+      "code": "ro"
+    },
+    {
+      "language": "Russian",
+      "code": "ru"
+    },
+    {
+      "language": "Samoan",
+      "code": "sm"
+    },
+    {
+      "language": "Scots Gaelic",
+      "code": "gd"
+    },
+    {
+      "language": "Serbian",
+      "code": "sr"
+    },
+    {
+      "language": "Sesotho",
+      "code": "st"
+    },
+    {
+      "language": "Shona",
+      "code": "sn"
+    },
+    {
+      "language": "Sindhi",
+      "code": "sd"
+    },
+    {
+      "language": "Sinhala (Sinhalese)",
+      "code": "si"
+    },
+    {
+      "language": "Slovak",
+      "code": "sk"
+    },
+    {
+      "language": "Slovenian",
+      "code": "sl"
+    },
+    {
+      "language": "Somali",
+      "code": "so"
+    },
+    {
+      "language": "Spanish",
+      "code": "es"
+    },
+    {
+      "language": "Sundanese",
+      "code": "su"
+    },
+    {
+      "language": "Swahili",
+      "code": "sw"
+    },
+    {
+      "language": "Swedish",
+      "code": "sv"
+    },
+    {
+      "language": "Tagalog (Filipino)",
+      "code": "tl"
+    },
+    {
+      "language": "Tajik",
+      "code": "tg"
+    },
+    {
+      "language": "Tamil",
+      "code": "ta"
+    },
+    {
+      "language": "Telugu",
+      "code": "te"
+    },
+    {
+      "language": "Thai",
+      "code": "th"
+    },
+    {
+      "language": "Turkish",
+      "code": "tr"
+    },
+    {
+      "language": "Ukrainian",
+      "code": "uk"
+    },
+    {
+      "language": "Urdu",
+      "code": "ur"
+    },
+    {
+      "language": "Uzbek",
+      "code": "uz"
+    },
+    {
+      "language": "Vietnamese",
+      "code": "vi"
+    },
+    {
+      "language": "Welsh",
+      "code": "cy"
+    },
+    {
+      "language": "Xhosa",
+      "code": "xh"
+    },
+    {
+      "language": "Yiddish",
+      "code": "yi"
+    },
+    {
+      "language": "Yoruba",
+      "code": "yo"
+    },
+    {
+      "language": "Zulu",
+      "code": "zu"
+    }
+  ]
 
-
-
-
-
-
+    return google_supported
 
 
 

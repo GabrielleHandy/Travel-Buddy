@@ -27,7 +27,7 @@ function display_hotels(hotelData) {
             const creditCard = results[result]['ratePlan']['features']['noCCRequired'];
             const price = results[result]['ratePlan']['price']['current'];
             const total = results[result]['ratePlan']['price']['fullyBundledPricePerStay'];
-            const rate = results[result]['ratePlan']['price']['info'];
+            
 
             displayResult.insertAdjacentHTML('beforeEnd',`<div class='hotel_card' id =hotel${result}></div>`);
             hotel_form = document.querySelector(`#hotel${result}`);
