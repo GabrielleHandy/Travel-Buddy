@@ -1,49 +1,101 @@
 {%extends 'base.html'%}
 {% block head %}
 <link rel="stylesheet" href="/static/css/travel_planner.css">
-
-
 {% endblock %}
-{% block content%}
-<li>Customize Travel Planner</li>
-<li>
-    <div class="dropdown">
-    <button class="dropbtn"> Switch Travel Planners
-    </button>
-    <div class="dropdown-content">
-        {% for travel_planner in tp.user.travel_planner%}
-            <a href="/travel_planner/{{travel_planner.tp_id}}/{{travel_planner.destinations[0].dest_id}}"`>{{travel_planner.name}}</a>
-        {%endfor%}
-    </div>
-</li>
 
+{% block content%}
+<li class="nav-item">
+    <a class="nav-link" href="/tp_settings/{{tp.tp_id}}">Settings</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Switch Travel Planners
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        {% for travel_planner in tp.user.travel_planner%}
+            {% if travel_planner.tp_id == tp.tp_id %}
+            <li><a class="dropdown-item" href="/travel_planner/{{travel_planner.tp_id}}/{{travel_planner.destinations[0].dest_id}}" style="background-color: powderblue;"><strong>{{travel_planner.name}}</strong></a></li>
+            {%else%}
+            <li><a class="dropdown-item" href="/travel_planner/{{travel_planner.tp_id}}/{{travel_planner.destinations[0].dest_id}}">{{travel_planner.name}}</a></li>
+            {%endif%}
+        {%endfor%}
+    </ul>
+  </li>
 {% endblock %}
 {% block body %}
     <div id="destination_name">
         <h1 id="dest_country">Destinations</h1>
-        <button>Add a new destination</button>
-        <button>Edit a destination</button>
-     <ul>
-         {% for destination in destinations%}
-         <li><a href='/travel_planner/{{tp.tp_id}}/{{destination.dest_id}}'><button value="{{destination.city_name}},{{destination.country_name}}">{{destination.city_name}},{{destination.country_name}}</button></a></li>
-        {% endfor %}
-     </ul>
+        <div id="dest_list">
+            <ul>
+                {% for destination in destinations%}
+                <li><a href='/travel_planner/{{tp.tp_id}}/{{destination.dest_id}}'><button value="{{destination.city_name}},{{destination.country_name}}">{{destination.city_name}},{{destination.country_name}}</button></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+            </form>
+
+            <button id="add">Add a new destination</button>
+            <div id="modal-add">
+                <div class="modal-content">
+                    <form action="/add_dest" id="add_dest" method="POST">
+                        <input id='add-tp_id' name='add-tp_id' type="text" style="visibility: hidden;" value="{{tp.tp_id}}"></input>
+                        <label>locations</label>
+                        <span id="close">&times;</span>
+                        <select class="destinations" name ="destinations">
+                            {% for location in locations %} 
+                                <option name="destinations" value="{{location.dest_id}}">{{location.city_name}}, {{location.country_name}}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        
+                        <label>Date you plan on going? *optional</label>
+                        <input type="date" name="date" id="date" min="{{today}}">
+                        <input type="submit" name="submit" value="submit">
+                    </form>
+                </div>
+        </div>
+
+        <!-- Delete form -->
+        <button id="remove" onclick="showForm('remove');">Delete a destination</button>
+        <form action="/remove_dest" method="post" id= "remove_dest" style="visibility: hidden;">
+            <input id='tp_id' type="text" style="visibility: hidden;" value="{{tp.tp_id}}"></input><br>
+            <label for="destinations">Choose a destination to remove</label><br>
+            <select name="destinations" id="dest_id">
+                {% for destination in destinations %}
+                    <option name="destinations" value="{{destination.dest_id}}">{{destination.city_name}},{{destination.country_name}}</option>
+                {% endfor %}
+            </select>
+            
+            <button id='delete'>Delete this destination</button>
+        </form>
     </div>
 
-
-    <div id= 'weather'>
-
-    <h3>Weather</h3>
-    {%if weather_info%}
-        {%for date in weather_info%}
-            <div class="day-forcast">  {{date[0]}}*{{date[1][0][0]}}***(icon)***{{date[1][0][2]}} {{date[1][0][1]}}</div>
-            <p class='expand_info'>
-                {%for time in date[1]%}
-                    {{time[0]}}: {{time[1]}}  {{time[2]}} 
-                {%endfor%}
-            </p>
+    <div class="accordion" id="#weatherAccordion">
+        <h3>Weather </h3>
+        <p style="opacity: 40;">*double click to expand</p>
+        {%if weather_info%}
         
-        {%endfor%}
+        <div class="accordion-item">
+            {%for date in weather_info%}
+          <h2 class="accordion-header" id="heading{{date[1][0][3]}}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{date[1][0][3]}}" aria-expanded="false" aria-controls="collapse{{date[1][0][3]}}">
+                {{date[0]}}*{{date[1][0][0]}}***(icon)***{{date[1][0][2]}} {{date[1][0][1]}}
+            </button>
+          </h2>
+          <div id="collapse{{date[1][0][3]}}" class="accordion-collapse collapse" aria-labelledby="heading{{date[1][0][3]}}" data-bs-parent="#weatherAccordion">
+            <div class="accordion-body">
+                {%for time in date[1]%}
+              <strong>{{time[0]}}  {{time[1]}}</strong> 
+              <ul>
+                  <li>{{time[2]}}</li>
+              </ul> 
+                 
+            {%endfor%}
+            </div>
+          </div>
+          {%endfor%}
+        </div> 
+        
     {%else%}
         {{weather_info}}
         <p>Sorry {{base_dest.city_name}} may be spelled improperly or may be too obscure</p> 
@@ -55,19 +107,20 @@
         and stuff
     </div>
     <div id ="flight">Flight and hotel recs</div>
-    <div  id='hotels'>
-        <form id='hotel_choice'>
-            <label for="checkin" >Check-in date:<input type="date"id="checkin"></label>
+    <div  id='hotels_form'>
+        <form id="hotel_choice">
+            <label for="checkin" >Check-in date:<input type="date"id="checkin" min="{{today}}" onchange="setMin();" required></label>
             <br>
-            <label for="checkout" >Check-out date:<input type="date" id="checkout"></label>
+            <label for="checkout" >Check-out date:<input type="date" id="checkout" min="{{today}}" required></label>
             <br>
             <label for="sort-order" >Sort by:</label>
             <select name="sort-order" id ='sort-order'>
+                <option value="PRICE">Price(low to high)</option>
                 <option value="STAR_RATING_HIGHEST_FIRST">Star rating(high to low)</option>
                 <option value="STAR_RATING_LOWEST_FIRST">Star rating(low to high)</option>
                 <option value="GUEST_RATING">Guest rating</option>
                 <option value="PRICE_HIGHEST_FIRST">Price (high to low)</option>
-                <option value="PRICE">Price(low to high)</option>
+                
             </select>
             <br>
             <label for="destination">Choose destination:<input type="text" id= "destination" value={{base_dest.city_name}} disabled= True></label>
@@ -76,26 +129,67 @@
             <br>
             <label for="adult_num">Number of Adults: <input type="number" name="adult_num" id="adult_num"> </label>
             <br>
-            <input type="submit" id="hotel_submit" value="Find Accomadations">
-            
-        </form>
-        <div id='hotel_results'>
-           
-        </div>
+            <input type="submit"  id="hotel_submit" value="Find Accomadations">
+        </form>         
     </div>
+    <div class="modal" tabindex="-1" id='hotels'>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hotel Results</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id='hotel_results'></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div>emergency info and embassy stuff
-        <h1>for example:</h1>
-        {% if embassy%}
-            <a href="{{embassy.website}}">Embassy</a>
-            <br>
-            address: {{embassy.address}}
-        <p>Here are some in the surronding areas in {{base_dest.country_name}}!</p>
+        <h1>Embassies</h1>
+        {% if rel_embassy %}
+                {% if rel_embassy[0].website %}
+                <a href="{{rel_embassy[0].website}}">Embassy of {{tp.user.home_country}} in {{base_dest.city_name}}</a>
+                <br>
+                {%else%}
+                <p>Embassy of {{tp.user.home_country}} in {{base_dest.city_name}}</p>
+                {% endif %} 
+                <p>address: {{rel_embassy[0].address}}</p>
+                
 
+
+            <h3>Here are some in the surronding areas in {{base_dest.country_name}}!</h3>
+                
+                {% if not embassies %}
+            <h3>Sorry! We couldnt find any other embassies for this location!</h3>
+            <p>We are always updating, so be sure to check back in!</p>
+                {%else%}
+                <ul>
+                    {% for embassy in embassies %}
+                    <li>
+                        
+                        <p> 
+                            {%if embassy.website %}
+                            <a href="{{embassy.website}}">Embassy of {{tp.user.home_country}} in {{embassy.destination.city_name}}</a>
+                            {%else%}
+                            <p>Embassy of {{tp.user.home_country}} in {{embassy.destination.city_name}}</p>
+                            {%endif%}
+                            <p>address: {{embassy.address}}</p>   
+                        </p>
+                    </li>
+                    <br>
+                    {%endfor%}
+                </ul>
+                {% endif %}
+        {%else%}
             {% if not embassies %}
-        <h3>Sorry! We couldnt find any other embassies for this location!</h3>
-        <p>We are always updating, so be sure to check back in!</p>
-            {%else%}
+            <h1>Sorry! We couldnt find any embassies for this location!</h1>
+            <p>We are always updating, so be sure to check back in!</p>
+            {% else %}
+            <p>There doesn't seem to be any embassies in {{base_dest.city_name}}!</p>
+            <p>However, we were able to find embassies around {{base_dest.country_name}} for you! </p>
             <ul>
                 {% for embassy in embassies %}
                 <li>
@@ -106,43 +200,21 @@
                         <br>
                         address: {{embassy.address}}
                         {%else%}
-                        Embassy
-                        <br>
+                        <p>Embassy of {{tp.user.home_country}} in {{embassy.destination.city_name}}</p>
+                       
                         address: {{embassy.address}}
                         {%endif%}
                     </p>
                 </li>
+                <br>
                 {%endfor%}
             </ul>
+            
             {% endif %}
-        {%else%}
-        {% if not embassies %}
-        <h1>Sorry! We couldnt find any embassies for this location!</h1>
-        <p>We are always updating, so be sure to check back in!</p>
-        {% else %}
-        <p>There doesn't seem to be any embassies in {{base_dest.city_name}}!</p>
-        <p>However, we were able to find embassies around {{base_dest.country_name}} for you! </p>
-        <ul>
-            {% for embassy in embassies %}
-            <li>
-                
-                <p> 
-                    {%if embassy.website %}
-                    <a href="{{embassy.website}}">Embassy</a>
-                    <br>
-                    address: {{embassy.address}}
-                    {%else%}
-                    Embassy
-                    <br>
-                    address: {{embassy.address}}
-                    {%endif%}
-                </p>
-            </li>
-            {%endfor%}
-        </ul>
-        
-        {% endif %}
-        {% endif %}  
+             
+        {%endif%}          
     </div>
-    <script src="/static/js/travel_planner.js"></script>
+    <!-- falsh message link -->
+    {% block script%} <script src="/static/js/travel_planner.js"></script> {% endblock %}
+    
 {%endblock body%}

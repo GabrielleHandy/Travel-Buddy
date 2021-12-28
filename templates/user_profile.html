@@ -3,23 +3,28 @@
 {% block body%}
 <p>Welcome {{user.fname}}</p>
 
-<div id= 'tp_list'>
-    
+
+<div id= 'list_of_tp'>
     <ul name='tp_list' id="tp_list">
-        {% for tp in user.travel_planner %}
-            <li>
-                I want to create an on hover message that shows tp country
+        {% for tp in tps%}
+            <li value="{{tp.tp_id}}">
+                
                 <span class="hover_info" data-hover= '{{tp.destinations[0].city_name}}, {{tp.destinations[0].country_name}}'>
                     <a href="/travel_planner/{{tp.tp_id}}/{{tp.destinations[0].dest_id}}"> {{tp.name}}</a>
                 </span>
             </li>
             
         {%endfor%}
-        </ul>
-        <button>Edit/ customize travelplanner</button>
-        <button>Delete travel planner</button>
+    </ul>
+        {% if tps %}
+            <button>Edit/ customize travelplanner</button>
+            <button id="showdelete_tp">Delete travel planner(s)</button> 
+    {% endif %}    
+    
         <a href="/new_tp"><button id ='create_tp'>Create a new planner</button></a>
+
 </div>
+
 <div>
     <h5>Make sure to do empty string and cant find text in image cases</h5>
     <h4>Translate text or text from pictures</h4>
@@ -72,6 +77,6 @@
 </div>
 <p>This is where the profile will be
     I want a list of travel planners </p>
-<!-- <div onclick=""></div> -->
+
 <script src="/static/js/profile.js"></script>
 {% endblock%}

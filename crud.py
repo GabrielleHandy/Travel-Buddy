@@ -94,6 +94,8 @@ def create_embassy(home_country, country,
 
         db.session.add(embassy)
         db.session.commit()
+
+
     
 def add_geocode(address):
     """This function adds a lat and longitude to 
@@ -132,9 +134,13 @@ def get_user_by_email(email):
     """Get user instance from email"""
     return User.query.filter(User.email == email).first()
 
+
+
 def get_user_by_id(user_id):
     """Get user instance from user_id"""
     return User.query.get(user_id)
+
+
 
 # Destinations
 
@@ -142,9 +148,13 @@ def get_all_destinations():
     """Pulls all locations available"""
     return Destination.query.all()
 
+
+
 def get_all_capitals():
     """Get's all capitals in worldcities.csv *seeding* """
     return Destination.query.filter(Destination.capital == True).all()
+
+
 
 def get_cities():
     cities = []
@@ -158,14 +168,18 @@ def get_cities():
 def get_destination_by_id(dest_id):
     return Destination.query.get(dest_id)
 
-def get_destid_by_location(city_name,country):
-    """Returns dest_id or..."""
 
-    dest = Destination.query.filter(Destination.city_name == city_name, Destination.country_name == country).first()
-    if dest:
-      dest_id = dest.dest_id
-      return dest_id
-    return []
+
+def get_destid_by_location(city_name,country):
+  """Returns dest_id or..."""
+
+  dest = Destination.query.filter(Destination.city_name == city_name, Destination.country_name == country).first()
+  if dest:
+    dest_id = dest.dest_id
+    return dest_id
+  return []
+
+
 
 def list_all_countries(list_dest):
     """Creates a list of available countries 
@@ -181,14 +195,61 @@ def list_all_countries(list_dest):
     return list_countries
 
 
-def add_destination(dest_id, tp_id):  
+
+def find_tpdest(dest_id, tp_id):
+    """Finds the Tp_dest for the connection between destination and Travel Planners"""
+    tp_dest = TpDest.query.filter(TpDest.dest_id == dest_id, TpDest.tp_id == tp_id).first()
+
+    return tp_dest
+
+
+
+
+
+def add_destination(dest_id, tp_id, date):  
     travel = get_travelplanner_by_id(tp_id)
     new_dest= get_destination_by_id(dest_id)
-    if new_dest not in travel.destination:
-        tp_dest = create_tpdest(tp_id, dest_id)
+    if new_dest not in travel.destinations:
+        tp_dest = create_tpdest(tp_id, dest_id, date)
         return tp_dest
     
     return "Already in your travelplanner"
+
+
+
+
+
+def remove_destination(tp_dest):
+    """Deletes a tp_dest from database to remove connection beteween """
+
+    db.session.delete(tp_dest)
+    db.session.commit()
+
+
+def create_usembassy_website(embassy):
+    """Gets calls from api to use in embassy websites for us embassies"""
+    
+    country_name = embassy.destination.country_name
+    name = country_name.lower()
+    res = requests.get(f'https://restcountries.com/v3.1/name/{name}')
+
+    response = res.json()
+
+    if response:
+        results = response[0]
+      
+        country_code = results['cca2']
+        
+        country_code = country_code.lower()
+        url = f"https://{country_code}.usembassy.gov"
+        embassy.website = url
+        
+        db.session.commit()
+        return True
+    return False
+
+
+
 
 def get_country_code(country_name):
     """Gets calls from api to use in get_emer_num"""
@@ -206,7 +267,9 @@ def get_country_code(country_name):
         country_code = False
 
     return country_code
-    
+
+
+
 
 def get_country_currency(country_name):
     """Gets call from API to use in get_currency_rate """
@@ -233,19 +296,32 @@ def get_country_currency(country_name):
 
     return(currency)
 
+
+
 def get_emer_num(country_code):
     """Gets emergency info for specific countries based on country_code"""
-
+    numbers = {}
     res = requests.get(f'https://emergencynumberapi.com/api/country/{country_code}')
 
     response = res.json()
     results = response['data']
-
     print(results)
+    if results: 
+      numbers['ambulance'] = results['ambulance']['all']
+      numbers['fire'] = results['fire']['all']
+      numbers['police'] = results['police']['all']
+      return numbers
+
+    return results
+    
+
+
 
 def get_currency_rate(home_currency, country_currency):
 
     pass
+
+
 
 
 # Embassies
@@ -261,28 +337,25 @@ def get_relevant_embassies(dest, user):
         to destination and user"""
 
     relevant_embassies = set()
-    
-    user_embassies = Embassy.query.options(db.joinedload('destination')).filter(Embassy.home_country == user.home_country)
+
+    user_embassies = Embassy.query.options(db.joinedload('destination')).filter(Embassy.home_country == user.home_country).all()
     for embassy in user_embassies:
-        if embassy.destination.country_name == dest.country_name:
+        if embassy.destination.country_name.lower() == dest.country_name.lower():
             relevant_embassies.add(embassy)
         
-    
+
     return relevant_embassies
 
-def get_home_embassy(dest, user):
-
-    embassy = dest.embassies
+def get_home_embassy(dest, embassies):
     places = []
     
    
-    for place in embassy:
-        if place.home_country == user.home_country: 
+    for place in embassies:
+        if place.destination.city_name == dest.city_name: 
           places.append(place)
-          return places
+    set(places)
+    return list(places)
     
-    if embassy == [] or places == []:
-      return None
 
 
 
@@ -293,62 +366,73 @@ def get_home_embassy(dest, user):
 def get_travelplanner_by_id(tp_id):
     return Travel_planner.query.get(tp_id)
 
-def check_for_repeats(dest_id, user_id):
+
+
+def check_for_repeats(name, user_id):
     """Checks for repeats travelplanners"""
     user = get_user_by_id(user_id)
     tps = user.travel_planner
     
     for tp in tps:
-        if tp.dest_id == dest_id:
+        if tp.name == name:
             return False
+
     return True
 
-
+def delete_travelplanner(travel_planner):
+    db.session.delete(travel_planner)
+    db.session.commit()
+    return("deleted")
 ## in Travel Planner but pulls from APIs and other sources
 
 #Travel advisories specific to destination country
 def retrieve_advisory(country_name, user):
-    advisory = 'No Travel Advisory for this location'
+  advisory = 'No Travel Advisory for this location'
 
-    home_country = user.home_country
+  home_country = user.home_country
 
-    if home_country == 'United States':
-   
-        res = requests.get('https://travel.state.gov/_res/rss/TAsTWs.xml')
+  if home_country == 'United States':
+  
+      res = requests.get('https://travel.state.gov/_res/rss/TAsTWs.xml')
+      
+
+      root = ET.fromstring(res.content)
+
+      for country in root.iter("item"):
+          title = country.find("title").text
+          title = title.split("-")
+          warning = country.find("category").text
+          
+          name = title[0].strip()
+          
+      
+          if name == country_name:
+
+              advisory = f"Travel Advisory: {warning}"
+
+  elif home_country == 'Canada':
+
+
+    res = requests.get('https://data.international.gc.ca/travel-voyage/index-alpha-eng.json')    
+
+    response = res.json()
+    results = response['data']
+
+    for result in results:
+      if results[result]["country-eng"] == country_name:
+        advisory = f"Travel Advisory: {results[result]['eng']['advisory-text']}"
         
+  else:
+    
+    advisory = f"Uk.gov Travel Advisory website for {country_name}:"
 
-        root = ET.fromstring(res.content)
-
-        for country in root.iter("item"):
-            title = country.find("title").text
-            title = title.split("-")
-            warning = country.find("category").text
-            print(warning)
-            name = title[0].strip()
-            print(repr(name), name)
-        
-            if name == country_name:
-
-                advisory = f"Travel Advisory: {warning}"
-
-    elif home_country == 'Canada':
+  return advisory
 
 
-        res = requests.get('https://data.international.gc.ca/travel-voyage/index-alpha-eng.json')    
-
-        response = res.json()
-        results = response['data']
-
-        for result in results:
-            if results[result]["country-eng"] == country_name:
-                advisory = f"Travel Advisory: {results[result]['eng']['advisory-text']}"
-        
-
-    return advisory
 
 def get_advisory_url(country_name, user):
     """Rerieves the url links to gov pages with more info for country name"""
-
+    url = None
     home_country = user.home_country
 
     if home_country == 'United States':
@@ -378,7 +462,13 @@ def get_advisory_url(country_name, user):
         for result in results:
             if results[result]["country-eng"] == country_name:
                 url = website + results[result]['eng']['url-slug']
+    
+    else:
+      country = country_name.replace(" ", "-").lower()
+
+      url = f"https://www.gov.uk/foreign-travel-advice/{country}"
    
+
     return url
 
 
@@ -397,6 +487,8 @@ def get_weather(city_name, user):
         return results
 
     return result['message']
+
+
 
 def extract_weather_info(results):
     """Takes in the json of the weather data and extracts relevant info
@@ -459,10 +551,13 @@ def strip_text(img_url, language):
 
     response = res.json()
     print(response)
-    result = response['ParsedResults'][0]['ParsedText']
-    result = result.split()
-    
-    return " ".join(result)
+    if 'ParsedResults' in response:
+      result = response['ParsedResults'][0]['ParsedText']
+      result = result.split()
+      return " ".join(result)
+    results = response['ErrorMessage'][0]
+    return results
+
 
 
 def translate(text, target_language, source):
@@ -494,8 +589,8 @@ def get_photo_lang_options():
     """Gives a dictionary of languges available for photo stripping"""
     lan=    {"Arabic": "ara",
             "Bulgarian": "bul",
-            "Chinese(Simplified)": "chs",
-            "Chinese(Traditional)": "cht",
+            "Chinese (Simplified)": "chs",
+            "Chinese (Traditional)": "cht",
             "Croatian" : "hrv",
             "Czech" : "cze",
             "Danish" : "dan",
@@ -518,6 +613,35 @@ def get_photo_lang_options():
             "Turkish" : "tur"}
 
     return lan
+
+
+
+
+
+def transfrom_source_code(raw_source):
+  """Because the photo api and the text translator uses different source codes 
+    the codes need to be checked and transformed in order to translate
+    i.e photo_soucecode = Chinese Simplified: 'chs'
+    text_sourcecode = Chinses Simplified 'zh-CN' """
+
+  photocode = get_photo_lang_options()
+  textcode = get_languages_text()
+  source = False
+  if raw_source in photocode.values():
+      for key, value in photocode.items():
+          if raw_source == value:
+            lang_key =  key
+          
+      for lan in textcode:
+          if lan['language'].lower() == lang_key.lower():
+              source = lan['code']
+
+  return source
+
+
+
+
+
 
 def get_languages_text():
     """gets languages for text translation"""
@@ -950,5 +1074,5 @@ if __name__ == '__main__':
     from server import app
     connect_to_db(app)
 
-    useer = get_user_by_id(1)
-    
+    user = get_user_by_id(11)
+  
