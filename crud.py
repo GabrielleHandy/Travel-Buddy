@@ -13,9 +13,17 @@ from xml.etree import ElementTree as ET
 
 # google_key ip restricted
 google_key = 'AIzaSyDGFnnxaxYd_2SHJ9jEPUjzEOJTDIkKoPs'
+
+# link_preview is ip restricted
+link_preview = "a13bc55e7afaf5a9cb963200cb704f16"
+us_linkpreview = {}
+canada_linkpreview = {}
+uk_linkpreview = {}
+
 OCR_API = os.environ['OCR_KEY']
 WEATHER_KEY = os.environ['WEATHER_KEY']
 MY_MEMORY = os.environ['MY_MEMORY']
+CURRENCY_KEY = os.environ['CURRENCY_KEY']
 # This section is for creating instances of 
 # USER, TRAVEL_PLANNER, DESTINATION, OR EMBASSY
 def create_user(first_name, last_name, email, password, home_country):
@@ -226,6 +234,10 @@ def remove_destination(tp_dest):
     db.session.commit()
 
 
+
+
+# Api calls for embassy website links and previews per destination
+
 def create_usembassy_website(embassy):
     """Gets calls from api to use in embassy websites for us embassies"""
     
@@ -250,6 +262,41 @@ def create_usembassy_website(embassy):
 
 
 
+def get_link_preview(url, user, country_name):
+  """Produces the info necessary to view a preview"""
+ 
+
+  if user.home_country == 'United States':
+      if country_name in us_linkpreview:
+          return us_linkpreview[country_name]
+      else:
+        
+          response = requests.get(f"http://api.linkpreview.net/?key={link_preview}&q={url}")
+          res = response.json()
+          us_linkpreview[country_name] = res
+          return res
+
+  if user.home_country == 'Canada':
+      if country_name in ca_linkpreview:
+          return ca_linkpreview[country_name]
+      else:
+        
+          response = requests.get(f"http://api.linkpreview.net/?key={link_preview}&q={url}")
+          res = response.json()
+          ca_linkpreview[country_name] = res
+          return res
+
+  if user.home_country == 'United Kingdom':
+      if country_name in uk_linkpreview:
+          return uk_linkpreview[country_name]
+      else:
+        
+          response = requests.get(f"http://api.linkpreview.net/?key={link_preview}&q={url}")
+          res = response.json()
+          uk_linkpreview[country_name] = res
+          return res
+
+
 
 def get_country_code(country_name):
     """Gets calls from api to use in get_emer_num"""
@@ -267,6 +314,7 @@ def get_country_code(country_name):
         country_code = False
 
     return country_code
+
 
 
 
@@ -298,28 +346,62 @@ def get_country_currency(country_name):
 
 
 
-def get_emer_num(country_code):
+def get_emer_num(country_name):
     """Gets emergency info for specific countries based on country_code"""
     numbers = {}
-    res = requests.get(f'https://emergencynumberapi.com/api/country/{country_code}')
+    with open('static/databases/emergency_nums.csv') as emergency_nums:
+        for location in emergency_nums:
+            country, police, ambulance, fire = location.strip().split(',')
+            if country.lower() == country_name.lower():
+                numbers['ambulance'] = ambulance
+                numbers['fire'] = fire
+                numbers['police'] = police
+    return numbers
 
-    response = res.json()
-    results = response['data']
-    print(results)
-    if results: 
-      numbers['ambulance'] = results['ambulance']['all']
-      numbers['fire'] = results['fire']['all']
-      numbers['police'] = results['police']['all']
-      return numbers
+def get_covid_info(country_name):
+  """Uses country name to find relevant covid info"""
 
-    return results
+  if country_name == 'United States':
+    country_name = 'USA'
+  elif country_name == 'United Kingdom':
+    country_name = 'UK'
+
+  url = "https://api.quarantine.country/api/v1/summary/latest"
+
+  payload={}
+  headers = {
+    'Accept': 'application/json'
+  }
+
+  response = requests.request("GET", url, headers=headers, data=payload)
+  result = response.json()
+  info = result['data']['regions']
+  for location in info.keys():
     
+    if info[location]['name'].lower() == country_name.lower():
+        return info[location]
 
 
 
-def get_currency_rate(home_currency, country_currency):
+def get_currency_rate(home_currency, country_currency, amount = 1.0):
+    """Takes in list of currencies and runs them through currency api"""
+    original = home_currency[0][0]
+    desired = country_currency[0][0]
 
-    pass
+    exchange_rate = 0
+
+    url = "https://currency-exchange.p.rapidapi.com/exchange"
+
+    querystring = {"from":f"{original}","to":f"{desired}","q":f"{amount}"}
+
+    headers = {
+        'x-rapidapi-key': f"{CURRENCY_KEY}",
+        'x-rapidapi-host': "currency-exchange.p.rapidapi.com"
+    }
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    return(response.text)
+
 
 
 
@@ -379,10 +461,15 @@ def check_for_repeats(name, user_id):
 
     return True
 
+
+
 def delete_travelplanner(travel_planner):
     db.session.delete(travel_planner)
     db.session.commit()
     return("deleted")
+
+
+
 ## in Travel Planner but pulls from APIs and other sources
 
 #Travel advisories specific to destination country
@@ -542,7 +629,80 @@ def extract_weather_info(results):
 
 
 
-# Call for photo strip and translataion
+# Call for profile page : photo strip, translataion, Travel news
+
+def retrieve_news_articles(news_source ='cn'):
+  """At the moment I have NY Times and Conde Nast travel news
+    I want to add in the  ability to choose between the news source"""
+  ny_articles = []
+  cn_articles = []
+  counter =  0
+  if news_source == 'ny':
+      res = requests.get('https://rss.nytimes.com/services/xml/rss/nyt/Travel.xml')
+            
+
+      root = ET.fromstring(res.content)
+
+      
+      for article in root.iter("item"):
+          if counter == 4:
+              break
+          ny_article = {}
+          title = article.find("title").text
+          img = article.find("{http://search.yahoo.com/mrss/}content")
+          if img is None:
+            continue
+          img = article.find("{http://search.yahoo.com/mrss/}content").attrib['url']
+          link = article.find("link").text
+          description = article.find("description").text
+          date = article.find("pubDate").text
+
+
+          ny_article['title'] = title
+          ny_article['img'] = img
+          ny_article['link'] = link
+          ny_article['desc'] = description
+          ny_article['date'] = date
+          ny_article['order'] = counter
+
+          ny_articles.append(ny_article)
+          counter += 1 
+      return ny_articles        
+            
+  else:
+
+      res = requests.get('https://www.cntraveler.com/feed/rss')
+              
+
+      root = ET.fromstring(res.content)
+      
+      
+      for article in root.iter("item"):
+          if counter == 4:
+              break
+          cn_article = {}
+          title = article.find("title").text
+          img = article.find("{http://search.yahoo.com/mrss/}thumbnail").attrib['url']
+          link = article.find("link").text
+          description = article.find("description").text
+          date = article.find("pubDate").text
+
+
+          cn_article['title'] = title
+          cn_article['img'] = img
+          cn_article['link'] = link
+          cn_article['desc'] = description
+          cn_article['date'] = date
+          cn_article['order'] = counter
+
+          cn_articles.append(cn_article)
+          counter += 1 
+      return cn_articles
+
+
+
+
+
 def strip_text(img_url, language):
     """This is to pull the text off of the image to translate """
 

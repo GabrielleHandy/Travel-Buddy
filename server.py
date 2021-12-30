@@ -80,11 +80,19 @@ def show_profile(fname):
     text_lang = crud.get_languages_text()
     user =crud.get_user_by_id(session["user_id"])
     tps = list(user.travel_planner)
+
+    news = crud.retrieve_news_articles()
+
     return render_template('user_profile.html', 
                             user = user, tps = tps,
                             photo_languages = p_lang,
-                            languages = text_lang)
+                            languages = text_lang,
+                            news = news)
 
+
+@app.route('/change_news', methods=['POST'])
+def change_news_source():
+    """Changes the news source for new feed"""
 
  
 @app.route('/translated_photo', methods=['POST'])
@@ -217,10 +225,19 @@ def show_chosen_planner(tp_id, dest_id):
 
 
 @app.route('/emergency_info/<country_name>')
-def view_emergency_Info():
+def view_emergency_Info(country_name):
     """View emergency info based on country"""
-    # country_code = crud.get_country_code
-    # emer_num= crud.get_emer_num(country_code)
+    
+
+    covid_info= crud.get_covid_info(country_name)
+    emer_num= crud.get_emer_num(country_name)
+
+    user = crud.get_user_by_id(session['user_id'])
+    advisory_link = crud.get_advisory_url(country_name, user)
+    link_preview = crud.get_link_preview
+    
+    
+
     pass
 
 

@@ -10,9 +10,9 @@ hotelForm.addEventListener('submit', (evt) => {
     const checkout = document.querySelector('#checkout').value;
     const sortBy = document.querySelector('#sort-order').value;
     const adult_num= document.querySelector('#adult_num').value;
-    const hotelModal= document.querySelector('.modal');
-    hotelModal.Modal();
-
+    
+    hotelForm.insertAdjacentHTML('beforeEnd', "<button type='button' data-bs-toggle='modal' data-bs-target='#hotels'>See Results!</button>");
+    
     find_hotels(destination,checkin,checkout,sortBy,adult_num);
     
 

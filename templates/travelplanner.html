@@ -5,7 +5,10 @@
 
 {% block content%}
 <li class="nav-item">
-    <a class="nav-link" href="/tp_settings/{{tp.tp_id}}">Settings</a>
+    <a class="nav-link" href="/tp_settings/{{tp.tp_id}}">Edit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/emergency_info/{{base_dest.country_name}}">Emergency Info</a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -132,7 +135,7 @@
             <input type="submit"  id="hotel_submit" value="Find Accomadations">
         </form>         
     </div>
-    <div class="modal" tabindex="-1" id='hotels'>
+    <div class="modal" tabindex="-1" id="hotels">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">

@@ -26,7 +26,11 @@
     visibility: visible;
   }
 
-
+  .carousel-inner > .carousel-item >img{
+    min-height : 300px;
+    max-height : 300px;
+    width : 100%;
+  }
 
 
 
