@@ -561,6 +561,54 @@ def get_advisory_url(country_name, user):
 
 
 #  weather api call inside travel_planners
+
+def add_icon(weather_desc, day_night = 'day'):
+    """Adds icons to the list of weather"""
+    desc = weather_desc.strip().split(" ")
+    day_icons = {
+      "clouds"  : '/static/layout/weather_icons/cloudy-weather-svgrepo-com.svg',
+      "overcast": '/static/layout/weather_icons/clouds.svg',
+      "default": '/static/layout/weather_icons/weather-sunny-svgrepo-com.svg',
+      'drizzle' : '/static/layout/weather_icons/cloud-drizzle.svg',
+      'rain': '/static/layout/weather_icons/cloud-rain-heavy.svg',
+      'snow': '/static/layout/weather_icons/cloud-snow.svg'
+    }
+    night_icons = {
+      "clouds"  : '/static/layout/weather_icons/cloudy-weather-svgrepo-com.svg',
+      "overcast": '/static/layout/weather_icons/clouds.svg',
+      "default": '/static/layout/weather_icons/moon-stars.svg',
+      'drizzle' : '/static/layout/weather_icons/cloud-drizzle.svg',
+      'rain': '/static/layout/weather_icons/cloud-rain-heavy.svg',
+      'snow': '/static/layout/weather_icons/cloud-snow.svg'
+    }
+
+    if day_night == 'night':
+      for forecast in night_icons.keys():
+        if desc[0] == 'overcast':
+          icon = night_icons['overcast']
+          return icon
+        else:
+           for word in desc:
+            if word == forecast:
+              icon = night_icons[forecast]
+              return icon
+        
+      icon = night_icons['default']
+
+    else:
+      for forecast in day_icons.keys():
+        if desc[0] == 'overcast':
+          icon = day_icons['overcast'] 
+          return icon
+        else:
+           for word in desc:
+            if word == forecast:
+              icon = day_icons[forecast]
+              return icon
+      icon = day_icons['default']
+    return icon
+
+
 def get_weather(city_name, user):
     default_unit = 'metric'
     if user.home_country == 'United States':
@@ -577,7 +625,7 @@ def get_weather(city_name, user):
 
 
 
-def extract_weather_info(results):
+def extract_weather_info(results, user):
     """Takes in the json of the weather data and extracts relevant info
        returns a list of list with the first index is the naming 
        
@@ -588,6 +636,12 @@ def extract_weather_info(results):
        ['afternoon', 'clear sky', 10.71], ['evening', 
        'clear sky', 9.09]],...'Sun, Dec 19': [['morning', 'clear sky', 8.74], 
        ['afternoon', 'clear sky'], 8.02], ['evening', 'clear sky', 6.02]]}"""
+    if user.home_country == 'United States':
+        measure = u"\N{DEGREE SIGN}" + "F"
+    else:
+        measure = u"\N{DEGREE SIGN}" + "C"
+
+
     days = {}
     organize = 0
     for result in results:
@@ -595,11 +649,16 @@ def extract_weather_info(results):
         date = datetime.strptime(time[0], "%Y-%m-%d")
         day = calendar.day_abbr[date.weekday()]
         month = calendar.month_abbr[date.month]
-                
+
+
+        description = result['weather'][0]['description']
+        print(description)
+        temp = f"{result['main']['temp']}{measure}"
+
 
         if time[1] == '06:00:00':
-
-            morning = ['Morning', result['weather'][0]['description'], result['main']['temp'], organize]
+            icon = add_icon(description)
+            morning = ['Morning', description , temp, organize, icon]
             
             if f'{day}, {month} {date.day}' not in days: 
                days[f'{day}, {month} {date.day}'] = []
@@ -608,7 +667,8 @@ def extract_weather_info(results):
             organize += 1          
             
         elif time[1] == '12:00:00':
-            afternoon = ['Afternoon', result['weather'][0]['description'], result['main']['temp'], organize]
+            icon = add_icon(description)
+            afternoon = ['Afternoon', description, temp, organize, icon]
 
             if f'{day}, {month} {date.day}' not in days: 
                days[f'{day}, {month} {date.day}'] = []
@@ -617,7 +677,9 @@ def extract_weather_info(results):
             organize += 1
             
         elif time[1] == '18:00:00':
-            evening = ['Evening', result['weather'][0]['description'], result['main']['temp'], organize] 
+            
+            icon = add_icon(description,'night')
+            evening = ['Evening', description, temp ,organize ,icon] 
 
             if f'{day}, {month} {date.day}' not in days: 
                days[f'{day}, {month} {date.day}'] = []

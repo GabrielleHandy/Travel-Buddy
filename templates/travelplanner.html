@@ -26,37 +26,53 @@
   </li>
 {% endblock %}
 {% block body %}
-    <div id="destination_name">
+    <div id="1">
         <h1 id="dest_country">Destinations</h1>
         <div id="dest_list">
             <ul>
                 {% for destination in destinations%}
+                {% if destination == base_dest %}
+                <li><a href='/travel_planner/{{tp.tp_id}}/{{destination.dest_id}}'><button disabled value="{{destination.city_name}},{{destination.country_name}}">{{destination.city_name}},{{destination.country_name}}</button></a></li>
+                {% else %}
                 <li><a href='/travel_planner/{{tp.tp_id}}/{{destination.dest_id}}'><button value="{{destination.city_name}},{{destination.country_name}}">{{destination.city_name}},{{destination.country_name}}</button></a></li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
             </form>
 
-            <button id="add">Add a new destination</button>
-            <div id="modal-add">
-                <div class="modal-content">
-                    <form action="/add_dest" id="add_dest" method="POST">
-                        <input id='add-tp_id' name='add-tp_id' type="text" style="visibility: hidden;" value="{{tp.tp_id}}"></input>
-                        <label>locations</label>
-                        <span id="close">&times;</span>
-                        <select class="destinations" name ="destinations">
-                            {% for location in locations %} 
-                                <option name="destinations" value="{{location.dest_id}}">{{location.city_name}}, {{location.country_name}}</option>
-                            {% endfor %}
-                        </select>
-                        <br>
-                        
-                        <label>Date you plan on going? *optional</label>
-                        <input type="date" name="date" id="date" min="{{today}}">
-                        <input type="submit" name="submit" value="submit">
-                    </form>
+            <button id="add" data-bs-toggle='modal' data-bs-target="#modal-add" >Add a new destination</button>
+            <div class="modal" tabindex="-1" id="modal-add">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Choose a location</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/add_dest" id="add_dest" method="POST">
+                            <input id='add-tp_id' name='add-tp_id' type="text" style="visibility: hidden;" value="{{tp.tp_id}}"></input>
+                            <label>locations</label>
+                            <span id="close">&times;</span>
+                            <select class="destinations" name ="destinations">
+                                {% for location in locations %} 
+                                    <option name="destinations" value="{{location.dest_id}}">{{location.city_name}}, {{location.country_name}}</option>
+                                {% endfor %}
+                            </select>
+                            <br>
+                            
+                            <label>Date you plan on going? *optional</label>
+                            <input type="date" name="date" id="date" min="{{today}}">
+                            <input type="submit" name="submit" value="submit">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
                 </div>
-        </div>
+              </div>
+            
 
         <!-- Delete form -->
         <button id="remove" onclick="showForm('remove');">Delete a destination</button>
@@ -72,7 +88,7 @@
             <button id='delete'>Delete this destination</button>
         </form>
     </div>
-
+    <div id = '2'>
     <div class="accordion" id="#weatherAccordion">
         <h3>Weather </h3>
         <p style="opacity: 40;">*double click to expand</p>
@@ -82,13 +98,13 @@
             {%for date in weather_info%}
           <h2 class="accordion-header" id="heading{{date[1][0][3]}}">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{date[1][0][3]}}" aria-expanded="false" aria-controls="collapse{{date[1][0][3]}}">
-                {{date[0]}}*{{date[1][0][0]}}***(icon)***{{date[1][0][2]}} {{date[1][0][1]}}
+                <p class = "weather_info" >{{date[0]}}*{{date[1][0][0]}}&nbsp;&nbsp;&nbsp;&nbsp;{{date[1][0][2]}} {{date[1][0][1]}}&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{date[1][0][4]}}" alt="weather icon" class= "weather_icon"></p>
             </button>
           </h2>
           <div id="collapse{{date[1][0][3]}}" class="accordion-collapse collapse" aria-labelledby="heading{{date[1][0][3]}}" data-bs-parent="#weatherAccordion">
             <div class="accordion-body">
                 {%for time in date[1]%}
-              <strong>{{time[0]}}  {{time[1]}}</strong> 
+              <p class = "weather_info"><strong>{{time[0]}}&nbsp;&nbsp;{{time[1]}}</strong>&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{time[4]}}" alt="weather icon" class= "weather_icon"></p>
               <ul>
                   <li>{{time[2]}}</li>
               </ul> 
@@ -104,7 +120,9 @@
         <p>Sorry {{base_dest.city_name}} may be spelled improperly or may be too obscure</p> 
     {%endif%}   
     </div>
-      
+    </div>  
+
+    <div id= "3" >
     <div id= 'money_exchange'>Money Currency</div>
     <div>maybe a little notebook with budget calculator
         and stuff
@@ -149,8 +167,9 @@
           </div>
         </div>
       </div>
-
-    <div>emergency info and embassy stuff
+    </div>
+    <div id = "4"> 
+        <div id="embassy_info">
         <h1>Embassies</h1>
         {% if rel_embassy %}
                 {% if rel_embassy[0].website %}
@@ -215,8 +234,10 @@
             
             {% endif %}
              
-        {%endif%}          
+        {%endif%}
+        </div>          
     </div>
+
     <!-- falsh message link -->
     {% block script%} <script src="/static/js/travel_planner.js"></script> {% endblock %}
     

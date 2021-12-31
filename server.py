@@ -197,11 +197,11 @@ def show_chosen_planner(tp_id, dest_id):
         weather_info =  session[city_name]
         
     else:
-        results = crud.get_weather(city_name, tp.user)
+        results = crud.get_weather(city_name, user)
         if type(results) is str:
             weather_info = results
         else:    
-            weather_info =  crud.extract_weather_info(results)
+            weather_info =  crud.extract_weather_info(results, user)
         session[city_name] = weather_info
       
     # sorted by an organizer counter I put in first array
