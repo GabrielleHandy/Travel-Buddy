@@ -1,0 +1,26 @@
+#link-preview{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+#emergency{
+    padding: 25px 25px 25px 25px;
+    /* float: right; */
+    margin: 50px 100px 100px 379px;
+    text-align: center;
+    border: solid black;
+    width: 50%;
+}
+
+#embassy_info{
+    text-align: center;
+}
+
+.embassies ol {
+    
+    box-shadow: 0px 7px 10px 0px darkgrey;
+    margin: 12px 203px 27px 202px;
+    padding: 49px 0px 39px 0px;
+    border: solid black;
+    
+}

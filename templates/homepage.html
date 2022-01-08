@@ -1,39 +1,70 @@
 {% extends 'base.html' %}
 {% block title %}HomePage{% endblock %}
     {% block body %}
-        <h1>WELCOME TO TRAVEL BUDDY</h1>
-        <button id="login-signup"> Already a buddy? Login here!</button>
-        <form action="/signup" id="signup-form" method="post">
-            <label>First name</label>
-            <input type="text" name="fname" id="fname">
-            <label>Last name</label>
-            <input type="text" name="lname" id="lname">
-            <label>Email</label>
-            <input type="text" name="email" id="email">
-            <label>Password</label>
-            <input type="password" name="password" id="password">
-            <label>Nationality</label>
-            <select name="Nationality" id="">
-                <option name = "Nationality" value="United States">American</option>
-                <option name = "Nationality" value="Canada">Canadian</option>
-                <option name = "Nationality" value="United Kingdom">British</option>
-            </select>
-            
-            <input type="submit" name="submit" value="submit">
-        </form>
+        <h1 style="text-align: center;">WELCOME TO TRAVEL BUDDY</h1>
+        <div class="main">
+            <div class="container a-container" id="a-container">
+                <form action="/signup" id="signup-form" method="post" >
+                    <h2 class="form_title title">Create an Account</h2>
+                    <label>First name</label>
+                    <input type="text" name="fname" id="fname">
+                    <label>Last name</label>
+                    <input type="text" name="lname" id="lname">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password">
+                    <label>Nationality</label>
+                    <select name="Nationality" id="">
+                        <option name = "Nationality" value="United States">American</option>
+                        <option name = "Nationality" value="Canada">Canadian</option>
+                        <option name = "Nationality" value="United Kingdom">British</option>
+                    </select><br>
+                    <input type="submit" name="submit" value="submit">
+                </form>
+            </div>
+            <div class="container b-container" id="b-container">
+                <form action="/login" id="login-form" method="post">
+                <h2 class="form_title title">Sign in to Website</h2>
+                    <label>Email<input type="email" name="email" id="login-email"></label><br>
+                    <label>Password<input type="password" name="password" id="login-password"></label><br>
+                    
+                    <input type="submit" name="submit" value="submit">
+                </form>
+            </div>
+            <div class="switch" id="switch-cnt">
+              <div class="switch__circle"></div>
+              <div class="switch__circle switch__circle--t"></div>
+              <div class="switch__container" id="switch-c1">
+                <h2 class="switch__title title">Welcome Back!</h2>
+                <p class="switch__description description">Already a buddy? Login here!</p>
+                <button class="switch__button button switch-btn">SIGN IN</button>
+              </div>
+              <div class="switch__container is-hidden" id="switch-c2">
+                <h2 class="switch__title title">Hello Friend !</h2>
+                <p class="switch__description description">Enter your personal details and start journey with us</p>
+                <button class="switch__button button switch-btn">SIGN UP</button>
+              </div>
+            </div>
+          </div>
 
-        <form action="/login" id="login-form" method="post" style="visibility: hidden;">
-            <label>Email</label>
-            <input type="email" name="email" id="login-email">
-            <label>Password</label>
-            <input type="password" name="password" id="login-password">
-            <input type="submit" name="submit" value="submit">
-        </form>
-        <h1></h1>
+
+
+
+
+
+
+
+
         {% for msg in get_flashed_messages() %}
         <p class="flash-msg">
         {{ msg }}
         </p>
         {% endfor %} 
+
+
+
+
+
         <script src="/static/js/homepage.js"></script>
   {% endblock %}

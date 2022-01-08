@@ -12,14 +12,13 @@ model.connect_to_db(server.app)
 model.db.create_all()
 
 # all ciites
-with open('static/databases/worldcities_smaller.csv') as file:
+countries_capitals= crud.get_countries_and_capitals()  
+for country in countries_capitals:
     
-    for line in csv.reader(file, delimiter=","):
-        if line[8] in ['admin', 'primary']:
-            city_name = line[0]
-            country = line[4]
+    city_name = country["capital"]
+    country = country["name"]
 
-            crud.create_destination(city_name, country)
+    crud.create_destination(city_name, country)
 
 
 # US embassies

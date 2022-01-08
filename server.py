@@ -72,6 +72,10 @@ def clear_session():
     session.clear()
     return redirect('/')
 
+
+
+
+
 # profile page routes
 @app.route('/profile/<fname>')
 def show_profile(fname):
@@ -90,9 +94,6 @@ def show_profile(fname):
                             news = news)
 
 
-@app.route('/change_news', methods=['POST'])
-def change_news_source():
-    """Changes the news source for new feed"""
 
  
 @app.route('/translated_photo', methods=['POST'])
@@ -168,25 +169,10 @@ def show_chosen_planner(tp_id, dest_id):
     alert = crud.retrieve_advisory(country_name, user)
     advisory_link = crud.get_advisory_url(country_name, user)
     if advisory_link:
-        flash(Markup(f'{alert} <a href={advisory_link} id="advisory-url" class="advisory-link">Click here for information</a>'))
+        flash(Markup(f'{alert} <a target="_blank" href={advisory_link} id="advisory-url" class="advisory-link">Click here for information</a>'))
     else:
     
         flash(alert)
-    
-    # embassy info
-    embassies = []
-    embassies = crud.get_relevant_embassies(base_destination,user)
-
-    rel_embassy = crud.get_home_embassy(base_destination, embassies)
-
-    if tp.user.home_country == 'United States':
-        for embassy in embassies:
-            if not embassy.website:
-                crud.create_usembassy_website(embassy)
-
-    if rel_embassy:
-        embassies.remove(rel_embassy[0])
-    
     
 
     city_name = base_destination.city_name
@@ -202,43 +188,70 @@ def show_chosen_planner(tp_id, dest_id):
             weather_info = results
         else:    
             weather_info =  crud.extract_weather_info(results, user)
+            # weather is sorted by an organizer counter I put in each list
+            weather_info = sorted(weather_info.items(), key=lambda x: x[1][0][3], reverse=False)
         session[city_name] = weather_info
       
-    # sorted by an organizer counter I put in first array
-    weather_info = sorted(weather_info.items(), key=lambda x: x[1][0][3], reverse=False)
-    currencies= {'United States': 'USD',
-                'United Kingdom': 'EUR',
-                'Canada': 'CAD'  
-                }
-    currency = currencies[tp.user.home_country]
-    session['currency'] = currency
+            
+    
+    # currency information
+    home_country_code = crud.get_country_code_currency(user.home_country)
+    
+    country_code = crud.get_country_code_currency(base_destination.country_name)
+   
+    country_curr = crud.get_country_currency(country_code)
+    home_currency = crud.get_country_currency(home_country_code)
+    session['currency'] = home_currency[0][0]
+    currency_rate = crud.get_currency_rate(home_currency, country_curr)
+
 
     # for the add and delete forms
     today = date.today()
     locations = crud.get_all_destinations()
+    countries = crud.list_all_countries(locations)
     return render_template('travelplanner.html', tp = tp, base_dest = base_destination,
-                          destinations = destinations, embassies=embassies, today = today,
-                          rel_embassy= rel_embassy, weather_info = weather_info, 
-                          currency = currency, locations= locations)
+                          destinations = destinations, today = today,
+                          weather_info = weather_info, countries= countries,
+                          home_currency = home_currency, country_currency = country_curr,
+                          currency_rate = currency_rate)
 
 
 
 
-@app.route('/emergency_info/<country_name>')
-def view_emergency_Info(country_name):
+@app.route('/emergency_info/<tp_id>/<country_name>')
+def view_emergency_Info(tp_id, country_name):
     """View emergency info based on country"""
     
-
-    covid_info= crud.get_covid_info(country_name)
+    tp =crud.get_travelplanner_by_id(tp_id)
+   
     emer_num= crud.get_emer_num(country_name)
+    
+    for dest in tp.destinations:
+        if dest.country_name == country_name:
+            destination = dest
+
 
     user = crud.get_user_by_id(session['user_id'])
     advisory_link = crud.get_advisory_url(country_name, user)
-    link_preview = crud.get_link_preview
+    link_preview = crud.get_link_preview(advisory_link, user, country_name)
     
-    
+    # embassy info
+    embassies = []
+    embassies = crud.get_relevant_embassies(destination,user)
 
-    pass
+    rel_embassy = crud.get_home_embassy(destination, embassies)
+
+    if tp.user.home_country == 'United States':
+        for embassy in embassies:
+            if not embassy.website:
+                crud.create_usembassy_website(embassy)
+
+    if rel_embassy:
+        embassies.remove(rel_embassy[0])
+
+    return render_template('emergency_info.html', tp = tp, rel_embassy= rel_embassy, 
+                            embassies=embassies,destination=destination,
+                            emergency_nums= emer_num, link_preview= link_preview)
 
 
 @app.route('/new_tp')
@@ -246,8 +259,10 @@ def view_travelplanner_form():
     """View Travelplanner Form"""
 
     destinations = crud.get_all_destinations()
-
-    return render_template('create_travelplanner.html', destinations = destinations)
+    countries = crud.list_all_countries(destinations)
+    
+    return render_template('create_travelplanner.html', destinations = destinations, 
+                            countries = countries)
 
 
 
@@ -271,27 +286,11 @@ def create_travel_planner():
 
     user_id = session['user_id']
     tp_name = request.form.get('tp_name')
-    
-    # getting city and country name
-    destinations = request.form.get('destinations')
-    
-    # if destinations:
-    destination = destinations.split(",")
 
-
-    city_name = destination[0]
-    country = destination[1]
-
-    # else:
-    # check for instance of city, country
-    # if not in there:
-    #  crud.create_destination(city_name, country)
-
-    dest_id = crud.get_destid_by_location(city_name,country)
-    
-    
-
-
+    city_name = request.form.get('city')
+    country = request.form.get('country')
+    print(city_name)
+    print(country)
     tp_date = request.form.get('date')
     if len(tp_date) == 0:
         tp_date = None
@@ -299,11 +298,22 @@ def create_travel_planner():
     # checking for duplicates
     answer = crud.check_for_repeats(tp_name, user_id)
     if answer:
-        # store this in a variable to get information to create tp_dest
+        user = crud.get_user_by_id(user_id)
+        # check for instance of city, country
+        dest_id = crud.get_destid_by_location(city_name, country)
+        
+        if not dest_id:
+            new_dest = crud.create_destination(city_name, country)
+            dest_id = new_dest.dest_id
+
+
         travel_planner = crud.create_travelplanner(tp_name,user_id)
         tp_id =travel_planner.tp_id
         crud.create_tpdest(tp_id, dest_id, tp_date)
+
+        
         flash(f"{tp_name} was successfuly created!!")
+        return redirect(f'/profile/{user.fname}')
     else:
         flash("""Seems like you created this Travel Planner already!""")
 
@@ -314,7 +324,16 @@ def create_travel_planner():
 def add_dest():
     """Adding a destination to Travel Planner"""
     tp_id = request.form.get('add-tp_id')
-    dest_id = request.form.get('destinations')
+   
+    city_name = request.form.get('city')
+    country = request.form.get('country')
+    dest_id = crud.get_destid_by_location(city_name, country)
+        
+    if not dest_id:
+        new_dest = crud.create_destination(city_name, country)
+        dest_id = new_dest.dest_id
+
+
     dest_date = request.form.get('date')
 
     
@@ -329,6 +348,8 @@ def add_dest():
     else:
         flash('Successfully Added!')
     return redirect(f'/travel_planner/{tp_id}/{dest_id}')
+
+
 
 
 @app.route('/remove_dest', methods=['POST'])
@@ -361,6 +382,7 @@ def hotel_dest_id():
 
     # call for dest_id
     currency = session['currency']
+    
     url = "https://hotels-com-provider.p.rapidapi.com/v1/destinations/search"
 
     query_string = {'query': f'{destination}', 'currency': f'{currency}', 'locale': 'en_US' }
@@ -398,7 +420,7 @@ def display_hotels():
     response = requests.request("GET", url, headers=headers, params=querystring)
     
     return jsonify(response.json())
-   
+
 
 if __name__ == '__main__':
     # DebugToolbarExtension(app)

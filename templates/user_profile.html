@@ -5,39 +5,58 @@
 
 
 <div id= 'list_of_tp'>
-    <ul name='tp_list' id="tp_list">
         {% for tp in tps%}
-            <li value="{{tp.tp_id}}">
+             <div class='tp_previews' id="{{tp.tp_id}}">
                 
-                <span class="hover_info" data-hover= '{{tp.destinations[0].city_name}}, {{tp.destinations[0].country_name}}'>
-                    <a href="/travel_planner/{{tp.tp_id}}/{{tp.destinations[0].dest_id}}"> {{tp.name}}</a>
-                </span>
-            </li>
+
+                    {{tp.name}}
+                    <p> 
+                        {% if tp.destinations|length > 0 %}
+                        <span class="hover_info" data-hover='{{tp.destinations[0].city_name}}, {{tp.destinations[0].country_name}}'>
+                            {{tp.destinations|length}}
+                        </span>
+                        destination(s)
+                        {%endif%}
+                        {%if tp.destinations|length > 1 %}
+                        <a href="/travel_planner/{{tp.tp_id}}/{{tp.destinations[0].dest_id}}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg></a>
+                        {% else %}
+                        <a href="/travel_planner/{{tp.tp_id}}/{{tp.destinations[0].dest_id}}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg></a>  
+                        {% endif %}
+                        
+
+                    </p>
+               
+            </div>
             
         {%endfor%}
-    </ul>
-        {% if tps %}
-            <button>Edit/ customize travelplanner</button>
-            <button id="showdelete_tp">Delete travel planner(s)</button> 
-    {% endif %}    
-    
-        <a href="/new_tp"><button id ='create_tp'>Create a new planner</button></a>
-
+       
 </div>
+<div>{% if tps %}
+<button>Edit/ customize travelplanner</button>
+<button id="showdelete_tp">Delete travel planner(s)</button> 
+{% endif %} </div>
+   
 
-<div id="news" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+<a href="/new_tp"><button id ='create_tp'>Create a new planner</button></a>
+
+<div id="cn-news" class="carousel slide tabinfo" data-bs-ride="carousel">
+    <div id="cn-carousel-indicators" class="carousel-indicators">
     {% for article in news %}
-        <button type="button" data-bs-target="#news" data-bs-slide-to= "{{article['order']}}" class="active" aria-current="true" aria-label="Slide {{article['order'] + 1}}"></button>
+        <button type="button" data-bs-target="#cn-news" data-bs-slide-to= "{{article['order']}}" class="active" aria-current="true" aria-label="Slide {{article['order'] + 1}}"></button>
     {% endfor %}
     </div>
-    <div class="carousel-inner">
+    <div id="carousel-inner" class="carousel-inner">
         <div class="carousel-item active">
         <img src={{news[0]['img']}} class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
+
             <h5>{{news[0]['title']}}</h5>
             <p>{{news[0]['desc']}}</p>
-            <a href="{{news[0]['link']}}">Go to article</a>
+            <a class= 'news_link' target="_blank" href="{{news[0]['link']}}">Go to Condé Nast Traveler to read full article</a>
         </div>
         </div>
         {% for article in news %}  
@@ -47,25 +66,30 @@
         <div class="carousel-caption d-none d-md-block">
             <h5>{{article['title']}}</h5>
             <p>{{article['desc']}}</p>
-            <a href="{{article['link']}}">Go to article</a>
+            <a class= 'news_link' target="_blank" href="{{article['link']}}">Go to Condé Nast Traveler to read full article</a>
         </div>
         </div>
         {% endif %} 
         
     {% endfor %} 
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#news" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#cn-news" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#news" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#cn-news" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
     </div>
 
-<div>
-    <h5>Make sure to do empty string and cant find text in image cases</h5>
+        
+       
+
+</div>
+<div id="translation">
+    <div>
+    
     <h4>Translate text or text from pictures</h4>
     <button id="text-photo">Click here to translate from a photo</button>
     <form id="trans-text" action="/trans_text" method="post">
@@ -87,8 +111,8 @@
         <input type="text" id="original-text">
         <input type="submit" id='text-submit' value="Translate" >
     </form>
-
-
+</div>
+<div>
     <form id="translated-photo" action="/translated_photo" method="post" enctype="multipart/form-data" >
         <label for="">Choose your langauges
         <label for="language">From</label>
@@ -114,8 +138,8 @@
         <div id="translated">{{translated}}</div>
     </div>
 </div>
-<p>This is where the profile will be
-    I want a list of travel planners </p>
+</div>
+
 
 <script src="/static/js/profile.js"></script>
 {% endblock%}

@@ -17,7 +17,7 @@ google_key = 'AIzaSyDGFnnxaxYd_2SHJ9jEPUjzEOJTDIkKoPs'
 # link_preview is ip restricted
 link_preview = "a13bc55e7afaf5a9cb963200cb704f16"
 us_linkpreview = {}
-canada_linkpreview = {}
+ca_linkpreview = {}
 uk_linkpreview = {}
 
 OCR_API = os.environ['OCR_KEY']
@@ -69,7 +69,11 @@ def create_destination(city, country):
     db.session.add(destination)
     db.session.commit()
     return destination
-    
+
+def delete_travelplanner(travel_planner):
+    db.session.delete(travel_planner)
+    db.session.commit()
+    return("deleted")  
 
 
 def create_embassy(home_country, country,
@@ -164,9 +168,12 @@ def get_all_capitals():
 
 
 
-def get_cities():
+def get_cities(list_dest = None):
     cities = []
-    locations = get_all_destinations()
+    if list_dest:
+      locations = list_dest
+    else:
+      locations = get_all_destinations()
     for location in locations:
         cities.append(location.city_name)
     return cities
@@ -316,20 +323,77 @@ def get_country_code(country_name):
     return country_code
 
 
+def get_emer_num(country_name):
+    """Gets emergency info for specific countries based on country_code"""
+    numbers = {}
+    with open('static/databases/emergency_nums.csv') as emergency_nums:
+        for location in emergency_nums:
+            country, police, ambulance, fire = location.rstrip().split(',')
+        
+            if country.replace("\"", "").lower() == country_name.lower():
+                numbers['ambulance'] = ambulance.replace("\"", "")
+                numbers['fire'] = fire.replace("\"", "")
+                numbers['police'] = police.replace("\"", "")
+                
+    return numbers
 
 
 
-def get_country_currency(country_name):
-    """Gets call from API to use in get_currency_rate """
+# def get_covid_info(country_name):
+#   """Uses country name to find relevant covid info"""
+
+#   if country_name == 'United States':
+#     country_name = 'USA'
+#   elif country_name == 'United Kingdom':
+#     country_name = 'UK'
+
+#   url = "https://api.quarantine.country/api/v1/summary/latest"
+
+#   payload={}
+#   headers = {
+#     'Accept': 'application/json'
+#   }
+#   print(len(country_name))
+#   response = requests.request("GET", url, headers=headers, data=payload)
+#   print(response)
+#   result = response.json()
+#   info = result['data']['regions']
+#   for location in info.keys():
+    
+#     if info[location]['name'].lower() == country_name.lower():
+#         return info[location]
+
+
+
+
+def get_country_code_currency(country_name):
+    """Gets calls from api to use in get_country_currency"""
+
     name = country_name.lower()
     res = requests.get(f'https://restcountries.com/v3.1/name/{name}')
+    country_code = False
+    response = res.json()
+    if response:
+      for res in response:
+        if res['name']['common'] == country_name:
+                country_code = res['cca2']
+            
+                
+
+    return country_code
+
+
+
+def get_country_currency(country_code):
+    """Gets call from API to use in get_currency_rate """
+    res = requests.get(f'https://restcountries.com/v3.1/alpha/{country_code}')
 
     response = res.json()
-
+    
     results = response[0]
 
     currency = []
-
+  
     if len(results['currencies']) > 1:
         for currency in results['currencies']:
             keys = list(currency.keys())
@@ -346,61 +410,21 @@ def get_country_currency(country_name):
 
 
 
-def get_emer_num(country_name):
-    """Gets emergency info for specific countries based on country_code"""
-    numbers = {}
-    with open('static/databases/emergency_nums.csv') as emergency_nums:
-        for location in emergency_nums:
-            country, police, ambulance, fire = location.strip().split(',')
-            if country.lower() == country_name.lower():
-                numbers['ambulance'] = ambulance
-                numbers['fire'] = fire
-                numbers['police'] = police
-    return numbers
-
-def get_covid_info(country_name):
-  """Uses country name to find relevant covid info"""
-
-  if country_name == 'United States':
-    country_name = 'USA'
-  elif country_name == 'United Kingdom':
-    country_name = 'UK'
-
-  url = "https://api.quarantine.country/api/v1/summary/latest"
-
-  payload={}
-  headers = {
-    'Accept': 'application/json'
-  }
-
-  response = requests.request("GET", url, headers=headers, data=payload)
-  result = response.json()
-  info = result['data']['regions']
-  for location in info.keys():
-    
-    if info[location]['name'].lower() == country_name.lower():
-        return info[location]
-
-
-
-def get_currency_rate(home_currency, country_currency, amount = 1.0):
+def get_currency_rate(home_currency, country_currency, amount = 1):
     """Takes in list of currencies and runs them through currency api"""
     original = home_currency[0][0]
     desired = country_currency[0][0]
 
     exchange_rate = 0
 
-    url = "https://currency-exchange.p.rapidapi.com/exchange"
+    url = f'https://freecurrencyapi.net/api/v2/latest?apikey={CURRENCY_KEY}&base_currency={original}'
 
-    querystring = {"from":f"{original}","to":f"{desired}","q":f"{amount}"}
-
-    headers = {
-        'x-rapidapi-key': f"{CURRENCY_KEY}",
-        'x-rapidapi-host': "currency-exchange.p.rapidapi.com"
-    }
-    response = requests.request("GET", url, headers=headers, params=querystring)
-
-    return(response.text)
+    response = requests.request("GET", url)
+    result = response.json()
+    for currency in result['data']:
+      if currency == desired:
+        return result['data'][currency]
+    return('Sorry! having trouble finding currency info!')
 
 
 
@@ -411,6 +435,7 @@ def get_currency_rate(home_currency, country_currency, amount = 1.0):
 def get_all_embassies():
     """Gets all embassies"""
     return Embassy.query.all()
+
 
 
 def get_relevant_embassies(dest, user):
@@ -427,6 +452,7 @@ def get_relevant_embassies(dest, user):
         
 
     return relevant_embassies
+
 
 def get_home_embassy(dest, embassies):
     places = []
@@ -463,10 +489,7 @@ def check_for_repeats(name, user_id):
 
 
 
-def delete_travelplanner(travel_planner):
-    db.session.delete(travel_planner)
-    db.session.commit()
-    return("deleted")
+
 
 
 
@@ -652,7 +675,7 @@ def extract_weather_info(results, user):
 
 
         description = result['weather'][0]['description']
-        print(description)
+        
         temp = f"{result['main']['temp']}{measure}"
 
 
@@ -772,7 +795,7 @@ def strip_text(img_url, language):
 
 
     response = res.json()
-    print(response)
+    
     if 'ParsedResults' in response:
       result = response['ParsedResults'][0]['ParsedText']
       result = result.split()
@@ -798,7 +821,7 @@ def translate(text, target_language, source):
     response = requests.request("GET", url, headers=headers, params=querystring)
 
     res = response.json()
-    print(res)
+    
     result = res['responseData']['translatedText']
     return result
 
@@ -1290,6 +1313,13 @@ def get_languages_text():
     return google_supported
 
 
+def get_countries_and_capitals():
+    url ="https://countriesnow.space/api/v0.1/countries/capital"
+    payload= {}
+    headers ={}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    results =response.json()
+    return results['data']
 
 
 if __name__ == '__main__':

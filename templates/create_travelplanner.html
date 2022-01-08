@@ -8,21 +8,29 @@
 
 <form action="/create_travelplanner" id="create_travelplanner" method="POST">
     <label>Travel Planner name</label>
-    <input type="text" name="tp_name" id="name">
+    <input type="text" name="tp_name" id="name" required>
     <br>
-    <label>locations</label>
-    <select class="destinations" name ="destinations">
-        {% for destination in destinations %} 
-            <option name="destinations" value="{{destination.city_name}},{{destination.country_name}}">{{destination.city_name}},{{destination.country_name}}</option>
+    <label>Country</label>
+    <input type="text" name="country" id="country" list="list_countries" required>
+    <datalist id ="list_countries">
+        {% for country in countries %} 
+            <option value="{{country}}"></option>
         {% endfor %}
-    </select>
+    </datalist>
+    <label>cities</label>
+    <input type="text" name="city" id="city" list= 'list_of_cities' required>
+    <datalist id ="list_of_cities">
+      
+            
+        
+    </datalist>
     <br>
     
     <label>Date you plan on going? *optional</label>
     <input type="date" name="date" id="date">
     <input type="submit" name="submit" value="submit">
 </form>
-<p>Don't see your destination? <a href="#">Let us know other places you want added</a></p>
-<!-- find another option with vanilla js because jquery is just like a wrapper -->
+<script src="/static/databases/countries.js"></script>
+<script src="/static/js/createTP_addDest.js"></script>
 
 {%endblock body%}

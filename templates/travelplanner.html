@@ -8,7 +8,7 @@
     <a class="nav-link" href="/tp_settings/{{tp.tp_id}}">Edit</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/emergency_info/{{base_dest.country_name}}">Emergency Info</a>
+    <a class="nav-link" href="/emergency_info/{{tp.tp_id}}/{{base_dest.country_name}}">Emergency Info</a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,6 +26,7 @@
   </li>
 {% endblock %}
 {% block body %}
+    <div id="Alert"></div>
     <div id="1">
         <h1 id="dest_country">Destinations</h1>
         <div id="dest_list">
@@ -51,19 +52,29 @@
                     </div>
                     <div class="modal-body">
                         <form action="/add_dest" id="add_dest" method="POST">
-                            <input id='add-tp_id' name='add-tp_id' type="text" style="visibility: hidden;" value="{{tp.tp_id}}"></input>
-                            <label>locations</label>
-                            <span id="close">&times;</span>
-                            <select class="destinations" name ="destinations">
-                                {% for location in locations %} 
-                                    <option name="destinations" value="{{location.dest_id}}">{{location.city_name}}, {{location.country_name}}</option>
-                                {% endfor %}
-                            </select>
-                            <br>
+                            <label>Country</label><br>
                             
+                            
+                            
+                            
+                            <input type="text" name="country" id="add_dest_country" list="AD_list_countries" required>
+                            <datalist id ="AD_list_countries">
+                                {% for country in countries %} 
+                                    <option value="{{country}}"></option>
+                                {% endfor %}
+                            </datalist><br>
+                            <br><label>City</label><br>
+                            <input type="text" name="city" id="add_dest_city" list= 'AD_list_of_cities' required>
+                            <datalist id ="AD_list_of_cities">
+                              
+                                    
+                                
+                            </datalist><br>
+                           
+                            <input id='add-tp_id' name='add-tp_id' type="text" style="visibility: hidden;" value="{{tp.tp_id}}"></input><br>
                             <label>Date you plan on going? *optional</label>
-                            <input type="date" name="date" id="date" min="{{today}}">
-                            <input type="submit" name="submit" value="submit">
+                            <input type="date" name="date" id="date" min="{{today}}"><br>
+                            <br><input type="submit" name="submit" value="Add Destination!">
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -92,13 +103,15 @@
     <div class="accordion" id="#weatherAccordion">
         <h3>Weather </h3>
         <p style="opacity: 40;">*double click to expand</p>
-        {%if weather_info%}
-        
+        {%if weather_info == weather_info|string() %}
+          {{weather_info}}
+          <p>Sorry {{base_dest.city_name}} may be too obscure or may be spelled improperly</p> 
+          {%else%}  
         <div class="accordion-item">
             {%for date in weather_info%}
           <h2 class="accordion-header" id="heading{{date[1][0][3]}}">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{date[1][0][3]}}" aria-expanded="false" aria-controls="collapse{{date[1][0][3]}}">
-                <p class = "weather_info" >{{date[0]}}*{{date[1][0][0]}}&nbsp;&nbsp;&nbsp;&nbsp;{{date[1][0][2]}} {{date[1][0][1]}}&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{date[1][0][4]}}" alt="weather icon" class= "weather_icon"></p>
+                <p class = "weather_info" >{{date[0]}}*{{date[1][0][0]}}&nbsp;&nbsp;&nbsp;&nbsp;{{date[1][0][2]}}&nbsp;{{date[1][0][1]}}&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{date[1][0][4]}}" alt="weather icon" class= "weather_icon"></p>
             </button>
           </h2>
           <div id="collapse{{date[1][0][3]}}" class="accordion-collapse collapse" aria-labelledby="heading{{date[1][0][3]}}" data-bs-parent="#weatherAccordion">
@@ -115,18 +128,12 @@
           {%endfor%}
         </div> 
         
-    {%else%}
-        {{weather_info}}
-        <p>Sorry {{base_dest.city_name}} may be spelled improperly or may be too obscure</p> 
     {%endif%}   
     </div>
     </div>  
 
     <div id= "3" >
-    <div id= 'money_exchange'>Money Currency</div>
-    <div>maybe a little notebook with budget calculator
-        and stuff
-    </div>
+    
     <div id ="flight">Flight and hotel recs</div>
     <div  id='hotels_form'>
         <form id="hotel_choice">
@@ -144,11 +151,11 @@
                 
             </select>
             <br>
-            <label for="destination">Choose destination:<input type="text" id= "destination" value={{base_dest.city_name}} disabled= True></label>
+            <label for="destination">Choose destination:<input type="text" id= "destination" value='{{base_dest.city_name}} {{base_dest.country_name}}' disabled= True></label>
             <br>
-            <label for="currency">Currency: <input type="text" id='currency' value={{currency}}></label>
+            <label for="currency">Currency: <input type="text" id='currency' value={{home_currency[0][0]}}></label>
             <br>
-            <label for="adult_num">Number of Adults: <input type="number" name="adult_num" id="adult_num"> </label>
+            <label for="adult_num">Number of Adults: <input type="number" name="adult_num" id="adult_num" min="1"> </label>
             <br>
             <input type="submit"  id="hotel_submit" value="Find Accomadations">
         </form>         
@@ -157,7 +164,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Hotel Results</h5>
+              <h5 class="modal-title" id="hotelHeader">Hotel Results</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id='hotel_results'></div>
@@ -168,77 +175,35 @@
         </div>
       </div>
     </div>
-    <div id = "4"> 
-        <div id="embassy_info">
-        <h1>Embassies</h1>
-        {% if rel_embassy %}
-                {% if rel_embassy[0].website %}
-                <a href="{{rel_embassy[0].website}}">Embassy of {{tp.user.home_country}} in {{base_dest.city_name}}</a>
-                <br>
-                {%else%}
-                <p>Embassy of {{tp.user.home_country}} in {{base_dest.city_name}}</p>
-                {% endif %} 
-                <p>address: {{rel_embassy[0].address}}</p>
-                
 
 
-            <h3>Here are some in the surronding areas in {{base_dest.country_name}}!</h3>
-                
-                {% if not embassies %}
-            <h3>Sorry! We couldnt find any other embassies for this location!</h3>
-            <p>We are always updating, so be sure to check back in!</p>
-                {%else%}
-                <ul>
-                    {% for embassy in embassies %}
-                    <li>
-                        
-                        <p> 
-                            {%if embassy.website %}
-                            <a href="{{embassy.website}}">Embassy of {{tp.user.home_country}} in {{embassy.destination.city_name}}</a>
-                            {%else%}
-                            <p>Embassy of {{tp.user.home_country}} in {{embassy.destination.city_name}}</p>
-                            {%endif%}
-                            <p>address: {{embassy.address}}</p>   
-                        </p>
-                    </li>
-                    <br>
-                    {%endfor%}
-                </ul>
-                {% endif %}
-        {%else%}
-            {% if not embassies %}
-            <h1>Sorry! We couldnt find any embassies for this location!</h1>
-            <p>We are always updating, so be sure to check back in!</p>
-            {% else %}
-            <p>There doesn't seem to be any embassies in {{base_dest.city_name}}!</p>
-            <p>However, we were able to find embassies around {{base_dest.country_name}} for you! </p>
-            <ul>
-                {% for embassy in embassies %}
-                <li>
-                    
-                    <p> 
-                        {%if embassy.website %}
-                        <a href="{{embassy.website}}">Embassy</a>
-                        <br>
-                        address: {{embassy.address}}
-                        {%else%}
-                        <p>Embassy of {{tp.user.home_country}} in {{embassy.destination.city_name}}</p>
-                       
-                        address: {{embassy.address}}
-                        {%endif%}
-                    </p>
-                </li>
-                <br>
-                {%endfor%}
-            </ul>
-            
-            {% endif %}
-             
-        {%endif%}
-        </div>          
+    <p>
+    <button id="currency_button" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#four" aria-expanded="false" aria-controls="four">
+        <img src="/static/layout/foreign-exchange.svg" alt="Money Currency Icon">
+      </button>
+    </p>
+    <div class="collapse" id ="four">
+        <div class="card card-body" id='money_exchange'>
+          
+          <h5>Money Currency</h5>
+          <div id="home currency">{{home_currency[0][1]}} -- {{home_currency[0][0]}} -- {{home_currency[0][2]}}</div><br>
+          <div>{{country_currency[0][1]}} -- {{country_currency[0][0]}} -- {{country_currency[0][2]}}</div>
+          
+          <p>Current Rate: {{country_currency[2]}}{{currency_rate}} to {{home_currency[0][2]}}1</p>
+
+          <p>I want to add a calculator function on js side</p>
+        </div>
     </div>
+    <div>
+      maps on the travelplanner page would be nice, to do list if I wanna
+    </div>
+        
+    
 
     <!-- falsh message link -->
-    {% block script%} <script src="/static/js/travel_planner.js"></script> {% endblock %}
+    <script src="/static/databases/countries.js"></script>
+    
+
+   <script src="/static/js/travel_planner.js"></script> 
     
 {%endblock body%}

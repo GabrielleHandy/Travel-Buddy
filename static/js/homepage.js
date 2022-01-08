@@ -1,23 +1,37 @@
 
+// Code By Webdevtrick ( https://webdevtrick.com )
+let switchCtn = document.querySelector("#switch-cnt");
+let switchC1 = document.querySelector("#switch-c1");
+let switchC2 = document.querySelector("#switch-c2");
+let switchCircle = document.querySelectorAll(".switch__circle");
+let switchBtn = document.querySelectorAll(".switch-btn");
+let aContainer = document.querySelector("#a-container");
+let bContainer = document.querySelector("#b-container");
 
-const change = document.querySelector("button");
-change.addEventListener("click", (evt)=>{
-const clickbutton =evt.target;
-console.log(clickbutton);
-if (clickbutton.innerHTML === 'Are you a new buddy? sign up here!'){
-    let hiddenForm = document.querySelector('#login-form');
-    let unhiddenForm = document.querySelector('#signup-form');
-    clickbutton.innerHTML = 'Already a buddy? Login here'
-    hiddenForm.style.visibility = 'hidden'
-    unhiddenForm.style.visibility = 'visible'
+ 
+
+ 
+let changeForm = (e) => {
+ 
+    switchCtn.classList.add("is-gx");
+    setTimeout(function(){
+        switchCtn.classList.remove("is-gx");
+    }, 100)
+ 
+    switchCtn.classList.toggle("is-txr");
+    switchCircle[0].classList.toggle("is-txr");
+    switchCircle[1].classList.toggle("is-txr");
+ 
+    switchC1.classList.toggle("is-hidden");
+    switchC2.classList.toggle("is-hidden");
+    aContainer.classList.toggle("is-txl");
+    bContainer.classList.toggle("is-txl");
+    bContainer.classList.toggle("is-z200");
 }
-else {
-    let hiddenForm = document.querySelector('#signup-form')
-    let unhiddenForm = document.querySelector('#login-form')
-    clickbutton.innerHTML = 'Are you a new buddy? sign up here!';
-    hiddenForm.style.visibility = 'hidden'
-    unhiddenForm.style.visibility = 'visible'
+ 
+let mainF = (e) => {
+    for (var i = 0; i < switchBtn.length; i++)
+        switchBtn[i].addEventListener("click", changeForm)
 }
-
-
-});
+ 
+window.addEventListener("load", mainF);
