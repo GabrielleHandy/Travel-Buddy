@@ -118,6 +118,8 @@ def connect_to_db(flask_app, db_uri="postgresql:///travelbuddy", echo=True):
     print("Connected to the db!")
 
 
+
+
 def example_data():
     """Creates sample data for testing"""
     # resetting for fresh testing

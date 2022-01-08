@@ -70,10 +70,13 @@ def create_destination(city, country):
     db.session.commit()
     return destination
 
+
+
 def delete_travelplanner(travel_planner):
     db.session.delete(travel_planner)
     db.session.commit()
     return("deleted")  
+
 
 
 def create_embassy(home_country, country,
