@@ -4,9 +4,6 @@
 {% endblock %}
 
 {% block content%}
-<li class="nav-item">
-    <a class="nav-link" href="/tp_settings/{{tp.tp_id}}">Edit</a>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="/emergency_info/{{tp.tp_id}}/{{base_dest.country_name}}">Emergency Info</a>
   </li>
@@ -187,16 +184,26 @@
           
           <h5>Money Currency</h5>
           <div id="home currency">{{home_currency[0][1]}} -- {{home_currency[0][0]}} -- {{home_currency[0][2]}}</div><br>
+          {% if country_currency|length > 1 %}
+            {% for curr in country_currency %}
+                <div>{{curr[1]}} -- {{curr[0]}} -- {{curr[2]}}</div>
+                {% for rate in currency_rate %}
+                    {% if  rate[curr[0]] == 'Sorry! having trouble finding currency info!'%}
+                        <p>{{rate[curr[0]]}}</p>
+                    {%elif curr[0] in rate %}
+                        <p>Current Rate: {{curr[2]}}{{rate[curr[0]]}} to {{home_currency[0][2]}}1</p> 
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+              
+            {% else %}
           <div>{{country_currency[0][1]}} -- {{country_currency[0][0]}} -- {{country_currency[0][2]}}</div>
           
-          <p>Current Rate: {{country_currency[2]}}{{currency_rate}} to {{home_currency[0][2]}}1</p>
-
-          <p>I want to add a calculator function on js side</p>
+          <p>Current Rate: {{country_currency[0][2]}} {{currency_rate[country_currency[0][0]]}} to {{home_currency[0][2]}}1</p>
+        {% endif %}
         </div>
     </div>
-    <div>
-      maps on the travelplanner page would be nice, to do list if I wanna
-    </div>
+    
         
     
 

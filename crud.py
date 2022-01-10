@@ -395,39 +395,46 @@ def get_country_currency(country_code):
     
     results = response[0]
 
-    currency = []
-  
+    currency_info = []
+    print(results['currencies'])
     if len(results['currencies']) > 1:
         for currency in results['currencies']:
-            keys = list(currency.keys())
-            key = keys[0]
-            currency.append([key, currency[key]['name'], currency[key]['symbol']])
+            currency_info.append([currency, results['currencies'][currency]['name'], results['currencies'][currency]['symbol']])
     else:
         curr = results['currencies']
         keys = list(curr.keys())
         key = keys[0]
-        currency.append([key, curr[key]['name'], curr[key]['symbol']])
+        currency_info.append([key, curr[key]['name'], curr[key]['symbol']])
     
 
-    return(currency)
+    return(currency_info)
 
 
 
 def get_currency_rate(home_currency, country_currency, amount = 1):
     """Takes in list of currencies and runs them through currency api"""
+    exchange_rate = {}
     original = home_currency[0][0]
-    desired = country_currency[0][0]
+    if len(country_currency) > 1:
+      desired = country_currency[0]
+      print(desired)
 
-    exchange_rate = 0
+    else:
+      desired = country_currency[0][0]
+      
+      
 
     url = f'https://freecurrencyapi.net/api/v2/latest?apikey={CURRENCY_KEY}&base_currency={original}'
 
     response = requests.request("GET", url)
     result = response.json()
+    print(result)
     for currency in result['data']:
       if currency == desired:
-        return result['data'][currency]
-    return('Sorry! having trouble finding currency info!')
+        exchange_rate[desired] = result['data'][currency]
+        return exchange_rate
+    exchange_rate[desired] = 'Sorry! having trouble finding currency info!'
+    return exchange_rate
 
 
 

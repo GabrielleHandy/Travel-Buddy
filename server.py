@@ -202,9 +202,16 @@ def show_chosen_planner(tp_id, dest_id):
     country_curr = crud.get_country_currency(country_code)
     home_currency = crud.get_country_currency(home_country_code)
     session['currency'] = home_currency[0][0]
-    currency_rate = crud.get_currency_rate(home_currency, country_curr)
 
+    if len(country_curr) > 1:
+        currency_rate = []
+        for curr in country_curr:
+            rate = crud.get_currency_rate(home_currency, curr)
+            currency_rate.append(rate)
+    else:
+        currency_rate = crud.get_currency_rate(home_currency, country_curr)
 
+    print(currency_rate)
     # for the add and delete forms
     today = date.today()
     locations = crud.get_all_destinations()
