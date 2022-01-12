@@ -1,8 +1,3 @@
-const popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-    trigger: 'focus'
-  })
-
-
 const hotelForm = document.querySelector('#hotel_choice');
 
 hotelForm.addEventListener('submit', (evt) => {

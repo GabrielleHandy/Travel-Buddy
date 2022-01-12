@@ -371,7 +371,9 @@ def get_emer_num(country_name):
 
 def get_country_code_currency(country_name):
     """Gets calls from api to use in get_country_currency"""
-
+    if country_name in [ "England", "Scotland", "Wales"]:
+      country_name = "United Kingdom"
+    
     name = country_name.lower()
     res = requests.get(f'https://restcountries.com/v3.1/name/{name}')
     country_code = False
@@ -382,7 +384,7 @@ def get_country_code_currency(country_name):
                 country_code = res['cca2']
             
                 
-
+    print(country_code)
     return country_code
 
 

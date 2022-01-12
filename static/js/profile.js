@@ -17,7 +17,7 @@ function translateText(text, target, source){
     };
     fetch('/translate_text', options)
     .then(response => response.json())
-    .then(translation => document.querySelector("#translated").innerHTML = translation);
+    .then(translation => document.querySelector("#translated").value = translation);
 
 };
 
@@ -41,7 +41,7 @@ photoForm.addEventListener('submit', function(e) {
     reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = function(evt) {    
-        console.log(reader.result);
+        
    
         formData.append('photo', `${reader.result}`); 
 
@@ -64,8 +64,8 @@ textForm.addEventListener('submit', (evt) => {
     const text = document.querySelector("#original-text").value;
     const source =document.querySelector("#source-language").value;
     const target = document.querySelector("#target-text").value;
-    console.log(source);
-    document.querySelector("#original").innerHTML = text;
+    
+    document.querySelector("#original").value = text;
     translateText(text, target, source);
 });
 
@@ -81,8 +81,11 @@ function showForm(text){
         let tp_buttons =  document.querySelectorAll(".deleteTpBtn")
         
         while(tp_buttons.length > 0){
-            tp_buttons[0].parentNode.removeChild(tp_buttons[0]);
-        }
+            for(btn of tp_buttons){
+               btn.parentNode.removeChild(btn);
+            } 
+            }
+            
 
     }
     else{
@@ -105,13 +108,13 @@ showDeleteForm.addEventListener('click', (evt) => {
 
 
 function deleteTP(id){
-    console.log(id);
+    
     const btn = id;
 
     const answer= confirm("Are you sure you want to delete this Travel Planner?");
     if (answer === true){
         const tp_id = btn.parentNode.id;
-        console.log(tp_id);
+        
 
         const param = {'tp_id': tp_id}
                 

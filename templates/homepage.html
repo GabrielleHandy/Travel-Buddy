@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 {% block title %}HomePage{% endblock %}
     {% block body %}
-        <h1 style="text-align: center;">WELCOME TO TRAVEL BUDDY</h1>
-        <div class="main">
-            <div class="container a-container" id="a-container">
+    <div class="main row">
+            <div class="login-signup-container a-container" id="a-container">
                 <form action="/signup" id="signup-form" method="post" >
                     <h2 class="form_title title">Create an Account</h2>
                     <label>First name</label>
@@ -15,15 +14,15 @@
                     <label>Password</label>
                     <input type="password" name="password" id="password">
                     <label>Nationality</label>
-                    <select name="Nationality" id="">
+                    <select name="Nationality" id="Nationality">
                         <option name = "Nationality" value="United States">American</option>
                         <option name = "Nationality" value="Canada">Canadian</option>
                         <option name = "Nationality" value="United Kingdom">British</option>
                     </select><br>
                     <input type="submit" name="submit" value="submit">
                 </form>
-            </div>
-            <div class="container b-container" id="b-container">
+              </div>
+            <div class="login-signup-container b-container col" id="b-container">
                 <form action="/login" id="login-form" method="post">
                 <h2 class="form_title title">Sign in to Website</h2>
                     <label>Email<input type="email" name="email" id="login-email"></label><br>
@@ -32,7 +31,7 @@
                     <input type="submit" name="submit" value="submit">
                 </form>
             </div>
-            <div class="switch" id="switch-cnt">
+            <div class="switch col" id="switch-cnt">
               <div class="switch__circle"></div>
               <div class="switch__circle switch__circle--t"></div>
               <div class="switch__container" id="switch-c1">
@@ -47,6 +46,10 @@
               </div>
             </div>
           </div>
+         
+            Welcome Image
+          </div>
+</div>
 
 
 
@@ -54,13 +57,6 @@
 
 
 
-
-
-        {% for msg in get_flashed_messages() %}
-        <p class="flash-msg">
-        {{ msg }}
-        </p>
-        {% endfor %} 
 
 
 

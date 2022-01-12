@@ -23,6 +23,11 @@ CLOUD_NAME = "travel-buddy"
 @app.route('/')
 def homepage():
     """View  homepage."""
+    if 'name' in session:
+        print(session['name'])
+        name = session['name']
+        return redirect(f'/profile/{name}')
+        
     return render_template('homepage.html')
 
 # Login/ Signup  and User verification
@@ -56,7 +61,7 @@ def login_user():
     if user:
         if user.password == password:
             flash("Logged in :)")
-            session['name' ] = user.fname
+            session['name'] = user.fname
             session['user_id'] = user.user_id
             return redirect(f'/profile/{user.fname}')
         else:
@@ -169,10 +174,10 @@ def show_chosen_planner(tp_id, dest_id):
     alert = crud.retrieve_advisory(country_name, user)
     advisory_link = crud.get_advisory_url(country_name, user)
     if advisory_link:
-        flash(Markup(f'{alert} <a target="_blank" href={advisory_link} id="advisory-url" class="advisory-link">Click here for information</a>'))
-    else:
+        alert = (Markup(f'{alert} <a target="_blank" href={advisory_link} id="advisory-url" class="alert-link">Click here for information</a>'))
     
-        flash(alert)
+    
+        
     
 
     city_name = base_destination.city_name
@@ -196,27 +201,31 @@ def show_chosen_planner(tp_id, dest_id):
     
     # currency information
     home_country_code = crud.get_country_code_currency(user.home_country)
-    
-    country_code = crud.get_country_code_currency(base_destination.country_name)
-   
-    country_curr = crud.get_country_currency(country_code)
     home_currency = crud.get_country_currency(home_country_code)
+
+    country_code = crud.get_country_code_currency(base_destination.country_name)
+
+    if country_code:
+        country_curr = crud.get_country_currency(country_code)
+        if len(country_curr) > 1:
+            currency_rate = []
+            for curr in country_curr:
+                rate = crud.get_currency_rate(home_currency, curr)
+                currency_rate.append(rate)
+        else:
+            currency_rate = crud.get_currency_rate(home_currency, country_curr)
+
+    
     session['currency'] = home_currency[0][0]
 
-    if len(country_curr) > 1:
-        currency_rate = []
-        for curr in country_curr:
-            rate = crud.get_currency_rate(home_currency, curr)
-            currency_rate.append(rate)
-    else:
-        currency_rate = crud.get_currency_rate(home_currency, country_curr)
+    
 
-    print(currency_rate)
+    
     # for the add and delete forms
     today = date.today()
     locations = crud.get_all_destinations()
     countries = crud.list_all_countries(locations)
-    return render_template('travelplanner.html', tp = tp, base_dest = base_destination,
+    return render_template('travelplanner.html', alert = alert, tp = tp, base_dest = base_destination,
                           destinations = destinations, today = today,
                           weather_info = weather_info, countries= countries,
                           home_currency = home_currency, country_currency = country_curr,
@@ -267,9 +276,10 @@ def view_travelplanner_form():
 
     destinations = crud.get_all_destinations()
     countries = crud.list_all_countries(destinations)
+    today = date.today()
     
     return render_template('create_travelplanner.html', destinations = destinations, 
-                            countries = countries)
+                            countries = countries, today = today)
 
 
 
@@ -296,8 +306,7 @@ def create_travel_planner():
 
     city_name = request.form.get('city')
     country = request.form.get('country')
-    print(city_name)
-    print(country)
+    
     tp_date = request.form.get('date')
     if len(tp_date) == 0:
         tp_date = None

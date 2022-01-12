@@ -5,16 +5,16 @@
 
 {% block content%}
   <li class="nav-item">
-    <a class="nav-link" href="/emergency_info/{{tp.tp_id}}/{{base_dest.country_name}}">Emergency Info</a>
+    <a class="nav-link active" href="/emergency_info/{{tp.tp_id}}/{{base_dest.country_name}}">Emergency Info</a>
   </li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Switch Travel Planners
     </a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         {% for travel_planner in tp.user.travel_planner%}
             {% if travel_planner.tp_id == tp.tp_id %}
-            <li><a class="dropdown-item" href="/travel_planner/{{travel_planner.tp_id}}/{{travel_planner.destinations[0].dest_id}}" style="background-color: powderblue;"><strong>{{travel_planner.name}}</strong></a></li>
+            <li><a class="dropdown-item" href="/travel_planner/{{travel_planner.tp_id}}/{{travel_planner.destinations[0].dest_id}}" style="background-color: rgba(64, 130, 173, 0.699);"><strong>{{travel_planner.name}}</strong></a></li>
             {%else%}
             <li><a class="dropdown-item" href="/travel_planner/{{travel_planner.tp_id}}/{{travel_planner.destinations[0].dest_id}}">{{travel_planner.name}}</a></li>
             {%endif%}
@@ -23,7 +23,10 @@
   </li>
 {% endblock %}
 {% block body %}
-    <div id="Alert"></div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{alert}}.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
     <div id="1">
         <h1 id="dest_country">Destinations</h1>
         <div id="dest_list">

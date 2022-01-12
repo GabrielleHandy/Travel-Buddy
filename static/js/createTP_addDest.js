@@ -10,7 +10,12 @@ function addCities(e) {
     cities.innerHTML = '';
     cityInput.value = '';
     let chosenCountry = e.target.value;
-  
+      if (chosenCountry === 'South Korea'){
+        chosenCountry = 'Republic of Korea';
+      }
+      else if (chosenCountry === 'Lithuania' || chosenCountry === "Moldova" ){
+        chosenCountry = `Republic of ${chosenCountry}`;
+      }
       console.log(countries);
       for (city of countries[chosenCountry]){
                cities.insertAdjacentHTML('beforeEnd', `<option value="${city}"></option>`); 
