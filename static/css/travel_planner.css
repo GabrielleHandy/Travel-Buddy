@@ -1,3 +1,118 @@
+
+body
+{
+  background-color: #e9e3e3bd;
+}
+h3
+{
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+}
+.travelplanner-body {
+  width: 100%;
+  margin-top: 3em;
+}
+#2.tp-column {
+  margin-left: 260px;
+}
+
+#weatherAccordion 
+{
+  margin-top: 4em;
+  
+}
+
+.btn#add
+{
+  opacity: 70%;
+  background: black;
+}
+.btn#add:hover
+{
+  opacity: 100%;
+}
+
+
+.btn#remove
+{
+  opacity: 70%;
+}
+
+
+.btn#remove:hover
+{
+  opacity: 100%;
+}
+
+.dest_btn
+{
+  border: solid 1px #2a5c85bd;
+  border-radius: 17px;
+  
+  font-weight: bold;
+}
+.dest_btn.open:hover{
+  background-color: #2a5c85bd;
+  color: #fefefe;
+}
+
+#dests
+{
+  background: url("/static/layout/dest_bg.png") no-repeat center center;
+  background-size: cover;
+  background-blend-mode: screen;
+  text-align: center;
+  padding: 25px;
+}
+
+.travelplanner-body #dests, #weather, #hotel
+{
+  background-color: #af9e9e34;
+  border-radius: 2px;
+  box-shadow: 1px 0px 2px 13px #e1dada;
+
+}
+
+
+#hotel_choice
+{
+    background-color: rgba(255, 228, 196, 50%);
+    
+    display: grid;
+}
+
+#hotel
+{
+  background: url("/static/layout/hotels.png") no-repeat center center;
+  background-size: cover;
+  padding: 25px;
+}
+
+#money
+{
+
+margin-top: 5em;
+
+}
+
+
+
+#money div
+{
+  background-color: #af9e9e34;
+  border-radius: 7px;
+
+}
+
+
+
+#remove_dest
+{
+  margin-top: 0px;
+}
+
+
 #modal-add {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -36,6 +151,4 @@
     cursor: pointer;
   }
 
-  #currency_button{
-    width: 100px;
-  }
+ 

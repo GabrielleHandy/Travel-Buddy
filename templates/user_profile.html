@@ -43,7 +43,7 @@
     <br><br>
     <h3>
         <img id="tp_icon" src="/static/layout/diary-svgrepo-com.svg" alt="Planner icon">
-        <span id="tp_text">Travel Planners</span>
+        <span class="tp_text">Travel Planners</span>
         <button type="button" class="btn btn-outline-success" data-bs-toggle="offcanvas" data-bs-target="#create_tp"
             aria-controls="create_tpt">Create a new
             planner</button>
@@ -52,7 +52,7 @@
         {% endif %}
     </h3><br>
 
-    
+
     <div class="row" id='list_of_tp'>
 
         {% for tp in tps |reverse %}
@@ -84,7 +84,7 @@
     <br>
     <h3 id="trs-header">
         <img id="trs_icon" src="/static/layout/translate-language-svgrepo-com.svg" alt="Planner icon">
-        <span id="tp_text">Translator</span>
+        <span class="tp_text">Translator</span>
     </h3>
     <div class="row" id="translation">
         <div class="col-xl-6">
@@ -92,20 +92,19 @@
             <h4>Translate text</h4>
 
             <form id="trans-text" action="/trans_text" method="post">
-                <label for="">Choose your languages <br>
-                    <label for="language">From</label>
-                    <select name="language" id="source-language">
-                        {%for language in languages%}
-                        <option value={{language['code']}}>{{language['language']}}</option>
-                        {%endfor%}
-                    </select>
-                    <label for="language">To</label>
+                <label for="language">From</label>
+                <select name="language" id="source-language">
+                    {%for language in languages%}
+                    <option value={{language['code']}}>{{language['language']}}</option>
+                    {%endfor%}
+                </select>
+                <label for="language">To
                     <select name="language" id="target-text">
                         {%for language in languages%}
                         <option value={{language['code']}}>{{language['language']}}</option>
                         {%endfor%}
-                    </select>
-                </label>
+                    </select></label>
+
                 <label for="original">Type text
                     <input type="text" id="original-text"></label>
                 <input type="submit" id='text-submit' value="Translate">
@@ -113,23 +112,22 @@
             <br>
             <h4>Translate text from pictures</h4>
             <form id="translated-photo" action="/translated_photo" method="post" enctype="multipart/form-data">
-                <label for="">Choose your langauges <br>
-                    <label for="language">From</label>
-
+                <label for="language">From
                     <select name="source" id="source">
                         {%for language in photo_languages%}
                         <option value={{photo_languages[language]}}>{{language}}</option>
                         {%endfor%}
-                    </select>
-                    <label for="target_lang">To</label>
+                    </select></label>
+
+                <label for="target_lang">To
                     <select name="target_lang" id="target">
                         {%for language in languages%}
                         <option value={{language['code']}}>{{language['language']}}</option>
                         {%endfor%}
-                    </select>
-                </label>
+                    </select></label>
+
                 <label for="original">upload photo **must be 1 MB or smaller</label>
-                <input type="file" id='photo' name="original-photo"> <br>
+                <input type="file" id='photo' name="original-photo"> <br><br>
                 <input type="submit" id='photo-sumbit' value="Translate">
             </form>
 
@@ -152,7 +150,7 @@
 
     <h3 id="news-header">
         <img id="news_icon" src="/static/layout/news-svgrepo-com.svg" alt="Planner icon">
-        <span id="tp_text">News</span>
+        <span class="tp_text">News</span>
     </h3>
     <div class="row">
         <div id="cn-news" class="carousel slide tabinfo" data-bs-ride="carousel">

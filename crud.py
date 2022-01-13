@@ -384,7 +384,7 @@ def get_country_code_currency(country_name):
                 country_code = res['cca2']
             
                 
-    print(country_code)
+   
     return country_code
 
 
@@ -398,7 +398,7 @@ def get_country_currency(country_code):
     results = response[0]
 
     currency_info = []
-    print(results['currencies'])
+   
     if len(results['currencies']) > 1:
         for currency in results['currencies']:
             currency_info.append([currency, results['currencies'][currency]['name'], results['currencies'][currency]['symbol']])
@@ -419,7 +419,7 @@ def get_currency_rate(home_currency, country_currency, amount = 1):
     original = home_currency[0][0]
     if len(country_currency) > 1:
       desired = country_currency[0]
-      print(desired)
+      
 
     else:
       desired = country_currency[0][0]
@@ -430,7 +430,7 @@ def get_currency_rate(home_currency, country_currency, amount = 1):
 
     response = requests.request("GET", url)
     result = response.json()
-    print(result)
+    
     for currency in result['data']:
       if currency == desired:
         exchange_rate[desired] = result['data'][currency]

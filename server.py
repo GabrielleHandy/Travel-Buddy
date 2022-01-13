@@ -42,7 +42,12 @@ def create_user():
     home_country = request.form.get("Nationality")
     user = crud.get_user_by_email(email)
     if user:
-        flash('Email already in use. Click button to Sign in')
+        flash(Markup("""<div class="alert alert-primary d-flex align-items-center" role="alert">
+                    <div>
+                        Email already in use.
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>"""))
         return redirect('/')
     else:
         crud.create_user(first_name=fname, last_name=lname, email=email, 
@@ -60,14 +65,24 @@ def login_user():
     
     if user:
         if user.password == password:
-            flash("Logged in :)")
             session['name'] = user.fname
             session['user_id'] = user.user_id
             return redirect(f'/profile/{user.fname}')
         else:
-            flash("Incorrect password :(")
+            flash( Markup("""<div class="alert alert-danger d-flex align-items-center" role="alert">
+            <div>
+                Incorrect password.
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>"""))
     else:
-        flash("Email does not exist :(")
+       flash( Markup("""<div class="alert alert-danger d-flex align-items-center" role="alert">
+            <div>
+                Email does not exist. 
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>"""))
+        
     return redirect('/')
 
 
@@ -270,16 +285,6 @@ def view_emergency_Info(tp_id, country_name):
                             emergency_nums= emer_num, link_preview= link_preview)
 
 
-@app.route('/new_tp')
-def view_travelplanner_form():
-    """View Travelplanner Form"""
-
-    destinations = crud.get_all_destinations()
-    countries = crud.list_all_countries(destinations)
-    today = date.today()
-    
-    return render_template('create_travelplanner.html', destinations = destinations, 
-                            countries = countries, today = today)
 
 
 
@@ -327,13 +332,24 @@ def create_travel_planner():
         tp_id =travel_planner.tp_id
         crud.create_tpdest(tp_id, dest_id, tp_date)
 
+        flash( Markup(f"""<div class="alert alert-success d-flex align-items-center" role="alert">
+            <div>
+                {tp_name} was successfuly created!!
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>"""))
         
-        flash(f"{tp_name} was successfuly created!!")
         return redirect(f'/profile/{user.fname}')
     else:
-        flash("""Seems like you created this Travel Planner already!""")
-
-    return redirect('/new_tp')
+        flash( Markup("""<div class="alert alert-warning d-flex align-items-center" role="alert">
+            <div>
+                Seems like you created this Travel Planner already!
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>"""))
+        
+    fname = session['name']
+    return redirect(f'/profile/{fname}')
 
 
 @app.route('/add_dest', methods=['POST'])

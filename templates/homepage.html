@@ -1,56 +1,69 @@
 {% extends 'base.html' %}
 {% block title %}HomePage{% endblock %}
+{% block head %} <link rel="stylesheet" href="/static/css/login-signup.css">{% endblock %}
+{% block body_id %} id="login-signup"{% endblock %} 
     {% block body %}
-    <div class="main row">
-            <div class="login-signup-container a-container" id="a-container">
-                <form action="/signup" id="signup-form" method="post" >
-                    <h2 class="form_title title">Create an Account</h2>
-                    <label>First name</label>
-                    <input type="text" name="fname" id="fname">
-                    <label>Last name</label>
-                    <input type="text" name="lname" id="lname">
-                    <label>Email</label>
-                    <input type="text" name="email" id="email">
-                    <label>Password</label>
-                    <input type="password" name="password" id="password">
-                    <label>Nationality</label>
-                    <select name="Nationality" id="Nationality">
-                        <option name = "Nationality" value="United States">American</option>
-                        <option name = "Nationality" value="Canada">Canadian</option>
-                        <option name = "Nationality" value="United Kingdom">British</option>
-                    </select><br>
-                    <input type="submit" name="submit" value="submit">
-                </form>
-              </div>
-            <div class="login-signup-container b-container col" id="b-container">
-                <form action="/login" id="login-form" method="post">
-                <h2 class="form_title title">Sign in to Website</h2>
-                    <label>Email<input type="email" name="email" id="login-email"></label><br>
-                    <label>Password<input type="password" name="password" id="login-password"></label><br>
-                    
-                    <input type="submit" name="submit" value="submit">
-                </form>
-            </div>
-            <div class="switch col" id="switch-cnt">
-              <div class="switch__circle"></div>
-              <div class="switch__circle switch__circle--t"></div>
-              <div class="switch__container" id="switch-c1">
-                <h2 class="switch__title title">Welcome Back!</h2>
-                <p class="switch__description description">Already a buddy? Login here!</p>
-                <button class="switch__button button switch-btn">SIGN IN</button>
-              </div>
-              <div class="switch__container is-hidden" id="switch-c2">
-                <h2 class="switch__title title">Hello Friend !</h2>
-                <p class="switch__description description">Enter your personal details and start journey with us</p>
-                <button class="switch__button button switch-btn">SIGN UP</button>
-              </div>
-            </div>
-          </div>
-         
-            Welcome Image
-          </div>
+   
+
+<div class="homepage container">
+  <div class="blueBg">
+    <div class="box signin">
+      <h2>Already a Buddy?</h2>
+      <button class="signinBtn">Sign in</button>
+    </div>
+    <div class="box signup">
+      <h2>Don't Have an Account?</h2>
+      <button class="signupBtn">Sign up</button>
+    </div>
+  </div>
+  <div class="formBx">
+    <div class="form signinForm">
+      <form action="/login" id="login-form" method="post">
+        <h3 class="form_title title">Sign in</h3>
+            <label>Email<input type="email" name="email" id="login-email"></label><br>
+            <label>Password<input type="password" name="password" id="login-password"></label><br>
+            
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </div>
+    <div class="form signupForm">
+      <form action="/signup" id="signup-form" method="post" >
+        <h3 class="form_title title">Create an Account</h3>
+        <label>First name</label>
+        <input type="text" name="fname" id="fname">
+        <label>Last name</label>
+        <input type="text" name="lname" id="lname">
+        <label>Email</label>
+        <input type="text" name="email" id="email">
+        <label>Password</label>
+        <input type="password" name="password" id="password">
+        <label>Nationality</label>
+        <select name="Nationality" id="Nationality">
+            <option name = "Nationality" value="United States">American</option>
+            <option name = "Nationality" value="Canada">Canadian</option>
+            <option name = "Nationality" value="United Kingdom">British</option>
+        </select>
+        <input type="submit" name="submit" value="submit">
+    </form>
+    </div>
+  </div>
 </div>
 
+<script type="text/javascript">
+  const signinBtn = document.querySelector('.signinBtn');
+  const signupBtn = document.querySelector('.signupBtn');
+  const body = document.querySelector('body');
+  const formBx = document.querySelector('.formBx');
+
+  signupBtn.onclick = function(){
+    formBx.classList.add('active');
+    body.classList.add('active');
+  }
+  signinBtn.onclick = function(){
+    formBx.classList.remove('active');
+    body.classList.remove('active');
+  }
+</script>
 
 
 

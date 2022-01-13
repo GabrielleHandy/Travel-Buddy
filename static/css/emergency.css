@@ -1,26 +1,82 @@
-#link-preview{
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-#emergency{
-    padding: 25px 25px 25px 25px;
-    /* float: right; */
-    margin: 50px 100px 100px 379px;
-    text-align: center;
-    border: solid black;
-    width: 50%;
+.emer_body div.col-12
+{
+    margin-top: 3em;
 }
 
-#embassy_info{
-    text-align: center;
+
+#link-preview{
+    
+    
+    margin: auto;
 }
+#main-em
+{
+    border-bottom: solid 2px black;
+}
+
+#ambulance
+{
+    font-style: bold;
+    background: url("/static/layout/ambulance.png") no-repeat 45px -116px;
+    background-size: cover;
+    height: 113px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0px 3px 9px 0px grey;
+}
+
+#police
+{
+    font-style: bold;
+    background: url("/static/layout/police.png") no-repeat 45px -116px;
+    background-size: cover;
+    height: 113px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0px 3px 9px 0px grey;
+}
+
+#fire
+{
+    font-style: bold;
+    background: url("/static/layout/fire.png") no-repeat 45px -55px;
+    background-size: cover;
+    height: 113px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0px 3px 9px 0px grey;
+}
+
+#link-preview img
+{
+    width: 200px;
+    height: auto;
+    margin-left: 167px;
+}
+#link-preview h4, h5
+{
+    text-align: center;
+    
+}
+
+#emergency{
+    padding: 25px;
+    margin-top: 4em;
+    
+    text-align: center;
+    border: solid black;
+    
+}
+
+
 
 .embassies ol {
     
-    box-shadow: 0px 7px 10px 0px darkgrey;
-    margin: 12px 203px 27px 202px;
-    padding: 49px 0px 39px 0px;
-    border: solid black;
+    box-shadow: 3px 1px 8px 0px darkgrey;
+    border: solid 1px black;
+    padding: 15px;
     
 }
