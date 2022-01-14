@@ -14,8 +14,8 @@ from xml.etree import ElementTree as ET
 # google_key ip restricted
 google_key = 'AIzaSyDGFnnxaxYd_2SHJ9jEPUjzEOJTDIkKoPs'
 
-# link_preview is ip restricted
-link_preview = "a13bc55e7afaf5a9cb963200cb704f16"
+
+link_preview = os.environ['LINKP_KEY']
 us_linkpreview = {}
 ca_linkpreview = {}
 uk_linkpreview = {}
@@ -75,7 +75,7 @@ def create_destination(city, country):
 def delete_travelplanner(travel_planner):
     db.session.delete(travel_planner)
     db.session.commit()
-    return("deleted")  
+    return "deleted"
 
 
 
@@ -339,33 +339,6 @@ def get_emer_num(country_name):
                 numbers['police'] = police.replace("\"", "")
                 
     return numbers
-
-
-
-# def get_covid_info(country_name):
-#   """Uses country name to find relevant covid info"""
-
-#   if country_name == 'United States':
-#     country_name = 'USA'
-#   elif country_name == 'United Kingdom':
-#     country_name = 'UK'
-
-#   url = "https://api.quarantine.country/api/v1/summary/latest"
-
-#   payload={}
-#   headers = {
-#     'Accept': 'application/json'
-#   }
-#   print(len(country_name))
-#   response = requests.request("GET", url, headers=headers, data=payload)
-#   print(response)
-#   result = response.json()
-#   info = result['data']['regions']
-#   for location in info.keys():
-    
-#     if info[location]['name'].lower() == country_name.lower():
-#         return info[location]
-
 
 
 
