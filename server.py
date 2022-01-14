@@ -106,12 +106,14 @@ def show_profile(fname):
     tps = list(user.travel_planner)
 
     news = crud.retrieve_news_articles()
+    locations = crud.get_all_destinations()
+    countries = crud.list_all_countries(locations)
 
     return render_template('user_profile.html', 
                             user = user, tps = tps,
                             photo_languages = p_lang,
                             languages = text_lang,
-                            news = news)
+                            news = news, countries = countries)
 
 
 
