@@ -17,7 +17,7 @@
 #ambulance
 {
     font-style: bold;
-    background: url("/static/layout/ambulance.png") no-repeat 45px -116px;
+    background: url("/static/layout/ambulance.png") no-repeat 60%;
     background-size: cover;
     height: 113px;
     text-align: left;
@@ -29,7 +29,7 @@
 #police
 {
     font-style: bold;
-    background: url("/static/layout/police.png") no-repeat 45px -116px;
+    background: url("/static/layout/police.png") no-repeat 60%;
     background-size: cover;
     height: 113px;
     text-align: left;
@@ -41,7 +41,7 @@
 #fire
 {
     font-style: bold;
-    background: url("/static/layout/fire.png") no-repeat 45px -55px;
+    background: url("/static/layout/fire.png") no-repeat 60%;
     background-size: cover;
     height: 113px;
     text-align: left;
@@ -54,7 +54,7 @@
 {
     width: 200px;
     height: auto;
-    margin-left: 167px;
+    margin-left: 145px;
 }
 #link-preview h4, h5
 {

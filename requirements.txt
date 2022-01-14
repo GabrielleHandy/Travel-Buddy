@@ -23,7 +23,6 @@ itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
 packaging==21.3
-Pillow==8.4.0
 proto-plus==1.19.8
 protobuf==3.19.1
 psycopg2-binary==2.8.6

@@ -16,7 +16,7 @@ class Login_Index_test(TestCase):
         """Test for homepage"""
 
         result = self.client.get("/")
-        self.assertIn(b"WELCOME TO TRAVEL BUDDY", result.data)
+        self.assertIn(b"Sign in", result.data)
     
     def test_login(self):
         """Test login page"""
