@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}HomePage{% endblock %}
+{% block title %}TravelBuddy-Login/Signup{% endblock %}
 {% block head %} <link rel="stylesheet" href="/static/css/login-signup.css">{% endblock %}
 {% block body_id %} id="login-signup"{% endblock %} 
     {% block body %}
@@ -18,8 +18,11 @@
   </div>
   <div class="formBx">
     <div class="form signinForm">
+      
       <form action="/login" id="login-form" method="post">
         <h3 class="form_title title">Sign in</h3>
+        <p>Demo username: jtest@test.com</p>
+        <p>Demo password: test</p>
             <label>Email<input type="email" name="email" id="login-email"></label><br>
             <label>Password<input type="password" name="password" id="login-password"></label><br>
             

@@ -3,10 +3,10 @@ import requests
 from flask import (Flask, render_template, request, 
                    redirect, session, flash, jsonify,
                    Markup)
-from werkzeug.datastructures import FileStorage
 import crud
 import cloudinary.uploader
-from datetime import datetime, date
+import helper
+from datetime import date
 
 from model import connect_to_db
 
@@ -76,7 +76,7 @@ def login_user():
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>"""))
     else:
-       flash( Markup("""<div class="alert alert-danger d-flex align-items-center" role="alert">
+        flash( Markup("""<div class="alert alert-danger d-flex align-items-center" role="alert">
             <div>
                 Email does not exist. 
             </div>
@@ -109,8 +109,8 @@ def show_profile(fname):
     locations = crud.get_all_destinations()
     countries = crud.list_all_countries(locations)
 
-    return render_template('user_profile.html', 
-                            user = user, tps = tps,
+    return render_template('user_profile.html',
+                            fname = fname, tps = tps,
                             photo_languages = p_lang,
                             languages = text_lang,
                             news = news, countries = countries)
@@ -175,6 +175,7 @@ def translate_text():
 @app.route('/travel_planner/<tp_id>/<dest_id>')
 def show_chosen_planner(tp_id, dest_id):
     """View Travel_Planner by id"""
+    user = crud.get_user_by_id(session['user_id'])
 
     # destinations
 
@@ -186,32 +187,23 @@ def show_chosen_planner(tp_id, dest_id):
 
     country_name = base_destination.country_name
 
-    # advisory alert
-    user = crud.get_user_by_id(session['user_id'])
-    alert = crud.retrieve_advisory(country_name, user)
-    advisory_link = crud.get_advisory_url(country_name, user)
-    if advisory_link:
-        alert = (Markup(f'{alert} <a target="_blank" href={advisory_link} id="advisory-url" class="alert-link">Click here for information</a>'))
-    
-    
-        
-    
-
     city_name = base_destination.city_name
 
-    # weather api, currency api, hotel api info 
-    # weather info saved in session to lower pulls to api
+    # advisory alert
+    alert = helper.create_alert(country_name, user)
+    
+    
+    # weather api, currency api, hotel api info below
+    
     if city_name in session:
+
         weather_info =  session[city_name]
         
     else:
-        results = crud.get_weather(city_name, user)
-        if type(results) is str:
-            weather_info = results
-        else:    
-            weather_info =  crud.extract_weather_info(results, user)
-            # weather is sorted by an organizer counter I put in each list
-            weather_info = sorted(weather_info.items(), key=lambda x: x[1][0][3], reverse=False)
+
+        weather_info = helper.get_weather_info(city_name, user)
+
+        # weather info saved in session to lower pulls to api
         session[city_name] = weather_info
       
             
@@ -224,15 +216,10 @@ def show_chosen_planner(tp_id, dest_id):
 
     if country_code:
         country_curr = crud.get_country_currency(country_code)
-        if len(country_curr) > 1:
-            currency_rate = []
-            for curr in country_curr:
-                rate = crud.get_currency_rate(home_currency, curr)
-                currency_rate.append(rate)
-        else:
-            currency_rate = crud.get_currency_rate(home_currency, country_curr)
 
-    
+        currency_rate = helper.get_currency_rate(home_currency, country_curr)
+
+    # Saves home currency for future use
     session['currency'] = home_currency[0][0]
 
     
@@ -252,7 +239,7 @@ def show_chosen_planner(tp_id, dest_id):
 
 
 @app.route('/emergency_info/<tp_id>/<country_name>')
-def view_emergency_Info(tp_id, country_name):
+def view_emergency_info(tp_id, country_name):
     """View emergency info based on country"""
     
     tp =crud.get_travelplanner_by_id(tp_id)
@@ -268,19 +255,22 @@ def view_emergency_Info(tp_id, country_name):
     advisory_link = crud.get_advisory_url(country_name, user)
     link_preview = crud.get_link_preview(advisory_link, user, country_name)
     
-    # embassy info
+    # embassy info for embassies in destination country
     embassies = []
     embassies = crud.get_relevant_embassies(destination,user)
 
+    # takes embassies and finds the ones located in city of destination
     rel_embassy = crud.get_home_embassy(destination, embassies)
 
-    if tp.user.home_country == 'United States':
-        for embassy in embassies:
-            if not embassy.website:
-                crud.create_usembassy_website(embassy)
-
+    # removes city embassy from list of all embassies __avoids repeats__
     if rel_embassy:
         embassies.remove(rel_embassy[0])
+
+
+    if tp.user.home_country == 'United States':
+        helper.create_usembassy_website_link(embassies)
+        
+    
 
     return render_template('emergency_info.html', tp = tp, rel_embassy= rel_embassy, 
                             embassies=embassies,destination=destination,
@@ -307,7 +297,7 @@ def delete_travelplanner():
 
 @app.route('/create_travelplanner', methods=['POST'])
 def create_travel_planner():
-
+    """Creates a travel planner"""
     user_id = session['user_id']
     tp_name = request.form.get('tp_name')
 
@@ -319,20 +309,17 @@ def create_travel_planner():
         tp_date = None
 
     # checking for duplicates
-    answer = crud.check_for_repeats(tp_name, user_id)
-    if answer:
+    no_repeat = crud.check_for_repeats(tp_name, user_id)
+    if no_repeat:
         user = crud.get_user_by_id(user_id)
         # check for instance of city, country
-        dest_id = crud.get_destid_by_location(city_name, country)
+
+        dest_id = helper.find_dest_id(city_name, country)
         
-        if not dest_id:
-            new_dest = crud.create_destination(city_name, country)
-            dest_id = new_dest.dest_id
 
 
-        travel_planner = crud.create_travelplanner(tp_name,user_id)
-        tp_id =travel_planner.tp_id
-        crud.create_tpdest(tp_id, dest_id, tp_date)
+        helper.create_travel_planner(tp_name, user_id, dest_id, tp_date)
+        
 
         flash( Markup(f"""<div class="alert alert-success d-flex align-items-center" role="alert">
             <div>
@@ -361,11 +348,10 @@ def add_dest():
    
     city_name = request.form.get('city')
     country = request.form.get('country')
-    dest_id = crud.get_destid_by_location(city_name, country)
+
+    dest_id = helper.find_dest_id(city_name, country)
         
-    if not dest_id:
-        new_dest = crud.create_destination(city_name, country)
-        dest_id = new_dest.dest_id
+    
 
 
     dest_date = request.form.get('date')
@@ -396,13 +382,10 @@ def remove_dest():
 
     if len(travel_planner.destinations) == 1:
         return jsonify("Travel planners must have atleast one destination. Try removing after adding a new destination.")
+
     tp_dest = crud.find_tpdest(dest_id, tp_id)
     crud.remove_destination(tp_dest)
-    user = crud.get_user_by_id(session['user_id'])
     
-    destinations = travel_planner.destinations
-    
-    dest_destid = destinations[0].dest_id
     
 
     return jsonify('Sucessful')
@@ -458,6 +441,6 @@ def display_hotels():
 
 if __name__ == '__main__':
     # DebugToolbarExtension(app)
-    connect_to_db(app)
-    app.run()
+    connect_to_db(app, echo=True)
+    app.run(debug = True)
    

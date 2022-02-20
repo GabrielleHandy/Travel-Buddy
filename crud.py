@@ -440,14 +440,15 @@ def get_relevant_embassies(dest, user):
 
 
 def get_home_embassy(dest, embassies):
-    places = []
-    
-   
-    for place in embassies:
-        if place.destination.city_name == dest.city_name: 
-          places.append(place)
-    set(places)
-    return list(places)
+  """Filters emabssies that are in destination city"""
+  places = []
+  
+  
+  for place in embassies:
+      if place.destination.city_name == dest.city_name: 
+        places.append(place)
+  set(places)
+  return list(places)
     
 
 
@@ -471,9 +472,6 @@ def check_for_repeats(name, user_id):
             return False
 
     return True
-
-
-
 
 
 
@@ -1311,5 +1309,5 @@ if __name__ == '__main__':
     from server import app
     connect_to_db(app)
 
-    user = get_user_by_id(11)
+    
   
