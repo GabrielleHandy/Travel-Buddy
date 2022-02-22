@@ -16,8 +16,8 @@ APIs: OCR API, Hotels API,  OpenWeather API,  MyMemory Translation API,  REST CO
 Problems I faced:
 
 Translating text from images:
---- Recieving Images from users wasn't possible because I don't have ssl certification. In order to get past that I used Cloudinary API that let's users update images
-    to cloud storage ad used the url provided from that to access the image I needed.
+--- Recieving Images from users wasn't possible because I don't have ssl certification. In order to get past that I used Cloudinary API that let's users updload images
+    to cloud storage and used the url provided from that to access the image I needed.
 
 --- I also needed a way to scrape the text off of an image. I used OCR API in order to acheive that and then ran the results through the translator.
 
