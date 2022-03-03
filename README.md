@@ -1,4 +1,4 @@
-# Travel-Buddy [Visit Travel Buddy!](https://www.travelbuddy.top)
+# Travel-Buddy [Visit Travel Buddy!](http://www.travelbuddy.top)
 
 Traveling can be unpredictable, especially now during the time of Covid-19.  
 Travel Buddy was created to help people while traveling to feel safe and secure knowing that emergency information can be found in a centralized place.
@@ -40,7 +40,7 @@ ex. https://www.gov.uk/foreign-travel-advice/taiwan
     
     
 
-Video Demo Below!
+# Video Demo Below!
 
 https://user-images.githubusercontent.com/91081738/150046847-e0f0207c-8e53-4010-a7dd-7b07de8416e9.mp4
 
