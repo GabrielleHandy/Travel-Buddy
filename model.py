@@ -129,6 +129,7 @@ def example_data():
     TpDest.query.delete()
     Embassy.query.delete()
 
+    # Created test users and test travel planners
     sophie = User(fname= "Sophie", lname= "Hatter", 
                 email="shatter@hmc.com", password="test", home_country="United States")
 
@@ -143,6 +144,14 @@ def example_data():
                 email="cfire-demon@hmc.com", password="test", home_country="Canada")
     calcifer_tp = Travel_planner(name= "For after I break the curse", user_id= calcifer.user_id)
     
+    # Created test Destinations for each user and test embassies for destinations
+    taiwan = Destination(city_name="Taipei", country_name= "Taiwan")
+    sophie_tpdest = TpDest(tp_id= sophie_tp.tp_id, dest_id = taiwan.dest_id, date = datetime(randint(2023, 2030), randint(1, 12), randint(1, 27)))
+
+    taiwanem = Embassy(home_country="United States",
+                            latitude="60", longitude="-120", 
+                            address= "6563 Somewhere St", website = "Great-embassy.com", dest_id= taiwan.dest_id)
+
 
     japan = Destination(city_name="Tokyo", country_name="Japan")
     howl_tpdest= TpDest(tp_id= howl_tp.tp_id, dest_id = japan.dest_id, date = datetime(randint(2023, 2030), randint(1, 12), randint(1, 27)))
@@ -153,19 +162,21 @@ def example_data():
                             address= "1125 Somewhere Rd", website = "Awesome-embassy.com", dest_id=japan.dest_id)
 
 
-    taiwan = Destination(city_name="Taipei", country_name= "Taiwan")
-    sophie_tpdest = TpDest(tp_id= sophie_tp.tp_id, dest_id = taiwan.dest_id, date = datetime(randint(2023, 2030), randint(1, 12), randint(1, 27)))
-
-    taiwanem = Embassy(home_country="United States",
-                            latitude="60", longitude="-120", 
-                            address= "6563 Somewhere St", website = "Great-embassy.com", dest_id= taiwan.dest_id)
-
     korea = Destination(city_name="Seoul", country_name="Korea")
     calcifer_tpdest = TpDest(tp_id= calcifer_tp.tp_id, dest_id = korea.dest_id, date = datetime(randint(2023, 2030), randint(1, 12), randint(1, 27)))
 
     koreaem = Embassy(home_country="Canada",
                             latitude="35", longitude="-70", 
                             address= "875 Somewhere Ln", website = "Fun-embassy.com", dest_id=korea.dest_id)
+
+    db.session.add_all([sophie, sophie_tp,
+                        howl, howl_tp,
+                        calcifer, calcifer_tp, 
+                        taiwan, japan, korea,
+                        taiwanem, japanem, koreaem,
+                        howl_tpdest, sophie_tpdest, calcifer_tpdest])
+    db.session.commit()
+
 
 
 if __name__ == "__main__":
