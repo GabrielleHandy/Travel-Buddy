@@ -116,7 +116,7 @@ with open('static/databases/usEmbassy.json') as f:
             
 
 
-# #Canadian Embassies 
+#Canadian Embassies 
 
 with open('static/databases/caEmbassy.json') as j:
     caembassy_data = json.loads(j.read())

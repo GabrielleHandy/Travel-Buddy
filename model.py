@@ -47,10 +47,10 @@ class Travel_planner(db.Model):
         return f"Travel PLanner tp_id:{self.tp_id} name:{self.name}"
 
 
-# check your crud.py for necessary changes
+
 class TpDest(db.Model):
     # association table
-    """A Travel_planner with more than one destination"""
+    """A destination in a travel planner"""
 
     __tablename__ = 'tps_dests'
 
