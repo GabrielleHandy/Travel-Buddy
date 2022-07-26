@@ -51,7 +51,7 @@ def create_alert(country_name, user):
 
     return alert
 
-def create_travelplanner(tp_name, user_id, dest_id, tp_date):
+def create_travel_planner(tp_name, user_id, dest_id, tp_date):
     """Creates a travel_planner and destination in travelplanner"""
     travel_planner = crud.create_travelplanner(tp_name,user_id)
     tp_id =travel_planner.tp_id
