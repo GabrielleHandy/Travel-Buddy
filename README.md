@@ -27,8 +27,7 @@ Information coming from RSS Feeds:
     in order to create features like travel advisories and news feed.
 
 Creating URLs for all websites:
---- Most information provided on my website came from datasets directly from government pages. The probllem arouse when Uk government had no advisory website links and 
-    US government had no address links available for some embassy locations or embassy websites. 
+--- Most information provided on my website came from datasets directly from government pages. The problem arose when Uk government info had no advisory website links and US government had no address links available for some embassy locations or embassy websites. 
     
 --- I used Google maps reverse geocoding feature to create addresses for embassies
 
