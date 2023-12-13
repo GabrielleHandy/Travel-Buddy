@@ -1,4 +1,4 @@
-# Travel-Buddy [Visit Travel Buddy!](http://www.travelbuddy.top)
+# Travel-Buddy [Under Construction]()
 
 Traveling can be unpredictable, especially now during the time of Covid-19.  
 Travel Buddy was created to help people while traveling to feel safe and secure knowing that emergency information can be found in a centralized place.
