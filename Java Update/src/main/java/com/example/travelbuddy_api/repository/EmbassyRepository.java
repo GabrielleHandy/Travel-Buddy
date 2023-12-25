@@ -9,6 +9,7 @@ import java.util.List;
 @Repository
 public interface EmbassyRepository extends JpaRepository<Embassy, Long> {
 
+
     public List<Embassy> findAllByHomeCountry(String homeCountry);
 
 }
