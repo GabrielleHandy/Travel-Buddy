@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static jakarta.persistence.FetchType.LAZY;
@@ -27,12 +28,12 @@ public class TravelPlanner {
     @JoinTable( name = "travelplanner_destinations",
             joinColumns = {@JoinColumn(name = "travelplanner_id")},
             inverseJoinColumns = {@JoinColumn(name = "destination_id")})
-    private Set<Destination> destinations;
+    private Set<Destination> destinations = new HashSet<>();
 
     public TravelPlanner() {
     }
 
-    public TravelPlanner(Long id, String name, User user, Set<Destination> destinations = new Set<Destination>()) {
+    public TravelPlanner(Long id, String name, User user, Set<Destination> destinations) {
         this.id = id;
         this.name = name;
         this.user = user;
