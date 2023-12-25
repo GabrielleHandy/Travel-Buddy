@@ -7,6 +7,7 @@ import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -34,13 +35,14 @@ public class User {
     private String password;
 
     @OneToMany
-    private TravelPlanner travelPlanner;
+    private List<TravelPlanner> travelPlanners;
 
     public User() {
+        travelPlanners = new ArrayList<>();
     }
 
 
-    public User(Long id, String userName, String firstName, String lastName, String emailAddress, String homeCountry, String password, TravelPlanner travelPlanner) {
+    public User(Long id, String userName, String firstName, String lastName, String emailAddress, String homeCountry, String password) {
         this.id = id;
         this.userName = userName;
         this.firstName = firstName;
@@ -48,7 +50,7 @@ public class User {
         this.emailAddress = emailAddress;
         this.homeCountry = homeCountry;
         this.password = password;
-        this.travelPlanner = travelPlanner;
+        this.travelPlanners = new ArrayList<>();
     }
 
     public Long getId() {
@@ -107,12 +109,12 @@ public class User {
         this.password = password;
     }
 
-    public TravelPlanner getTravelPlanner() {
-        return travelPlanner;
+    public List<TravelPlanner> getTravelPlanners() {
+        return travelPlanners;
     }
 
-    public void setTravelPlanner(TravelPlanner travelPlanner) {
-        this.travelPlanner = travelPlanner;
+    public void setTravelPlanners(List<TravelPlanner> travelPlanners) {
+        this.travelPlanners = travelPlanners;
     }
 
     @Override
@@ -124,7 +126,6 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
                 ", homeCountry='" + homeCountry + '\'' +
-                ", travelPlanner=" + travelPlanner +
                 '}';
     }
 }
