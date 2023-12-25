@@ -34,15 +34,15 @@ public class User {
     @Column
     private String password;
 
-    @OneToMany
-    private List<TravelPlanner> travelPlanners;
+    @OneToMany(mappedBy = "user", orphanRemoval = true)
+    private List<TravelPlanner> travelPlanners = new ArrayList<>();
 
     public User() {
-        travelPlanners = new ArrayList<>();
+
     }
 
 
-    public User(Long id, String userName, String firstName, String lastName, String emailAddress, String homeCountry, String password) {
+    public User(Long id, String userName, String firstName, String lastName, String emailAddress, String homeCountry, String password, List<TravelPlanner> travelPlanners) {
         this.id = id;
         this.userName = userName;
         this.firstName = firstName;
@@ -50,7 +50,7 @@ public class User {
         this.emailAddress = emailAddress;
         this.homeCountry = homeCountry;
         this.password = password;
-        this.travelPlanners = new ArrayList<>();
+        this.travelPlanners = travelPlanners;
     }
 
     public Long getId() {

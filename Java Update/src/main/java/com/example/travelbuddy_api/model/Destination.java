@@ -3,6 +3,7 @@ package com.example.travelbuddy_api.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -17,6 +18,10 @@ public class Destination {
     @Column
     private String countryName;
 
+    @OneToMany(mappedBy = "destination", orphanRemoval = true)
+    private Set<Embassy> embassies = new HashSet<>();
+
+
     @ManyToMany(
             cascade = {
                     CascadeType.PERSIST,
@@ -30,10 +35,12 @@ public class Destination {
     public Destination() {
     }
 
-    public Destination(Long id, String cityName, String countryName, Set<TravelPlanner> travelPlanners) {
+    public Destination(Long id, String cityName, String countryName,
+                       Set<Embassy> embassies ,Set<TravelPlanner> travelPlanners) {
         this.id = id;
         this.cityName = cityName;
         this.countryName = countryName;
+        this.embassies = embassies;
         this.travelPlanners = travelPlanners;
     }
 
@@ -61,6 +68,14 @@ public class Destination {
         this.countryName = countryName;
     }
 
+    public Set<Embassy> getEmbassies() {
+        return embassies;
+    }
+
+    public void setEmbassies(Set<Embassy> embassies) {
+        this.embassies = embassies;
+    }
+
     public Set<TravelPlanner> getTravelPlanners() {
         return travelPlanners;
     }
@@ -75,6 +90,7 @@ public class Destination {
                 "id=" + id +
                 ", cityName='" + cityName + '\'' +
                 ", countryName='" + countryName + '\'' +
+                ", embassies=" + embassies +
                 ", travelPlanners=" + travelPlanners +
                 '}';
     }
